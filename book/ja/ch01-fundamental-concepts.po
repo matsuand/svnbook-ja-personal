@@ -1,0 +1,1518 @@
+# Japanese translations for PACKAGE package
+# Copyright (C) 2017 Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2017.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2017-08-03 18:00+0900\n"
+"PO-Revision-Date: 2017-08-03 18:00+0900\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: matsuand個人翻訳\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. type: Content of: <chapter><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:4
+msgid "Fundamental Concepts"
+msgstr ""
+
+#. type: Content of: <chapter><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:6
+msgid ""
+"This chapter is a short, casual introduction to Subversion and its approach "
+"to version control.  We begin with a discussion of general version control "
+"concepts, work our way into the specific ideas behind Subversion, and show "
+"some simple examples of Subversion in use."
+msgstr ""
+
+#. type: Content of: <chapter><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:12
+msgid ""
+"Even though the examples in this chapter show people sharing collections of "
+"program source code, keep in mind that Subversion can manage any sort of "
+"file collection&mdash;it's not limited to helping computer programmers."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:22
+msgid "Version Control Basics"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para><indexterm><primary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:26
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:57
+msgid "version control systems"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:25
+msgid ""
+"<placeholder type=\"indexterm\" id=\"0\"/>A version control system (or "
+"revision control system) is a system that tracks incremental versions (or "
+"revisions) of files and, in some cases, directories over time.  Of course, "
+"merely tracking the various versions of a user's (or group of users') files "
+"and directories isn't very interesting in itself.  What makes a version "
+"control system useful is the fact that it allows you to explore the changes "
+"which resulted in each of those versions and facilitates the arbitrary "
+"recall of the same."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:37
+msgid ""
+"In this section, we'll introduce some fairly high-level version control "
+"system components and concepts.  We'll limit our discussion to modern "
+"version control systems&mdash;in today's interconnected world, there is very "
+"little point in acknowledging version control systems which cannot operate "
+"across wide-area networks."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:46
+msgid "The Repository"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para><indexterm><primary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:50
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:53
+msgid "repositories"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para><indexterm><secondary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:54
+msgid "filesystem tree"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para><indexterm><secondary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:58
+msgid "clients"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:49
+msgid ""
+"<placeholder type=\"indexterm\" id=\"0\"/> <placeholder type=\"indexterm\" "
+"id=\"1\"/> <placeholder type=\"indexterm\" id=\"2\"/>At the core of the "
+"version control system is a repository, which is the central store of that "
+"system's data.  The repository usually stores information in the form of a "
+"<firstterm>filesystem tree</firstterm>&mdash;a hierarchy of files and "
+"directories.  Any number of <firstterm>clients</firstterm> connect to the "
+"repository, and then read or write to these files.  By writing data, a "
+"client makes the information available to others; by reading data, the "
+"client receives information from others.  <xref linkend=\"svn.basic."
+"repository.dia-1\"/> illustrates this."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><figure><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:72
+msgid "A typical client/server system"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><figure>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:73
+msgid "<graphic fileref=\"images/ch02dia1.png\"/>"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:76
+msgid ""
+"Why is this interesting? So far, this sounds like the definition of a "
+"typical file server.  And indeed, the repository <emphasis>is</emphasis> a "
+"kind of file server, but it's not your usual breed.  What makes the "
+"repository special is that as the files in the repository are changed, the "
+"repository remembers each version of those files."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:83
+msgid ""
+"When a client reads data from the repository, it normally sees only the "
+"latest version of the filesystem tree.  But what makes a version control "
+"client interesting is that it also has the ability to request previous "
+"states of the filesystem from the repository.  A version control client can "
+"ask historical questions such as <quote>What did this directory contain last "
+"Wednesday?</quote> and <quote>Who was the last person to change this file, "
+"and what changes did he make?</quote> These are the sorts of questions that "
+"are at the heart of any version control system."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:98
+msgid "The Working Copy"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para><indexterm><primary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:102
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:683
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:853
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:947
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:987
+msgid "working copies"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:101
+msgid ""
+"<placeholder type=\"indexterm\" id=\"0\"/>A version control system's value "
+"comes from the fact that it tracks versions of files and directories, but "
+"the rest of the software universe doesn't operate on <quote>versions of "
+"files and directories</quote>.  Most software programs understand how to "
+"operate only on a <emphasis>single</emphasis> version of a specific type of "
+"file.  So how does a version control user interact with an abstract&mdash;"
+"and, often, remote&mdash;repository full of multiple versions of various "
+"files in a concrete fashion? How does his or her word processing software, "
+"presentation software, source code editor, web design software, or some "
+"other program&mdash;all of which trade in the currency of simple data "
+"files&mdash;get access to such files? The answer is found in the version "
+"control construct known as a <firstterm>working copy</firstterm>."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para><footnote><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:121
+msgid ""
+"The term <quote>working copy</quote> can be generally applied to any one "
+"file version's local instance.  When most folks use the term, though, they "
+"are referring to a whole directory tree containing files and subdirectories "
+"managed by the version control system."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:119
+msgid ""
+"A working copy is, quite literally, a local copy of a particular version of "
+"a user's VCS-managed data upon which that user is free to work.  Working "
+"copies<placeholder type=\"footnote\" id=\"0\"/> appear to other software "
+"just as any other local directory full of files, so those programs don't "
+"have to be <quote>version-control-aware</quote> in order to read from and "
+"write to that data.  The task of managing the working copy and communicating "
+"changes made to its contents to and from the repository falls squarely to "
+"the version control system's client software."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:138
+msgid "Versioning Models"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:140
+msgid ""
+"If the primary mission of a version control system is to track the various "
+"versions of digital information over time, a very close secondary mission in "
+"any modern version control system is to enable collaborative editing and "
+"sharing of that data.  But different systems use different strategies to "
+"achieve this.  It's important to understand these different strategies, for "
+"a couple of reasons.  First, it will help you compare and contrast existing "
+"version control systems, in case you encounter other systems similar to "
+"Subversion.  Beyond that, it will also help you make more effective use of "
+"Subversion, since Subversion itself supports a couple of different ways of "
+"working."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:155
+msgid "The problem of file sharing"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:157
+msgid ""
+"All version control systems have to solve the same fundamental problem: how "
+"will the system allow users to share information, but prevent them from "
+"accidentally stepping on each other's feet? It's all too easy for users to "
+"accidentally overwrite each other's changes in the repository."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:164
+msgid ""
+"Consider the scenario shown in <xref linkend=\"svn.basic.vsn-models.problem-"
+"sharing.dia-1\"/>.  Suppose we have two coworkers, Harry and Sally.  They "
+"each decide to edit the same repository file at the same time.  If Harry "
+"saves his changes to the repository first, it's possible that (a few moments "
+"later) Sally could accidentally overwrite them with her own new version of "
+"the file.  While Harry's version of the file won't be lost forever (because "
+"the system remembers every change), any changes Harry made <emphasis>won't</"
+"emphasis> be present in Sally's newer version of the file, because she never "
+"saw Harry's changes to begin with.  Harry's work is still effectively "
+"lost&mdash;or at least missing from the latest version of the file&mdash;and "
+"probably by accident.  This is definitely a situation we want to avoid!"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><figure><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:181
+msgid "The problem to avoid"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><figure>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:182
+msgid "<graphic fileref=\"images/ch02dia2.png\"/>"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><figure><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:189
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:213
+msgid "The lock-modify-unlock solution"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para><indexterm><primary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:193
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:273
+msgid "version control"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para><indexterm><secondary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:194
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:274
+msgid "models"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para><indexterm><tertiary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:195
+msgid "lock-modify-unlock"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para><indexterm>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:195
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:275
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:847
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:906
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:941
+msgid "<placeholder type=\"tertiary\" id=\"0\"/>"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:192
+msgid ""
+"<placeholder type=\"indexterm\" id=\"0\"/>Many version control systems use a "
+"<firstterm>lock-modify-unlock</firstterm> model to address the problem of "
+"many authors clobbering each other's work.  In this model, the repository "
+"allows only one person to change a file at a time.  This exclusivity policy "
+"is managed using locks.  Harry must <quote>lock</quote> a file before he can "
+"begin making changes to it.  If Harry has locked a file, Sally cannot also "
+"lock it, and therefore cannot make any changes to that file.  All she can do "
+"is wait for Harry to finish his changes, save the file and release his "
+"lock.  After Harry unlocks the file, Sally can take her turn by locking the "
+"file.  Then she may read the latest version of the file and edit it.  <xref "
+"linkend=\"svn.basic.vsn-models.lock-unlock.dia-1\"/> demonstrates this "
+"simple solution."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><figure>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:214
+msgid "<graphic fileref=\"images/ch02dia3.png\"/>"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:217
+msgid ""
+"The problem with the lock-modify-unlock model is that it's a bit restrictive "
+"and often becomes a roadblock for users:"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><itemizedlist><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:223
+msgid ""
+"<emphasis>Locking may cause administrative problems.</emphasis> Sometimes "
+"Harry will lock a file and then forget about it.  Meanwhile, because Sally "
+"is still waiting to edit the file, her hands are tied.  And then Harry goes "
+"on vacation.  Now Sally has to get an administrator to release Harry's "
+"lock.  The situation ends up causing a lot of unnecessary delay and wasted "
+"time."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><itemizedlist><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:235
+msgid ""
+"<emphasis>Locking may cause unnecessary serialization.</emphasis> What if "
+"Harry is editing the beginning of a text file, and Sally simply wants to "
+"edit the end of the same file? These changes don't overlap at all.  They "
+"could easily edit the file simultaneously, and no great harm would come, "
+"assuming the changes were properly merged together.  There's no need for "
+"them to take turns in this situation."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><itemizedlist><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:248
+msgid ""
+"<emphasis>Locking may create a false sense of security.</emphasis> Suppose "
+"Harry locks and edits file A, while Sally simultaneously locks and edits "
+"file B.  But what if A and B depend on one another, and the changes made to "
+"each are semantically incompatible? Suddenly A and B don't work together "
+"anymore.  The locking system was powerless to prevent the problem&mdash;yet "
+"it somehow provided a false sense of security.  It's easy for Harry and "
+"Sally to imagine that by locking files, each is beginning a safe, insulated "
+"task, and thus they need not bother discussing their incompatible changes "
+"early on.  Locking often becomes a substitute for real communication."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><figure><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:269
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:308
+msgid "The copy-modify-merge solution"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para><indexterm><tertiary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:275
+msgid "copy-modify-merge"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:272
+msgid ""
+"<placeholder type=\"indexterm\" id=\"0\"/>Subversion, CVS, and many other "
+"version control systems use a <firstterm>copy-modify-merge</firstterm> model "
+"as an alternative to locking.  In this model, each user's client contacts "
+"the project repository and creates a personal working copy.  Users then work "
+"simultaneously and independently, modifying their private copies.  Finally, "
+"the private copies are merged together into a new, final version.  The "
+"version control system often assists with the merging, but ultimately, a "
+"human being is responsible for making it happen correctly."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para><indexterm><primary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:289
+msgid "out of date"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:288
+msgid ""
+"<placeholder type=\"indexterm\" id=\"0\"/>Here's an example.  Say that Harry "
+"and Sally each create working copies of the same project, copied from the "
+"repository.  They work concurrently and make changes to the same file A "
+"within their copies.  Sally saves her changes to the repository first.  When "
+"Harry attempts to save his changes later, the repository informs him that "
+"his file A is <firstterm>out of date</firstterm>.  In other words, file A in "
+"the repository has somehow changed since he last copied it.  So Harry asks "
+"his client to merge any new changes from the repository into his working "
+"copy of file A.  Chances are that Sally's changes don't overlap with his "
+"own; once he has both sets of changes integrated, he saves his working copy "
+"back to the repository.  <xref linkend=\"svn.basic.vsn-models.copy-merge."
+"dia-1\"/> and <xref linkend=\"svn.basic.vsn-models.copy-merge.dia-2\"/> show "
+"this process."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><figure>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:309
+msgid "<graphic fileref=\"images/ch02dia4.png\"/>"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><figure><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:313
+msgid "The copy-modify-merge solution (continued)"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><figure>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:314
+msgid "<graphic fileref=\"images/ch02dia5.png\"/>"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para><indexterm><primary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:319
+msgid "conflicts"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:318
+msgid ""
+"<placeholder type=\"indexterm\" id=\"0\"/>But what if Sally's changes "
+"<emphasis>do</emphasis> overlap with Harry's changes? What then? This "
+"situation is called a <firstterm>conflict</firstterm>, and it's usually not "
+"much of a problem.  When Harry asks his client to merge the latest "
+"repository changes into his working copy, his copy of file A is somehow "
+"flagged as being in a state of conflict: he'll be able to see both sets of "
+"conflicting changes and manually choose between them.  Note that software "
+"can't automatically resolve conflicts; only humans are capable of "
+"understanding and making the necessary intelligent choices.  Once Harry has "
+"manually resolved the overlapping changes&mdash;perhaps after a discussion "
+"with Sally&mdash;he can safely save the merged file back to the repository."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:336
+msgid ""
+"The copy-modify-merge model may sound a bit chaotic, but in practice, it "
+"runs extremely smoothly.  Users can work in parallel, never waiting for one "
+"another.  When they work on the same files, it turns out that most of their "
+"concurrent changes don't overlap at all; conflicts are infrequent.  And the "
+"amount of time it takes to resolve conflicts is usually far less than the "
+"time lost by a locking system."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:344
+msgid ""
+"In the end, it all comes down to one critical factor: user communication.  "
+"When users communicate poorly, both syntactic and semantic conflicts "
+"increase.  No system can force users to communicate perfectly, and no system "
+"can detect semantic conflicts.  So there's no point in being lulled into a "
+"false sense of security that a locking system will somehow prevent "
+"conflicts; in practice, locking seems to inhibit productivity more than "
+"anything else."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><sidebar><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:354
+msgid "When Locking Is Necessary"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><sidebar><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:356
+msgid ""
+"While the lock-modify-unlock model is considered generally harmful to "
+"collaboration, sometimes locking is appropriate."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><sidebar><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:360
+msgid ""
+"The copy-modify-merge model is based on the assumption that files are "
+"contextually mergeable&mdash;that is, that the majority of the files in the "
+"repository are line-based text files (such as program source code).  But for "
+"files with binary formats, such as artwork or sound, it's often impossible "
+"to merge conflicting changes.  In these situations, it really is necessary "
+"for users to take strict turns when changing the file.  Without serialized "
+"access, somebody ends up wasting time on changes that are ultimately "
+"discarded."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><sidebar><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:371
+msgid ""
+"While Subversion is primarily a copy-modify-merge system, it still "
+"recognizes the need to lock an occasional file, and thus provides mechanisms "
+"for this.  We discuss this feature in <xref linkend=\"svn.advanced.locking\"/"
+">."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:386
+msgid "Version Control the Subversion Way"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:388
+msgid ""
+"We've mentioned already that Subversion is a modern, network-aware version "
+"control system.  As we described in <xref linkend=\"svn.basic.version-"
+"control-basics\"/> (our high-level version control overview), a repository "
+"serves as the core storage mechanism for Subversion's versioned data, and "
+"it's via working copies that users and their software programs interact with "
+"that data.  In this section, we'll begin to introduce the specific ways in "
+"which Subversion implements version control."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:400
+msgid "Subversion Repositories"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:402
+msgid ""
+"Subversion implements the concept of a version control repository much as "
+"any other modern version control system would.  Unlike a working copy, a "
+"Subversion repository is an abstract entity, able to be operated upon almost "
+"exclusively by Subversion's own libraries and tools.  As most of a user's "
+"Subversion interactions involve the use of the Subversion client and occur "
+"in the context of a working copy, we spend the majority of this book "
+"discussing the Subversion working copy and how to manipulate it.  For the "
+"finer details of the repository, though, check out <xref linkend=\"svn."
+"reposadmin\"/>."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><warning><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:415
+msgid ""
+"In Subversion, the client-side object which every user of the system "
+"has&mdash;the directory of versioned files, along with metadata that enables "
+"the system to track them and communicate with the server&mdash;is called a "
+"<emphasis>working copy</emphasis>.  Although other version control systems "
+"use the term <quote>repository</quote> for the client-side object, it is "
+"both incorrect and a common source of confusion to use the term in that way "
+"in the context of Subversion."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><warning><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:425
+msgid ""
+"Working copies are described later, in <xref linkend=\"svn.basic.in-action.wc"
+"\"/>."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:433
+msgid "Revisions"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:435
+msgid ""
+"A Subversion client commits (that is, communicates the changes made to) any "
+"number of files and directories as a single atomic transaction.  By atomic "
+"transaction, we mean simply this: either all of the changes are accepted "
+"into the repository, or none of them is.  Subversion tries to retain this "
+"atomicity in the face of program crashes, system crashes, network problems, "
+"and other users' actions."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><itemizedlist><indexterm><primary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:445
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:471
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:745
+msgid "revisions"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:444
+msgid ""
+"<placeholder type=\"indexterm\" id=\"0\"/>Each time the repository accepts a "
+"commit, this creates a new state of the filesystem tree, called a "
+"<firstterm>revision</firstterm>.  Each revision is assigned a unique natural "
+"number, one greater than the number assigned to the previous revision.  The "
+"initial revision of a freshly created repository is numbered 0 and consists "
+"of nothing but an empty root directory."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:454
+msgid ""
+"<xref linkend=\"svn.basic.in-action.revs.dia-1\"/> illustrates a nice way to "
+"visualize the repository.  Imagine an array of revision numbers, starting at "
+"0, stretching from left to right.  Each revision number has a filesystem "
+"tree hanging below it, and each tree is a <quote>snapshot</quote> of the way "
+"the repository looked after a commit."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><figure><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:462
+msgid "Tree changes over time"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><figure>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:463
+msgid "<graphic fileref=\"images/ch02dia7.png\"/>"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sidebar><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:467
+msgid "Global Revision Numbers"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sidebar><para><indexterm><secondary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:472
+msgid "global"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sidebar><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:470
+msgid ""
+"<placeholder type=\"indexterm\" id=\"0\"/>Unlike most version control "
+"systems, Subversion's revision numbers apply to <emphasis>the entire "
+"repository tree</emphasis>, not individual files.  Each revision number "
+"selects an entire tree, a particular state of the repository after some "
+"committed change.  Another way to think about it is that revision N "
+"represents the state of the repository filesystem after the Nth commit.  "
+"When Subversion users talk about <quote>revision 5 of <filename>foo.c</"
+"filename>,</quote> they really mean <quote><filename>foo.c</filename> as it "
+"appears in revision 5.</quote> Notice that in general, revisions N and M of "
+"a file do <emphasis>not</emphasis> necessarily differ! Many other version "
+"control systems use per-file revision numbers, so this concept may seem "
+"unusual at first. (Former CVS users might want to see <xref linkend=\"svn."
+"forcvs\"/> for more details.)"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:495
+msgid "Addressing the Repository"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para><indexterm><primary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:499
+msgid "repository URL"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:498
+msgid ""
+"<placeholder type=\"indexterm\" id=\"0\"/>Subversion client programs use "
+"URLs to identify versioned files and directories in Subversion "
+"repositories.  For the most part, these URLs use the standard syntax, "
+"allowing for server names and port numbers to be specified as part of the "
+"URL."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><informalexample><itemizedlist><listitem><simpara>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:509
+msgid "http://svn.example.com/svn/project"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><informalexample><itemizedlist><listitem><simpara>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:512
+msgid "http://svn.example.com:9834/repos"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:517
+msgid ""
+"Subversion repository URLs aren't limited to only the <literal>http://</"
+"literal> variety.  Because Subversion offers several different ways for its "
+"clients to communicate with its servers, the URLs used to address the "
+"repository differ subtly depending on which repository access mechanism is "
+"employed.  <xref linkend=\"svn.basic.in-action.wc.tbl-1\"/> describes how "
+"different URL schemes map to the available repository access methods.  For "
+"more details about Subversion's server options, see <xref linkend=\"svn."
+"serverconfig\"/>."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><table><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:529
+msgid "Repository access URLs"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><table><tgroup><thead><row><entry>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:533
+msgid "Schema"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><table><tgroup><thead><row><entry>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:534
+msgid "Access method"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><table><tgroup><tbody><row><entry>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:539
+msgid "<literal>file:///</literal>"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><table><tgroup><tbody><row><entry>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:540
+msgid "Direct repository access (on local disk)"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><table><tgroup><tbody><row><entry>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:543
+msgid "<literal>http://</literal>"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><table><tgroup><tbody><row><entry>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:544
+msgid "Access via WebDAV protocol to Subversion-aware Apache server"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><table><tgroup><tbody><row><entry>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:548
+msgid "<literal>https://</literal>"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><table><tgroup><tbody><row><entry>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:549
+msgid ""
+"Same as <literal>http://</literal>, but with SSL encapsulation (encryption "
+"and authentication)"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><table><tgroup><tbody><row><entry>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:553
+msgid "<literal>svn://</literal>"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><table><tgroup><tbody><row><entry>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:554
+msgid "Access via custom protocol to an <literal>svnserve</literal> server"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><table><tgroup><tbody><row><entry>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:558
+msgid "<literal>svn+ssh://</literal>"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><table><tgroup><tbody><row><entry>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:559
+msgid "Same as <literal>svn://</literal>, but through an SSH tunnel"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:566
+msgid ""
+"Subversion's handling of URLs has some notable nuances.  For example, URLs "
+"containing the <literal>file://</literal> access method (used for local "
+"repositories) must, in accordance with convention, have either a server name "
+"of <literal>localhost</literal> or no server name at all:"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><informalexample><itemizedlist><listitem><simpara>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:576
+msgid "file:///var/svn/repos"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><informalexample><itemizedlist><listitem><simpara>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:579
+msgid "file://localhost/var/svn/repos"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:584
+msgid ""
+"Also, users of the <literal>file://</literal> scheme on Windows platforms "
+"will need to use an unofficially <quote>standard</quote> syntax for "
+"accessing repositories that are on the same machine, but on a different "
+"drive than the client's current working drive.  Either of the two following "
+"URL path syntaxes will work, where <literal>X</literal> is the drive on "
+"which the repository resides:"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><informalexample><itemizedlist><listitem><simpara>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:596
+msgid "file:///X:/var/svn/repos"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><informalexample><itemizedlist><listitem><simpara>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:599
+msgid "file:///X|/var/svn/repos"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:604
+msgid ""
+"Note that a URL uses forward slashes even though the native (non-URL) form "
+"of a path on Windows uses backslashes.  Also note that when using the "
+"<literal>file:///<replaceable>X</replaceable>|/</literal> form at the "
+"command line, you need to quote the URL (wrap it in quotation marks) so that "
+"the vertical bar character is not interpreted as a pipe."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><note><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:613
+msgid ""
+"You cannot use Subversion's <literal>file://</literal> URLs in a regular web "
+"browser the way you can use typical <literal>file://</literal> URLs.  When "
+"you attempt to view a <literal>file://</literal> URL in a regular web "
+"browser, it reads and displays the contents of the file at that location by "
+"examining the filesystem directly.  However, Subversion's resources exist in "
+"a virtual filesystem (see <xref linkend=\"svn.developer.layerlib.repos\" /"
+">), and your browser will not understand how to interact with that "
+"filesystem."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:625
+msgid ""
+"The Subversion client will automatically encode URLs as necessary, just like "
+"a web browser does.  For example, the URL <literal>http://host/path with "
+"space/project/españa</literal> &mdash; which contains both spaces and upper-"
+"ASCII characters &mdash; will be automatically interpreted by Subversion as "
+"if you'd provided <literal>http://host/path%20with%20space/project/espa"
+"%C3%B1a</literal>.  If the URL contains spaces, be sure to place it within "
+"quotation marks at the command line so that your shell treats the whole "
+"thing as a single argument to the program."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:636
+msgid ""
+"There is one notable exception to Subversion's handling of URLs which also "
+"applies to its handling of local paths in many contexts, too.  If the final "
+"path component of your URL or local path contains an at sign (<literal>@</"
+"literal>), you need to use a special syntax&mdash;described in <xref linkend="
+"\"svn.advanced.pegrevs\" />&mdash;in order to make Subversion properly "
+"address that resource."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para><indexterm><primary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:646
+msgid "repository-relative URL"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para><indexterm><see>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:649
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:653
+msgid "caret syntax"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para><indexterm><primary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:652
+msgid "^"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:645
+msgid ""
+"<placeholder type=\"indexterm\" id=\"0\"/> <placeholder type=\"indexterm\" "
+"id=\"1\"/> <placeholder type=\"indexterm\" id=\"2\"/>In Subversion 1.6, a "
+"new caret (<literal>^</literal>)  notation was introduced as a shorthand for "
+"<quote>the URL of the repository's root directory</quote>.  For example, you "
+"can use the <literal>^/tags/bigsandwich/</literal> to refer to the URL of "
+"the <filename>/tags/bigsandwich</filename> directory in the root of the "
+"repository.  Such a URL is called a <firstterm>repository-relative URL</"
+"firstterm>.  Note that this URL syntax works only when your current working "
+"directory is a working copy&mdash;the command-line client knows the "
+"repository's root URL by looking at the working copy's metadata.  Also note "
+"that when you wish to refer precisely to the root directory of the "
+"repository, you must do so using <literal>^/</literal> (with the trailing "
+"slash character), not merely <literal>^</literal>.  Windows users should not "
+"forget that a caret is an escape character on their platform.  Therefore, "
+"use a double caret <literal>^^</literal> if you run the Subversion client on "
+"a Windows machine."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:679
+msgid "Subversion Working Copies"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:682
+msgid ""
+"<placeholder type=\"indexterm\" id=\"0\"/>A Subversion working copy is an "
+"ordinary directory tree on your local system, containing a collection of "
+"files.  You can edit these files however you wish, and if they're source "
+"code files, you can compile your program from them in the usual way.  Your "
+"working copy is your own private work area: Subversion will never "
+"incorporate other people's changes, nor make your own changes available to "
+"others, until you explicitly tell it to do so.  You can even have multiple "
+"working copies of the same project."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:694
+msgid ""
+"After you've made some changes to the files in your working copy and "
+"verified that they work properly, Subversion provides you with commands to "
+"<quote>publish</quote> your changes (by writing to the repository), thereby "
+"making them available to the other people working with you on your project.  "
+"If other people publish their own changes, Subversion provides you with "
+"commands to merge those changes into your own working copy (by reading from "
+"the repository).  Notice that the central repository is the broker for "
+"everybody's changes in Subversion&mdash;changes aren't passed directly from "
+"working copy to working copy in the typical workflow."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para><indexterm><see>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:709
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:713
+msgid "administrative directory"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para><indexterm><primary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:712
+msgid ".svn"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:708
+msgid ""
+"<placeholder type=\"indexterm\" id=\"0\"/> <placeholder type=\"indexterm\" "
+"id=\"1\"/>A working copy also contains some extra files, created and "
+"maintained by Subversion, to help it carry out these commands.  In "
+"particular, each working copy contains a subdirectory named <filename>.svn</"
+"filename>, also known as the working copy's <firstterm>administrative "
+"directory</firstterm>.  The files in the administrative directory help "
+"Subversion recognize which of your versioned files contain unpublished "
+"changes, and which files are out of date with respect to others' work."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><note><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:725
+msgid ""
+"Prior to version 1.7, Subversion maintained <filename>.svn</filename> "
+"administrative subdirectories in <emphasis>every</emphasis> versioned "
+"directory of your working copy.  Subversion 1.7 offers a completely new "
+"approach to how working copy metadata is stored and maintained, and chief "
+"among the visible changes to this approach is that each working copy now has "
+"only one <filename>.svn</filename> subdirectory which is an immediate child "
+"of the root of that working copy."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:738
+msgid "How the working copy works"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:740
+msgid ""
+"For each file in a working directory, Subversion records (among other "
+"things) two essential pieces of information:"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><itemizedlist><indexterm><secondary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:746
+msgid "working"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><itemizedlist><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:750
+msgid ""
+"What revision your working file is based on (this is called the file's "
+"<firstterm>working revision</firstterm>)"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><itemizedlist><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:755
+msgid ""
+"A timestamp recording when the local copy was last updated by the repository"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:760
+msgid ""
+"Given this information, by talking to the repository, Subversion can tell "
+"which of the following four states a working file is in:"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:766
+msgid "Unchanged, and current"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:768
+msgid ""
+"The file is unchanged in the working directory, and no changes to that file "
+"have been committed to the repository since its working revision.  An "
+"<command>svn commit</command> of the file will do nothing, and an "
+"<command>svn update</command> of the file will do nothing."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:778
+msgid "Locally changed, and current"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:780
+msgid ""
+"The file has been changed in the working directory, and no changes to that "
+"file have been committed to the repository since you last updated.  There "
+"are local changes that have not been committed to the repository; thus an "
+"<command>svn commit</command> of the file will succeed in publishing your "
+"changes, and an <command>svn update</command> of the file will do nothing."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:791
+msgid "Unchanged, and out of date"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:793
+msgid ""
+"The file has not been changed in the working directory, but it has been "
+"changed in the repository.  The file should eventually be updated in order "
+"to make it current with the latest public revision.  An <command>svn commit</"
+"command> of the file will do nothing, and an <command>svn update</command> "
+"of the file will fold the latest changes into your working copy."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:805
+msgid "Locally changed, and out of date"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:807
+msgid ""
+"The file has been changed both in the working directory and in the "
+"repository.  An <command>svn commit</command> of the file will fail with an "
+"<quote>out-of-date</quote> error.  The file should be updated first; an "
+"<command>svn update</command> command will attempt to merge the public "
+"changes with the local changes.  If Subversion can't complete the merge in a "
+"plausible way automatically, it leaves it to the user to resolve the "
+"conflict."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:824
+msgid "Fundamental working copy interactions"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:826
+msgid ""
+"A typical Subversion repository often holds the files (or source code) for "
+"several projects; usually, each project is a subdirectory in the "
+"repository's filesystem tree.  In this arrangement, a user's working copy "
+"will usually correspond to a particular subtree of the repository."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:832
+msgid ""
+"For example, suppose you have a repository that contains two software "
+"projects, <literal>paint</literal> and <literal>calc</literal>.  Each "
+"project lives in its own top-level subdirectory, as shown in <xref linkend="
+"\"svn.basic.in-action.wc.dia-1\"/>."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><figure><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:839
+msgid "The repository's filesystem"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><figure>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:840
+msgid "<graphic fileref=\"images/ch02dia6.png\"/>"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para><indexterm><primary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:845
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:904
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:939
+msgid "svn"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para><indexterm><secondary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:846
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:905
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:940
+msgid "subcommands"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para><indexterm><tertiary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:847
+msgid "checkout"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para><indexterm><see>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:850
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:855
+msgid "checking out"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para><indexterm><secondary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:854
+msgid "creating"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:844
+msgid ""
+"<placeholder type=\"indexterm\" id=\"0\"/> <placeholder type=\"indexterm\" "
+"id=\"1\"/> <placeholder type=\"indexterm\" id=\"2\"/>To get a working copy, "
+"you must <firstterm>check out</firstterm> some subtree of the repository.  "
+"(The term <emphasis>check out</emphasis> may sound like it has something to "
+"do with locking or reserving resources, but it doesn't; it simply creates a "
+"working copy of the project for you.)  For example, if you check out "
+"<filename>/calc</filename>, you will get a working copy like this:"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:866
+#, no-wrap
+msgid ""
+"$ svn checkout http://svn.example.com/repos/calc\n"
+"A    calc/Makefile\n"
+"A    calc/integer.c\n"
+"A    calc/button.c\n"
+"Checked out revision 56.\n"
+"$ ls -A calc\n"
+"Makefile  button.c integer.c .svn/\n"
+"$\n"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:877
+msgid ""
+"The list of letter <literal>A</literal>s in the left margin indicates that "
+"Subversion is adding a number of items to your working copy.  You now have a "
+"personal copy of the repository's <filename>/calc</filename> directory, with "
+"one additional entry&mdash;<filename>.svn</filename>&mdash;which holds the "
+"extra information needed by Subversion, as mentioned earlier."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para><indexterm><primary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:887
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:891
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:909
+msgid "committing"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para><indexterm><primary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:890
+msgid "checking in"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:886
+msgid ""
+"<placeholder type=\"indexterm\" id=\"0\"/> <placeholder type=\"indexterm\" "
+"id=\"1\"/>Suppose you make changes to <filename>button.c</filename>.  Since "
+"the <filename>.svn</filename> directory remembers the file's original "
+"modification date and contents, Subversion can tell that you've changed the "
+"file.  However, Subversion does not make your changes public until you "
+"explicitly tell it to.  The act of publishing your changes is more commonly "
+"known as <firstterm>committing</firstterm> (or <firstterm>checking in</"
+"firstterm>) changes to the repository."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para><indexterm><tertiary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:906
+msgid "commit"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:903
+msgid ""
+"<placeholder type=\"indexterm\" id=\"0\"/> <placeholder type=\"indexterm\" "
+"id=\"1\"/>To publish your changes, you can use Subversion's <command>svn "
+"commit</command> command:"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:915
+#, no-wrap
+msgid ""
+"$ svn commit button.c -m \"Fixed a typo in button.c.\"\n"
+"Sending        button.c\n"
+"Transmitting file data .\n"
+"Committed revision 57.\n"
+"$\n"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:923
+msgid ""
+"Now your changes to <filename>button.c</filename> have been committed to the "
+"repository, with a note describing your change (namely, that you fixed a "
+"typo).  If another user checks out a working copy of <filename>/calc</"
+"filename>, she will see your changes in the latest version of the file."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:930
+msgid ""
+"Suppose you have a collaborator, Sally, who checked out a working copy of "
+"<filename>/calc</filename> at the same time you did.  When you commit your "
+"change to <filename>button.c</filename>, Sally's working copy is left "
+"unchanged; Subversion modifies working copies only at the user's request."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para><indexterm><tertiary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:941
+msgid "update"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para><indexterm><see>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:944
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:948
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:949
+msgid "updating"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:938
+msgid ""
+"<placeholder type=\"indexterm\" id=\"0\"/> <placeholder type=\"indexterm\" "
+"id=\"1\"/> <placeholder type=\"indexterm\" id=\"2\"/>To bring her project up "
+"to date, Sally can ask Subversion to <firstterm>update</firstterm> her "
+"working copy, by using the <command>svn update</command> command.  This will "
+"incorporate your changes into her working copy, as well as any others that "
+"have been committed since she checked it out."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:959
+#, no-wrap
+msgid ""
+"$ pwd\n"
+"/home/sally/calc\n"
+"$ ls -A\n"
+"Makefile button.c integer.c .svn/\n"
+"$ svn update\n"
+"Updating '.':\n"
+"U    button.c\n"
+"Updated to revision 57.\n"
+"$\n"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:971
+msgid ""
+"The output from the <command>svn update</command> command indicates that "
+"Subversion updated the contents of <filename>button.c</filename>.  Note that "
+"Sally didn't need to specify which files to update; Subversion uses the "
+"information in the <filename>.svn</filename> directory as well as further "
+"information in the repository, to decide which files need to be brought up "
+"to date."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:983
+msgid "Mixed-revision working copies"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para><indexterm><secondary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:988
+msgid "mixed-revision"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:986
+msgid ""
+"<placeholder type=\"indexterm\" id=\"0\"/>As a general principle, Subversion "
+"tries to be as flexible as possible.  One special kind of flexibility is the "
+"ability to have a working copy containing files and directories with a mix "
+"of different working revision numbers.  Subversion working copies do not "
+"always correspond to any single revision in the repository; they may contain "
+"files from several different revisions.  For example, suppose you check out "
+"a working copy from a repository whose most recent revision is 4:"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><informalexample><literallayout>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:1001
+#, no-wrap
+msgid ""
+"calc/\n"
+"   Makefile:4\n"
+"   integer.c:4\n"
+"   button.c:4\n"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:1008
+msgid ""
+"At the moment, this working directory corresponds exactly to revision 4 in "
+"the repository.  However, suppose you make a change to <filename>button.c</"
+"filename>, and commit that change.  Assuming no other commits have taken "
+"place, your commit will create revision 5 of the repository, and your "
+"working copy will now look like this:"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><informalexample><literallayout>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:1017
+#, no-wrap
+msgid ""
+"calc/\n"
+"   Makefile:4\n"
+"   integer.c:4\n"
+"   button.c:5\n"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:1024
+msgid ""
+"Suppose that, at this point, Sally commits a change to <filename>integer.c</"
+"filename>, creating revision 6.  If you use <command>svn update</command> to "
+"bring your working copy up to date, it will look like this:"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><informalexample><literallayout>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:1031
+#, no-wrap
+msgid ""
+"calc/\n"
+"   Makefile:6\n"
+"   integer.c:6\n"
+"   button.c:6\n"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:1038
+msgid ""
+"Sally's change to <filename>integer.c</filename> will appear in your working "
+"copy, and your change will still be present in <filename>button.c</"
+"filename>.  In this example, the text of <filename>Makefile</filename> is "
+"identical in revisions 4, 5, and 6, but Subversion will mark your working "
+"copy of <filename>Makefile</filename> with revision 6 to indicate that it is "
+"still current.  So, after you do a clean update at the top of your working "
+"copy, it will generally correspond to exactly one revision in the repository."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><sect4><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:1049
+msgid "Updates and commits are separate"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><sect4><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:1051
+msgid ""
+"One of the fundamental rules of Subversion is that a <quote>push</quote> "
+"action does not cause a <quote>pull</quote> nor vice versa.  Just because "
+"you're ready to submit new changes to the repository doesn't mean you're "
+"ready to receive changes that others have checked in.  And if you have new "
+"changes still in progress, <command>svn update</command> should gracefully "
+"merge repository changes into your own, rather than forcing you to publish "
+"them."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><sect4><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:1061
+msgid ""
+"The main side effect of this rule is that it means a working copy has to do "
+"extra bookkeeping to track mixed revisions as well as be tolerant of the "
+"mixture.  It's made more complicated by the fact that directories themselves "
+"are versioned."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><sect4><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:1067
+msgid ""
+"For example, suppose you have a working copy entirely at revision 10, while "
+"others have been committing their changes so that the youngest revision in "
+"the repository is now revision 14.  You edit the file <filename>foo.html</"
+"filename> and then perform an <command>svn commit</command>, which creates "
+"revision 15 in the repository.  After the commit succeeds, many new users "
+"would expect the working copy to be entirely at revision 15, but that's not "
+"the case! Any number of changes might have happened in the repository "
+"between revisions 10 and 15.  The client knows nothing of those changes in "
+"the repository, since you haven't yet run <command>svn update</command>, and "
+"<command>svn commit</command> doesn't pull down new changes.  If, on the "
+"other hand, <command>svn commit</command> were to automatically download the "
+"newest changes, it would be possible to set the entire working copy to "
+"revision 15&mdash;but then we'd be breaking the fundamental rule of "
+"<quote>push</quote> and <quote>pull</quote> remaining separate actions.  "
+"Therefore, the only safe thing the Subversion client can do is mark the one "
+"file&mdash;<filename>foo.html</filename>&mdash;as being at revision 15.  The "
+"rest of the working copy remains at revision 10.  Only by running "
+"<command>svn update</command> can the latest changes be downloaded and the "
+"whole working copy be marked as revision 15."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><sect4><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:1097
+msgid "Mixed revisions are normal"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><sect4><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:1099
+msgid ""
+"The fact is, <emphasis>every time</emphasis> you run <command>svn commit</"
+"command> your working copy ends up with some mixture of revisions.  The "
+"things you just committed are marked as having larger working revisions than "
+"everything else.  After several commits (with no updates in between), your "
+"working copy will contain a whole mixture of revisions.  Even if you're the "
+"only person using the repository, you will still see this phenomenon.  To "
+"examine your mixture of working revisions, use the <command>svn status</"
+"command> command with the <option>--verbose</option> (<option>-v</option>) "
+"option (see <xref linkend=\"svn.tour.cycle.examine.status\"/> for more "
+"information)."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><sect4><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:1113
+msgid ""
+"Often, new users are completely unaware that their working copy contains "
+"mixed revisions.  This can be confusing, because many client commands are "
+"sensitive to the working revision of the item they're examining.  For "
+"example, the <command>svn log</command> command is used to display the "
+"history of changes to a file or directory (see <xref linkend=\"svn.tour."
+"history.log\"/>).  When the user invokes this command on a working copy "
+"object, he expects to see the entire history of the object.  But if the "
+"object's working revision is quite old (often because <command>svn update</"
+"command> hasn't been run in a long time), the history of the "
+"<emphasis>older</emphasis> version of the object is shown."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><sect4><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:1130
+msgid "Mixed revisions are useful"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><sect4><para><indexterm><primary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:1134
+msgid "backdating"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><sect4><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:1133
+msgid ""
+"<placeholder type=\"indexterm\" id=\"0\"/>If your project is sufficiently "
+"complex, you'll discover that it's sometimes nice to forcibly "
+"<firstterm>backdate</firstterm> (or update to a revision older than the one "
+"you already have) portions of your working copy to an earlier revision; "
+"you'll learn how to do that in <xref linkend=\"svn.tour\"/>.  Perhaps you'd "
+"like to test an earlier version of a submodule contained in a subdirectory, "
+"or perhaps you'd like to figure out when a bug first came into existence in "
+"a specific file.  This is the <quote>time machine</quote> aspect of a "
+"version control system&mdash;the feature that allows you to move any portion "
+"of your working copy forward and backward in history."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><sect4><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:1152
+msgid "Mixed revisions have limitations"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><sect4><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:1154
+msgid ""
+"However you make use of mixed revisions in your working copy, there are "
+"limitations to this flexibility."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><sect4><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:1157
+msgid ""
+"First, you cannot commit the deletion of a file or directory that isn't "
+"fully up to date.  If a newer version of the item exists in the repository, "
+"your attempt to delete will be rejected to prevent you from accidentally "
+"destroying changes you've not yet seen."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><sect4><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:1163
+msgid ""
+"Second, you cannot commit a metadata change to a directory unless it's fully "
+"up to date.  You'll learn about attaching <quote>properties</quote> to items "
+"in <xref linkend=\"svn.advanced\"/>.  A directory's working revision defines "
+"a specific set of entries and properties, and thus committing a property "
+"change to an out-of-date directory may destroy properties you've not yet "
+"seen."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><sect4><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:1171
+msgid ""
+"Finally, beginning in Subversion 1.7, you cannot by default use a mixed-"
+"revision working copy as the target of a merge operation.  (This new "
+"requirement was introduced to prevent common problems which stem from doing "
+"so.)"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:1185
+msgid "Summary"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:1187
+msgid "We covered a number of fundamental Subversion concepts in this chapter:"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><itemizedlist><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:1192
+msgid ""
+"We introduced the notions of the central repository, the client working "
+"copy, and the array of repository revision trees."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><itemizedlist><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:1198
+msgid ""
+"We saw some simple examples of how two collaborators can use Subversion to "
+"publish and receive changes from one another, using the <quote>copy-modify-"
+"merge</quote> model."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><itemizedlist><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:1205
+msgid ""
+"We talked a bit about the way Subversion tracks and manages information in a "
+"working copy."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:1211
+msgid ""
+"At this point, you should have a good idea of how Subversion works in the "
+"most general sense.  Armed with this knowledge, you should now be ready to "
+"move into the next chapter, which is a detailed tour of Subversion's "
+"commands and features."
+msgstr ""

@@ -1,0 +1,97 @@
+PO4AGETTEXTIZE=@PO4AGETTEXTIZE@
+TRUNKDIR=@abs_trunkdir@
+ORIGSRCDIR=$(TRUNKDIR)/en/book
+basenames = \
+	appa-quickstart.xml \
+	appb-svn-for-cvs-users.xml \
+	appc-webdav.xml \
+	appd-berkeley-db.xml \
+	book.xml \
+	ch00-preface.xml \
+	ch01-fundamental-concepts.xml \
+	ch02-basic-usage.xml \
+	ch03-advanced-topics.xml \
+	ch04-branching-and-merging.xml \
+	ch05-repository-admin.xml \
+	ch06-server-configuration.xml \
+	ch07-customizing-svn.xml \
+	ch08-embedding-svn.xml \
+	copyright.xml \
+	foreword.xml \
+	index.xml \
+	ref-reposhooks.xml \
+	ref-svn.xml \
+	ref-svnadmin.xml \
+	ref-svndumpfilter.xml \
+	ref-svnlook.xml \
+	ref-svnmucc.xml \
+	ref-svnrdump.xml \
+	ref-svnserve.xml \
+	ref-svnsync.xml \
+	ref-svnversion.xml
+
+srcs = $(addprefix $(ORIGSRCDIR)/,$(basenames))
+outputs = $(patsubst %.xml,%.pot,$(basenames))
+DISTCLEANFILES = $(outputs)
+
+define PO4A
+  $(PO4AGETTEXTIZE) -f docbook -M utf-8 -m $1 -p $2
+endef
+
+.PHONY: all
+all: $(outputs)
+
+appa-quickstart.pot: $(ORIGSRCDIR)/appa-quickstart.xml
+	$(call PO4A, $<, $@)
+appb-svn-for-cvs-users.pot: $(ORIGSRCDIR)/appb-svn-for-cvs-users.xml
+	$(call PO4A, $<, $@)
+appc-webdav.pot: $(ORIGSRCDIR)/appc-webdav.xml
+	$(call PO4A, $<, $@)
+appd-berkeley-db.pot: $(ORIGSRCDIR)/appd-berkeley-db.xml
+	$(call PO4A, $<, $@)
+book.pot: $(ORIGSRCDIR)/book.xml
+	$(call PO4A, $<, $@)
+ch00-preface.pot: $(ORIGSRCDIR)/ch00-preface.xml
+	$(call PO4A, $<, $@)
+ch01-fundamental-concepts.pot: $(ORIGSRCDIR)/ch01-fundamental-concepts.xml
+	$(call PO4A, $<, $@)
+ch02-basic-usage.pot: $(ORIGSRCDIR)/ch02-basic-usage.xml
+	$(call PO4A, $<, $@)
+ch03-advanced-topics.pot: $(ORIGSRCDIR)/ch03-advanced-topics.xml
+	$(call PO4A, $<, $@)
+ch04-branching-and-merging.pot: $(ORIGSRCDIR)/ch04-branching-and-merging.xml
+	$(call PO4A, $<, $@)
+ch05-repository-admin.pot: $(ORIGSRCDIR)/ch05-repository-admin.xml
+	$(call PO4A, $<, $@)
+ch06-server-configuration.pot: $(ORIGSRCDIR)/ch06-server-configuration.xml
+	$(call PO4A, $<, $@)
+ch07-customizing-svn.pot: $(ORIGSRCDIR)/ch07-customizing-svn.xml
+	$(call PO4A, $<, $@)
+ch08-embedding-svn.pot: $(ORIGSRCDIR)/ch08-embedding-svn.xml
+	$(call PO4A, $<, $@)
+copyright.pot: $(ORIGSRCDIR)/copyright.xml
+	$(call PO4A, $<, $@)
+foreword.pot: $(ORIGSRCDIR)/foreword.xml
+	$(call PO4A, $<, $@)
+index.pot: $(ORIGSRCDIR)/index.xml
+	$(call PO4A, $<, $@)
+ref-reposhooks.pot: $(ORIGSRCDIR)/ref-reposhooks.xml
+	$(call PO4A, $<, $@)
+ref-svn.pot: $(ORIGSRCDIR)/ref-svn.xml
+	$(call PO4A, $<, $@)
+ref-svnadmin.pot: $(ORIGSRCDIR)/ref-svnadmin.xml
+	$(call PO4A, $<, $@)
+ref-svndumpfilter.pot: $(ORIGSRCDIR)/ref-svndumpfilter.xml
+	$(call PO4A, $<, $@)
+ref-svnlook.pot: $(ORIGSRCDIR)/ref-svnlook.xml
+	$(call PO4A, $<, $@)
+ref-svnmucc.pot: $(ORIGSRCDIR)/ref-svnmucc.xml
+	$(call PO4A, $<, $@)
+ref-svnrdump.pot: $(ORIGSRCDIR)/ref-svnrdump.xml
+	$(call PO4A, $<, $@)
+ref-svnserve.pot: $(ORIGSRCDIR)/ref-svnserve.xml
+	$(call PO4A, $<, $@)
+ref-svnsync.pot: $(ORIGSRCDIR)/ref-svnsync.xml
+	$(call PO4A, $<, $@)
+ref-svnversion.pot: $(ORIGSRCDIR)/ref-svnversion.xml
+	$(call PO4A, $<, $@)

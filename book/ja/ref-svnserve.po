@@ -1,0 +1,368 @@
+# Japanese translations for PACKAGE package
+# Copyright (C) 2017 Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2017.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2017-08-03 18:00+0900\n"
+"PO-Revision-Date: 2017-08-03 18:00+0900\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: matsuand個人翻訳\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. type: Content of: <reference><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnserve.xml:4
+msgid "svnserve Reference&mdash;Custom Subversion Server"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refname>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnserve.xml:12
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnserve.xml:16
+msgid "svnserve"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refpurpose>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnserve.xml:17
+msgid "Serve Subversion repositories via Subversion's custom network protocol"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsynopsisdiv><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnserve.xml:22
+msgid "<literal>svnserve [-d | -i | -t | -X] OPTIONS...</literal>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnserve.xml:27
+msgid "Description"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnserve.xml:29
+msgid ""
+"<command>svnserve</command> allows access to Subversion repositories using "
+"Subversion's custom network protocol."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnserve.xml:33
+msgid ""
+"You can run <command>svnserve</command> as a standalone server process (for "
+"clients that are using the <literal>svn://</literal> access method); you can "
+"have a daemon such as <command>inetd</command> or <command>xinetd</command> "
+"launch it for you on demand (also for <literal>svn://</literal>), or you can "
+"have <command>sshd</command> launch it on demand for the <literal>svn+ssh://"
+"</literal> access method."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnserve.xml:42
+msgid ""
+"Unless the <option>--config-file</option> option was specified on the "
+"command line, once the client has selected a repository by transmitting its "
+"URL, <command>svnserve</command> reads a file named <filename>conf/svnserve."
+"conf</filename> in the repository directory to determine repository-specific "
+"settings such as what authentication database to use and what authorization "
+"policies to apply.  See <xref linkend=\"svn.serverconfig.svnserve\"/> for "
+"details of the <filename>svnserve.conf</filename> file."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnserve.xml:56
+msgid "Options"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnserve.xml:58
+msgid ""
+"Unlike the previous commands we've described, <command>svnserve</command> "
+"has no subcommands&mdash;it is controlled exclusively by options."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnserve.xml:66
+msgid "<option>--cache-fulltexts</option> <replaceable>ARG</replaceable>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnserve.xml:68
+msgid ""
+"Toggles support for fulltext file content caching (in FSFS repositories "
+"only)."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnserve.xml:74
+msgid "<option>--cache-txdeltas</option> <replaceable>ARG</replaceable>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnserve.xml:76
+msgid ""
+"Toggles support for file content delta caching (in FSFS repositories only)."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnserve.xml:82
+msgid "<option>--compression</option> <replaceable>LEVEL</replaceable>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnserve.xml:84
+msgid ""
+"Specifies the level of compression used for wire transmissions as an integer "
+"beween 0 and 9, inclusive.  A value of <literal>9</literal> offers the best "
+"compression, <literal>5</literal> is the default value, and <literal>0</"
+"literal> disables compression altogether."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnserve.xml:94
+msgid "<option>--config-file</option> <replaceable>FILENAME</replaceable>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnserve.xml:96
+msgid ""
+"When specified, <command>svnserve</command> reads <replaceable>FILENAME</"
+"replaceable> once at program startup and caches the <command>svnserve</"
+"command> configuration.  The password and authorization configurations "
+"referenced from filename will be loaded on each connection.  "
+"<command>svnserve</command> will not read any per‐repository <filename>conf/"
+"svnserve.conf</filename> files when this option is used.  See the <xref "
+"linkend=\"svn.serverconfig.svnserve\"/> for details of the file format for "
+"this option."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnserve.xml:109
+msgid "<option>--daemon</option> (<option>-d</option>)"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnserve.xml:111
+msgid ""
+"Causes <command>svnserve</command> to run in daemon mode.  "
+"<command>svnserve</command> backgrounds itself and accepts and serves TCP/IP "
+"connections on the <literal>svn</literal> port (3690, by default)."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnserve.xml:120
+msgid "<option>--foreground</option>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnserve.xml:122
+msgid ""
+"When used together with <option>-d</option>, causes <command>svnserve</"
+"command> to stay in the foreground.  This is mainly useful for debugging."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnserve.xml:129
+msgid "<option>--inetd</option> (<option>-i</option>)"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnserve.xml:131
+msgid ""
+"Causes <command>svnserve</command> to use the <filename>stdin</filename> and "
+"<filename>stdout</filename> file descriptors, as is appropriate for a daemon "
+"running out of <command>inetd</command>."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnserve.xml:138
+msgid "<option>--help</option> (<option>-h</option>)"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnserve.xml:140
+msgid "Displays a usage summary and exits."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnserve.xml:145
+msgid "<option>--listen-host</option> <replaceable>HOST</replaceable>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnserve.xml:147
+msgid ""
+"Causes <command>svnserve</command> to listen on the interface specified by "
+"<replaceable>HOST</replaceable>, which may be either a hostname or an IP "
+"address."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnserve.xml:154
+msgid "<option>--listen-once</option> (<option>-X</option>)"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnserve.xml:156
+msgid ""
+"Causes <command>svnserve</command> to accept one connection on the "
+"<literal>svn</literal> port, serve it, and exit.  This option is mainly "
+"useful for debugging."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnserve.xml:164
+msgid "<option>--listen-port</option> <replaceable>PORT</replaceable>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnserve.xml:166
+msgid ""
+"Causes <command>svnserve</command> to listen on <replaceable>PORT</"
+"replaceable> when run in daemon mode.  (FreeBSD daemons listen only on tcp6 "
+"by default&mdash;this option tells them to also listen on tcp4.)"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnserve.xml:174
+msgid "<option>--log-file</option> <replaceable>FILENAME</replaceable>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnserve.xml:176
+msgid ""
+"Instructs <command>svnserve</command> to create (if necessary) and use the "
+"file located at <replaceable>FILENAME</replaceable> for Subversion "
+"operational log output of the same sort that <command>mod_dav_svn</command> "
+"generates.  See <xref linkend=\"svn.serverconfig.operational-logging\" /> "
+"for details."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnserve.xml:187
+msgid ""
+"<option>--memory-cache-size</option> (<option>-M</option>) <replaceable>ARG</"
+"replaceable>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnserve.xml:189
+msgid ""
+"Configures the size (in Megabytes) of the extra in-memory cache used to "
+"minimize redundant operations.  The default value is <literal>16</literal>.  "
+"(This cache is used for FSFS-backed repositories only.)"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnserve.xml:197
+msgid "<option>--pid-file</option> <replaceable>FILENAME</replaceable>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnserve.xml:199
+msgid ""
+"Causes <command>svnserve</command> to write its process ID to "
+"<replaceable>FILENAME</replaceable>, which must be writable by the user "
+"under which <command>svnserve</command> is running."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnserve.xml:207
+msgid "<option>--prefer-ipv6</option> (<option>-6</option>)"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnserve.xml:209
+msgid ""
+"When resolving the listen hostname, prever an IPv6 answer over an IPv4 one.  "
+"IPv4 is preferred by default."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnserve.xml:216
+msgid "<option>--quiet</option>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnserve.xml:218
+msgid "Disables progress notifications.  Error output will still be printed."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnserve.xml:224
+msgid ""
+"<option>--root</option> (<option>-r</option>) <replaceable>ROOT</replaceable>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnserve.xml:226
+msgid ""
+"Sets the virtual root for repositories served by <command>svnserve</"
+"command>.  The pathname in URLs provided by the client will be interpreted "
+"relative to this root and will not be allowed to escape this root."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnserve.xml:235
+msgid "<option>--threads</option> (<option>-T</option>)"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnserve.xml:237
+msgid ""
+"When running in daemon mode, causes <command>svnserve</command> to spawn a "
+"thread instead of a process for each connection (e.g., for when running on "
+"Windows).  The <command>svnserve</command> process still backgrounds itself "
+"at startup time."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnserve.xml:246
+msgid "<option>--tunnel</option> (<option>-t</option>)"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnserve.xml:248
+msgid ""
+"Causes <command>svnserve</command> to run in tunnel mode, which is just like "
+"the <command>inetd</command> mode of operation (both modes serve one "
+"connection over <filename>stdin</filename>/<filename>stdout</filename>, and "
+"then exit), except that the connection is considered to be preauthenticated "
+"with the username of the current UID.  This flag is automatically passed for "
+"you by the client when running over a tunnel agent such as <command>ssh</"
+"command>.  That means there's rarely any need for <emphasis>you</emphasis> "
+"to pass this option to <command>svnserve</command>.  So, if you find "
+"yourself typing <literal>svnserve --tunnel</literal> on the command line and "
+"wondering what to do next, see <xref linkend=\"svn.serverconfig.svnserve."
+"sshauth\"/>."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnserve.xml:266
+msgid "<option>--tunnel-user</option> <replaceable>NAME</replaceable>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnserve.xml:268
+msgid ""
+"Used in conjunction with the <option>--tunnel</option> option, tells "
+"<command>svnserve</command> to assume that <replaceable>NAME</replaceable> "
+"is the authenticated user, rather than the UID of the <command>svnserve</"
+"command> process.  This is useful for users wishing to share a single system "
+"account over SSH, but to maintain separate commit identities."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnserve.xml:279
+msgid "<option>--version</option>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnserve.xml:281
+msgid ""
+"Displays version information and a list of repository backend modules "
+"available, and then exits."
+msgstr ""

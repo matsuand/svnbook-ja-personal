@@ -1,0 +1,1215 @@
+# Japanese translations for PACKAGE package
+# Copyright (C) 2017 Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2017.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2017-08-03 18:00+0900\n"
+"PO-Revision-Date: 2017-08-03 18:00+0900\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: matsuand個人翻訳\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. type: Content of: <preface><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:4
+msgid "Preface"
+msgstr ""
+
+#. type: Content of: <preface><blockquote><attribution>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:7
+msgid "Greg Hudson, Subversion developer"
+msgstr ""
+
+#. type: Content of: <preface><blockquote><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:8
+msgid ""
+"<quote>It is important not to let the perfect become the enemy of the good, "
+"even when you can agree on what perfect is.  Doubly so when you can't.  As "
+"unpleasant as it is to be trapped by past mistakes, you can't make any "
+"progress by being afraid of your own shadow during design.</quote>"
+msgstr ""
+
+#. type: Content of: <preface><para><indexterm><see>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:17
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:21
+msgid "Concurrent Versions System"
+msgstr ""
+
+#. type: Content of: <preface><para><indexterm><primary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:20
+msgid "CVS"
+msgstr ""
+
+#. type: Content of: <preface><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:16
+msgid ""
+"<placeholder type=\"indexterm\" id=\"0\"/> <placeholder type=\"indexterm\" "
+"id=\"1\"/>In the world of open source software, the Concurrent Versions "
+"System (CVS) was the tool of choice for version control for many years.  And "
+"rightly so.  CVS was open source software itself, and its nonrestrictive "
+"modus operandi and support for networked operation allowed dozens of "
+"geographically dispersed programmers to share their work.  It fit the "
+"collaborative nature of the open source world very well.  CVS and its semi-"
+"chaotic development model have since become cornerstones of open source "
+"culture."
+msgstr ""
+
+#. type: Content of: <preface><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:32
+msgid ""
+"But CVS was not without its flaws, and simply fixing those flaws promised to "
+"be an enormous effort.  Enter Subversion.  Subversion was designed to be a "
+"successor to CVS, and its originators set out to win the hearts of CVS users "
+"in two ways&mdash;by creating an open source system with a design (and "
+"<quote>look and feel</quote>) similar to CVS, and by attempting to avoid "
+"most of CVS's noticeable flaws.  While the result wasn't&mdash;and "
+"isn't&mdash;the next great evolution in version control design, Subversion "
+"<emphasis>is</emphasis> very powerful, very usable, and very flexible."
+msgstr ""
+
+#. type: Content of: <preface><para><footnote><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:44
+msgid ""
+"We'll refer to it simply as <quote>Subversion</quote> throughout this book.  "
+"You'll thank us when you realize just how much space that saves!"
+msgstr ""
+
+#. type: Content of: <preface><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:43
+msgid ""
+"This book is written to document the 1.8 series of the Apache&trade; "
+"Subversion&reg;<placeholder type=\"footnote\" id=\"0\"/> version control "
+"system.  We have made every attempt to be thorough in our coverage.  "
+"However, Subversion has a thriving and energetic development community, so "
+"already a number of features and improvements are planned for future "
+"versions that may change some of the commands and specific notes in this "
+"book."
+msgstr ""
+
+#. type: Content of: <preface><sect1><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:59
+msgid "What Is Subversion?"
+msgstr ""
+
+#. type: Content of: <preface><sect1><sect2><para><indexterm><primary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:63
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:250
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:314
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:341
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:371
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:504
+msgid "Subversion"
+msgstr ""
+
+#. type: Content of: <preface><sect1><sect2><para><indexterm><primary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:66
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:70
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:166
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:183
+msgid "version control systems"
+msgstr ""
+
+#. type: Content of: <preface><sect1><para><indexterm><primary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:69
+msgid "VCS"
+msgstr ""
+
+#. type: Content of: <preface><sect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:62
+msgid ""
+"<placeholder type=\"indexterm\" id=\"0\"/> <placeholder type=\"indexterm\" "
+"id=\"1\"/> <placeholder type=\"indexterm\" id=\"2\"/>Subversion is a free/"
+"open source <firstterm>version control system</firstterm> (VCS).  That is, "
+"Subversion manages files and directories, and the changes made to them, over "
+"time.  This allows you to recover older versions of your data or examine the "
+"history of how your data changed.  In this regard, many people think of a "
+"version control system as a sort of <quote>time machine.</quote>"
+msgstr ""
+
+#. type: Content of: <preface><sect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:79
+msgid ""
+"Subversion can operate across networks, which allows it to be used by people "
+"on different computers.  At some level, the ability for various people to "
+"modify and manage the same set of data from their respective locations "
+"fosters collaboration.  Progress can occur more quickly without a single "
+"conduit through which all modifications must occur.  And because the work is "
+"versioned, you need not fear that quality is the trade-off for losing that "
+"conduit&mdash;if some incorrect change is made to the data, just undo that "
+"change."
+msgstr ""
+
+#. type: Content of: <preface><sect1><para><indexterm><see>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:91
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:95
+msgid "software configuration management"
+msgstr ""
+
+#. type: Content of: <preface><sect1><para><indexterm><primary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:94
+msgid "SCM"
+msgstr ""
+
+#. type: Content of: <preface><sect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:90
+msgid ""
+"<placeholder type=\"indexterm\" id=\"0\"/> <placeholder type=\"indexterm\" "
+"id=\"1\"/>Some version control systems are also <firstterm>software "
+"configuration management</firstterm> (SCM) systems.  These systems are "
+"specifically tailored to manage trees of source code and have many features "
+"that are specific to software development&mdash;such as natively "
+"understanding programming languages, or supplying tools for building "
+"software.  Subversion, however, is not one of these systems.  It is a "
+"general system that can be used to manage <emphasis>any</emphasis> "
+"collection of files.  For you, those files might be source code&mdash;for "
+"others, anything from grocery shopping lists to digital video mixdowns and "
+"beyond."
+msgstr ""
+
+#. type: Content of: <preface><sect1><sect2><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:112
+msgid "Is Subversion the Right Tool?"
+msgstr ""
+
+#. type: Content of: <preface><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:114
+msgid ""
+"If you're a user or system administrator pondering the use of Subversion, "
+"the first question you should ask yourself is: \"Is this the right tool for "
+"the job?\" Subversion is a fantastic hammer, but be careful not to view "
+"every problem as a nail."
+msgstr ""
+
+#. type: Content of: <preface><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:120
+msgid ""
+"As a first step, you need to decide if version control in general is "
+"required for your purposes.  If you need to archive old versions of files "
+"and directories, possibly resurrect them, and examine logs of how they've "
+"changed over time, then version control tools can do that.  If you need to "
+"collaborate with people on documents (usually over a network) and keep track "
+"of who made which changes, a version control tool can do that, too.  In "
+"fact, this is why version control tools such as Subversion are so often used "
+"in software development environments&mdash;working on a development team is "
+"an inherently social activity where changes to source code files are "
+"constantly being discussed, made, evaluated, and even sometimes unmade.  "
+"Version control tools facilitate that sort of collaboration."
+msgstr ""
+
+#. type: Content of: <preface><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:135
+msgid ""
+"There is cost associated with using version control, too.  Unless you can "
+"outsource the administration of your version control system to a third-"
+"party, you'll have the obvious costs of performing that administration "
+"yourself.  When working with the data on a daily basis, you won't be able to "
+"copy, move, rename, or delete files the way you usually do.  Instead, you'll "
+"have to do all of those things through the version control system."
+msgstr ""
+
+#. type: Content of: <preface><sect1><sect2><para><footnote><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:157
+msgid "Or as a friend puts it, <quote>swatting a fly with a Buick.</quote>"
+msgstr ""
+
+#. type: Content of: <preface><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:144
+msgid ""
+"Even assuming that you are okay with the cost/benefit tradeoff afforded by a "
+"version control system, you shouldn't choose to use one merely because it "
+"<emphasis>can</emphasis> do what you want.  Consider whether your needs are "
+"better addressed by other tools.  For example, because Subversion replicates "
+"data to all the collaborators involved, a common misuse is to treat it as a "
+"generic distribution system.  People will sometimes use Subversion to "
+"distribute huge collections of photos, digital music, or software packages.  "
+"The problem is that this sort of data usually isn't changing at all.  The "
+"collection itself grows over time, but the individual files within the "
+"collection aren't being changed.  In this case, using Subversion is "
+"<quote>overkill.</quote><placeholder type=\"footnote\" id=\"0\"/> There are "
+"simpler tools that efficiently replicate data <emphasis>without</emphasis> "
+"the overhead of tracking changes, such as <command>rsync</command> or "
+"<command>unison</command>."
+msgstr ""
+
+#. type: Content of: <preface><sect1><sect2><para><indexterm><secondary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:167
+msgid "centralized"
+msgstr ""
+
+#. type: Content of: <preface><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:165
+msgid ""
+"<placeholder type=\"indexterm\" id=\"0\"/>Once you've decided that you need "
+"a version control solution, you'll find no shortage of available options.  "
+"When Subversion was first designed and released, the predominant methodology "
+"of version control was <firstterm>centralized version control</"
+"firstterm>&mdash;a single remote master storehouse of versioned data with "
+"individual users operating locally against shallow copies of that data's "
+"version history.  Subversion quickly emerged after its initial introduction "
+"as the clear leader in this field of version control, earning widespread "
+"adoption and supplanting installations of many older version control "
+"systems.  It continues to hold that prominent position today."
+msgstr ""
+
+#. type: Content of: <preface><sect1><sect2><para><indexterm><secondary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:184
+msgid "distributed"
+msgstr ""
+
+#. type: Content of: <preface><sect1><sect2><para><indexterm><primary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:187
+msgid "DVCS"
+msgstr ""
+
+#. type: Content of: <preface><sect1><sect2><para><indexterm><see>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:188
+msgid "version control systems, distributed"
+msgstr ""
+
+#. type: Content of: <preface><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:182
+msgid ""
+"<placeholder type=\"indexterm\" id=\"0\"/> <placeholder type=\"indexterm\" "
+"id=\"1\"/>Much has changed since that time, though.  In the years since the "
+"Subversion project began its life, a newer methodology of version control "
+"called <firstterm>distributed version control</firstterm> has likewise "
+"garnered widespread attention and adoption.  Tools such as Git (<ulink url="
+"\"http://git-scm.com/\" />) and Mercurial (<ulink url=\"http://mercurial-scm."
+"org/\" />) have risen to the tops of the distributed version control system "
+"(DVCS)  ranks.  Distributed version control harnesses the growing ubiquity "
+"of high-speed network connections and low storage costs to offer an approach "
+"which differs from the centralized model in key ways.  First and most "
+"obvious is the fact that there is no remote, central storehouse of versioned "
+"data.  Rather, each user keeps and operates against very deep&mdash;"
+"complete, in a sense&mdash;local version history data stores.  Collaboration "
+"still occurs, but is accomplished by trading collections of changes made to "
+"versioned items directly between users' local data stores, not via a "
+"centralized master data store.  In fact, any semblance of a canonical "
+"<quote>master</quote> source of a project's versioned data is by convention "
+"only, a status imputed by the various collaborators on that project."
+msgstr ""
+
+#. type: Content of: <preface><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:212
+msgid ""
+"There are pros and cons to each version control approach.  Perhaps the two "
+"biggest benefits delivered by the DVCS tools are incredible performance for "
+"day-to-day operations (because the primary data store is locally held) and "
+"vastly better support for merging between branches (because merge algorithms "
+"serve as the very core of how DVCSes work at all).  The downside is that "
+"distributed version control is an inherently more complicated model, which "
+"can present a non-negligible challenge to comfortable collaboration.  Also, "
+"DVCS tools do what they do well in part because of a certain degree of "
+"control withheld from the user which centalized systems freely offer&mdash;"
+"the ability to implement path-based access control, the flexibility to "
+"update or backdate individual versioned data items, etc.  Fortunately, many "
+"wise organizations have discovered that this needn't be a religious debate, "
+"and that Subversion and a DVCS tool such as Git can be used together "
+"harmoniously within the organization, each serving the purposes best suited "
+"to the tool."
+msgstr ""
+
+#. type: Content of: <preface><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:231
+msgid ""
+"Alas, this book is about Subversion, so we'll not attempt a full comparison "
+"of Subversion and other tools.  Readers empowered to choose their version "
+"control system are encouraged to research the available options and make the "
+"determination that works best for themselves and their fellow "
+"collaborators.  And if, after doing so, Subversion is the chosen tool, "
+"there's <emphasis>plenty</emphasis> of detailed information about how to use "
+"it successfully in the chapters that follow!"
+msgstr ""
+
+#. type: Content of: <preface><sect1><sect2><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:246
+msgid "Subversion's History"
+msgstr ""
+
+#. type: Content of: <preface><sect1><sect2><para><indexterm><secondary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:251
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:505
+msgid "history of"
+msgstr ""
+
+#. type: Content of: <preface><sect1><sect2><para><indexterm><primary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:254
+msgid "CollabNet"
+msgstr ""
+
+#. type: Content of: <preface><sect1><sect2><para><footnote><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:258
+msgid ""
+"CollabNet Enterprise Edition has since been replaced by a new product line "
+"called CollabNet TeamForge."
+msgstr ""
+
+#. type: Content of: <preface><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:249
+msgid ""
+"<placeholder type=\"indexterm\" id=\"0\"/> <placeholder type=\"indexterm\" "
+"id=\"1\"/>In early 2000, CollabNet, Inc. (<ulink url=\"http://www.collab.net"
+"\"/>) began seeking developers to write a replacement for CVS.  CollabNet "
+"offered<placeholder type=\"footnote\" id=\"2\"/> a collaboration software "
+"suite called CollabNet Enterprise Edition (CEE), of which one component was "
+"version control.  Although CEE used CVS as its initial version control "
+"system, CVS's limitations were obvious from the beginning, and CollabNet "
+"knew it would eventually have to find something better.  Unfortunately, CVS "
+"had become the de facto standard in the open source world largely because "
+"there <emphasis>wasn't</emphasis> anything better, at least not under a free "
+"license.  So CollabNet determined to write a new version control system from "
+"scratch, retaining the basic ideas of CVS, but without the bugs and "
+"misfeatures."
+msgstr ""
+
+#. type: Content of: <preface><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:272
+msgid ""
+"In February 2000, they contacted Karl Fogel, the author of <citetitle>Open "
+"Source Development with CVS</citetitle> (Coriolis, 1999), and asked if he'd "
+"like to work on this new project.  Coincidentally, at the time Karl was "
+"already discussing a design for a new version control system with his friend "
+"Jim Blandy.  In 1995, the two had started Cyclic Software, a company "
+"providing CVS support contracts, and although they later sold the business, "
+"they still used CVS every day at their jobs.  Their frustration with CVS had "
+"led Jim to think carefully about better ways to manage versioned data, and "
+"he'd already come up with not only the Subversion name, but also the basic "
+"design of the Subversion data store.  When CollabNet called, Karl "
+"immediately agreed to work on the project, and Jim got his employer, Red Hat "
+"Software, to essentially donate him to the project for an indefinite period "
+"of time.  CollabNet hired Karl and Ben Collins-Sussman, and detailed design "
+"work began in May 2000.  With the help of some well-placed prods from Brian "
+"Behlendorf and Jason Robbins of CollabNet, and from Greg Stein (at the time "
+"an independent developer active in the WebDAV/DeltaV specification process), "
+"Subversion quickly attracted a community of active developers.  It turned "
+"out that many people had encountered the same frustrating experiences with "
+"CVS and welcomed the chance to finally do something about it."
+msgstr ""
+
+#. type: Content of: <preface><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:297
+msgid ""
+"The original design team settled on some simple goals.  They didn't want to "
+"break new ground in version control methodology, they just wanted to fix "
+"CVS.  They decided that Subversion would match CVS's features and preserve "
+"the same development model, but not duplicate CVS's most obvious flaws.  And "
+"although it did not need to be a drop-in replacement for CVS, it should be "
+"similar enough that any CVS user could make the switch with little effort."
+msgstr ""
+
+#. type: Content of: <preface><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:306
+msgid ""
+"After 14 months of coding, Subversion became <quote>self-hosting</quote> on "
+"August 31, 2001.  That is, Subversion developers stopped using CVS to manage "
+"Subversion's own source code and started using Subversion instead."
+msgstr ""
+
+#. type: Content of: <preface><sect1><sect2><para><indexterm><primary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:313
+msgid "Apache Subversion"
+msgstr ""
+
+#. type: Content of: <preface><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:312
+msgid ""
+"<placeholder type=\"indexterm\" id=\"0\"/>While CollabNet started the "
+"project, and still funds a large chunk of the work (it pays the salaries of "
+"a few full-time Subversion developers), Subversion is run like most open "
+"source projects, governed by a loose, transparent set of rules that "
+"encourage meritocracy.  In 2009, CollabNet worked with the Subversion "
+"developers towards the goal of integrating the Subversion project into the "
+"Apache Software Foundation (ASF), one of the most well-known collectives of "
+"open source projects in the world.  Subversion's technical roots, community "
+"priorities, and development practices were a perfect fit for the ASF, many "
+"of whose members were already active Subversion contributors.  In early "
+"2010, Subversion was fully adopted into the ASF's family of top-level "
+"projects, moved its project web presence to <ulink url=\"http://subversion."
+"apache.org\"/>, and was rechristened <quote>Apache Subversion</quote>."
+msgstr ""
+
+#. type: Content of: <preface><sect1><sect2><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:337
+msgid "Subversion's Architecture"
+msgstr ""
+
+#. type: Content of: <preface><sect1><sect2><para><indexterm><secondary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:342
+msgid "architecture"
+msgstr ""
+
+#. type: Content of: <preface><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:340
+msgid ""
+"<placeholder type=\"indexterm\" id=\"0\"/><xref linkend=\"svn.intro."
+"architecture.dia-1\"/> illustrates a <quote>mile-high</quote> view of "
+"Subversion's design."
+msgstr ""
+
+#. type: Content of: <preface><sect1><sect2><figure><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:348
+msgid "Subversion's architecture"
+msgstr ""
+
+#. type: Content of: <preface><sect1><sect2><figure>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:349
+msgid ""
+"<graphic width=\"5in\" depth=\"6.25in\" fileref=\"images/svn-arch-diagram.png"
+"\"/>"
+msgstr ""
+
+#. type: Content of: <preface><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:353
+msgid ""
+"On one end is a Subversion repository that holds all of your versioned "
+"data.  On the other end is your Subversion client program, which manages "
+"local reflections of portions of that versioned data.  Between these "
+"extremes are multiple routes through a Repository Access (RA) layer, some of "
+"which go across computer networks and through network servers which then "
+"access the repository, others of which bypass the network altogether and "
+"access the repository directly."
+msgstr ""
+
+#. type: Content of: <preface><sect1><sect2><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:367
+msgid "Subversion's Components"
+msgstr ""
+
+#. type: Content of: <preface><sect1><sect2><para><indexterm><secondary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:372
+msgid "components"
+msgstr ""
+
+#. type: Content of: <preface><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:370
+msgid ""
+"<placeholder type=\"indexterm\" id=\"0\"/>Subversion, once installed, has a "
+"number of different pieces.  The following is a quick overview of what you "
+"get.  Don't be alarmed if the brief descriptions leave you scratching your "
+"head&mdash;<emphasis>plenty</emphasis> more pages in this book are devoted "
+"to alleviating that confusion."
+msgstr ""
+
+#. type: Content of: <preface><sect1><sect2><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:382
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:413
+msgid "svn"
+msgstr ""
+
+#. type: Content of: <preface><sect1><sect2><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:385
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:420
+msgid "svnversion"
+msgstr ""
+
+#. type: Content of: <preface><sect1><sect2><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:388
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:428
+msgid "svnlook"
+msgstr ""
+
+#. type: Content of: <preface><sect1><sect2><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:391
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:435
+msgid "svnadmin"
+msgstr ""
+
+#. type: Content of: <preface><sect1><sect2><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:394
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:443
+msgid "mod_dav_svn"
+msgstr ""
+
+#. type: Content of: <preface><sect1><sect2><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:397
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:452
+msgid "svnserve"
+msgstr ""
+
+#. type: Content of: <preface><sect1><sect2><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:400
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:461
+msgid "svndumpfilter"
+msgstr ""
+
+#. type: Content of: <preface><sect1><sect2><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:403
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:469
+msgid "svnsync"
+msgstr ""
+
+#. type: Content of: <preface><sect1><sect2><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:406
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:477
+msgid "svnrdump"
+msgstr ""
+
+#. type: Content of: <preface><sect1><sect2><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:409
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:485
+msgid "svnmucc"
+msgstr ""
+
+#. type: Content of: <preface><sect1><sect2><variablelist>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:381
+msgid ""
+"<placeholder type=\"indexterm\" id=\"0\"/> <placeholder type=\"indexterm\" "
+"id=\"1\"/> <placeholder type=\"indexterm\" id=\"2\"/> <placeholder type="
+"\"indexterm\" id=\"3\"/> <placeholder type=\"indexterm\" id=\"4\"/> "
+"<placeholder type=\"indexterm\" id=\"5\"/> <placeholder type=\"indexterm\" "
+"id=\"6\"/> <placeholder type=\"indexterm\" id=\"7\"/> <placeholder type="
+"\"indexterm\" id=\"8\"/> <placeholder type=\"indexterm\" id=\"9\"/>"
+msgstr ""
+
+#. type: Content of: <preface><sect1><sect2><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:415
+msgid "The command-line client program"
+msgstr ""
+
+#. type: Content of: <preface><sect1><sect2><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:422
+msgid ""
+"A program for reporting the state (in terms of revisions of the items "
+"present) of a working copy"
+msgstr ""
+
+#. type: Content of: <preface><sect1><sect2><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:430
+msgid "A tool for directly inspecting a Subversion repository"
+msgstr ""
+
+#. type: Content of: <preface><sect1><sect2><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:437
+msgid "A tool for creating, tweaking, or repairing a Subversion repository"
+msgstr ""
+
+#. type: Content of: <preface><sect1><sect2><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:445
+msgid ""
+"A plug-in module for the Apache HTTP Server, used to make your repository "
+"available to others over a network"
+msgstr ""
+
+#. type: Content of: <preface><sect1><sect2><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:454
+msgid ""
+"A custom standalone server program, runnable as a daemon process or "
+"invokable by SSH; another way to make your repository available to others "
+"over a network"
+msgstr ""
+
+#. type: Content of: <preface><sect1><sect2><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:463
+msgid "A program for filtering Subversion repository dump streams"
+msgstr ""
+
+#. type: Content of: <preface><sect1><sect2><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:471
+msgid ""
+"A program for incrementally mirroring one repository to another over a "
+"network"
+msgstr ""
+
+#. type: Content of: <preface><sect1><sect2><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:479
+msgid ""
+"A program for performing repository history dumps and loads over a network"
+msgstr ""
+
+#. type: Content of: <preface><sect1><sect2><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:487
+msgid ""
+"A program for performing multiple repository URL-based operations in a "
+"single commit and without the use of a working copy"
+msgstr ""
+
+#. type: Content of: <preface><sect1><sect2><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:500
+msgid "What's New in Subversion"
+msgstr ""
+
+#. type: Content of: <preface><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:503
+msgid ""
+"<placeholder type=\"indexterm\" id=\"0\"/>The first edition of this book was "
+"published by O'Reilly Media in 2004, shortly after Subversion had reached "
+"1.0.  Since that time, the Subversion project has continued to release new "
+"major releases of the software.  Here's a quick summary of major new changes "
+"since Subversion 1.0.  Note that this is not a complete list; for full "
+"details, please visit Subversion's web site at <ulink url=\"http://"
+"subversion.apache.org\"/>."
+msgstr ""
+
+#. type: Content of: <preface><sect1><sect2><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:518
+msgid "Subversion 1.1 (September 2004)"
+msgstr ""
+
+#. type: Content of: <preface><sect1><sect2><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:520
+msgid ""
+"Release 1.1 introduced FSFS, a flat-file repository storage option for the "
+"repository.  While the Berkeley DB backend is still widely used and "
+"supported, FSFS has since become the default choice for newly created "
+"repositories due to its low barrier to entry and minimal maintenance "
+"requirements.  Also in this release came the ability to put symbolic links "
+"under version control, auto-escaping of URLs, and a localized user interface."
+msgstr ""
+
+#. type: Content of: <preface><sect1><sect2><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:533
+msgid "Subversion 1.2 (May 2005)"
+msgstr ""
+
+#. type: Content of: <preface><sect1><sect2><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:535
+msgid ""
+"Release 1.2 introduced the ability to create server-side locks on files, "
+"thus serializing commit access to certain resources.  While Subversion is "
+"still a fundamentally concurrent version control system, certain types of "
+"binary files (e.g. art assets)  cannot be merged together.  The locking "
+"feature fulfills the need to version and protect such resources.  With "
+"locking also came a complete WebDAV auto-versioning implementation, allowing "
+"Subversion repositories to be mounted as network folders.  Finally, "
+"Subversion 1.2 began using a new, faster binary-differencing algorithm to "
+"compress and retrieve old versions of files."
+msgstr ""
+
+#. type: Content of: <preface><sect1><sect2><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:551
+msgid "Subversion 1.3 (December 2005)"
+msgstr ""
+
+#. type: Content of: <preface><sect1><sect2><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:553
+msgid ""
+"Release 1.3 brought path-based authorization controls to the "
+"<command>svnserve</command> server, matching a feature formerly found only "
+"in the Apache server.  The Apache server, however, gained some new logging "
+"features of its own, and Subversion's API bindings to other languages also "
+"made great leaps forward."
+msgstr ""
+
+#. type: Content of: <preface><sect1><sect2><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:564
+msgid "Subversion 1.4 (September 2006)"
+msgstr ""
+
+#. type: Content of: <preface><sect1><sect2><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:566
+msgid ""
+"Release 1.4 introduced a whole new tool&mdash;<command>svnsync</"
+"command>&mdash;for doing one-way repository replication over a network.  "
+"Major parts of the working copy metadata were revamped to no longer use XML "
+"(resulting in client-side speed gains), while the Berkeley DB repository "
+"backend gained the ability to automatically recover itself after a server "
+"crash."
+msgstr ""
+
+#. type: Content of: <preface><sect1><sect2><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:578
+msgid "Subversion 1.5 (June 2008)"
+msgstr ""
+
+#. type: Content of: <preface><sect1><sect2><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:580
+msgid ""
+"Release 1.5 took much longer to finish than prior releases, but the "
+"headliner feature was gigantic: semi-automated tracking of branching and "
+"merging.  This was a huge boon for users, and pushed Subversion far beyond "
+"the abilities of CVS and into the ranks of commercial competitors such as "
+"Perforce and ClearCase.  Subversion 1.5 also introduced a bevy of other user-"
+"focused features, such as interactive resolution of file conflicts, sparse "
+"checkouts, client-side management of changelists, powerful new syntax for "
+"externals definitions, and SASL authentication support for the "
+"<command>svnserve</command> server."
+msgstr ""
+
+#. type: Content of: <preface><sect1><sect2><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:596
+msgid "Subversion 1.6 (March 2009)"
+msgstr ""
+
+#. type: Content of: <preface><sect1><sect2><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:598
+msgid ""
+"Release 1.6 continued to make branching and merging more robust by "
+"introducing tree conflicts, and offered improvements to several other "
+"existing features: more interactive conflict resolution options; de-"
+"telescoping and outright exclusion support for sparse checkouts; file-based "
+"externals definitions; and operational logging support for "
+"<command>svnserve</command> similar to what <command>mod_dav_svn</command> "
+"offered.  Also, the command-line client introduced a new shortcut syntax for "
+"referring to Subversion repository URLs."
+msgstr ""
+
+#. type: Content of: <preface><sect1><sect2><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:612
+msgid "Subversion 1.7 (October 2011)"
+msgstr ""
+
+#. type: Content of: <preface><sect1><sect2><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:614
+msgid ""
+"Release 1.7 was primarily a delivery vehicle for two big plumbing overhauls "
+"of existing Subversion components.  The largest and most impactful of these "
+"was the so-called <quote>WC-NG</quote>&mdash;a complete rewrite of the "
+"<command>libsvn_wc</command> working copy management library.  The second "
+"change was the introduction of a sleeker HTTP protocol for Subversion client/"
+"server interaction.  Subversion 1.7 delivered a handful of additional "
+"features, many bug fixes, and some notable performance improvements, too."
+msgstr ""
+
+#. type: Content of: <preface><sect1><sect2><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:628
+msgid "Subversion 1.8 (June 2013)"
+msgstr ""
+
+#. type: Content of: <preface><sect1><sect2><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:631
+msgid ""
+"In release 1.8, Subversion's client now tracks renamed files and directories "
+"more thoroughly, and its <command>svn merge</command> command has grown "
+"intelligent enough to make the <option>--reintegrate</option> option "
+"unnecessary.  Certain new versioned property values can be inherited from "
+"parent directories.  That feature now allows a repository to dictate default "
+"values for automatic property settings and ignorable file patterns, bringing "
+"consistency across the user base of that repository in a way which "
+"previously had to be managed socially.  There is also a new built-in command-"
+"line file merge tool for interactive conflict resolution.  As always, "
+"Subversion 1.8 includes many additional features, defect fixes, and "
+"improvements in behavior and performance."
+msgstr ""
+
+#. type: Content of: <preface><sect1><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:660
+msgid "Audience"
+msgstr ""
+
+#. type: Content of: <preface><sect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:662
+msgid ""
+"This book is written for computer-literate folk who want to use Subversion "
+"to manage their data.  While Subversion runs on a number of different "
+"operating systems, its primary user interface is command-line-based.  That "
+"command-line tool (<command>svn</command>), and some additional auxiliary "
+"programs, are the focus of this book."
+msgstr ""
+
+#. type: Content of: <preface><sect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:669
+msgid ""
+"For consistency, the examples in this book assume that the reader is using a "
+"Unix-like operating system and is relatively comfortable with Unix and "
+"command-line interfaces.  That said, the <command>svn</command> program also "
+"runs on non-Unix platforms such as Microsoft Windows.  With a few minor "
+"exceptions, such as the use of backward slashes (<literal>\\</literal>) "
+"instead of forward slashes (<literal>/</literal>) for path separators, the "
+"input to and output from this tool when run on Windows are identical to that "
+"of its Unix counterpart."
+msgstr ""
+
+#. type: Content of: <preface><sect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:679
+msgid ""
+"Most readers are probably programmers or system administrators who need to "
+"track changes to source code.  This is the most common use for Subversion, "
+"and therefore it is the scenario underlying all of the book's examples.  But "
+"Subversion can be used to manage changes to any sort of information&mdash;"
+"images, music, databases, documentation, and so on.  To Subversion, all data "
+"is just data."
+msgstr ""
+
+#. type: Content of: <preface><sect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:687
+msgid ""
+"While this book is written with the assumption that the reader has never "
+"used a version control system, we've also tried to make it easy for users of "
+"CVS (and other systems) to make a painless leap into Subversion.  Special "
+"sidebars may mention other version control systems from time to time, and "
+"<xref linkend=\"svn.forcvs\"/> summarizes many of the differences between "
+"CVS and Subversion."
+msgstr ""
+
+#. type: Content of: <preface><sect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:695
+msgid ""
+"Note also that the source code examples used throughout the book are only "
+"examples.  While they will compile with the proper compiler incantations, "
+"they are intended to illustrate a particular scenario and not necessarily to "
+"serve as examples of good programming style or practices."
+msgstr ""
+
+#. type: Content of: <preface><sect1><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:707
+msgid "How to Read This Book"
+msgstr ""
+
+#. type: Content of: <preface><sect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:709
+msgid ""
+"Technical books always face a certain dilemma: whether to cater to "
+"<quote>top-down</quote> or to <quote>bottom-up</quote> learners.  A top-down "
+"learner prefers to read or skim documentation, getting a large overview of "
+"how the system works; only then does she actually start using the software.  "
+"A bottom-up learner is a <quote>learn by doing</quote> person&mdash;someone "
+"who just wants to dive into the software and figure it out as she goes, "
+"referring to book sections when necessary.  Most books tend to be written "
+"for one type of person or the other, and this book is undoubtedly biased "
+"toward top-down learners.  (And if you're actually reading this section, "
+"you're probably already a top-down learner yourself!)  However, if you're a "
+"bottom-up person, don't despair.  While the book may be laid out as a broad "
+"survey of Subversion topics, the content of each section tends to be heavy "
+"with specific examples that you can try-by-doing.  For the impatient folks "
+"who just want to get going, you can jump right to <xref linkend=\"svn.intro"
+"\"/>."
+msgstr ""
+
+#. type: Content of: <preface><sect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:728
+msgid ""
+"Regardless of your learning style, this book aims to be useful to people of "
+"widely different backgrounds&mdash;from those with no previous experience in "
+"version control to experienced system administrators.  Depending on your own "
+"background, certain chapters may be more or less important to you.  The "
+"following can be considered a <quote>recommended reading list</quote> for "
+"various types of readers:"
+msgstr ""
+
+#. type: Content of: <preface><sect1><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:739
+msgid "Experienced system administrators"
+msgstr ""
+
+#. type: Content of: <preface><sect1><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:741
+msgid ""
+"The assumption here is that you've probably used version control before and "
+"are dying to get a Subversion server up and running ASAP.  <xref linkend="
+"\"svn.reposadmin\"/> and <xref linkend=\"svn.serverconfig\"/> will show you "
+"how to create your first repository and make it available over the network.  "
+"After that's done, <xref linkend=\"svn.tour\"/> and <xref linkend=\"svn."
+"forcvs\"/> are the fastest routes to learning the Subversion client."
+msgstr ""
+
+#. type: Content of: <preface><sect1><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:755
+msgid "New users"
+msgstr ""
+
+#. type: Content of: <preface><sect1><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:757
+msgid ""
+"Your administrator has probably set up Subversion already, and you need to "
+"learn how to use the client.  If you've never used a version control system, "
+"then <xref linkend=\"svn.basic\"/> is a vital introduction to the ideas "
+"behind version control.  <xref linkend=\"svn.tour\"/> is a guided tour of "
+"the Subversion client."
+msgstr ""
+
+#. type: Content of: <preface><sect1><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:767
+msgid "Advanced users"
+msgstr ""
+
+#. type: Content of: <preface><sect1><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:769
+msgid ""
+"Whether you're a user or administrator, eventually your project will grow "
+"larger.  You're going to want to learn how to do more advanced things with "
+"Subversion, such as how to use Subversion's property support (<xref linkend="
+"\"svn.advanced\"/>), how to use branches and perform merges (<xref linkend="
+"\"svn.branchmerge\"/>), how to configure runtime options (<xref linkend="
+"\"svn.customization\"/>), and other things.  These chapters aren't critical "
+"at first, but be sure to read them once you're comfortable with the basics."
+msgstr ""
+
+#. type: Content of: <preface><sect1><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:783
+msgid "Developers"
+msgstr ""
+
+#. type: Content of: <preface><sect1><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:785
+msgid ""
+"Presumably, you're already familiar with Subversion, and now want to either "
+"extend it or build new software on top of its many APIs.  <xref linkend="
+"\"svn.developer\"/> is just for you."
+msgstr ""
+
+#. type: Content of: <preface><sect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:793
+msgid ""
+"The book ends with reference material&mdash;<xref linkend=\"svn.ref\"/> is a "
+"reference guide for all Subversion commands, and the appendixes cover a "
+"number of useful topics.  These are the chapters you're most likely to come "
+"back to after you've finished the book."
+msgstr ""
+
+#. type: Content of: <preface><sect1><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:805
+msgid "Organization of This Book"
+msgstr ""
+
+#. type: Content of: <preface><sect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:807
+msgid "The chapters that follow and their contents are listed here:"
+msgstr ""
+
+#. type: Content of: <preface><sect1><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:813
+msgid "<xref linkend=\"svn.basic\"/>"
+msgstr ""
+
+#. type: Content of: <preface><sect1><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:815
+msgid ""
+"Explains the basics of version control and different versioning models, "
+"along with Subversion's repository, working copies, and revisions."
+msgstr ""
+
+#. type: Content of: <preface><sect1><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:822
+msgid "<xref linkend=\"svn.tour\"/>"
+msgstr ""
+
+#. type: Content of: <preface><sect1><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:824
+msgid ""
+"Walks you through a day in the life of a Subversion user.  It demonstrates "
+"how to use a Subversion client to obtain, modify, and commit data."
+msgstr ""
+
+#. type: Content of: <preface><sect1><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:831
+msgid "<xref linkend=\"svn.advanced\"/>"
+msgstr ""
+
+#. type: Content of: <preface><sect1><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:833
+msgid ""
+"Covers more complex features that regular users will eventually come into "
+"contact with, such as versioned metadata, file locking, and peg revisions."
+msgstr ""
+
+#. type: Content of: <preface><sect1><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:840
+msgid "<xref linkend=\"svn.branchmerge\"/>"
+msgstr ""
+
+#. type: Content of: <preface><sect1><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:842
+msgid ""
+"Discusses branches, merges, and tagging, including best practices for "
+"branching and merging, common use cases, how to undo changes, and how to "
+"easily swing from one branch to the next."
+msgstr ""
+
+#. type: Content of: <preface><sect1><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:850
+msgid "<xref linkend=\"svn.reposadmin\"/>"
+msgstr ""
+
+#. type: Content of: <preface><sect1><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:852
+msgid ""
+"Describes the basics of the Subversion repository, how to create, configure, "
+"and maintain a repository, and the tools you can use to do all of this."
+msgstr ""
+
+#. type: Content of: <preface><sect1><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:859
+msgid "<xref linkend=\"svn.serverconfig\"/>"
+msgstr ""
+
+#. type: Content of: <preface><sect1><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:861
+msgid ""
+"Explains how to configure your Subversion server and offers different ways "
+"to access your repository: <literal>HTTP</literal>, the <literal>svn</"
+"literal> protocol, and local disk access.  It also covers the details of "
+"authentication, authorization and anonymous access."
+msgstr ""
+
+#. type: Content of: <preface><sect1><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:871
+msgid "<xref linkend=\"svn.customization\"/>"
+msgstr ""
+
+#. type: Content of: <preface><sect1><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:873
+msgid ""
+"Explores the Subversion client configuration files, the handling of "
+"internationalized text, and how to make external tools cooperate with "
+"Subversion."
+msgstr ""
+
+#. type: Content of: <preface><sect1><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:880
+msgid "<xref linkend=\"svn.developer\"/>"
+msgstr ""
+
+#. type: Content of: <preface><sect1><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:882
+msgid ""
+"Describes the internals of Subversion, the Subversion filesystem, and the "
+"working copy administrative areas from a programmer's point of view.  It "
+"also demonstrates how to use the public APIs to write a program that uses "
+"Subversion."
+msgstr ""
+
+#. type: Content of: <preface><sect1><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:891
+msgid "<xref linkend=\"svn.ref\"/>"
+msgstr ""
+
+#. type: Content of: <preface><sect1><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:893
+msgid ""
+"Explains in great detail every subcommand of <command>svn</command>, "
+"<command>svnadmin</command>, and <command>svnlook</command> with plenty of "
+"examples for the whole family!"
+msgstr ""
+
+#. type: Content of: <preface><sect1><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:901
+msgid "<xref linkend=\"svn.intro\"/>"
+msgstr ""
+
+#. type: Content of: <preface><sect1><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:903
+msgid ""
+"For the impatient, a whirlwind explanation of how to install Subversion and "
+"start using it immediately.  You have been warned."
+msgstr ""
+
+#. type: Content of: <preface><sect1><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:910
+msgid "<xref linkend=\"svn.forcvs\"/>"
+msgstr ""
+
+#. type: Content of: <preface><sect1><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:912
+msgid ""
+"Covers the similarities and differences between Subversion and CVS, with "
+"numerous suggestions on how to break all the bad habits you picked up from "
+"years of using CVS.  Included are descriptions of Subversion revision "
+"numbers, versioned directories, offline operations, <command>update</"
+"command> versus <command>status</command>, branches, tags, metadata, "
+"conflict resolution, and authentication."
+msgstr ""
+
+#. type: Content of: <preface><sect1><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:924
+msgid "<xref linkend=\"svn.webdav\"/>"
+msgstr ""
+
+#. type: Content of: <preface><sect1><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:926
+msgid ""
+"Describes the details of WebDAV and DeltaV and how you can configure your "
+"Subversion repository to be mounted read/write as a DAV share."
+msgstr ""
+
+#. type: Content of: <preface><sect1><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:933
+msgid "<xref linkend=\"svn.copyright\"/>"
+msgstr ""
+
+#. type: Content of: <preface><sect1><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:935
+msgid ""
+"A copy of the Creative Commons Attribution License, under which this book is "
+"licensed."
+msgstr ""
+
+#. type: Content of: <preface><sect1><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:949
+msgid "This Book Is Free"
+msgstr ""
+
+#. type: Content of: <preface><sect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:951
+msgid ""
+"This book started out as bits of documentation written by Subversion project "
+"developers, which were then coalesced into a single work and rewritten.  As "
+"such, it has always been under a free license (see <xref linkend=\"svn."
+"copyright\"/>).  In fact, the book was written in the public eye, originally "
+"as part of the Subversion project itself.  This means two things:"
+msgstr ""
+
+#. type: Content of: <preface><sect1><itemizedlist><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:960
+msgid ""
+"You will always find the latest version of this book in the book's own "
+"Subversion repository."
+msgstr ""
+
+#. type: Content of: <preface><sect1><itemizedlist><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:965
+msgid ""
+"You can make changes to this book and redistribute it however you wish&mdash;"
+"it's under a free license.  Your only obligation is to maintain proper "
+"attribution to the original authors.  Of course, we'd much rather you send "
+"feedback and patches to the Subversion developer community, instead of "
+"distributing your private version of this book."
+msgstr ""
+
+#. type: Content of: <preface><sect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:974
+msgid ""
+"The online home of this book's development and most of the volunteer-driven "
+"translation efforts regarding it is <ulink url=\"http://svnbook.red-bean.com"
+"\"/>.  There you can find links to the latest releases and tagged versions "
+"of the book in various formats, as well as instructions for accessing the "
+"book's Subversion repository (where its DocBook XML source code lives).  "
+"Feedback is welcomed&mdash;encouraged, even.  Please submit all comments, "
+"complaints, and patches against the book sources to <email>svnbook-dev@red-"
+"bean.com</email>."
+msgstr ""
+
+#. type: Content of: <preface><sect1><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:993
+msgid "Acknowledgments"
+msgstr ""
+
+#. type: Content of: <preface><sect1><para><footnote><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:1001
+msgid ""
+"Oh, and thanks, Karl, for being too overworked to write this book yourself."
+msgstr ""
+
+#. type: Content of: <preface><sect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:995
+msgid ""
+"This book would not be possible (nor very useful) if Subversion did not "
+"exist.  For that, the authors would like to thank Brian Behlendorf and "
+"CollabNet for the vision to fund such a risky and ambitious new open source "
+"project; Jim Blandy for the original Subversion name and design&mdash;we "
+"love you, Jim; and Karl Fogel for being such a good friend and a great "
+"community leader, in that order.<placeholder type=\"footnote\" id=\"0\"/>"
+msgstr ""
+
+#. type: Content of: <preface><sect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:1005
+msgid ""
+"Thanks to O'Reilly and the team of professional editors who have helped us "
+"polish this text at various stages of its evolution: Chuck Toporek, Linda "
+"Mui, Tatiana Apandi, Mary Brady, and Mary Treseler.  Your patience and "
+"support has been tremendous."
+msgstr ""
+
+#. type: Content of: <preface><sect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch00-preface.xml:1011
+msgid ""
+"Finally, we thank the countless people who contributed to this book with "
+"informal reviews, suggestions, and patches.  An exhaustive listing of those "
+"folks' names would be impractical to print and maintain here, but may their "
+"names live on forever in this book's version control history!"
+msgstr ""

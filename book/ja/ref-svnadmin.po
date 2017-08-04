@@ -1,0 +1,1848 @@
+# Japanese translations for PACKAGE package
+# Copyright (C) 2017 Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2017.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2017-08-03 18:00+0900\n"
+"PO-Revision-Date: 2017-08-03 18:00+0900\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: matsuand個人翻訳\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. type: Content of: <reference><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:4
+msgid "svnadmin Reference&mdash;Subversion Repository Administration"
+msgstr ""
+
+#. type: Content of: <reference><partintro><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:7
+msgid ""
+"<command>svnadmin</command> is the administrative tool for monitoring and "
+"repairing your Subversion repository.  For detailed information on "
+"repository administration, see the maintenance section for <xref linkend="
+"\"svn.reposadmin.maint.tk.svnadmin\"/>."
+msgstr ""
+
+#. type: Content of: <reference><partintro><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:12
+msgid ""
+"Since <command>svnadmin</command> works via direct repository access (and "
+"thus can only be used on the machine that holds the repository), it refers "
+"to the repository with a path, not a URL."
+msgstr ""
+
+#. type: Content of: <reference><partintro><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:16
+msgid ""
+"Options in <command>svnadmin</command> are global, just as they are in "
+"<command>svn</command>:"
+msgstr ""
+
+#. type: Content of: <reference><partintro><variablelist><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:20
+msgid "svnadmin Options"
+msgstr ""
+
+#. type: Content of: <reference><partintro><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:23
+msgid "<option>--bdb-log-keep</option>"
+msgstr ""
+
+#. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:25
+msgid ""
+"(Berkeley DB-specific.) Disable automatic log removal of database logfiles.  "
+"Having these logfiles around can be convenient if you need to restore from a "
+"catastrophic repository failure."
+msgstr ""
+
+#. type: Content of: <reference><partintro><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:33
+msgid "<option>--bdb-txn-nosync</option>"
+msgstr ""
+
+#. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:36
+msgid ""
+"(Berkeley DB-specific.) Disables fsync when committing database "
+"transactions.  Used with the <command>svnadmin create</command> command to "
+"create a Berkeley DB-backed repository with <literal>DB_TXN_NOSYNC</literal> "
+"enabled (which improves speed but has some risks associated with it)."
+msgstr ""
+
+#. type: Content of: <reference><partintro><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:46
+msgid "<option>--bypass-hooks</option>"
+msgstr ""
+
+#. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:48
+msgid "Bypass the repository hook system."
+msgstr ""
+
+#. type: Content of: <reference><partintro><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:53
+msgid "<option>--bypass-prop-validation</option>"
+msgstr ""
+
+#. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:55
+msgid ""
+"When loading a dump file, disable the logic which validates property values."
+msgstr ""
+
+#. type: Content of: <reference><partintro><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:61
+msgid "<option>--clean-logs</option>"
+msgstr ""
+
+#. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:63
+msgid "Remove unused Berkeley DB logs."
+msgstr ""
+
+#. type: Content of: <reference><partintro><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:68
+msgid "<option>--compatible-version</option> <replaceable>ARG</replaceable>"
+msgstr ""
+
+#. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:70
+msgid ""
+"Use repository format compatible with Subversion version <replaceable>ARG</"
+"replaceable>."
+msgstr ""
+
+#. type: Content of: <reference><partintro><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:78
+msgid "<option>--config-dir</option> <replaceable>DIR</replaceable>"
+msgstr ""
+
+#. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:80
+msgid ""
+"Instructs Subversion to read configuration information from the specified "
+"directory instead of the default location (<filename>.subversion</filename> "
+"in the user's home directory)."
+msgstr ""
+
+#. type: Content of: <reference><partintro><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:88
+msgid "<option>--deltas</option>"
+msgstr ""
+
+#. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:90
+msgid ""
+"When creating a repository dump file, specify changes in versioned "
+"properties and file contents as deltas against their previous state."
+msgstr ""
+
+#. type: Content of: <reference><partintro><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:97
+msgid ""
+"<option>--file</option> (<option>-F</option>) <replaceable>FILENAME</"
+"replaceable>"
+msgstr ""
+
+#. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:99
+msgid "Uses the contents of the named file for the specified subcommand."
+msgstr ""
+
+#. type: Content of: <reference><partintro><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:105
+msgid "<option>--fs-type</option> <replaceable>ARG</replaceable>"
+msgstr ""
+
+#. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:107
+msgid ""
+"When creating a repository, use <replaceable>ARG</replaceable> as the "
+"requested filesyste type.  <replaceable>ARG</replaceable> may be either "
+"<literal>bdb</literal> or <literal>fsfs</literal>."
+msgstr ""
+
+#. type: Content of: <reference><partintro><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:116
+msgid "<option>--force-uuid</option>"
+msgstr ""
+
+#. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:118
+msgid ""
+"By default, when loading data into a repository that already contains "
+"revisions, <command>svnadmin</command> will ignore the UUID from the dump "
+"stream.  This option will cause the repository's UUID to be set to the UUID "
+"from the stream."
+msgstr ""
+
+#. type: Content of: <reference><partintro><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:127
+msgid "<option>--ignore-uuid</option>"
+msgstr ""
+
+#. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:129
+msgid ""
+"By default, when loading data into an empty repository, <command>svnadmin</"
+"command> will set the repository's UUID to the UUID from the dump stream.  "
+"This option will cause the UUID from the stream to be ignored."
+msgstr ""
+
+#. type: Content of: <reference><partintro><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:137
+msgid "<option>--incremental</option>"
+msgstr ""
+
+#. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:139
+msgid ""
+"Dump a revision only as a diff against the previous revision, instead of the "
+"usual fulltext."
+msgstr ""
+
+#. type: Content of: <reference><partintro><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:146
+msgid ""
+"<option>--memory-cache-size</option> (<option>-M</option>) <replaceable>ARG</"
+"replaceable>"
+msgstr ""
+
+#. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:148
+msgid ""
+"Configures the size (in Megabytes) of the extra in-memory cache used to "
+"minimize redundant operations.  The default value is <literal>16</literal>.  "
+"(This cache is used for FSFS-backed repositories only.)"
+msgstr ""
+
+#. type: Content of: <reference><partintro><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:156
+msgid "<option>--parent-dir</option> <replaceable>DIR</replaceable>"
+msgstr ""
+
+#. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:158
+msgid ""
+"When loading a dump file, root paths at <replaceable>DIR</replaceable> "
+"instead of <filename>/</filename>."
+msgstr ""
+
+#. type: Content of: <reference><partintro><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:165
+msgid "<option>--pre-1.4-compatible</option>"
+msgstr ""
+
+#. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:167
+msgid ""
+"<emphasis>Deprecated</emphasis>.  See option <option>--compatible-version</"
+"option>.  When creating a new repository, use a format that is compatible "
+"with versions of Subversion earlier than Subversion 1.4."
+msgstr ""
+
+#. type: Content of: <reference><partintro><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:175
+msgid "<option>--pre-1.5-compatible</option>"
+msgstr ""
+
+#. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:177
+msgid ""
+"<emphasis>Deprecated</emphasis>.  See option <option>--compatible-version</"
+"option>.  When creating a new repository, use a format that is compatible "
+"with versions of Subversion earlier than Subversion 1.5."
+msgstr ""
+
+#. type: Content of: <reference><partintro><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:185
+msgid "<option>--pre-1.6-compatible</option>"
+msgstr ""
+
+#. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:187
+msgid ""
+"<emphasis>Deprecated</emphasis>.  See option <option>--compatible-version</"
+"option>.  When creating a new repository, use a format that is compatible "
+"with versions of Subversion earlier than Subversion 1.6."
+msgstr ""
+
+#. type: Content of: <reference><partintro><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:195
+msgid ""
+"<option>--revision</option> (<option>-r</option>) <replaceable>ARG</"
+"replaceable>"
+msgstr ""
+
+#. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:197
+msgid "Specify a particular revision to operate on."
+msgstr ""
+
+#. type: Content of: <reference><partintro><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:203
+msgid "<option>--quiet</option> (<option>-q</option>)"
+msgstr ""
+
+#. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:205
+msgid "Do not show normal progress&mdash;show only errors."
+msgstr ""
+
+#. type: Content of: <reference><partintro><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:211
+msgid "<option>--use-post-commit-hook</option>"
+msgstr ""
+
+#. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:213
+msgid ""
+"When loading a dump file, runs the repository's <literal>post-commit</"
+"literal> hook after finalizing each newly loaded revision."
+msgstr ""
+
+#. type: Content of: <reference><partintro><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:220
+msgid "<option>--use-post-revprop-change-hook</option>"
+msgstr ""
+
+#. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:222
+msgid ""
+"When changing a revision property, runs the repository's <literal>post-"
+"revprop-change</literal> hook after changing the revision property."
+msgstr ""
+
+#. type: Content of: <reference><partintro><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:229
+msgid "<option>--use-pre-commit-hook</option>"
+msgstr ""
+
+#. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:231
+msgid ""
+"When loading a dump file, runs the repository's <literal>pre-commit</"
+"literal> hook before finalizing each newly loaded revision.  If the hook "
+"fails, aborts the commit and terminates the load process."
+msgstr ""
+
+#. type: Content of: <reference><partintro><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:239
+msgid "<option>--use-pre-revprop-change-hook</option>"
+msgstr ""
+
+#. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:241
+msgid ""
+"When changing a revision property, runs the repository's <literal>pre-"
+"revprop-change</literal> hook before changing the revision property.  If the "
+"hook fails, aborts the modification and terminates."
+msgstr ""
+
+#. type: Content of: <reference><partintro><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:249
+msgid "<option>--wait</option>"
+msgstr ""
+
+#. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:251
+msgid ""
+"For operations which require exclusive repository access, wait until the "
+"requisite repository lock has been obtained instead of immediately erroring "
+"out when it cannot be."
+msgstr ""
+
+#. type: Content of: <reference><refentry><indexterm><primary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:267
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:324
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:424
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:474
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:600
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:668
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:699
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:772
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:810
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:867
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:984
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1030
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1092
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1139
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1177
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1276
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1329
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1397
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1469
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1536
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1597
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1640
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1716
+msgid "svnadmin"
+msgstr ""
+
+#. type: Content of: <reference><refentry><indexterm><secondary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:268
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:325
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:425
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:475
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:601
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:669
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:700
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:773
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:811
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:868
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:985
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1031
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1093
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1140
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1178
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1277
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1330
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1398
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1470
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1537
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1598
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1641
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1717
+msgid "subcommands"
+msgstr ""
+
+#. type: Content of: <reference><refentry><indexterm><tertiary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:269
+msgid "crashtest"
+msgstr ""
+
+#. type: Content of: <reference><refentry><indexterm>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:269
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:326
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:426
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:476
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:602
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:670
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:701
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:774
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:812
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:869
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:986
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1032
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1094
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1141
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1179
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1278
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1331
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1399
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1471
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1538
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1599
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1642
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1718
+msgid "<placeholder type=\"tertiary\" id=\"0\"/>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refname>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:273
+msgid "svnadmin crashtest"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refpurpose>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:274
+msgid "Simulate a process that crashes."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsynopsisdiv><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:278
+msgid "<literal>svnadmin crashtest REPOS_PATH</literal>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:283
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:340
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:440
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:490
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:617
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:684
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:715
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:790
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:828
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:884
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1002
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1046
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1108
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1156
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1199
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1293
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1345
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1413
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1485
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1552
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1614
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1657
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1732
+msgid "Description"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:285
+msgid ""
+"Open the repository at <replaceable>REPOS_PATH</replaceable>, then abort, "
+"thus simulating a process that crashes while holding an open repository "
+"handle.  This is used for testing automatic repository recovery (a new "
+"feature in Berkeley DB 4.4).  It's unlikely that you'll need to run this "
+"command."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:296
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:371
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:456
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:552
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:637
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:744
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:909
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1015
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1059
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1165
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1207
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1299
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1354
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1437
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1499
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1564
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1625
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1682
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1750
+msgid "Options"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:298
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1061
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1166
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1300
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1565
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1683
+msgid "None"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:304
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:389
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:567
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:647
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:842
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:928
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1066
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1118
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1217
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1305
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1365
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1449
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1512
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1571
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1689
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1763
+msgid "Examples"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:308
+#, no-wrap
+msgid ""
+"$ svnadmin crashtest /var/svn/repos\n"
+"Aborted\n"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:313
+msgid "Exciting, isn't it?"
+msgstr ""
+
+#. type: Content of: <reference><refentry><indexterm><tertiary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:326
+msgid "create"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refname>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:330
+msgid "svnadmin create"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refpurpose>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:331
+msgid "Create a new, empty repository."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsynopsisdiv><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:335
+msgid "<literal>svnadmin create REPOS_PATH</literal>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para><footnote><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:345
+msgid ""
+"Remember, <command>svnadmin</command> works only with local <emphasis>paths</"
+"emphasis>, not <emphasis>URLs</emphasis>."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:342
+msgid ""
+"Create a new, empty repository at the path provided.  If the provided "
+"directory does not exist, it will be created for you.<placeholder type="
+"\"footnote\" id=\"0\"/> As of Subversion 1.2, <command>svnadmin</command> "
+"creates new repositories with the <literal>FSFS</literal> filesystem backend "
+"by default."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:353
+msgid ""
+"While <command>svnadmin create</command> will create the base directory for "
+"a new repository, it will not create intermediate directories.  For example, "
+"if you have an empty directory named <filename>/var/svn</filename>, creating "
+"<filename>/var/svn/repos</filename> will work, while attempting to create "
+"<filename>/var/svn/subdirectory/repos</filename> will fail with an error.  "
+"Also, keep in mind that, depending on where on your system you are creating "
+"your repository, you might need to run <command>svnadmin create</command> as "
+"a user with elevated privileges (such as the <literal>root</literal> user)."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:375
+#, no-wrap
+msgid ""
+"<xref linkend=\"svn.ref.svnadmin.sw.bdb_log_keep\" />\n"
+"<xref linkend=\"svn.ref.svnadmin.sw.bdb_txn_nosync\" />\n"
+"<xref linkend=\"svn.ref.svnadmin.sw.compatible_version\" />\n"
+"<xref linkend=\"svn.ref.svnadmin.sw.config_dir\" />\n"
+"<xref linkend=\"svn.ref.svnadmin.sw.fs_type\" />\n"
+"<xref linkend=\"svn.ref.svnadmin.sw.pre_1.4_compatible\" />\n"
+"<xref linkend=\"svn.ref.svnadmin.sw.pre_1.5_compatible\" />\n"
+"<xref linkend=\"svn.ref.svnadmin.sw.pre_1.6_compatible\" />\n"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:391
+msgid "Creating a new repository is this easy:"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:395
+#, no-wrap
+msgid ""
+"$ cd /var/svn\n"
+"$ svnadmin create repos\n"
+"$\n"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:401
+msgid ""
+"In Subversion 1.0, a Berkeley DB repository is always created.  In "
+"Subversion 1.1, a Berkeley DB repository is the default repository type, but "
+"an FSFS repository can be created using the <option>--fs-type</option> "
+"option:"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:409
+#, no-wrap
+msgid ""
+"$ cd /var/svn\n"
+"$ svnadmin create repos --fs-type fsfs\n"
+"$\n"
+msgstr ""
+
+#. type: Content of: <reference><refentry><indexterm><tertiary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:426
+msgid "deltify"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refname>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:430
+msgid "svnadmin deltify"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refpurpose>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:431
+msgid "Deltify changed paths in a revision range."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsynopsisdiv><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:435
+msgid "<literal>svnadmin deltify [-r LOWER[:UPPER]] REPOS_PATH</literal>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:442
+msgid ""
+"<command>svnadmin deltify</command> exists in current versions of Subversion "
+"only for historical reasons.  This command is deprecated and no longer "
+"needed."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:446
+msgid ""
+"It dates from a time when Subversion offered administrators greater control "
+"over compression strategies in the repository.  This turned out to be a lot "
+"of complexity for <emphasis>very</emphasis> little gain, and this "
+"<quote>feature</quote> was deprecated."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:460
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1754
+#, no-wrap
+msgid ""
+"<xref linkend=\"svn.ref.svnadmin.sw.memory_cache_size\" />\n"
+"<xref linkend=\"svn.ref.svnadmin.sw.quiet\" />\n"
+"<xref linkend=\"svn.ref.svnadmin.sw.revision\" />\n"
+msgstr ""
+
+#. type: Content of: <reference><refentry><indexterm><tertiary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:476
+msgid "dump"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refname>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:480
+msgid "svnadmin dump"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refpurpose>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:481
+msgid "Dump the contents of the filesystem to <filename>stdout</filename>."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsynopsisdiv><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:485
+msgid ""
+"<literal>svnadmin dump REPOS_PATH [-r LOWER[:UPPER]] [--incremental] [--"
+"deltas]</literal>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:492
+msgid ""
+"Dump the contents of the filesystem to <filename>stdout</filename> in a "
+"<quote>dump file</quote> portable format, sending feedback to "
+"<filename>stderr</filename>.  Dump revisions <replaceable>LOWER</"
+"replaceable> rev through <replaceable>UPPER</replaceable> rev.  If no "
+"revisions are given, dump all revision trees.  If only <replaceable>LOWER</"
+"replaceable> is given, dump that one revision tree.  See <xref linkend=\"svn."
+"reposadmin.maint.migrate\"/> for a practical use."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:502
+msgid ""
+"By default, the Subversion dump stream contains a single revision (the first "
+"revision in the requested revision range) in which every file and directory "
+"in the repository in that revision is presented as though that whole tree "
+"was added at once, followed by other revisions (the remainder of the "
+"revisions in the requested range), which contain only the files and "
+"directories that were modified in those revisions.  For a modified file, the "
+"complete full-text representation of its contents, as well as all of its "
+"properties, are presented in the dump file; for a directory, all of its "
+"properties are presented."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:514
+msgid ""
+"Two useful options modify the dump file generator's behavior.  The first is "
+"the <option>--incremental</option> option, which simply causes that first "
+"revision in the dump stream to contain only the files and directories "
+"modified in that revision, instead of being presented as the addition of a "
+"new tree, and in exactly the same way that every other revision in the dump "
+"file is presented.  This is useful for generating a relatively small dump "
+"file to be loaded into another repository that already has the files and "
+"directories that exist in the original repository."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:526
+msgid ""
+"The second useful option is <option>--deltas</option>.  This option causes "
+"<command>svnadmin dump</command> to, instead of emitting full-text "
+"representations of file contents and property lists, emit only deltas of "
+"those items against their previous versions.  This reduces (in some cases, "
+"drastically) the size of the dump file that <command>svnadmin dump</command> "
+"creates.  There are, however, disadvantages to using this option&mdash;"
+"deltified dump files are more CPU-intensive to create and tend not to "
+"compress as well as their nondeltified counterparts when using third-party "
+"tools such as <command>gzip</command> and <command>bzip2</command>."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><tip><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:540
+msgid ""
+"Beginning with Subversion 1.8, <command>svndumpfilter</command> can operate "
+"on deltified dump streams.  Prior to this release, <command>svndumpfilter</"
+"command> would not work with dump streams created using <option>--deltas</"
+"option> option."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:556
+#, no-wrap
+msgid ""
+"<xref linkend=\"svn.ref.svnadmin.sw.deltas\" />\n"
+"<xref linkend=\"svn.ref.svnadmin.sw.incremental\" />\n"
+"<xref linkend=\"svn.ref.svnadmin.sw.memory_cache_size\" />\n"
+"<xref linkend=\"svn.ref.svnadmin.sw.quiet\" />\n"
+"<xref linkend=\"svn.ref.svnadmin.sw.revision\" />\n"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:569
+msgid "Dump your whole repository:"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:573
+#, no-wrap
+msgid ""
+"$ svnadmin dump /var/svn/repos &gt; full.dump\n"
+"* Dumped revision 0.\n"
+"* Dumped revision 1.\n"
+"* Dumped revision 2.\n"
+"&hellip;\n"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:581
+msgid "Incrementally dump a single transaction from your repository:"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:586
+#, no-wrap
+msgid ""
+"$ svnadmin dump /var/svn/repos -r 21 --incremental &gt; incr.dump\n"
+"* Dumped revision 21.\n"
+msgstr ""
+
+#. type: Content of: <reference><refentry><indexterm><tertiary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:602
+msgid "freeze"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refname>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:606
+msgid "svnadmin freeze"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refpurpose>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:607
+msgid "Prevent commits to the repository while running an arbitary program."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsynopsisdiv><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:611
+msgid "<literal>svnadmin freeze REPOS_PATH PROGRAM [ARG...]</literal>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsynopsisdiv><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:612
+msgid "<literal>svnadmin freeze --file FILENAME PROGRAM [ARG...]</literal>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:619
+msgid ""
+"This subcommand prevents concurrent commits to the repository "
+"<replaceable>REPOS_PATH</replaceable> (i.e. it freezes the repository) while "
+"running <replaceable>PROGRAM</replaceable> with <replaceable>ARG</"
+"replaceable> arguments.  Clients trying to commit concurrently will wait "
+"until the repository becomes available again.  The subcommand is intended "
+"for backup purposes so that third-party backup tools such as <command>rsync</"
+"command> can be safely used on a live repository."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:628
+msgid ""
+"If <option>--file</option> option is used, then all repositories listed in "
+"<replaceable>FILENAME</replaceable> will froze.  The file format is a list "
+"of <replaceable>REPOS_PATH</replaceable> separated by newlines.  "
+"Repositories freeze in the same order as they are listed in the file."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:641
+#, no-wrap
+msgid "<xref linkend=\"svn.ref.svnadmin.sw.file\" />\n"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:649
+msgid ""
+"Freeze the repository and run <command>rsync</command> to make its backup:"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:654
+#, no-wrap
+msgid "$ svnadmin freeze /var/svn/repos -- rsync -av /var/svn/repos /backup/repos\n"
+msgstr ""
+
+#. type: Content of: <reference><refentry><indexterm><tertiary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:670
+msgid "help"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refname>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:674
+msgid "svnadmin help (h, ?)"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refpurpose>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:675
+msgid "Help!"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsynopsisdiv><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:679
+msgid "<literal>svnadmin help [SUBCOMMAND...]</literal>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:686
+msgid ""
+"This subcommand is useful when you're trapped on a desert island with "
+"neither a Net connection nor a copy of this book."
+msgstr ""
+
+#. type: Content of: <reference><refentry><indexterm><tertiary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:701
+msgid "hotcopy"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refname>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:705
+msgid "svnadmin hotcopy"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refpurpose>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:706
+msgid "Make a hot copy of a repository."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsynopsisdiv><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:710
+msgid "<literal>svnadmin hotcopy REPOS_PATH NEW_REPOS_PATH</literal>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:717
+msgid ""
+"This subcommand makes a <quote>hot</quote> backup of your repository, "
+"including all hooks, configuration files, and, of course, database files.  "
+"You can run this command at any time and make a safe copy of the repository, "
+"regardless of whether other processes are using the repository."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:723
+msgid ""
+"Prior to Subversion 1.8, <command>svnadmin hotcopy</command> always made a "
+"full hot copy of the source repository.  Beginning with Subversion 1.8 it "
+"supports incremental copy to the existing destination copy of the same "
+"source repository.  By passing the <option>--incremental</option> option to "
+"<command>svnadmin hotcopy</command>, you can instruct Subversion to copy "
+"only new revisions and revisions which have changed in size or had timestamp "
+"modifications.  The UUID of the hotcopy destination repository must match "
+"the UUID of the hotcopy source repository.  Incremental hotcopy mode is "
+"supported for FSFS repositories only."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:735
+msgid ""
+"If you pass the <option>--clean-logs</option> option, <command>svnadmin</"
+"command> will perform a hot copy of your repository, and then remove unused "
+"Berkeley DB logs from the original repository."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:748
+#, no-wrap
+msgid ""
+"<xref linkend=\"svn.ref.svnadmin.sw.clean_logs\" />\n"
+"<xref linkend=\"svn.ref.svnadmin.sw.incremental\" />\n"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><warning><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:754
+msgid ""
+"As described in <xref linkend=\"svn.berkeleydb.limitations.architectural\"/"
+">, hot-copied Berkeley DB repositories are <emphasis>not</emphasis> portable "
+"across operating systems, nor will they work on machines with a different "
+"<quote>endianness</quote> than the machine where they were created."
+msgstr ""
+
+#. type: Content of: <reference><refentry><indexterm><tertiary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:774
+msgid "list-dblogs"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refname>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:778
+msgid "svnadmin list-dblogs"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refpurpose>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:779
+msgid ""
+"Ask Berkeley DB which logfiles exist for a given Subversion repository "
+"(applies only to repositories using the <literal>bdb</literal> backend)."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsynopsisdiv><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:785
+msgid "<literal>svnadmin list-dblogs REPOS_PATH</literal>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:792
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:830
+msgid ""
+"Berkeley DB creates logs of all changes to the repository, which allow it to "
+"recover in the face of catastrophe.  Unless you enable "
+"<literal>DB_LOG_AUTOREMOVE</literal>, the logfiles accumulate, although most "
+"are no longer used and can be deleted to reclaim disk space.  See <xref "
+"linkend=\"svn.reposadmin.maint.diskspace\"/> for more information."
+msgstr ""
+
+#. type: Content of: <reference><refentry><indexterm><tertiary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:812
+msgid "list-unused-dblogs"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refname>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:816
+msgid "svnadmin list-unused-dblogs"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refpurpose>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:817
+msgid ""
+"Ask Berkeley DB which logfiles can be safely deleted (applies only to "
+"repositories using the <literal>bdb</literal> backend)."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsynopsisdiv><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:823
+msgid "<literal>svnadmin list-unused-dblogs REPOS_PATH</literal>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:844
+msgid "Remove all unused logfiles from the repository:"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:848
+#, no-wrap
+msgid ""
+"$ svnadmin list-unused-dblogs /var/svn/repos\n"
+"/var/svn/repos/log.0000000031\n"
+"/var/svn/repos/log.0000000032\n"
+"/var/svn/repos/log.0000000033\n"
+"\n"
+"$ svnadmin list-unused-dblogs /var/svn/repos | xargs rm\n"
+"## disk space reclaimed!\n"
+msgstr ""
+
+#. type: Content of: <reference><refentry><indexterm><tertiary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:869
+msgid "load"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refname>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:873
+msgid "svnadmin load"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refpurpose>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:873
+msgid "Read a repository dump stream from <filename>stdin</filename>."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsynopsisdiv><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:879
+msgid "<literal>svnadmin load REPOS_PATH [-r LOWER[:UPPER]]</literal>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:886
+msgid ""
+"Read a repository dump stream from <filename>stdin</filename>, committing "
+"new revisions into the repository's filesystem.  Progress feedback is sent "
+"to <filename>stdout</filename>.  If no revisions are given, read and commit "
+"all revisions.  But if <option>--revision</option> is provided, read and "
+"commit revisions <replaceable>LOWER</replaceable> rev through "
+"<replaceable>UPPER</replaceable> rev only.  If only <replaceable>LOWER</"
+"replaceable> is given, load that one revision."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:897
+msgid ""
+"Prior to Subversion 1.8, <command>svnadmin load</command> was limited to "
+"reading all revisions that the dump stream contains, but now "
+"<command>svnadmin load</command> accepts <option>--revision</option> option "
+"that acts as a filter for dump stream revisions.  This allows you to "
+"incrementally load only a range of revisions from a single dump stream "
+"making some repository maintenance and reorganization tasks much easier."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:913
+#, no-wrap
+msgid ""
+"<xref linkend=\"svn.ref.svnadmin.sw.bypass_prop_validation\" />\n"
+"<xref linkend=\"svn.ref.svnadmin.sw.force_uuid\" />\n"
+"<xref linkend=\"svn.ref.svnadmin.sw.ignore_uuid\" />\n"
+"<xref linkend=\"svn.ref.svnadmin.sw.memory_cache_size\" />\n"
+"<xref linkend=\"svn.ref.svnadmin.sw.parent_dir\" />\n"
+"<xref linkend=\"svn.ref.svnadmin.sw.quiet\" />\n"
+"<xref linkend=\"svn.ref.svnadmin.sw.revision\" />\n"
+"<xref linkend=\"svn.ref.svnadmin.sw.use_post_commit_hook\" />\n"
+"<xref linkend=\"svn.ref.svnadmin.sw.use_pre_commit_hook\" />\n"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:930
+msgid ""
+"This shows the beginning of loading a repository from a backup file (made, "
+"of course, with <command>svnadmin dump</command>):"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:936
+#, no-wrap
+msgid ""
+"$ svnadmin load /var/svn/restored &lt; repos-backup\n"
+"&lt;&lt;&lt; Started new txn, based on original revision 1\n"
+"     * adding path : test ... done.\n"
+"     * adding path : test/a ... done.\n"
+"&hellip;\n"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:944
+msgid "Or if you want to load into a subdirectory:"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:948
+#, no-wrap
+msgid ""
+"$ svnadmin load --parent-dir new/subdir/for/project \\\n"
+"                /var/svn/restored &lt; repos-backup\n"
+"&lt;&lt;&lt; Started new txn, based on original revision 1\n"
+"     * adding path : test ... done.\n"
+"     * adding path : test/a ... done.\n"
+"&hellip;\n"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:957
+msgid ""
+"Newer versions of Subversion have grown more strict regarding the format of "
+"the values of Subversion's own built-in properties.  Of course, properties "
+"created with older versions of Subversion wouldn't have benefitted from that "
+"strictness, and as such might be improperly formatted.  Dump streams carry "
+"property values as-is, so using Subversion 1.7 to load dump streams created "
+"from repositories with ill-formatted property values will, by default, "
+"trigger a validation error.  There are several workaround for this problem.  "
+"First, you can manually repair the problematic property values in the source "
+"repository and recreate the dump stream.  Or, you can manually tweak the "
+"dump stream itself to fix those property values.  Finally, if you'd rather "
+"not deal with the problem right now, use the <option>--bypass-prop-"
+"validation</option> option with <command>svnadmin load</command>."
+msgstr ""
+
+#. type: Content of: <reference><refentry><indexterm><tertiary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:986
+msgid "lock"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refname>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:990
+msgid "svnadmin lock"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refpurpose>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:991
+msgid "Lock path in the repository directly."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsynopsisdiv><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:995
+msgid ""
+"<literal>svnadmin lock REPOS_PATH PATH-IN-REPOS USERNAME FILE [TOKEN]</"
+"literal>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1004
+msgid ""
+"Lock <replaceable>PATH-IN-REPOS</replaceable> in the repository, assigning "
+"ownership of the lock to <replaceable>USERNAME</replaceable> and using the "
+"contents of <replaceable>FILE</replaceable> as comments associated with the "
+"created lock.  If provided, use <replaceable>TOKEN</replaceable> as lock "
+"token."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1018
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1628
+#, no-wrap
+msgid "<xref linkend=\"svn.ref.svnadmin.sw.bypass_hooks\" />\n"
+msgstr ""
+
+#. type: Content of: <reference><refentry><indexterm><tertiary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1032
+msgid "lslocks"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refname>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1036
+msgid "svnadmin lslocks"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refpurpose>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1037
+msgid "Print descriptions of all locks."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsynopsisdiv><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1041
+msgid "<literal>svnadmin lslocks REPOS_PATH [PATH-IN-REPOS]</literal>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1048
+msgid ""
+"Print descriptions of all locks in repository <replaceable>REPOS_PATH</"
+"replaceable> underneath the path <replaceable>PATH-IN-REPOS</replaceable>.  "
+"If <replaceable>PATH-IN-REPOS</replaceable> is not provided, it defaults to "
+"the root directory of the repository."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1069
+msgid ""
+"This lists the one locked file in the repository at <filename>/var/svn/"
+"repos</filename>:"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1074
+#, no-wrap
+msgid ""
+"$ svnadmin lslocks /var/svn/repos\n"
+"Path: /tree.jpg\n"
+"UUID Token: opaquelocktoken:ab00ddf0-6afb-0310-9cd0-dda813329753\n"
+"Owner: harry\n"
+"Created: 2005-07-08 17:27:36 -0500 (Fri, 08 Jul 2005)\n"
+"Expires: \n"
+"Comment (1 line):\n"
+"Rework the uppermost branches on the bald cypress in the foreground.\n"
+msgstr ""
+
+#. type: Content of: <reference><refentry><indexterm><tertiary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1094
+msgid "lstxns"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refname>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1098
+msgid "svnadmin lstxns"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refpurpose>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1099
+msgid "Print the names of all uncommitted transactions."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsynopsisdiv><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1103
+msgid "<literal>svnadmin lstxns REPOS_PATH</literal>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1110
+msgid ""
+"Print the names of all uncommitted transactions.  See <xref linkend=\"svn."
+"reposadmin.maint.diskspace.deadtxns\" /> for information on how uncommitted "
+"transactions are created and what you should do with them."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1120
+msgid "List all outstanding transactions in a repository:"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1125
+#, no-wrap
+msgid ""
+"$ svnadmin lstxns /var/svn/repos/ \n"
+"1w\n"
+"1x\n"
+msgstr ""
+
+#. type: Content of: <reference><refentry><indexterm><tertiary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1141
+msgid "pack"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refname>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1145
+msgid "svnadmin pack"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refpurpose>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1146
+msgid "Possibly compact the repository into a more efficient storage model."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsynopsisdiv><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1151
+msgid "<literal>svnadmin pack REPOS_PATH</literal>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1158
+msgid ""
+"See <xref linkend=\"svn.reposadmin.maint.diskspace.fsfspacking\" /> for more "
+"information."
+msgstr ""
+
+#. type: Content of: <reference><refentry><indexterm><tertiary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1179
+msgid "recover"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refname>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1183
+msgid "svnadmin recover"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refpurpose>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1185
+msgid ""
+"Bring a repository database back into a consistent state (applies only to "
+"repositories using the <literal>bdb</literal> backend).  In addition, if "
+"<filename>repos/conf/passwd</filename> does not exist, it will create a "
+"default passwordfile ."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsynopsisdiv><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1194
+msgid "<literal>svnadmin recover REPOS_PATH</literal>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1201
+msgid ""
+"Run this command if you get an error indicating that your repository needs "
+"to be recovered."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1210
+#, no-wrap
+msgid "<xref linkend=\"svn.ref.svnadmin.sw.wait\" />\n"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1219
+msgid "Recover a hung repository:"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1223
+#, no-wrap
+msgid ""
+"$ svnadmin recover /var/svn/repos/ \n"
+"Repository lock acquired.\n"
+"Please wait; recovering the repository may take some time...\n"
+"\n"
+"Recovery completed.\n"
+"The latest repos revision is 34.\n"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1232
+msgid ""
+"Recovering the database requires an exclusive lock on the repository. (This "
+"is a <quote>database lock</quote>; see the sidebar <xref linkend=\"svn."
+"advanced.locking.meanings\"/>.)  If another process is accessing the "
+"repository, then <command>svnadmin recover</command> will error:"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1240
+#, no-wrap
+msgid ""
+"$ svnadmin recover /var/svn/repos\n"
+"svn: E165000: Failed to get exclusive repository access; perhaps another proce\n"
+"ss such as httpd, svnserve or svn has it open?\n"
+"$\n"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1247
+msgid ""
+"The <option>--wait</option> option, however, will cause <command>svnadmin "
+"recover</command> to wait indefinitely for other processes to disconnect:"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1253
+#, no-wrap
+msgid ""
+"$ svnadmin recover /var/svn/repos --wait\n"
+"Waiting on repository lock; perhaps another process has it open?\n"
+"\n"
+"### time goes by&hellip;\n"
+"\n"
+"Repository lock acquired.\n"
+"Please wait; recovering the repository may take some time...\n"
+"\n"
+"Recovery completed.\n"
+"The latest repos revision is 34.\n"
+msgstr ""
+
+#. type: Content of: <reference><refentry><indexterm><tertiary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1278
+msgid "rmlocks"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refname>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1282
+msgid "svnadmin rmlocks"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refpurpose>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1283
+msgid "Unconditionally remove one or more locks from a repository."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsynopsisdiv><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1288
+msgid "<literal>svnadmin rmlocks REPOS_PATH LOCKED_PATH...</literal>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1294
+msgid ""
+"Remove one or more locks from each <replaceable>LOCKED_PATH</replaceable>."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1307
+msgid ""
+"This deletes the locks on <filename>tree.jpg</filename> and <filename>house."
+"jpg</filename> in the repository at <filename>/var/svn/repos</filename>:"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1314
+#, no-wrap
+msgid ""
+"$ svnadmin rmlocks /var/svn/repos tree.jpg house.jpg\n"
+"Removed lock on '/tree.jpg.\n"
+"Removed lock on '/house.jpg.\n"
+msgstr ""
+
+#. type: Content of: <reference><refentry><indexterm><tertiary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1331
+msgid "rmtxns"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refname>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1335
+msgid "svnadmin rmtxns"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refpurpose>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1336
+msgid "Delete transactions from a repository."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsynopsisdiv><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1340
+msgid "<literal>svnadmin rmtxns REPOS_PATH TXN_NAME...</literal>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1347
+msgid ""
+"Delete outstanding transactions from a repository.  This is covered in "
+"detail in <xref linkend=\"svn.reposadmin.maint.diskspace.deadtxns\" />."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1358
+#, no-wrap
+msgid "<xref linkend=\"svn.ref.svnadmin.sw.quiet\" />\n"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1367
+msgid "Remove named transactions:"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1371
+#, no-wrap
+msgid "$ svnadmin rmtxns /var/svn/repos/ 1w 1x\n"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1375
+msgid ""
+"Fortunately, the output of <command>lstxns</command> works great as the "
+"input for <command>rmtxns</command>:"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1380
+#, no-wrap
+msgid "$ svnadmin rmtxns /var/svn/repos/  `svnadmin lstxns /var/svn/repos/`\n"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1384
+msgid "This removes all uncommitted transactions from your repository."
+msgstr ""
+
+#. type: Content of: <reference><refentry><indexterm><tertiary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1399
+msgid "setlog"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refname>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1403
+msgid "svnadmin setlog"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refpurpose>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1404
+msgid "Set the log message on a revision."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsynopsisdiv><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1408
+msgid "<literal>svnadmin setlog REPOS_PATH -r REVISION FILE</literal>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1415
+msgid ""
+"Set the log message on revision <replaceable>REVISION</replaceable> to the "
+"contents of <replaceable>FILE</replaceable>."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1419
+msgid ""
+"This is similar to using <command>svn propset</command> with the <option>--"
+"revprop</option> option to set the <literal>svn:log</literal> property on a "
+"revision, except that you can also use the option <option>--bypass-hooks</"
+"option> to avoid running any pre- or post-commit hooks, which is useful if "
+"the modification of revision properties has not been enabled in the "
+"<literal>pre-revprop-change</literal> hook."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><warning><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1428
+msgid ""
+"Revision properties are not under version control, so this command will "
+"permanently overwrite the previous log message."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1441
+#, no-wrap
+msgid ""
+"<xref linkend=\"svn.ref.svnadmin.sw.bypass_hooks\" />\n"
+"<xref linkend=\"svn.ref.svnadmin.sw.revision\" />\n"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1451
+msgid ""
+"Set the log message for revision 19 to the contents of the file "
+"<filename>msg</filename>:"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1456
+#, no-wrap
+msgid "$ svnadmin setlog /var/svn/repos/ -r 19 msg\n"
+msgstr ""
+
+#. type: Content of: <reference><refentry><indexterm><tertiary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1471
+msgid "setrevprop"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refname>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1475
+msgid "svnadmin setrevprop"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refpurpose>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1476
+msgid "Set a property on a revision."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsynopsisdiv><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1480
+msgid "<literal>svnadmin setrevprop REPOS_PATH -r REVISION NAME FILE</literal>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1487
+msgid ""
+"Set the property <replaceable>NAME</replaceable> on revision "
+"<replaceable>REVISION</replaceable> to the contents of <replaceable>FILE</"
+"replaceable>.  Use <option>--use-pre-revprop-change-hook</option> or "
+"<option>--use-post-revprop-change-hook</option> to trigger the revision "
+"property-related hooks (e.g., if you want an email notification sent from "
+"your <literal>post-revprop-change-hook</literal>)."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1503
+#, no-wrap
+msgid ""
+"<xref linkend=\"svn.ref.svnadmin.sw.revision\" />\n"
+"<xref linkend=\"svn.ref.svnadmin.sw.use_post_revprop_change_hook\" />\n"
+"<xref linkend=\"svn.ref.svnadmin.sw.use_pre_revprop_change_hook\" />\n"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1514
+msgid ""
+"The following sets the revision property <literal>repository-photo</literal> "
+"to the contents of the file <filename>sandwich.png</filename>:"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1520
+#, no-wrap
+msgid "$ svnadmin setrevprop /var/svn/repos -r 0 repository-photo sandwich.png\n"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1524
+msgid ""
+"As you can see, <command>svnadmin setrevprop</command> has no output upon "
+"success."
+msgstr ""
+
+#. type: Content of: <reference><refentry><indexterm><tertiary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1538
+msgid "setuuid"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refname>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1542
+msgid "svnadmin setuuid"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refpurpose>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1543
+msgid "Reset the repository UUID."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsynopsisdiv><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1547
+msgid "<literal>svnadmin setuuid REPOS_PATH [NEW_UUID]</literal>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1554
+msgid ""
+"Reset the repository UUID for the repository located at "
+"<replaceable>REPOS_PATH</replaceable>.  If <replaceable>NEW_UUID</"
+"replaceable> is provided, use that as the new repository UUID; otherwise, "
+"generate a brand-new UUID for the repository."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1573
+msgid ""
+"If you've <command>svnsync</command>ed <filename>/var/svn/repos</filename> "
+"to <filename>/var/svn/repos-new</filename> and intend to use <filename>repos-"
+"new</filename> as your canonical repository, you may want to change the UUID "
+"for <filename>repos-new</filename> to the UUID of <filename>repos</filename> "
+"so that your users don't have to check out a new working copy to accommodate "
+"the change:"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1582
+#, no-wrap
+msgid "$ svnadmin setuuid /var/svn/repos-new 2109a8dd-854f-0410-ad31-d604008985ab\n"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1586
+msgid ""
+"As you can see, <command>svnadmin setuuid</command> has no output upon "
+"success."
+msgstr ""
+
+#. type: Content of: <reference><refentry><indexterm><tertiary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1599
+msgid "unlock"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refname>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1603
+msgid "svnadmin unlock"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refpurpose>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1604
+msgid "Unlock path in the repository directly."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsynopsisdiv><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1608
+msgid ""
+"<literal>svnadmin unlock REPOS_PATH LOCKED_PATH USERNAME TOKEN</literal>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1616
+msgid ""
+"Unlock <replaceable>LOCKED_PATH</replaceable> in the repository (as "
+"<replaceable>USERNAME</replaceable>) after verifying that the token "
+"associated with the lock matches <replaceable>TOKEN</replaceable>."
+msgstr ""
+
+#. type: Content of: <reference><refentry><indexterm><tertiary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1642
+msgid "upgrade"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refname>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1646
+msgid "svnadmin upgrade"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refpurpose>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1647
+msgid "Upgrade a repository to the latest supported schema version."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsynopsisdiv><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1652
+msgid "<literal>svnadmin upgrade REPOS_PATH</literal>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1659
+msgid ""
+"Upgrade the repository located at <replaceable>REPOS_PATH</replaceable> to "
+"the latest supported schema version."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1663
+msgid ""
+"This functionality is provided as a convenience for repository "
+"administrators who wish to make use of new Subversion functionality without "
+"having to undertake a potentially costly full repository dump and load "
+"operation.  As such, the upgrade performs only the minimum amount of work "
+"needed to accomplish this while still maintaining the integrity of the "
+"repository.  While a dump and subsequent load guarantee the most optimized "
+"repository state, <command>svnadmin upgrade</command> does not."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><warning><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1675
+msgid ""
+"You should <emphasis>always</emphasis> back up your repository before "
+"upgrading."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1691
+msgid "Upgrade the repository at path <filename>/var/repos/svn</filename>:"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1696
+#, no-wrap
+msgid ""
+"$ svnadmin upgrade /var/repos/svn\n"
+"Repository lock acquired.\n"
+"Please wait; upgrading the repository may take some time...\n"
+"\n"
+"Upgrade completed.\n"
+msgstr ""
+
+#. type: Content of: <reference><refentry><indexterm><tertiary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1718
+msgid "verify"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refname>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1722
+msgid "svnadmin verify"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refpurpose>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1723
+msgid "Verify the data stored in the repository."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsynopsisdiv><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1727
+msgid "<literal>svnadmin verify REPOS_PATH</literal>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1734
+msgid ""
+"Run this command if you wish to verify the integrity of your repository.  "
+"This basically iterates through all revisions in the repository by "
+"internally dumping all revisions and discarding the output&mdash;it's a good "
+"idea to run this on a regular basis to guard against latent hard disk "
+"failures and <quote>bitrot.</quote> If this command fails&mdash;which it "
+"will do at the first sign of a problem&mdash;that means your repository has "
+"at least one corrupted revision, and you should restore the corrupted "
+"revision from a backup (you did make a backup, didn't you?)."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1765
+msgid "Verify a hung repository:"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnadmin.xml:1769
+#, no-wrap
+msgid ""
+"$ svnadmin verify /var/svn/repos/ \n"
+"* Verified revision 1729.\n"
+msgstr ""

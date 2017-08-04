@@ -1,0 +1,729 @@
+# Japanese translations for PACKAGE package
+# Copyright (C) 2017 Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2017.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2017-08-03 18:00+0900\n"
+"PO-Revision-Date: 2017-08-03 18:00+0900\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: matsuand個人翻訳\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. type: Content of: <reference><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:4
+msgid "Subversion Repository Hook Reference"
+msgstr ""
+
+#. type: Content of: <reference><partintro><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:8
+msgid ""
+"Subversion repositories provide a number of event hooks which are "
+"essentially opportunities for administrators to extend Subversion's "
+"functionality at key moments of key operations.  Repository hooks are "
+"implemented as programs executed by Subversion itself at those key "
+"moments&mdash;before and after a commit, before and after a user locks a "
+"file, and so on."
+msgstr ""
+
+#. type: Content of: <reference><partintro><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:15
+msgid ""
+"For each hook it provides, Subversion will attempt to execute the program of "
+"that hook's name which is found in the <filename>hooks/</filename> "
+"subdirectory of the repository's on-disk directory structure.  For example, "
+"on a Unix system, the start-commit hook script would be installed at "
+"<filename><replaceable>REPOS_PATH</replaceable>/hooks/start-commit</"
+"filename>, where it could be a binary executable program, a shell script, a "
+"Python program, etc.  On a Windows system, the program would be installed in "
+"the same location, but would be named <filename>START-COMMIT.EXE</filename> "
+"or <filename>START-COMMIT.BAT</filename> instead of simply <filename>start-"
+"commit</filename>."
+msgstr ""
+
+#. type: Content of: <reference><partintro><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:28
+msgid ""
+"This reference guide describes the various hooks which Subversion offers to "
+"administrators, detailing when the hook is invoked, its input parameters, "
+"and how its behavior affects the Subversion workflow."
+msgstr ""
+
+#. type: Content of: <reference><refentry><indexterm><primary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:41
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:142
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:219
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:290
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:376
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:464
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:560
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:628
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:709
+msgid "hook scripts"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refname>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:42
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:46
+msgid "start-commit"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refpurpose>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:47
+msgid "Notification of the beginning of a commit."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsynopsisdiv><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:51
+msgid ""
+"<literal>start-commit <replaceable>REPOS-PATH</replaceable> "
+"<replaceable>USER</replaceable> <replaceable>CAPABILITIES</replaceable> "
+"<replaceable>TXN-NAME</replaceable></literal>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:60
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:159
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:237
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:311
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:397
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:484
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:577
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:648
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:726
+msgid "Description"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:62
+msgid ""
+"The start-commit hook is run immediately after the commit transaction is "
+"created and its initial properties set.  It is typically used as an early "
+"termination mechanism, avoiding what could be a lengthy commit process which "
+"would eventually fail at a later phase anyway due to a user's lack of commit "
+"privileges or some other commit metadata validation failure."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:70
+msgid ""
+"If the start-commit hook program returns a nonzero exit value, the commit "
+"process is stopped, the commit transaction is destroyed, and anything "
+"printed to <filename>stderr</filename> is marshalled back to the client."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:76
+msgid ""
+"The start-commit hook is not a suitable place to evaluate the substance of a "
+"particular commit, as it is invoked before any file or directory change "
+"information has been transmitted.  Use the pre-commit hook script (which is "
+"described in <xref linkend=\"svn.ref.reposhooks.pre-commit\" /> elsewhere in "
+"this reference) for that purpose."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><note><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:84
+msgid ""
+"Prior to Subversion 1.8, the Subversion invoked the start-commit hook "
+"<emphasis>before</emphasis> creating the commit transaction.  Failure of the "
+"script resulted in that transaction not being created at all.  This was "
+"changed in Subversion 1.8, though, to allow implementations of the start-"
+"commit hook access to the transaction's properties, which can include (among "
+"other things) the revision log associated with the commit."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:98
+msgid "Input Parameter(s)"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:100
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:180
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:259
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:333
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:422
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:521
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:596
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:670
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:745
+msgid "The command-line arguments passed to the hook program, in order, are:"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><orderedlist><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:105
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:185
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:264
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:338
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:427
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:526
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:601
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:675
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:750
+msgid "Repository path"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><orderedlist><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:108
+msgid "Authenticated username attempting the commit"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><orderedlist><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:111
+msgid ""
+"Colon-separated list of capabilities that a client passes to the server, "
+"including <literal>depth</literal>, <literal>mergeinfo</literal>, and "
+"<literal>log-revprops</literal> (new in Subversion 1.5)"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><orderedlist><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:118
+msgid "Commit transaction name (new in Subversion 1.8)"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:125
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:207
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:278
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:364
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:452
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:548
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:616
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:697
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:765
+msgid "Common uses"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:127
+msgid "Access control (e.g., temporarily lock out commits for some reason)."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:130
+msgid ""
+"A means to allow access only from clients that have certain capabilities."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refname>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:143
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:147
+msgid "pre-commit"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refpurpose>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:148
+msgid "Notification just prior to commit completion."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsynopsisdiv><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:152
+msgid ""
+"<literal>pre-commit <replaceable>REPOS-PATH</replaceable> <replaceable>TXN-"
+"NAME</replaceable></literal>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:161
+msgid ""
+"The <literal>pre-commit</literal> hook is run just before a commit "
+"transaction is promoted to a new revision.  Typically, this hook is used to "
+"protect against commits that are disallowed due to content or location (e."
+"g., your site might require that all commits to a certain branch include a "
+"ticket number from the bug tracker, or that the incoming log message is "
+"nonempty)."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:169
+msgid ""
+"If the <literal>pre-commit</literal> hook program returns a nonzero exit "
+"value, the commit is aborted, the commit transaction is removed, and "
+"anything printed to <filename>stderr</filename> is marshalled back to the "
+"client."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:178
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:257
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:331
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:420
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:519
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:594
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:668
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:743
+msgid "Input parameter(s)"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><orderedlist><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:188
+msgid "Commit transaction name"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:192
+msgid ""
+"Additionally, Subversion passes any lock tokens provided by the committing "
+"client to the hook script via standard input.  When present, these are "
+"formatted as a single line containing the string <literal>LOCK-TOKENS:</"
+"literal>, followed by additional lines&mdash;one per lock token&mdash;which "
+"contain the lock token information.  Each lock token information line "
+"consists of the URI-escaped repository filesystem path associated with the "
+"lock, followed by the pipe (<literal>|</literal>) separator character, and "
+"finally the lock token string."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:208
+msgid "Change validation and control"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refname>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:220
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:224
+msgid "post-commit"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refpurpose>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:225
+msgid "Notification of a successful commit."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsynopsisdiv><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:229
+msgid ""
+"<literal>post-commit <replaceable>REPOS-PATH</replaceable> "
+"<replaceable>REVISION</replaceable> <replaceable>TXN-NAME</replaceable></"
+"literal>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:239
+msgid ""
+"The <literal>post-commit</literal> hook is run after the transaction is "
+"committed and a new revision is created.  Most people use this hook to send "
+"out descriptive emails about the commit or to notify some other tool (such "
+"as an issue tracker) that a commit has happened.  Some configurations also "
+"use this hook to trigger backup processes."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:246
+msgid ""
+"If the <literal>post-commit</literal> hook returns a nonzero exit status, "
+"the commit <emphasis>will not</emphasis> be aborted since it has already "
+"completed.  However, anything that the hook printed to <filename>stderr</"
+"filename> will be marshalled back to the client, making it easier to "
+"diagnose hook failures."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><orderedlist><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:267
+msgid "Revision number created by the commit"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><orderedlist><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:270
+msgid ""
+"Name of the transaction that has become the revision triggering the post-"
+"commit hook."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:279
+msgid "Commit notification; tool integration"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refname>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:291
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:295
+msgid "pre-revprop-change"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refpurpose>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:296
+msgid "Notification of a revision property change attempt."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsynopsisdiv><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:301
+msgid ""
+"<literal>pre-revprop-change <replaceable>REPOS-PATH</replaceable> "
+"<replaceable>REVISION</replaceable> <replaceable>USER</replaceable> "
+"<replaceable>PROPNAME</replaceable> <replaceable>ACTION</replaceable></"
+"literal>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:313
+msgid ""
+"The <literal>pre-revprop-change</literal> hook is run immediately prior to "
+"the modification of a revision property when performed outside the scope of "
+"a normal commit.  Unlike the other hooks, the default state of this one is "
+"to deny the proposed action.  The hook must actually exist and return a zero "
+"exit value before a revision property modification can happen."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:321
+msgid ""
+"If the <literal>pre-revprop-change</literal> hook doesn't exist, isn't "
+"executable, or returns a nonzero exit value, no change to the property will "
+"be made, and anything printed to <filename>stderr</filename> is marshalled "
+"back to the client."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><orderedlist><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:341
+msgid "Revision whose property is about to be modified"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><orderedlist><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:344
+msgid "Authenticated username attempting the property change"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><orderedlist><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:347
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:436
+msgid "Name of the property changed"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><orderedlist><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:350
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:439
+msgid ""
+"Change description: <literal>A</literal> (added), <literal>D</literal> "
+"(deleted), or <literal>M</literal> (modified)"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:356
+msgid ""
+"Additionally, Subversion passes the intended new value of the property to "
+"the hook program via standard input."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:365
+msgid "Access control; change validation and control"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refname>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:377
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:381
+msgid "post-revprop-change"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refpurpose>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:382
+msgid "Notification of a successful revision property change."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsynopsisdiv><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:387
+msgid ""
+"<literal>post-revprop-change <replaceable>REPOS-PATH</replaceable> "
+"<replaceable>REVISION</replaceable> <replaceable>USER</replaceable> "
+"<replaceable>PROPNAME</replaceable> <replaceable>ACTION</replaceable></"
+"literal>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:399
+msgid ""
+"The <literal>post-revprop-change</literal> hook is run immediately after the "
+"modification of a revision property when performed outside the scope of a "
+"normal commit.  As you can derive from the description of its counterpart, "
+"the <literal>pre-revprop-change</literal> hook, this hook will not run at "
+"all unless the <literal>pre-revprop-change</literal> hook is implemented.  "
+"It is typically used to send email notification of the property change."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:409
+msgid ""
+"If the <literal>post-revprop-change</literal> hook returns a nonzero exit "
+"status, the change <emphasis>will not</emphasis> be aborted since it has "
+"already completed.  However, anything that the hook printed to "
+"<filename>stderr</filename> will be marshalled back to the client, making it "
+"easier to diagnose hook failures."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><orderedlist><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:430
+msgid "Revision whose property was modified"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><orderedlist><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:433
+msgid "Authenticated username of the person making the change"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:445
+msgid ""
+"Additionally, Subversion passes to the hook program, via standard input, the "
+"previous value of the property."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:453
+msgid "Property change notification"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refname>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:465
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:469
+msgid "pre-lock"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refpurpose>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:470
+msgid "Notification of a path lock attempt."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsynopsisdiv><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:474
+msgid ""
+"<literal>pre-lock <replaceable>REPOS-PATH</replaceable> <replaceable>PATH</"
+"replaceable> <replaceable>USER</replaceable> <replaceable>COMMENT</"
+"replaceable> <replaceable>STEAL</replaceable></literal>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:486
+msgid ""
+"The <literal>pre-lock</literal> hook runs whenever someone attempts to lock "
+"a path.  It can be used to prevent locks altogether or to create a more "
+"complex policy specifying exactly which users are allowed to lock particular "
+"paths.  If the hook notices a preexisting lock, it can also decide whether a "
+"user is allowed to <quote>steal</quote> the existing lock."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:494
+msgid ""
+"If the <literal>pre-lock</literal> hook program returns a nonzero exit "
+"value, the lock action is aborted and anything printed to <filename>stderr</"
+"filename> is marshalled back to the client."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:499
+msgid ""
+"The hook program may optionally dictate the lock token which will be "
+"assigned to the lock by printing the desired lock token to standard output.  "
+"Because of this, implementations of this hook should carefully avoid "
+"unexpected output sent to standard output."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><warning><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:506
+msgid ""
+"If the <literal>pre-lock</literal> script takes advantage of lock token "
+"dictation feature, the responsibility of generating a <emphasis>unique</"
+"emphasis> lock token falls to the script itself.  Failure to generate unique "
+"lock tokens may result in undefined&mdash;and very likely, undesired&mdash;"
+"behavior."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><orderedlist><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:529
+msgid "Versioned path that is to be locked"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><orderedlist><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:532
+msgid "Authenticated username of the person attempting the lock"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><orderedlist><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:536
+msgid "Comment provided when the lock was created"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><orderedlist><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:539
+msgid ""
+"<literal>1</literal> if the user is attempting to steal an existing lock; "
+"<literal>0</literal> otherwise"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:549
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:698
+msgid "Access control"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refname>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:561
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:565
+msgid "post-lock"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refpurpose>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:566
+msgid "Notification of a successful path lock."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsynopsisdiv><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:570
+msgid ""
+"<literal>post-lock <replaceable>REPOS-PATH</replaceable> <replaceable>USER</"
+"replaceable></literal>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:579
+msgid ""
+"The <literal>post-lock</literal> hook runs after one or more paths have been "
+"locked.  It is typically used to send email notification of the lock event."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:583
+msgid ""
+"If the <literal>post-lock</literal> hook returns a nonzero exit status, the "
+"lock <emphasis>will not</emphasis> be aborted since it has already "
+"completed.  However, anything that the hook printed to <filename>stderr</"
+"filename> will be marshalled back to the client, making it easier to "
+"diagnose hook failures."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><orderedlist><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:604
+msgid "Authenticated username of the person who locked the paths"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:609
+msgid ""
+"Additionally, the list of paths locked is passed to the hook program via "
+"standard input, one path per line."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:617
+msgid "Lock notification"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refname>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:629
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:633
+msgid "pre-unlock"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refpurpose>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:634
+msgid "Notification of a path unlock attempt."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsynopsisdiv><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:638
+msgid ""
+"<literal>pre-unlock <replaceable>REPOS-PATH</replaceable> <replaceable>PATH</"
+"replaceable> <replaceable>USER</replaceable> <replaceable>TOKEN</"
+"replaceable> <replaceable>BREAK-UNLOCK</replaceable></literal>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:650
+msgid ""
+"The <literal>pre-unlock</literal> hook runs whenever someone attempts to "
+"remove a lock on a file.  It can be used to create policies that specify "
+"which users are allowed to unlock particular paths.  It's particularly "
+"important for determining policies about lock breakage.  If user A locks a "
+"file, is user B allowed to break the lock? What if the lock is more than a "
+"week old? These sorts of things can be decided and enforced by the hook."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:659
+msgid ""
+"If the <literal>pre-unlock</literal> hook program returns a nonzero exit "
+"value, the unlock action is aborted and anything printed to "
+"<filename>stderr</filename> is marshalled back to the client."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><orderedlist><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:678
+msgid "Versioned path which is to be unlocked"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><orderedlist><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:681
+msgid "Authenticated username of the person attempting the unlock"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><orderedlist><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:685
+msgid "Lock token associated with the lock which is to be removed"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><orderedlist><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:689
+msgid ""
+"<literal>1</literal> if the user is attempting to break the lock; "
+"<literal>0</literal> otherwise"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refname>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:710
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:714
+msgid "post-unlock"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refpurpose>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:715
+msgid "Notification of a successful path unlock."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsynopsisdiv><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:719
+msgid ""
+"<literal>post-unlock <replaceable>REPOS-PATH</replaceable> "
+"<replaceable>USER</replaceable></literal>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:728
+msgid ""
+"The <literal>post-unlock</literal> hook runs after one or more paths have "
+"been unlocked.  It is typically used to send email notification of the "
+"unlock event."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:732
+msgid ""
+"If the <literal>post-unlock</literal> hook returns a nonzero exit status, "
+"the unlock <emphasis>will not</emphasis> be aborted since it has already "
+"completed.  However, anything that the hook printed to <filename>stderr</"
+"filename> will be marshalled back to the client, making it easier to "
+"diagnose hook failures."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><orderedlist><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:753
+msgid "Authenticated username of the person who unlocked the paths"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:758
+msgid ""
+"Additionally, the list of paths unlocked is passed to the hook program via "
+"standard input, one path per line."
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-reposhooks.xml:766
+msgid "Unlock notification"
+msgstr ""

@@ -1,0 +1,4087 @@
+# Japanese translations for PACKAGE package
+# Copyright (C) 2017 Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2017.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2017-08-03 18:00+0900\n"
+"PO-Revision-Date: 2017-08-03 18:00+0900\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: matsuand個人翻訳\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. type: Content of: <chapter><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:4
+msgid "Basic Usage"
+msgstr "利用の基本"
+
+#. type: Content of: <chapter><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:6
+msgid ""
+"Theory is useful, but its application is just plain fun.  Let's move now "
+"into the details of using Subversion.  By the time you reach the end of this "
+"chapter, you will be able to perform all the tasks you need to use "
+"Subversion in a normal day's work.  You'll start with getting your files "
+"into Subversion, followed by an initial checkout of your code.  We'll then "
+"walk you through making changes and examining those changes.  You'll also "
+"see how to bring changes made by others into your working copy, examine "
+"them, and work through any conflicts that might arise."
+msgstr ""
+
+#. type: Content of: <chapter><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:16
+msgid ""
+"This chapter will not provide exhaustive coverage of all of Subversion's "
+"commands&mdash;rather, it's a conversational introduction to the most common "
+"Subversion tasks that you'll encounter.  This chapter assumes that you've "
+"read and understood <xref linkend=\"svn.basic\"/> and are familiar with the "
+"general model of Subversion.  For a complete reference of all commands, see "
+"<xref linkend=\"svn.ref.svn\"/>."
+msgstr ""
+
+#. type: Content of: <chapter><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:24
+msgid ""
+"Also, this chapter assumes that the reader is seeking information about how "
+"to interact in a basic fashion with an existing Subversion repository.  No "
+"repository means no working copy; no working copy means not much of interest "
+"in this chapter.  There are many Internet sites which offer free or "
+"inexpensive Subversion repository hosting services.  Or, if you'd prefer to "
+"set up and administer your own repositories, check out <xref linkend=\"svn."
+"reposadmin\"/>.  But don't expect the examples in this chapter to work "
+"without the user having access to a Subversion repository."
+msgstr ""
+
+#. type: Content of: <chapter><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:35
+msgid ""
+"Finally, any Subversion operation that contacts the repository over a "
+"network may potentially require that the user authenticate.  For the sake of "
+"simplicity, our examples throughout this chapter avoid demonstrating and "
+"discussing authentication.  Be aware that if you hope to apply the knowledge "
+"herein to an existing, real-world Subversion instance, you'll probably be "
+"forced to provide at least a username and password to the server.  See <xref "
+"linkend=\"svn.serverconfig.netmodel.creds\"/> for a detailed description of "
+"Subversion's handling of authentication and client credentials."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:50
+msgid "Help!"
+msgstr "ヘルプ!"
+
+#. type: Content of: <chapter><sect1><sect2><indexterm><primary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:53
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:110
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:173
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:380
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:560
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:679
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:700
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:728
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:748
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:767
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:878
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1069
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1141
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1220
+msgid "svn"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><indexterm><secondary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:54
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:174
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:381
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:561
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:680
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:701
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:729
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:749
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:768
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:879
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1070
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1142
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1221
+msgid "subcommands"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><indexterm><tertiary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:55
+msgid "help"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para><indexterm>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:55
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:175
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:382
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:562
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:681
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:702
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:730
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:750
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:769
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:880
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1071
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1143
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1222
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1567
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1670
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1884
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2010
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2048
+msgid "<placeholder type=\"tertiary\" id=\"0\"/>"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:58
+msgid ""
+"It goes without saying that this book exists to be a source of information "
+"and assistance for Subversion users new and old.  Conveniently, though, the "
+"Subversion command-line is self-documenting, alleviating the need to grab a "
+"book off the shelf (wooden, virtual, or otherwise).  The <command>svn help</"
+"command> command is your gateway to that built-in documentation:"
+msgstr ""
+"It goes without saying that this book exists to be a source of information "
+"and assistance for Subversion users new and old.  Conveniently, though, the "
+"Subversion command-line is self-documenting, alleviating the need to grab a "
+"book off the shelf (wooden, virtual, or otherwise).  The <command>svn help</"
+"command> command is your gateway to that built-in documentation:"
+
+#. type: Content of: <chapter><sect1><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:68
+#, no-wrap
+msgid ""
+"$ svn help\n"
+"usage: svn &lt;subcommand&gt; [options] [args]\n"
+"Subversion command-line client, version 1.8.13.\n"
+"Type 'svn help &lt;subcommand&gt;' for help on a specific subcommand.\n"
+"Type 'svn --version' to see the program version and RA modules\n"
+"  or 'svn --version --quiet' to see just the version number.\n"
+"\n"
+"Most subcommands take file and/or directory arguments, recursing\n"
+"on the directories.  If no arguments are supplied to such a\n"
+"command, it recurses on the current directory (inclusive) by default.\n"
+"\n"
+"Available subcommands:\n"
+"   add\n"
+"   blame (praise, annotate, ann)\n"
+"   cat\n"
+"&hellip;\n"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:87
+msgid ""
+"As described in the previous output, you can ask for help on a particular "
+"subcommand by running <userinput>svn help <replaceable>SUBCOMMAND</"
+"replaceable></userinput>.  Subversion will respond with the full usage "
+"message for that subcommand, including its syntax, options, and behavior:"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:95
+#, no-wrap
+msgid ""
+"$ svn help help\n"
+"help (?, h): Describe the usage of this program or its subcommands.\n"
+"usage: help [SUBCOMMAND...]\n"
+"\n"
+"Global options:\n"
+"  --username ARG           : specify a username ARG\n"
+"  --password ARG           : specify a password ARG\n"
+"&hellip;\n"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sidebar><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:107
+msgid "Options and Switches and Flags, Oh My!"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sidebar><indexterm><secondary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:111
+msgid "options"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sidebar><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:114
+msgid ""
+"The Subversion command-line client has numerous command modifiers.  Some "
+"folks refer to such things as <quote>switches</quote> or <quote>flags</"
+"quote>&mdash;in this book, we'll call them <quote>options</quote>.  You'll "
+"find the options supported by a given <command>svn</command> subcommand, "
+"plus a set of options which are globally supported by all subcommands, "
+"listed near the bottom of the built-in usage message for that subcommand."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sidebar><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:123
+msgid ""
+"Subversion's options have two distinct forms: short options are a single "
+"hyphen followed by a single letter, and long options consist of two hyphens "
+"followed by several letters and hyphens (e.g., <literal>-s</literal> and "
+"<literal>--this-is-a-long-option</literal>, respectively).  Every option has "
+"at least one long format.  Some, such as the <option>--changelist</option> "
+"option, feature an abbreviated long-format alias (<option>--cl</option>, in "
+"this case).  Only certain options&mdash;generally the most-used ones&mdash;"
+"have an additional short format.  To maintain clarity in this book, we "
+"usually use the long form in code examples, but when describing options, if "
+"there's a short form, we'll provide the long form (to improve clarity) and "
+"the short form (to make it easier to remember).  Use the form you're more "
+"comfortable with when executing your own Subversion commands."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:142
+msgid ""
+"Many Unix-based distributions of Subversion include manual pages of the sort "
+"that can be invoked using the <command>man</command> program, but those tend "
+"to carry only pointers to other sources of real help, such as the project's "
+"website and to the website which hosts this book.  Also, several companies "
+"offer Subversion help and support, too, usually via a mixture of web-based "
+"discussion forums and fee-based consulting.  And of course, the Internet "
+"holds a decade's worth of Subversion-related discussions just begging to be "
+"located by your favorite search engine.  Subversion help is never too far "
+"away."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:160
+msgid "Getting Data into Your Repository"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:162
+msgid ""
+"You can get new files into your Subversion repository in two ways: "
+"<command>svn import</command> and <command>svn add</command>.  We'll discuss "
+"<command>svn import</command> now and will discuss <command>svn add</"
+"command> later in this chapter when we review a typical day with Subversion."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:170
+msgid "Importing Files and Directories"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><indexterm><tertiary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:175
+msgid "import"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:178
+msgid ""
+"The <command>svn import</command> command is a quick way to copy an "
+"unversioned tree of files into a repository, creating intermediate "
+"directories as necessary.  <command>svn import</command> doesn't require a "
+"working copy, and your files are immediately committed to the repository.  "
+"You typically use this when you have an existing tree of files that you want "
+"to begin tracking in your Subversion repository.  For example:"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:188
+#, no-wrap
+msgid ""
+"$ svn import /path/to/mytree \\\n"
+"             http://svn.example.com/svn/repo/some/project \\\n"
+"             -m \"Initial import\"\n"
+"Adding         mytree/foo.c\n"
+"Adding         mytree/bar.c\n"
+"Adding         mytree/subdir\n"
+"Adding         mytree/subdir/quux.h\n"
+"\n"
+"Committed revision 1.\n"
+"$\n"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:201
+msgid ""
+"The previous example copied the contents of the local directory "
+"<filename>mytree</filename> into the directory <filename>some/project</"
+"filename> in the repository.  Note that you didn't have to create that new "
+"directory first&mdash;<command>svn import</command> does that for you.  "
+"Immediately after the commit, you can see your data in the repository:"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:211
+#, no-wrap
+msgid ""
+"$ svn list http://svn.example.com/svn/repo/some/project\n"
+"bar.c\n"
+"foo.c\n"
+"subdir/\n"
+"$\n"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:219
+msgid ""
+"Note that after the import is finished, the original local directory is "
+"<emphasis>not</emphasis> converted into a working copy.  To begin working on "
+"that data in a versioned fashion, you still need to create a fresh working "
+"copy of that tree."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:229
+msgid "Recommended Repository Layout"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:231
+msgid ""
+"Subversion provides the ultimate flexibility in terms of how you arrange "
+"your data.  Because it simply versions directories and files, and because it "
+"ascribes no particular meaning to any of those objects, you may arrange the "
+"data in your repository in any way that you choose.  Unfortunately, this "
+"flexibility also means that it's easy to find yourself <quote>lost without a "
+"roadmap</quote> as you attempt to navigate different Subversion repositories "
+"which may carry completely different and unpredictable arrangements of the "
+"data within them."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para><indexterm><primary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:244
+msgid "trunk"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para><indexterm><primary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:247
+msgid "tags"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para><indexterm><primary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:250
+msgid "branches"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para><indexterm><primary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:253
+msgid "project root"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:243
+msgid ""
+"<placeholder type=\"indexterm\" id=\"0\"/> <placeholder type=\"indexterm\" "
+"id=\"1\"/> <placeholder type=\"indexterm\" id=\"2\"/> <placeholder type="
+"\"indexterm\" id=\"3\"/>To counteract this confusion, we recommend that you "
+"follow a repository layout convention (established long ago, in the nascency "
+"of the Subversion project itself) in which a handful of strategically named "
+"Subversion repository directories convey valuable meaning about the data "
+"they hold.  Most projects have a recognizable <quote>main line</quote>, or "
+"<firstterm>trunk</firstterm>, of development; some <firstterm>branches</"
+"firstterm>, which are divergent copies of development lines; and some "
+"<firstterm>tags</firstterm>, which are named, stable snapshots of a "
+"particular line of development.  So we first recommend that each project "
+"have a recognizable <firstterm>project root</firstterm> in the repository, a "
+"directory under which all of the versioned information for that "
+"project&mdash;and only that project&mdash;lives.  Secondly, we suggest that "
+"each project root contain a <filename>trunk</filename> subdirectory for the "
+"main development line, a <filename>branches</filename> subdirectory in which "
+"specific branches (or collections of branches) will be created, and a "
+"<filename>tags</filename> subdirectory in which specific tags (or "
+"collections of tags) will be created.  Of course, if a repository houses "
+"only a single project, the root of the repository can serve as the project "
+"root, too."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:279
+msgid "Here are some examples:"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:283
+#, no-wrap
+msgid ""
+"$ svn list file:///var/svn/single-project-repo\n"
+"trunk/\n"
+"branches/\n"
+"tags/\n"
+"$ svn list file:///var/svn/multi-project-repo\n"
+"project-A/\n"
+"project-B/\n"
+"$ svn list file:///var/svn/multi-project-repo/project-A\n"
+"trunk/\n"
+"branches/\n"
+"tags/\n"
+"$\n"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:298
+msgid ""
+"We talk much more about tags and branches in <xref linkend=\"svn.branchmerge"
+"\"/>.  For details and some advice on how to set up repositories when you "
+"have multiple projects, see <xref linkend=\"svn.branchmerge.maint.layout\"/"
+">.  Finally, we discuss project roots more in <xref linkend=\"svn.reposadmin."
+"projects.chooselayout\"/>."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:309
+msgid "What's In a Name?"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:311
+msgid ""
+"Subversion tries hard not to limit the type of data you can place under "
+"version control.  The contents of files and property values are stored and "
+"transmitted as binary data, and <xref linkend=\"svn.advanced.props.special."
+"mime-type\"/> tells you how to give Subversion a hint that <quote>textual</"
+"quote> operations don't make sense for a particular file.  There are a few "
+"places, however, where Subversion places restrictions on information it "
+"stores."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:321
+msgid ""
+"Subversion internally handles certain bits of data&mdash;for example, "
+"property names, pathnames, and log messages&mdash;as UTF-8-encoded Unicode.  "
+"This is not to say that all your interactions with Subversion must involve "
+"UTF-8, though.  As a general rule, Subversion clients will gracefully and "
+"transparently handle conversions between UTF-8 and the encoding system in "
+"use on your computer, if such a conversion can meaningfully be done (which "
+"is the case for most common encodings in use today)."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:331
+msgid ""
+"In WebDAV exchanges and older versions of some of Subversion's "
+"administrative files, paths are used as XML attribute values, and property "
+"names in XML tag names.  This means that pathnames can contain only legal "
+"XML (1.0)  characters, and properties are further limited to ASCII "
+"characters.  Subversion also prohibits <literal>TAB</literal>, <literal>CR</"
+"literal>, and <literal>LF</literal> characters in path names to prevent "
+"paths from being broken up in diffs or in the output of commands such as "
+"<command>svn log</command> or <command>svn status</command>."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:342
+msgid ""
+"While it may seem like a lot to remember, in practice these limitations are "
+"rarely a problem.  As long as your locale settings are compatible with UTF-8 "
+"and you don't use control characters in path names, you should have no "
+"trouble communicating with Subversion.  The command-line client adds an "
+"extra bit of help&mdash;to create <quote>legally correct</quote> versions "
+"for internal use it will automatically escape illegal path characters as "
+"needed in URLs that you type."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><warning><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:353
+msgid ""
+"Of course, when it comes to choosing valid path names, Subversion isn't the "
+"only limiting factor.  Teams using multiple operating systems need to "
+"consider the limitations placed on path names by those operating systems, "
+"too.  For example, while Windows disallows the use of colon characters in "
+"file names, a user on a Linux system can very easily add such a file to "
+"version control, resulting in a dataset that can no longer be checked out on "
+"Windows.  Adding multiple files to a directory whose names differ only in "
+"their letter casing will likewise cause problems for users checking out "
+"working copies onto case-insensitive filesystems.  So, some broad awareness "
+"of the various limitations introduced by different operating systems and "
+"filesystems, then, is recommended."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:376
+msgid "Creating a Working Copy"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><para><indexterm><tertiary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:382
+msgid "checkout"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:379
+msgid ""
+"<placeholder type=\"indexterm\" id=\"0\"/>Most of the time, you will start "
+"using a Subversion repository by performing a <firstterm>checkout</"
+"firstterm> of your project.  Checking out a directory from a repository "
+"creates a working copy of that directory on your local machine.  Unless "
+"otherwise specified, this copy contains the youngest (that is, most recently "
+"created or modified) versions of the directory and its children found in the "
+"Subversion repository:"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:394
+#, no-wrap
+msgid ""
+"$ svn checkout http://svn.example.com/svn/repo/trunk\n"
+"A    trunk/README\n"
+"A    trunk/INSTALL\n"
+"A    trunk/src/main.c\n"
+"A    trunk/src/header.h\n"
+"&hellip;\n"
+"Checked out revision 8810.\n"
+"$\n"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:405
+msgid ""
+"Although the preceding example checks out the trunk directory, you can just "
+"as easily check out a deeper subdirectory of a repository by specifying that "
+"subdirectory's URL as the checkout URL:"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:412
+#, no-wrap
+msgid ""
+"$ svn checkout http://svn.example.com/svn/repo/trunk/src\n"
+"A    src/main.c\n"
+"A    src/header.h\n"
+"A    src/lib/helpers.c\n"
+"&hellip;\n"
+"Checked out revision 8810.\n"
+"$\n"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:422
+msgid ""
+"Since Subversion uses a copy-modify-merge model instead of lock-modify-"
+"unlock (see <xref linkend=\"svn.basic.vsn-models\"/>), you can immediately "
+"make changes to the files and directories in your working copy.  Your "
+"working copy is just like any other collection of files and directories on "
+"your system.  You can edit the files inside it, rename it, even delete the "
+"entire working copy and forget about it."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><warning><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:431
+msgid ""
+"While your working copy is <quote>just like any other collection of files "
+"and directories on your system,</quote> you can edit files at will, but you "
+"must tell Subversion about <emphasis>everything else</emphasis> that you "
+"do.  For example, if you want to copy or move an item in a working copy, you "
+"should use <command>svn copy</command> or <command>svn move</command> "
+"instead of the copy and move commands provided by your operating system.  "
+"We'll talk more about them later in this chapter."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:442
+msgid ""
+"Unless you're ready to commit the addition of a new file or directory or "
+"changes to existing ones, there's no need to further notify the Subversion "
+"server that you've done anything."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sidebar><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:448
+msgid "What Is This .svn Directory?"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sidebar><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:450
+msgid ""
+"The topmost directory of a working copy&mdash;and prior to version 1.7, "
+"every versioned subdirectory thereof&mdash;contains a special administrative "
+"subdirectory named <filename>.svn</filename>.  Usually, your operating "
+"system's directory listing commands won't show this subdirectory, but it is "
+"nevertheless an important directory.  Whatever you do, don't delete or "
+"change anything in the administrative area! Subversion uses that directory "
+"and its contents to manage your working copy."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:461
+msgid ""
+"Notice that in the previous pair of examples, Subversion chose to create a "
+"working copy in a directory named for the final component of the checkout "
+"URL.  This occurs only as a convenience to the user when the checkout URL is "
+"the only bit of information provided to the <command>svn checkout</command> "
+"command.  Subversion's command-line client gives you additional flexibility, "
+"though, allowing you to optionally specify the local directory name that "
+"Subversion should use for the working copy it creates.  For example:"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:473
+#, no-wrap
+msgid ""
+"$ svn checkout http://svn.example.com/svn/repo/trunk my-working-copy\n"
+"A    my-working-copy/README\n"
+"A    my-working-copy/INSTALL\n"
+"A    my-working-copy/src/main.c\n"
+"A    my-working-copy/src/header.h\n"
+"&hellip;\n"
+"Checked out revision 8810.\n"
+"$\n"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:484
+msgid ""
+"If the local directory you specify doesn't yet exist, that's okay&mdash;"
+"<command>svn checkout</command> will create it for you."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:494
+msgid "Basic Work Cycle"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:496
+msgid ""
+"Subversion has numerous features, options, bells, and whistles, but on a day-"
+"to-day basis, odds are that you will use only a few of them.  In this "
+"section, we'll run through the most common things that you might find "
+"yourself doing with Subversion in the course of a day's work."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:502
+msgid "The typical work cycle looks like this:"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><orderedlist><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:506
+msgid ""
+"<emphasis>Update your working copy.</emphasis> This involves the use of the "
+"<command>svn update</command> command."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><orderedlist><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:511
+msgid ""
+"<emphasis>Make your changes.</emphasis> The most common changes that you'll "
+"make are edits to the contents of your existing files.  But sometimes you "
+"need to add, remove, copy and move files and directories&mdash;the "
+"<command>svn add</command>, <command>svn delete</command>, <command>svn "
+"copy</command>, and <command>svn move</command> commands handle those sorts "
+"of structural changes within the working copy."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><orderedlist><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:521
+msgid ""
+"<emphasis>Review your changes.</emphasis> The <command>svn status</command> "
+"and <command>svn diff</command> commands are critical to reviewing the "
+"changes you've made in your working copy."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><orderedlist><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:527
+msgid ""
+"<emphasis>Fix your mistakes.</emphasis> Nobody's perfect, so as you review "
+"your changes, you may spot something that's not quite right.  Sometimes the "
+"easiest way to fix a mistake is start all over again from scratch.  The "
+"<command>svn revert</command> command restores a file or directory to its "
+"unmodified state."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><orderedlist><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:535
+msgid ""
+"<emphasis>Resolve any conflicts (merge others' changes).</emphasis> In the "
+"time it takes you to make and review your changes, others might have made "
+"and published changes, too.  You'll want to integrate their changes into "
+"your working copy to avoid the potential out-of-dateness scenarios when you "
+"attempt to publish your own.  Again, the <command>svn update</command> "
+"command is the way to do this.  If this results in local conflicts, you'll "
+"need to resolve those using the <command>svn resolve</command> command."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><orderedlist><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:547
+msgid ""
+"<emphasis>Publish (commit) your changes.</emphasis> The <command>svn commit</"
+"command> command transmits your changes to the repository where, if they are "
+"accepted, they create the newest versions of all the things you modified.  "
+"Now others can see your work, too!"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:557
+msgid "Update Your Working Copy"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><indexterm><tertiary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:562
+msgid "update"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:565
+msgid ""
+"When working on a project that is being modified via multiple working "
+"copies, you'll want to update your working copy to receive any changes "
+"committed from other working copies since your last update.  These might be "
+"changes that other members of your project team have made, or they might "
+"simply be changes you've made yourself from a different computer.  To "
+"protect your data, Subversion won't allow you commit new changes to out-of-"
+"date files and directories, so it's best to have the latest versions of all "
+"your project's files and directories before making new changes of your own."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:577
+msgid ""
+"Use <command>svn update</command> to bring your working copy into sync with "
+"the latest revision in the repository:"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:583
+#, no-wrap
+msgid ""
+"$ svn update\n"
+"Updating '.':\n"
+"U    foo.c\n"
+"U    bar.c\n"
+"Updated to revision 2.\n"
+"$\n"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:592
+msgid ""
+"In this case, it appears that someone committed modifications to both "
+"<filename>foo.c</filename> and <filename>bar.c</filename> since the last "
+"time you updated, and Subversion has updated your working copy to include "
+"those changes."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:598
+msgid ""
+"When the server sends changes to your working copy via <command>svn update</"
+"command>, a letter code is displayed next to each item to let you know what "
+"actions Subversion performed to bring your working copy up to date.  To find "
+"out what these letters mean, run <userinput>svn help update</userinput> or "
+"see <xref linkend=\"svn.ref.svn.c.update\"/> in <xref linkend=\"svn.ref.svn"
+"\"/>."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:610
+msgid "Make Your Changes"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para><indexterm><primary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:614
+msgid "file changes"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para><indexterm><primary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:617
+msgid "tree changes"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:613
+msgid ""
+"<placeholder type=\"indexterm\" id=\"0\"/> <placeholder type=\"indexterm\" "
+"id=\"1\"/>Now you can get to work and make changes in your working copy.  "
+"You can make two kinds of changes to your working copy: <firstterm>file "
+"changes</firstterm> and <firstterm>tree changes</firstterm>.  You don't need "
+"to tell Subversion that you intend to change a file; just make your changes "
+"using your text editor, word processor, graphics program, or whatever tool "
+"you would normally use.  Subversion automatically detects which files have "
+"been changed, and in addition, it handles binary files just as easily as it "
+"handles text files&mdash;and just as efficiently, too.  Tree changes are "
+"different, and involve changes to a directory's structure.  Such changes "
+"include adding and removing files, renaming files or directories, and "
+"copying files or directories to new locations.  For tree changes, you use "
+"Subversion operations to <quote>schedule</quote> files and directories for "
+"removal, addition, copying, or moving.  These changes may take place "
+"immediately in your working copy, but no additions or removals will happen "
+"in the repository until you commit them."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sidebar><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:638
+msgid "Versioning Symbolic Links"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sidebar><para><indexterm><see>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:642
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:646
+msgid "symlink"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sidebar><para><indexterm><primary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:645
+msgid "symbolic link"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sidebar><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:641
+msgid ""
+"<placeholder type=\"indexterm\" id=\"0\"/> <placeholder type=\"indexterm\" "
+"id=\"1\"/>On non-Windows platforms, Subversion is able to version files of "
+"the special type <firstterm>symbolic link</firstterm> (or <quote>symlink</"
+"quote>).  A symlink is a file that acts as a sort of transparent reference "
+"to some other object in the filesystem, allowing programs to read and write "
+"to those objects indirectly by performing operations on the symlink itself."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sidebar><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:655
+msgid ""
+"When a symlink is committed into a Subversion repository, Subversion "
+"remembers that the file was in fact a symlink, as well as the object to "
+"which the symlink <quote>points.</quote> When that symlink is checked out to "
+"another working copy on a non-Windows system, Subversion reconstructs a real "
+"filesystem-level symbolic link from the versioned symlink.  But that doesn't "
+"in any way limit the usability of working copies on systems such as Windows "
+"that do not support symlinks.  On such systems, Subversion simply creates a "
+"regular text file whose contents are the path to which the original symlink "
+"pointed.  While that file can't be used as a symlink on a Windows system, it "
+"also won't prevent Windows users from performing their other Subversion-"
+"related activities."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:670
+msgid ""
+"Here is an overview of the five Subversion subcommands that you'll use most "
+"often to make tree changes:"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:676
+msgid "<userinput>svn add FOO</userinput>"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><listitem><indexterm><tertiary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:681
+msgid "add"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:683
+msgid ""
+"Use this to schedule the file, directory, or symbolic link <filename>FOO</"
+"filename> to be added to the repository.  When you next commit, "
+"<filename>FOO</filename> will become a child of its parent directory.  Note "
+"that if <filename>FOO</filename> is a directory, everything underneath "
+"<filename>FOO</filename> will be scheduled for addition.  If you want only "
+"to add <filename>FOO</filename> itself, pass the <option>--depth=empty</"
+"option> option."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:697
+msgid "<userinput>svn delete FOO</userinput>"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><listitem><indexterm><tertiary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:702
+msgid "delete"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><listitem><para><footnote><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:713
+msgid ""
+"Of course, nothing is ever totally deleted from the repository&mdash;just "
+"from its <literal>HEAD</literal> revision.  You may continue to access the "
+"deleted item in previous revisions.  Should you desire to resurrect the item "
+"so that it is again present in <literal>HEAD</literal>, see <xref linkend="
+"\"svn.branchmerge.basicmerging.resurrect\" />."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:704
+msgid ""
+"Use this to schedule the file, directory, or symbolic link <filename>FOO</"
+"filename> to be deleted from the repository.  If <filename>FOO</filename> is "
+"a file or link, it is immediately deleted from your working copy.  If "
+"<filename>FOO</filename> is a directory, it is not deleted, but Subversion "
+"schedules it for deletion.  When you commit your changes, <filename>FOO</"
+"filename> will be entirely removed from your working copy and the repository."
+"<placeholder type=\"footnote\" id=\"0\"/>"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:725
+msgid "<userinput>svn copy FOO BAR</userinput>"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><listitem><indexterm><tertiary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:730
+msgid "copy"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:732
+msgid ""
+"Create a new item <filename>BAR</filename> as a duplicate of <filename>FOO</"
+"filename> and automatically schedule <filename>BAR</filename> for addition.  "
+"When <filename>BAR</filename> is added to the repository on the next commit, "
+"its copy history is recorded (as having originally come from <filename>FOO</"
+"filename>).  <command>svn copy</command> does not create intermediate "
+"directories unless you pass the <option>--parents</option> option."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:745
+msgid "<userinput>svn move FOO BAR</userinput>"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><listitem><indexterm><tertiary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:750
+msgid "move"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:752
+msgid ""
+"This command is exactly the same as running <userinput>svn copy FOO BAR; svn "
+"delete FOO</userinput>.  That is, <filename>BAR</filename> is scheduled for "
+"addition as a copy of <filename>FOO</filename>, and <filename>FOO</filename> "
+"is scheduled for removal.  <command>svn move</command> does not create "
+"intermediate directories unless you pass the <option>--parents</option> "
+"option."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:764
+msgid "<userinput>svn mkdir FOO</userinput>"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><listitem><indexterm><tertiary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:769
+msgid "mkdir"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:771
+msgid ""
+"This command is exactly the same as running <userinput>mkdir FOO; svn add "
+"FOO</userinput>.  That is, a new directory named <filename>FOO</filename> is "
+"created and scheduled for addition."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sidebar><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:781
+msgid "Changing the Repository Without a Working Copy"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sidebar><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:783
+msgid ""
+"Subversion <emphasis>does</emphasis> offer ways to immediately commit tree "
+"changes to the repository without an explicit commit action.  In particular, "
+"specific uses of <command>svn mkdir</command>, <command>svn copy</command>, "
+"<command>svn move</command>, and <command>svn delete</command> can operate "
+"directly on repository URLs as well as on working copy paths.  Of course, as "
+"previously mentioned, <command>svn import</command> always makes direct "
+"changes to the repository.  We discuss the ways to commit tree changes "
+"without a working copy in <xref linkend=\"svn.advanced.working-without-a-wc"
+"\"/>."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sidebar><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:796
+msgid ""
+"There are pros and cons to performing URL-based operations.  One obvious "
+"advantage to doing so is speed: sometimes, checking out a working copy that "
+"you don't already have solely to perform some seemingly simple action is an "
+"overbearing cost.  A disadvantage is that you are generally limited to a "
+"single, or single type of, operation at a time when operating directly on "
+"URLs.  Finally, the primary advantage of a working copy is in its utility as "
+"a sort of <quote>staging area</quote> for changes.  You can make sure that "
+"the changes you are about to commit make sense in the larger scope of your "
+"project before committing them.  And, of course, these staged changes can be "
+"as complex or as a simple as they need to be, yet result in but a single new "
+"revision when committed."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:817
+msgid "Review Your Changes"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para><indexterm><primary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:821
+msgid "log message"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:820
+msgid ""
+"<placeholder type=\"indexterm\" id=\"0\"/>Once you've finished making "
+"changes, you need to commit them to the repository, but before you do so, "
+"it's usually a good idea to take a look at exactly what you've changed.  By "
+"examining your changes before you commit, you can compose a more accurate "
+"<firstterm>log message</firstterm> (a human-readable description of the "
+"committed changes stored alongside those changes in the repository).  You "
+"may also discover that you've inadvertently changed a file, and that you "
+"need to undo that change before committing.  Additionally, this is a good "
+"opportunity to review and scrutinize changes before publishing them.  You "
+"can see an overview of the changes you've made by using the <command>svn "
+"status</command> command, and you can dig into the details of those changes "
+"by using the <command>svn diff</command> command."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sidebar><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:838
+msgid "Look Ma! No Network!"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sidebar><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:840
+msgid ""
+"You can use the commands <command>svn status</command>, <command>svn diff</"
+"command>, and <command>svn revert</command> without any network access even "
+"if your repository <emphasis>is</emphasis> across the network.  This makes "
+"it easy to manage and review your changes-in-progress when you are working "
+"offline or are otherwise unable to contact your repository over the network."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sidebar><para><indexterm><primary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:850
+msgid "text-base"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sidebar><para><indexterm><primary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:853
+msgid "delta"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sidebar><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:849
+msgid ""
+"<placeholder type=\"indexterm\" id=\"0\"/> <placeholder type=\"indexterm\" "
+"id=\"1\"/>Subversion does this by keeping private caches of pristine, "
+"unmodified versions of each versioned file inside its working copy "
+"administrative area (or prior to version 1.7, potentially multiple "
+"administrative areas).  This allows Subversion to report&mdash;and "
+"revert&mdash;local modifications to those files <emphasis>without network "
+"access</emphasis>.  This cache (called the <firstterm>text-base</firstterm>) "
+"also allows Subversion to send the user's local modifications during a "
+"commit to the server as a compressed <firstterm>delta</firstterm> (or "
+"<quote>difference</quote>) against the pristine version.  Having this cache "
+"is a tremendous benefit&mdash;even if you have a fast Internet connection, "
+"it's generally much faster to send only a file's changes rather than the "
+"whole file to the server."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:875
+msgid "See an overview of your changes"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><indexterm><tertiary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:880
+msgid "status"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:883
+msgid ""
+"To get an overview of your changes, use the <command>svn status</command> "
+"command.  You'll probably use <command>svn status</command> more than any "
+"other Subversion command."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><tip><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:889
+msgid ""
+"Because the <command>cvs status</command> command's output was so noisy, and "
+"because <command>cvs update</command> not only performs an update, but also "
+"reports the status of your local changes, most CVS users have grown "
+"accustomed to using <command>cvs update</command> to report their changes.  "
+"In Subversion, the update and status reporting facilities are completely "
+"separate.  See <xref linkend=\"svn.forcvs.status-vs-update\"/> for more "
+"details."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:901
+msgid ""
+"If you run <userinput>svn status</userinput> at the top of your working copy "
+"with no additional arguments, it will detect and report all file and tree "
+"changes you've made."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:908
+#, no-wrap
+msgid ""
+"$ svn status\n"
+"?       scratch.c\n"
+"A       stuff/loot\n"
+"A       stuff/loot/new.c\n"
+"D       stuff/old.c\n"
+"M       bar.c\n"
+"$\n"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:918
+msgid ""
+"In its default output mode, <command>svn status</command> prints seven "
+"columns of characters, followed by several whitespace characters, followed "
+"by a file or directory name.  The first column tells the status of a file or "
+"directory and/or its contents.  Some of the most common codes that "
+"<command>svn status</command> displays are:"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:929
+msgid "<computeroutput>? item</computeroutput>"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:931
+msgid ""
+"The file, directory, or symbolic link <filename>item</filename> is not under "
+"version control."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:938
+msgid "<computeroutput>A item</computeroutput>"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:940
+msgid ""
+"The file, directory, or symbolic link <filename>item</filename> has been "
+"scheduled for addition into the repository."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:947
+msgid "<computeroutput>C item</computeroutput>"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:949
+msgid ""
+"The file <filename>item</filename> is in a state of conflict.  That is, "
+"changes received from the server during an update overlap with local changes "
+"that you have in your working copy (and weren't resolved during the "
+"update).  You must resolve this conflict before committing your changes to "
+"the repository."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:960
+msgid "<computeroutput>D item</computeroutput>"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:962
+msgid ""
+"The file, directory, or symbolic link <filename>item</filename> has been "
+"scheduled for deletion from the repository."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:969
+msgid "<computeroutput>M item</computeroutput>"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:971
+msgid "The contents of the file <filename>item</filename> have been modified."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:978
+msgid ""
+"If you pass a specific path to <command>svn status</command>, you get "
+"information about that item alone:"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:984
+#, no-wrap
+msgid ""
+"$ svn status stuff/fish.c\n"
+"D       stuff/fish.c\n"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:989
+msgid ""
+"<command>svn status</command> also has a <option>--verbose</option> "
+"(<option>-v</option>) option, which will show you the status of "
+"<emphasis>every</emphasis> item in your working copy, even if it has not "
+"been changed:"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:997
+#, no-wrap
+msgid ""
+"$ svn status -v\n"
+"M               44        23    sally     README\n"
+"                44        30    sally     INSTALL\n"
+"M               44        20    harry     bar.c\n"
+"                44        18    ira       stuff\n"
+"                44        35    harry     stuff/trout.c\n"
+"D               44        19    ira       stuff/fish.c\n"
+"                44        21    sally     stuff/things\n"
+"A                0         ?     ?        stuff/things/bloo.h\n"
+"                44        36    harry     stuff/things/gloo.c\n"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1010
+msgid ""
+"This is the <quote>long form</quote> output of <command>svn status</"
+"command>.  The letters in the first column mean the same as before, but the "
+"second column shows the working revision of the item.  The third and fourth "
+"columns show the revision in which the item last changed, and who changed it."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1017
+msgid ""
+"None of the prior invocations to <command>svn status</command> contact the "
+"repository&mdash;they merely report what is known about the working copy "
+"items based on the records stored in the working copy administrative area "
+"and on the timestamps and contents of modified files.  But sometimes it is "
+"useful to see which of the items in your working copy have been modified in "
+"the repository since the last time you updated your working copy.  For this, "
+"<command>svn status</command> offers the <option>--show-updates</option> "
+"(<option>-u</option>)  option, which contacts the repository and adds "
+"information about items that are out of date:"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1032
+#, no-wrap
+msgid ""
+"$ svn status -u -v\n"
+"M      *        44        23    sally     README\n"
+"M               44        20    harry     bar.c\n"
+"       *        44        35    harry     stuff/trout.c\n"
+"D               44        19    ira       stuff/fish.c\n"
+"A                0         ?     ?        stuff/things/bloo.h\n"
+"Status against revision:   46\n"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1042
+msgid ""
+"Notice in the previous example the two asterisks: if you were to run "
+"<userinput>svn update</userinput> at this point, you would receive changes "
+"to <filename>README</filename> and <filename>trout.c</filename>.  This tells "
+"you some very useful information&mdash;because one of those items is also "
+"one that you have locally modified (the file <filename>README</filename>), "
+"you'll need to update and get the server's changes for that file before you "
+"commit, or the repository will reject your commit for being out of date.  We "
+"discuss this in more detail later."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1053
+msgid ""
+"<command>svn status</command> can display much more information about the "
+"files and directories in your working copy than we've shown here&mdash;for "
+"an exhaustive description of <command>svn status</command> and its output, "
+"run <userinput>svn help status</userinput> or see <xref linkend=\"svn.ref."
+"svn.c.status\"/> in <xref linkend=\"svn.ref.svn\"/>."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1065
+msgid "Examine the details of your local modifications"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para><indexterm><tertiary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1071
+msgid "diff"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para><indexterm><primary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1074
+msgid "differences"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para><indexterm><secondary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1075
+msgid "unified diff"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1068
+msgid ""
+"<placeholder type=\"indexterm\" id=\"0\"/> <placeholder type=\"indexterm\" "
+"id=\"1\"/>Another way to examine your changes is with the <command>svn diff</"
+"command> command, which displays differences in file content.  When you run "
+"<userinput>svn diff</userinput> at the top of your working copy with no "
+"arguments, Subversion will print the changes you've made to human-readable "
+"files in your working copy.  It displays those changes in <firstterm>unified "
+"diff</firstterm> format, a format which describes changes as <quote>hunks</"
+"quote> (or <quote>snippets</quote>) of a file's content where each line of "
+"text is prefixed with a single-character code: a space, which means the line "
+"was unchanged; a minus sign (<literal>-</literal>), which means the line was "
+"removed from the file; or a plus sign (<literal>+</literal>), which means "
+"the line was added to the file.  In the context of <command>svn diff</"
+"command>, those minus-sign- and plus-sign-prefixed lines show how the lines "
+"looked before and after your modifications, respectively."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1094
+msgid "Here's an example:"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1098
+#, no-wrap
+msgid ""
+"$ svn diff\n"
+"Index: bar.c\n"
+"===================================================================\n"
+"--- bar.c\t(revision 3)\n"
+"+++ bar.c\t(working copy)\n"
+"@@ -1,7 +1,12 @@\n"
+"+#include &lt;sys/types.h&gt;\n"
+"+#include &lt;sys/stat.h&gt;\n"
+"+#include &lt;unistd.h&gt;\n"
+"+\n"
+"+#include &lt;stdio.h&gt;\n"
+"\n"
+" int main(void) {\n"
+"-  printf(\"Sixty-four slices of American Cheese...\\n\");\n"
+"+  printf(\"Sixty-five slices of American Cheese...\\n\");\n"
+" return 0;\n"
+" }\n"
+"\n"
+"Index: README\n"
+"===================================================================\n"
+"--- README\t(revision 3)\n"
+"+++ README\t(working copy)\n"
+"@@ -193,3 +193,4 @@\n"
+"+Note to self:  pick up laundry.\n"
+"\n"
+"Index: stuff/fish.c\n"
+"===================================================================\n"
+"--- stuff/fish.c\t(revision 1)\n"
+"+++ stuff/fish.c\t(working copy)\n"
+"-Welcome to the file known as 'fish'.\n"
+"-Information on fish will be here soon.\n"
+"\n"
+"Index: stuff/things/bloo.h\n"
+"===================================================================\n"
+"--- stuff/things/bloo.h\t(revision 8)\n"
+"+++ stuff/things/bloo.h\t(working copy)\n"
+"+Here is a new file to describe\n"
+"+things about bloo.\n"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para><indexterm><tertiary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1143
+msgid "patch"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para><indexterm><see>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1146
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1150
+msgid "patches"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para><indexterm><primary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1149
+msgid "patch file"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1140
+msgid ""
+"<placeholder type=\"indexterm\" id=\"0\"/> <placeholder type=\"indexterm\" "
+"id=\"1\"/> <placeholder type=\"indexterm\" id=\"2\"/>The <command>svn diff</"
+"command> command produces this output by comparing your working files "
+"against its pristine text-base.  Files scheduled for addition are displayed "
+"as files in which every line was added; files scheduled for deletion are "
+"displayed as if every line was removed from those files.  The output from "
+"<command>svn diff</command> is somewhat compatible with the <command>patch</"
+"command> program&mdash;more so with the <command>svn patch</command> "
+"subcommand introduced in Subversion 1.7.  Patch processing commands such as "
+"these read and apply <firstterm>patch files</firstterm> (or <quote>patches</"
+"quote>), which are files that describe differences made to one or more "
+"files.  Because of this, you can share the changes you've made in your "
+"working copy with someone else without first committing those changes by "
+"creating a patch file from the redirected output of <command>svn diff</"
+"command>:"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1170
+#, no-wrap
+msgid ""
+"$ svn diff &gt; patchfile\n"
+"$\n"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1175
+msgid ""
+"Subversion uses its internal diff engine, which produces unified diff "
+"format, by default.  If you want diff output in a different format, specify "
+"an external diff program using <option>--diff-cmd</option> and pass any "
+"additional flags that it needs via the <option>--extensions</option> "
+"(<option>-x</option>) option.  For example, you might want Subversion to "
+"defer its difference calculation and display to the GNU <command>diff</"
+"command> program, asking that program to print local modifications made to "
+"the file <filename>foo.c</filename> in context diff format (another flavor "
+"of difference format) while ignoring changes made only to the case of the "
+"letters used in the file's contents:"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1191
+#, no-wrap
+msgid ""
+"$ svn diff --diff-cmd /usr/bin/diff -x \"-i\" foo.c\n"
+"&hellip;\n"
+"$\n"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1204
+msgid "Fix Your Mistakes"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1206
+msgid ""
+"Suppose while viewing the output of <command>svn diff</command> you "
+"determine that all the changes you made to a particular file are mistakes.  "
+"Maybe you shouldn't have changed the file at all, or perhaps it would be "
+"easier to make different changes starting from scratch.  You could edit the "
+"file again and unmake all those changes.  You could try to find a copy of "
+"how the file looked before you changed it, and then copy its contents atop "
+"your modified version.  You could attempt to apply those changes to the file "
+"again in reverse using <userinput>svn patch --reverse-diff</userinput> or "
+"using your operating system's <userinput>patch -R</userinput>.  And there "
+"are probably other approaches you could take."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><indexterm><tertiary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1222
+msgid "revert"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1225
+msgid ""
+"Fortunately in Subversion, undoing your work and starting over from scratch "
+"doesn't require such acrobatics.  Just use the <command>svn revert</command> "
+"command:"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1231
+#, no-wrap
+msgid ""
+"$ svn status README\n"
+"M       README\n"
+"$ svn revert README\n"
+"Reverted 'README'\n"
+"$ svn status README\n"
+"$\n"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1240
+msgid ""
+"In this example, Subversion has reverted the file to its premodified state "
+"by overwriting it with the pristine version of the file cached in the text-"
+"base area.  But note that <command>svn revert</command> can undo "
+"<emphasis>any</emphasis> scheduled operation&mdash;for example, you might "
+"decide that you don't want to add a new file after all:"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1250
+#, no-wrap
+msgid ""
+"$ svn status new-file.txt\n"
+"?       new-file.txt\n"
+"$ svn add new-file.txt\n"
+"A         new-file.txt\n"
+"$ svn revert new-file.txt\n"
+"Reverted 'new-file.txt'\n"
+"$ svn status new-file.txt\n"
+"?       new-file.txt\n"
+"$\n"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1262
+msgid "Or perhaps you mistakenly removed a file from version control:"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1267
+#, no-wrap
+msgid ""
+"$ svn status README\n"
+"$ svn delete README\n"
+"D         README\n"
+"$ svn revert README\n"
+"Reverted 'README'\n"
+"$ svn status README\n"
+"$\n"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1277
+msgid ""
+"The <command>svn revert</command> command offers salvation for imperfect "
+"people.  It can save you huge amounts of time and energy that would "
+"otherwise be spent manually unmaking changes or, worse, disposing of your "
+"working copy and checking out a fresh one just to have a clean slate to work "
+"with again."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1288
+msgid "Resolve Any Conflicts"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><para><indexterm><primary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1292
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1504
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1565
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1668
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1701
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1882
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2008
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2046
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2995
+msgid "conflicts"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para><indexterm><secondary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1293
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1566
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1669
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1883
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2009
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2047
+msgid "resolution"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1291
+msgid ""
+"<placeholder type=\"indexterm\" id=\"0\"/>We've already seen how "
+"<userinput>svn status -u</userinput> can predict conflicts, but dealing with "
+"those conflicts is still something that remains to be done.  Conflicts can "
+"occur any time you attempt to merge or integrate (in a very general sense) "
+"changes from the repository into your working copy.  By now you know that "
+"<command>svn update</command> creates exactly that sort of scenario&mdash;"
+"that command's very purpose is to bring your working copy up to date with "
+"the repository by merging all the changes made since your last update into "
+"your working copy.  So how does Subversion report these conflicts to you, "
+"and how do you deal with them?"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1307
+msgid ""
+"Suppose you run <userinput>svn update</userinput> and you see this sort of "
+"interesting output:"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1312
+#, no-wrap
+msgid ""
+"$ svn update\n"
+"Updating '.':\n"
+"U    INSTALL\n"
+"G    README\n"
+"Conflict discovered in 'bar.c'.\n"
+"Select: (p) postpone, (df) show diff, (e) edit file, (m) merge,\n"
+"        (mc) my side of conflict, (tc) their side of conflict,\n"
+"        (s) show all options:\n"
+"        "
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1323
+msgid ""
+"The <computeroutput>U</computeroutput> (which stands for <quote>Updated</"
+"quote>) and <computeroutput>G</computeroutput> (for <quote>merGed</quote>) "
+"codes are no cause for concern; those files cleanly absorbed changes from "
+"the repository.  A file marked with <computeroutput>U</computeroutput> "
+"contains no local changes but was updated with changes from the repository.  "
+"One marked with <computeroutput>G</computeroutput> had local changes to "
+"begin with, but the changes coming from the repository didn't overlap with "
+"those local changes."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1334
+msgid ""
+"It's the next few lines which are interesting.  First, Subversion reports to "
+"you that in its attempt to merge outstanding server changes into the file "
+"<filename>bar.c</filename>, it has detected that some of those changes clash "
+"with local modifications you've made to that file in your working copy but "
+"have not yet committed.  Perhaps someone has changed the same line of text "
+"you also changed.  Whatever the reason, Subversion instantly flags this file "
+"as being in a state of conflict.  It then asks you what you want to do about "
+"the problem, allowing you to interactively choose an action to take toward "
+"resolving the conflict.  The most commonly used options are displayed, but "
+"you can see all of the options by typing <replaceable>s</replaceable>:"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1351
+#, no-wrap
+msgid ""
+"&hellip;\n"
+"Select: (p) postpone, (df) show diff, (e) edit file, (m) merge,\n"
+"        (mc) my side of conflict, (tc) their side of conflict,\n"
+"        (s) show all options: s\n"
+"\n"
+"  (e)  - change merged file in an editor  [edit]\n"
+"  (df) - show all changes made to merged file\n"
+"  (r)  - accept merged version of file\n"
+"\n"
+"  (dc) - show all conflicts (ignoring merged version)\n"
+"  (mc) - accept my version for all conflicts (same)  [mine-conflict]\n"
+"  (tc) - accept their version for all conflicts (same)  [theirs-conflict]\n"
+"\n"
+"  (mf) - accept my version of entire file (even non-conflicts)  [mine-full]\n"
+"  (tf) - accept their version of entire file (same)  [theirs-full]\n"
+"\n"
+"  (m)  - use internal merge tool to resolve conflict\n"
+"  (l)  - launch external tool to resolve conflict  [launch]\n"
+"  (p)  - mark the conflict to be resolved later  [postpone]\n"
+"  (q)  - postpone all remaining conflicts\n"
+"  (s)  - show this list (also 'h', '?')\n"
+"Words in square brackets are the corresponding --accept option arguments.\n"
+"\n"
+"Select: (p) postpone, (df) show diff, (e) edit file, (m) merge,\n"
+"        (mc) my side of conflict, (tc) their side of conflict,\n"
+"        (s) show all options:\n"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1380
+msgid ""
+"Let's briefly review each of these options before we go into detail on what "
+"each option means."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1385
+msgid "<computeroutput>(e)  edit [edit]</computeroutput>"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1387
+msgid ""
+"Open the file in conflict with your favorite editor, as set in the "
+"environment variable <literal>EDITOR</literal>."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1394
+msgid "<computeroutput>(df)  diff-full</computeroutput>"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1396
+msgid ""
+"Display the differences between the base revision and the conflicted file "
+"itself in unified diff format."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1402
+msgid "<computeroutput>(r)  resolved</computeroutput>"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1404
+msgid ""
+"After editing a file, tell <command>svn</command> that you've resolved the "
+"conflicts in the file and that it should accept the current contents&mdash;"
+"basically that you've <quote>resolved</quote> the conflict."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1413
+msgid "<computeroutput>(dc)  display-conflict</computeroutput>"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1415
+msgid ""
+"Display all conflicting regions of the file, ignoring changes which were "
+"successfully merged."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1421
+msgid "<computeroutput>(mc)  mine-conflict [mine-conflict]</computeroutput>"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1423
+msgid ""
+"Discard any newly received changes from the server which conflict with your "
+"local changes to the file under review.  However, accept and merge all non-"
+"conflicting changes received from the server for that file."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1431
+msgid ""
+"<computeroutput>(tc)  theirs-conflict [theirs-conflict]</computeroutput>"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1433
+msgid ""
+"Discard any local changes which conflict with incoming changes from the "
+"server for the file under review.  However, preserve all non-conflicting "
+"local changes to that file."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1441
+msgid "<computeroutput>(mf)  mine-full [mine-full]</computeroutput>"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1443
+msgid ""
+"Discard all newly received changes from the server for the file under "
+"review, but preserve all your local changes for that file."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1450
+msgid "<computeroutput>(tf)  theirs-full [theirs-full]</computeroutput>"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1452
+msgid ""
+"Discard all your local changes to the file under review and use only the "
+"newly received changes from the server for that file."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1459
+msgid "<computeroutput>(m)  merge</computeroutput>"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1461
+msgid ""
+"Launch an internal file merge tool to perform the conflict resolution.  The "
+"option is available starting with Subversion 1.8."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1468
+msgid "<computeroutput>(l)  launch</computeroutput>"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1470
+msgid ""
+"Launch an external program to perform the conflict resolution.  This "
+"requires a bit of preparation beforehand."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1477
+msgid "<computeroutput>(p)  postpone [postpone]</computeroutput>"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1479
+msgid ""
+"Leave the file in a conflicted state for you to resolve after your update is "
+"complete."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1485
+msgid "<computeroutput>(s)  show all</computeroutput>"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1487
+msgid ""
+"Show the list of all possible commands you can use in interactive conflict "
+"resolution."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1494
+msgid ""
+"We'll cover these commands in more detail now, grouping them together by "
+"related functionality."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1500
+msgid "Viewing conflict differences interactively"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para><indexterm><secondary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1505
+msgid "reviewing"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1503
+msgid ""
+"<placeholder type=\"indexterm\" id=\"0\"/>Before deciding how to attack a "
+"conflict interactively, odds are that you'd like to see exactly what is in "
+"conflict.  Two of the commands available at the interactive conflict "
+"resolution prompt can assist you here.  The first is the <quote>diff-full</"
+"quote> command (<userinput>df</userinput>), which displays all the local "
+"modifications to the file in question plus any conflict regions:"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1517
+#, no-wrap
+msgid ""
+"&hellip;\n"
+"Select: (p) postpone, (df) show diff, (e) edit file, (m) merge,\n"
+"        (mc) my side of conflict, (tc) their side of conflict,\n"
+"        (s) show all options: df\n"
+"--- .svn/text-base/sandwich.txt.svn-base      Tue Dec 11 21:33:57 2007\n"
+"+++ .svn/tmp/tempfile.32.tmp     Tue Dec 11 21:34:33 2007\n"
+"@@ -1 +1,5 @@\n"
+"-Just buy a sandwich.\n"
+"+&lt;&lt;&lt;&lt;&lt;&lt;&lt; .mine\n"
+"+Go pick up a cheesesteak.\n"
+"+=======\n"
+"+Bring me a taco!\n"
+"+&gt;&gt;&gt;&gt;&gt;&gt;&gt; .r32\n"
+"&hellip;\n"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1534
+msgid ""
+"The first line of the diff content shows the previous contents of the "
+"working copy (the <literal>BASE</literal> revision), the next content line "
+"is your change, and the last content line is the change that was just "
+"received from the server (<emphasis>usually</emphasis> the <literal>HEAD</"
+"literal> revision)."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1541
+msgid ""
+"The second command is similar to the first, but the <quote>display-conflict</"
+"quote> (<userinput>dc</userinput>) command shows only the conflict regions, "
+"not all the changes made to the file.  Additionally, this command uses a "
+"slightly different display format for the conflict regions which allows you "
+"to more easily compare the file's contents in those regions as they would "
+"appear in each of three states: original and unedited; with your local "
+"changes applied and the server's conflicting changes ignored; and with only "
+"the server's incoming changes applied and your local, conflicting changes "
+"reverted."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1553
+msgid ""
+"After reviewing the information provided by these commands, you're ready to "
+"move on to the next action."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1561
+msgid "Resolving conflict differences interactively"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para><indexterm><tertiary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1567
+msgid "interactive"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1564
+msgid ""
+"<placeholder type=\"indexterm\" id=\"0\"/>The main way to resolve conflicts "
+"interactively is to use an internal file merge tool.  The tool asks you what "
+"to do with each conflicting change and allows you to selectively merge and "
+"edit changes.  However, there are several other different ways to resolve "
+"conflicts interactively&mdash;two of them allow you to selectively merge and "
+"edit changes using external editors, the rest of which allow you to simply "
+"pick a version of the file and move along.  Internal merge tool combines all "
+"of the available ways to resolve conflicts."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1579
+msgid ""
+"You've already reviewed the conflicting changes, so it's now time to resolve "
+"the conflicts.  The first command that should help you is the <quote>merge</"
+"quote> command (<userinput>m</userinput>) which is available starting with "
+"Subversion 1.8.  The command displays the conflicting areas and allows you "
+"to choose from a number of options to resolve the conflicts area-by-area:"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1590
+#, no-wrap
+msgid ""
+"Select: (p) postpone, (df) show diff, (e) edit file, (m) merge,\n"
+"        (mc) my side of conflict, (tc) their side of conflict,\n"
+"        (s) show all options: m\n"
+"Merging 'Makefile'.\n"
+"Conflicting section found during merge:\n"
+"(1) their version (at line 24)                  |(2) your version (at line 24)\n"
+"------------------------------------------------+------------------------------------------------\n"
+"top_builddir = /bar                             |top_builddir = /foo\n"
+"------------------------------------------------+------------------------------------------------\n"
+"Select: (1) use their version, (2) use your version,\n"
+"        (12) their version first, then yours,\n"
+"        (21) your version first, then theirs,\n"
+"        (e1) edit their version and use the result,\n"
+"        (e2) edit your version and use the result,\n"
+"        (eb) edit both versions and use the result,\n"
+"        (p) postpone this conflicting section leaving conflict markers,\n"
+"        (a) abort file merge and return to main menu:\n"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1610
+msgid ""
+"As you can see, when you use the internal file merge tool, you can cycle "
+"through individual conflicting areas in the file and select various "
+"resolution options or postpone conflict resolution for selected conflicts."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1615
+msgid ""
+"However, if you wish to use an external editor to choose some combination of "
+"your local changes, you can use the <quote>edit</quote> command "
+"(<userinput>e</userinput>) to manually edit the file with conflict markers "
+"in a text editor (configured per the instructions in <xref linkend=\"svn."
+"advanced.externaleditors\" />).  After you've edited the file, if you're "
+"satisfied with the changes you've made, you can tell Subversion that the "
+"edited file is no longer in conflict by using the <quote>resolved</quote> "
+"command (<literal>r</literal>)."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1627
+msgid ""
+"Regardless of what your local Unix snob will likely tell you, editing the "
+"file by hand in your favorite text editor is a somewhat low-tech way of "
+"remedying conflicts (see <xref linkend=\"svn.tour.cycle.resolve.byhand\" /> "
+"for a walkthrough).  For this reason, Subversion provides the <quote>launch</"
+"quote> resolution command (<userinput>l</userinput>) to fire up a fancy "
+"graphical merge tool instead (see <xref linkend=\"svn.advanced."
+"externaldifftools.merge\" />)."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1638
+msgid ""
+"There is also a pair of compromise options available.  The <quote>mine-"
+"conflict</quote> (<userinput>mc</userinput>)  and <quote>theirs-conflict</"
+"quote> (<userinput>tc</userinput>) commands instruct Subversion to select "
+"your local changes or the server's incoming changes, respectively, as the "
+"<quote>winner</quote> for all conflicts in the file.  But, unlike the "
+"<quote>mine-full</quote> and <quote>theirs-full</quote> commands, these "
+"commands preserve both your local changes and changes received from the "
+"server in regions of the file where no conflict was detected."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1651
+msgid ""
+"Finally, if you decide that you don't need to merge any changes, but just "
+"want to accept one version of the file or the other, you can either choose "
+"your changes (a.k.a.  <quote>mine</quote>) by using the <quote>mine-full</"
+"quote> command (<userinput>mf</userinput>) or choose theirs by using the "
+"<quote>theirs-full</quote> command (<userinput>tf</userinput>)."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1664
+msgid "Postponing conflict resolution"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para><indexterm><tertiary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1670
+msgid "postponing"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1667
+msgid ""
+"<placeholder type=\"indexterm\" id=\"0\"/>This may sound like an appropriate "
+"section for avoiding marital disagreements, but it's actually still about "
+"Subversion, so read on.  If you're doing an update and encounter a conflict "
+"that you're not prepared to review or resolve, you can type <userinput>p</"
+"userinput> to postpone resolving a conflict on a file-by-file basis when you "
+"run <userinput>svn update</userinput>.  If you know in advance that you "
+"don't want to resolve any conflicts interactively, you can pass the "
+"<option>--non-interactive</option> option to <command>svn update</command>, "
+"and any file in conflict will be marked with a <computeroutput>C</"
+"computeroutput> automatically."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1684
+msgid ""
+"Beginning with Subversion 1.8, an internal file merge tool allows you to "
+"postpone conflict resolution for certain conflicts, but resolve other "
+"confilcts.  Therefore, you can postpone conflict resolution area-by-area, "
+"not just on file-to-file basis."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1690
+msgid ""
+"The <computeroutput>C</computeroutput> (for <quote>Conflicted</quote>) means "
+"that the changes from the server overlapped with your own, and now you have "
+"to manually choose between them after the update has completed.  When you "
+"postpone a conflict resolution, <command>svn</command> typically does three "
+"things to assist you in noticing and resolving that conflict:"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><itemizedlist><indexterm><secondary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1702
+msgid "conflict markers"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><itemizedlist><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1706
+msgid ""
+"Subversion prints a <computeroutput>C</computeroutput> during the update and "
+"remembers that the file is in a state of conflict."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><itemizedlist><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1712
+msgid ""
+"If Subversion considers the file to be mergeable, it places "
+"<firstterm>conflict markers</firstterm>&mdash;special strings of text that "
+"delimit the <quote>sides</quote> of the conflict&mdash;into the file to "
+"visibly demonstrate the overlapping areas.  (Subversion uses the "
+"<literal>svn:mime-type</literal> property to decide whether a file is "
+"capable of contextual, line-based merging.  See <xref linkend=\"svn.advanced."
+"props.special.mime-type\"/> to learn more.)"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><itemizedlist><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1725
+msgid ""
+"For every conflicted file, Subversion places three extra unversioned files "
+"in your working copy:"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><itemizedlist><listitem><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1731
+msgid "<filename>filename.mine</filename>"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><itemizedlist><listitem><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1733
+msgid ""
+"This is the file as it existed in your working copy before you began the "
+"update process.  It contains any local modifications you had made to the "
+"file up to that point.  (If Subversion considers the file to be unmergeable, "
+"the <filename>.mine</filename> file isn't created, since it would be "
+"identical to the working file.)"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><itemizedlist><listitem><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1745
+msgid "<filename>filename.r<replaceable>OLDREV</replaceable> </filename>"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><itemizedlist><listitem><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1748
+msgid ""
+"This is the file as it existed in the <literal>BASE</literal> revision&mdash;"
+"that is, the unmodified revision of the file in your working copy "
+"<emphasis>before</emphasis> you began the update process&mdash;where "
+"<replaceable>OLDREV</replaceable> is that base revision number."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><itemizedlist><listitem><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1759
+msgid "<filename>filename.r<replaceable>NEWREV</replaceable> </filename>"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><itemizedlist><listitem><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1762
+msgid ""
+"This is the file that your Subversion client just received from the server "
+"via the update of your working copy, where <replaceable>NEWREV</replaceable> "
+"corresponds to the revision number to which you were updating "
+"(<literal>HEAD</literal>, unless otherwise requested)."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1777
+msgid ""
+"For example, Sally makes changes to the file <filename>sandwich.txt</"
+"filename>, but does not yet commit those changes.  Meanwhile, Harry commits "
+"changes to that same file.  Sally updates her working copy before committing "
+"and she gets a conflict, which she postpones:"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1785
+#, no-wrap
+msgid ""
+"$ svn update\n"
+"Updating '.':\n"
+"Conflict discovered in 'sandwich.txt'.\n"
+"Select: (p) postpone, (df) show diff, (e) edit file, (m) merge,\n"
+"        (mc) my side of conflict, (tc) their side of conflict,\n"
+"        (s) show all options: p\n"
+"C    sandwich.txt\n"
+"Updated to revision 2.\n"
+"Summary of conflicts:\n"
+"  Text conflicts: 1\n"
+"$ ls -1\n"
+"sandwich.txt\n"
+"sandwich.txt.mine\n"
+"sandwich.txt.r1\n"
+"sandwich.txt.r2\n"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1803
+msgid ""
+"At this point, Subversion will <emphasis>not</emphasis> allow Sally to "
+"commit the file <filename>sandwich.txt</filename> until the three temporary "
+"files are removed:"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1810
+#, no-wrap
+msgid ""
+"$ svn commit -m \"Add a few more things\"\n"
+"svn: E155015: Commit failed (details follow):\n"
+"svn: E155015: Aborting commit: '/home/sally/svn-work/sandwich.txt' remains in conflict\n"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1816
+msgid ""
+"If you've postponed a conflict, you need to resolve the conflict before "
+"Subversion will allow you to commit your changes.  You'll do this with the "
+"<command>svn resolve</command> command.  This command accepts the <option>--"
+"accept</option> option, which allows you specify your desired approach for "
+"resolving the conflict.  Prior to Subversion 1.8, the <command>svn resolve</"
+"command> <emphasis>required</emphasis> the use of this option.  Subversion "
+"now allows you to run the <command>svn resolve</command> command without "
+"that option.  When you do so, Subversion cranks up its interactive conflict "
+"resolution mechanism, which you can read about (if you haven't done so "
+"already) in the previous section, <xref linkend=\"svn.tour.cycle.resolve."
+"resolve\" />.  We'll take the opportunity in this section, though, to "
+"discuss the use of the <option>--accept</option> option for conflict "
+"resolution."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1834
+msgid ""
+"The <option>--accept</option> option to the <command>svn resolve</command> "
+"command instructs Subversion to use one of its pre-packaged approaches to "
+"conflict resolution.  If you want Subversion to resolve the conflict using "
+"the version of the file that you last checked out before making your edits, "
+"use <option>--accept=base</option>.  If you'd prefer instead to keep the "
+"version that contains only your edits, use <option>--accept=mine-full</"
+"option>.  You can also select the version that your most recent update "
+"pulled from the server (discarding your edits entirely)&mdash;that's done "
+"using <option>--accept=theirs-full</option>.  There are other <quote>canned</"
+"quote> resolution types, too.  See <xref linkend=\"svn.ref.svn.sw.accept\" /"
+"> in <xref linkend=\"svn.ref.svn\" /> for details."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1849
+msgid ""
+"You aren't limited strictly to all-or-nothing options.  If you want to pick "
+"and choose from your changes and the changes that your update fetched from "
+"the server, you can manually repair the working file, fixing up the "
+"conflicted text <quote>by hand</quote> (by examining and editing the "
+"conflict markers within the file), then tell Subversion to resolve the "
+"conflict by keeping the working file in its current state by running "
+"<command>svn resolve</command> with the <option>--accept=working</option> "
+"option."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1859
+msgid ""
+"<command>svn resolve</command> removes the three temporary files and accepts "
+"the version of the file that you specified.  After the command completes "
+"successfully&mdash;and assuming you didn't interactively choose to postpone "
+"resolution, of course&mdash;Subversion no longer considers the file to be in "
+"a state of conflict:"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1869
+#, no-wrap
+msgid ""
+"$ svn resolve --accept working sandwich.txt\n"
+"Resolved conflicted state of 'sandwich.txt'\n"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1878
+msgid "Manual conflict resolution"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para><indexterm><tertiary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1884
+msgid "manual"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1881
+msgid ""
+"<placeholder type=\"indexterm\" id=\"0\"/>Manually resolving conflicts can "
+"be quite intimidating the first time you attempt it, but with a little "
+"practice, it can become as easy as falling off a bike."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1889
+msgid ""
+"Here's an example.  Due to a miscommunication, you and Sally, your "
+"collaborator, both edit the file <filename>sandwich.txt</filename> at the "
+"same time.  Sally commits her changes, and when you go to update your "
+"working copy, you get a conflict and you're going to have to edit "
+"<filename>sandwich.txt</filename> to resolve the conflict.  First, let's "
+"take a look at the file:"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1899
+#, no-wrap
+msgid ""
+"$ cat sandwich.txt\n"
+"Top piece of bread\n"
+"Mayonnaise\n"
+"Lettuce\n"
+"Tomato\n"
+"Provolone\n"
+"&lt;&lt;&lt;&lt;&lt;&lt;&lt; .mine\n"
+"Salami\n"
+"Mortadella\n"
+"Prosciutto\n"
+"=======\n"
+"Sauerkraut\n"
+"Grilled Chicken\n"
+"&gt;&gt;&gt;&gt;&gt;&gt;&gt; .r2\n"
+"Creole Mustard\n"
+"Bottom piece of bread\n"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1918
+msgid ""
+"The strings of less-than signs, equals signs, and greater-than signs are "
+"conflict markers and are not part of the actual data in conflict.  You "
+"generally want to ensure that those are removed from the file before your "
+"next commit.  The text between the first two sets of markers is composed of "
+"the changes you made in the conflicting area:"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1928
+#, no-wrap
+msgid ""
+"&lt;&lt;&lt;&lt;&lt;&lt;&lt; .mine\n"
+"Salami\n"
+"Mortadella\n"
+"Prosciutto\n"
+"=======\n"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1936
+msgid ""
+"The text between the second and third sets of conflict markers is the text "
+"from Sally's commit:"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1941
+#, no-wrap
+msgid ""
+"=======\n"
+"Sauerkraut\n"
+"Grilled Chicken\n"
+"&gt;&gt;&gt;&gt;&gt;&gt;&gt; .r2\n"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para><footnote><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1953
+msgid ""
+"And if you ask them for it, they may very well ride you out of town on a "
+"rail."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1948
+msgid ""
+"Usually you won't want to just delete the conflict markers and Sally's "
+"changes&mdash;she's going to be awfully surprised when the sandwich arrives "
+"and it's not what she wanted.  This is where you pick up the phone or walk "
+"across the office and explain to Sally that you can't get sauerkraut from an "
+"Italian deli.<placeholder type=\"footnote\" id=\"0\"/> Once you've agreed on "
+"the changes you will commit, edit your file and remove the conflict markers:"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1961
+#, no-wrap
+msgid ""
+"Top piece of bread\n"
+"Mayonnaise\n"
+"Lettuce\n"
+"Tomato\n"
+"Provolone\n"
+"Salami\n"
+"Mortadella\n"
+"Prosciutto\n"
+"Creole Mustard\n"
+"Bottom piece of bread\n"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1974
+msgid ""
+"Now use <command>svn resolve</command>, and you're ready to commit your "
+"changes:"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1979
+#, no-wrap
+msgid ""
+"$ svn resolve --accept working sandwich.txt\n"
+"Resolved conflicted state of 'sandwich.txt'\n"
+"$ svn commit -m \"Go ahead and use my sandwich, discarding Sally's edits.\"\n"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1985
+msgid ""
+"Naturally, you want to be careful that when using <command>svn resolve</"
+"command> you don't tell Subversion that you've resolved a conflict when you "
+"truly haven't.  Once the temporary files are removed, Subversion will let "
+"you commit the file even if it still contains conflict markers."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1992
+msgid ""
+"If you ever get confused while editing the conflicted file, you can always "
+"consult the three files that Subversion creates for you in your working "
+"copy&mdash;including your file as it was before you updated.  You can even "
+"use a third-party interactive merging tool to examine those three files."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2003
+msgid "Discarding your changes in favor of a newly fetched revision"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para><indexterm><tertiary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2010
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2048
+msgid "discarding local changes"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2007
+msgid ""
+"<placeholder type=\"indexterm\" id=\"0\"/>If you get a conflict and decide "
+"that you want to throw out your changes, you can run <userinput>svn resolve "
+"--accept theirs-full <replaceable>CONFLICTED-PATH</replaceable></userinput> "
+"and Subversion will discard your edits and remove the temporary files:"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2020
+#, no-wrap
+msgid ""
+"$ svn update\n"
+"Updating '.':\n"
+"Conflict discovered in 'sandwich.txt'.\n"
+"Select: (p) postpone, (df) show diff, (e) edit file, (m) merge,\n"
+"        (mc) my side of conflict, (tc) their side of conflict,\n"
+"        (s) show all options: p\n"
+"C    sandwich.txt\n"
+"Updated to revision 2.\n"
+"Summary of conflicts:\n"
+"  Text conflicts: 1\n"
+"$ ls sandwich.*\n"
+"sandwich.txt  sandwich.txt.mine  sandwich.txt.r2  sandwich.txt.r1\n"
+"$ svn resolve --accept theirs-full sandwich.txt\n"
+"Resolved conflicted state of 'sandwich.txt'\n"
+"$\n"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2042
+msgid "Punting: using svn revert"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2045
+msgid ""
+"<placeholder type=\"indexterm\" id=\"0\"/>If you decide that you want to "
+"throw out your changes and start your edits again (whether this occurs after "
+"a conflict or anytime), just revert your changes:"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2055
+#, no-wrap
+msgid ""
+"$ svn revert sandwich.txt\n"
+"Reverted 'sandwich.txt'\n"
+"$ ls sandwich.*\n"
+"sandwich.txt\n"
+"$\n"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2063
+msgid ""
+"Note that when you revert a conflicted file, you don't have to use "
+"<command>svn resolve</command>."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2072
+msgid "Commit Your Changes"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2074
+msgid ""
+"Finally! Your edits are finished, you've merged all changes from the server, "
+"and you're ready to commit your changes to the repository."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2078
+msgid ""
+"The <command>svn commit</command> command sends all of your changes to the "
+"repository.  When you commit a change, you need to supply a log message "
+"describing your change.  Your log message will be attached to the new "
+"revision you create.  If your log message is brief, you may wish to supply "
+"it on the command line using the <option>--message</option> (<option>-m</"
+"option>) option:"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2088
+#, no-wrap
+msgid ""
+"$ svn commit -m \"Corrected number of cheese slices.\"\n"
+"Sending        sandwich.txt\n"
+"Transmitting file data .\n"
+"Committed revision 3.\n"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2095
+msgid ""
+"However, if you've been composing your log message in some other text file "
+"as you work, you may want to tell Subversion to get the message from that "
+"file by passing its filename as the value of the <option>--file</option> "
+"(<option>-F</option>)  option:"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2103
+#, no-wrap
+msgid ""
+"$ svn commit -F logmsg\n"
+"Sending        sandwich.txt\n"
+"Transmitting file data .\n"
+"Committed revision 4.\n"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2110
+msgid ""
+"If you fail to specify either the <option>--message</option> (<option>-m</"
+"option>)  or <option>--file</option> (<option>-F</option>) option, "
+"Subversion will automatically launch your favorite editor (see the "
+"information on <literal>editor-cmd</literal> in <xref linkend=\"svn.advanced."
+"confarea.opts.config\"/>) for composing a log message."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><tip><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2119
+msgid ""
+"If you're in your editor writing a commit message and decide that you want "
+"to cancel your commit, you can just quit your editor without saving "
+"changes.  If you've already saved your commit message, simply delete all the "
+"text, save again, and then abort:"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><tip><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2127
+#, no-wrap
+msgid ""
+"$ svn commit\n"
+"Waiting for Emacs...Done\n"
+"\n"
+"Log message unchanged or not specified\n"
+"(a)bort, (c)ontinue, (e)dit\n"
+"a\n"
+"$\n"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2138
+msgid ""
+"The repository doesn't know or care whether your changes make any sense as a "
+"whole; it checks only to make sure nobody else has changed any of the same "
+"files that you did when you weren't looking.  If somebody <emphasis>has</"
+"emphasis> done that, the entire commit will fail with a message informing "
+"you that one or more of your files are out of date:"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2147
+#, no-wrap
+msgid ""
+"$ svn commit -m \"Add another rule\"\n"
+"Sending        rules.txt\n"
+"Transmitting file data .\n"
+"svn: E155011: Commit failed (details follow):\n"
+"svn: E155011: File '/home/sally/svn-work/sandwich.txt' is out of date\n"
+"&hellip;\n"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2156
+msgid ""
+"(The exact wording of this error message depends on the network protocol and "
+"server you're using, but the idea is the same in all cases.)"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2160
+msgid ""
+"At this point, you need to run <userinput>svn update</userinput>, deal with "
+"any merges or conflicts that result, and attempt your commit again."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2164
+msgid ""
+"That covers the basic work cycle for using Subversion.  Subversion offers "
+"many other features that you can use to manage your repository and working "
+"copy, but most of your day-to-day use of Subversion will involve only the "
+"commands that we've discussed so far in this chapter.  We will, however, "
+"cover a few more commands that you'll use fairly often."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2180
+msgid "Examining History"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2182
+msgid ""
+"Your Subversion repository is like a time machine.  It keeps a record of "
+"every change ever committed and allows you to explore this history by "
+"examining previous versions of files and directories as well as the metadata "
+"that accompanies them.  With a single Subversion command, you can check out "
+"the repository (or restore an existing working copy) exactly as it was at "
+"any date or revision number in the past.  However, sometimes you just want "
+"to <emphasis>peer into</emphasis> the past instead of <emphasis>going into</"
+"emphasis> it."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2192
+msgid ""
+"Several commands can provide you with historical data from the repository:"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2198
+msgid "<command>svn diff</command>"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2200
+msgid "Shows line-level details of a particular change"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2205
+msgid "<command>svn log</command>"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2207
+msgid ""
+"Shows you broad information: log messages with date and author information "
+"attached to revisions and which paths changed in each revision"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2214
+msgid "<command>svn cat</command>"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2216
+msgid ""
+"Retrieves a file as it existed in a particular revision number and displays "
+"it on your screen"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2222
+msgid "<command>svn annotate</command>"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2224
+msgid ""
+"Retrieves a human-readable file as it existed in a particular revision "
+"number, displaying its contents in a tabular form with last-changed "
+"information attributed to each line of the file."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><variablelist><varlistentry><term>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2232
+msgid "<command>svn list</command>"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><variablelist><varlistentry><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2234
+msgid "Displays the files in a directory for any given revision"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2244
+msgid "Examining the Details of Historical Changes"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2246
+msgid ""
+"We've already seen <command>svn diff</command> before&mdash;it displays file "
+"differences in unified diff format; we used it to show the local "
+"modifications made to our working copy before committing to the repository."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2251
+msgid ""
+"In fact, it turns out that there are <emphasis>three</emphasis> distinct "
+"uses of <command>svn diff</command>:"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2258
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2273
+msgid "Examining local changes"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><itemizedlist><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2262
+msgid "Comparing your working copy to the repository"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2266
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2331
+msgid "Comparing repository revisions"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2275
+msgid ""
+"As we've seen, invoking <userinput>svn diff</userinput> with no options will "
+"compare your working files to the cached <quote>pristine</quote> copies in "
+"the <filename>.svn</filename> area:"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2282
+#, no-wrap
+msgid ""
+"$ svn diff\n"
+"Index: rules.txt\n"
+"===================================================================\n"
+"--- rules.txt\t(revision 3)\n"
+"+++ rules.txt\t(working copy)\n"
+"@@ -1,4 +1,5 @@\n"
+" Be kind to others\n"
+" Freedom = Responsibility\n"
+" Everything in moderation\n"
+"-Chew with your mouth open\n"
+"+Chew with your mouth closed\n"
+"+Listen when others are speaking\n"
+"$\n"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2302
+msgid "Comparing working copy to repository"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2304
+msgid ""
+"If a single <option>--revision</option> (<option>-r</option>) number is "
+"passed, your working copy is compared to the specified revision in the "
+"repository:"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2311
+#, no-wrap
+msgid ""
+"$ svn diff -r 3 rules.txt\n"
+"Index: rules.txt\n"
+"===================================================================\n"
+"--- rules.txt\t(revision 3)\n"
+"+++ rules.txt\t(working copy)\n"
+"@@ -1,4 +1,5 @@\n"
+" Be kind to others\n"
+" Freedom = Responsibility\n"
+" Everything in moderation\n"
+"-Chew with your mouth open\n"
+"+Chew with your mouth closed\n"
+"+Listen when others are speaking\n"
+"$\n"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2333
+msgid ""
+"If two revision numbers, separated by a colon, are passed via <option>--"
+"revision</option> (<option>-r</option>), the two revisions are directly "
+"compared:"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2340
+#, no-wrap
+msgid ""
+"$ svn diff -r 2:3 rules.txt\n"
+"Index: rules.txt\n"
+"===================================================================\n"
+"--- rules.txt\t(revision 2)\n"
+"+++ rules.txt\t(revision 3)\n"
+"@@ -1,4 +1,4 @@\n"
+" Be kind to others\n"
+"-Freedom = Chocolate Ice Cream\n"
+"+Freedom = Responsibility\n"
+" Everything in moderation\n"
+" Chew with your mouth open\n"
+"$\n"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2355
+msgid ""
+"A more convenient way of comparing one revision to the previous revision is "
+"to use the <option>--change</option> (<option>-c</option>) option:"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2361
+#, no-wrap
+msgid ""
+"$ svn diff -c 3 rules.txt\n"
+"Index: rules.txt\n"
+"===================================================================\n"
+"--- rules.txt\t(revision 2)\n"
+"+++ rules.txt\t(revision 3)\n"
+"@@ -1,4 +1,4 @@\n"
+" Be kind to others\n"
+"-Freedom = Chocolate Ice Cream\n"
+"+Freedom = Responsibility\n"
+" Everything in moderation\n"
+" Chew with your mouth open\n"
+"$\n"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2376
+msgid ""
+"Lastly, you can compare repository revisions even when you don't have a "
+"working copy on your local machine, just by including the appropriate URL on "
+"the command line:"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2382
+#, no-wrap
+msgid ""
+"$ svn diff -c 5 http://svn.example.com/repos/example/trunk/text/rules.txt\n"
+"&hellip;\n"
+"$\n"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2394
+msgid "Generating a List of Historical Changes"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2396
+msgid ""
+"To find information about the history of a file or directory, use the "
+"<command>svn log</command> command.  <command>svn log</command> will provide "
+"you with a record of who made changes to a file or directory, at what "
+"revision it changed, the time and date of that revision, and&mdash;if it was "
+"provided&mdash;the log message that accompanied the commit:"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2406
+#, no-wrap
+msgid ""
+"$ svn log\n"
+"------------------------------------------------------------------------\n"
+"r3 | sally | 2008-05-15 23:09:28 -0500 (Thu, 15 May 2008) | 1 line\n"
+"\n"
+"Added include lines and corrected # of cheese slices.\n"
+"------------------------------------------------------------------------\n"
+"r2 | harry | 2008-05-14 18:43:15 -0500 (Wed, 14 May 2008) | 1 line\n"
+"\n"
+"Added main() methods.\n"
+"------------------------------------------------------------------------\n"
+"r1 | sally | 2008-05-10 19:50:31 -0500 (Sat, 10 May 2008) | 1 line\n"
+"\n"
+"Initial import\n"
+"------------------------------------------------------------------------\n"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2423
+msgid ""
+"Note that the log messages are printed in <emphasis>reverse chronological "
+"order</emphasis> by default.  If you wish to see a different range of "
+"revisions in a particular order or just a single revision, pass the "
+"<option>--revision</option> (<option>-r</option>)  option:"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><table><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2431
+msgid "Common log requests"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><table><tgroup><thead><row><entry>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2435
+msgid "Command"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><table><tgroup><thead><row><entry>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2436
+msgid "Description"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><table><tgroup><tbody><row><entry>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2441
+msgid "<userinput>svn log -r 5:19</userinput>"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><table><tgroup><tbody><row><entry>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2442
+msgid "Display logs for revisions 5 through 19 in chronological order"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><table><tgroup><tbody><row><entry>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2446
+msgid "<userinput>svn log -r 19:5</userinput>"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><table><tgroup><tbody><row><entry>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2447
+msgid "Display logs for revisions 5 through 19 in reverse chronological order"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><table><tgroup><tbody><row><entry>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2451
+msgid "<userinput>svn log -r 8</userinput>"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><table><tgroup><tbody><row><entry>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2452
+msgid "Display logs for revision 8 only"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2458
+msgid ""
+"You can also examine the log history of a single file or directory.  For "
+"example:"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2463
+#, no-wrap
+msgid ""
+"$ svn log foo.c\n"
+"&hellip;\n"
+"$ svn log http://foo.com/svn/trunk/code/foo.c\n"
+"&hellip;\n"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2470
+msgid ""
+"These will display log messages <emphasis>only</emphasis> for those "
+"revisions in which the named file (or directory)  changed."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sidebar><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2476
+msgid "Why Does svn log Not Show Me What I Just Committed?"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sidebar><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2479
+msgid ""
+"If you make a commit and immediately type <userinput>svn log</userinput> "
+"with no arguments, you may notice that your most recent commit doesn't show "
+"up in the list of log messages.  This is due to a combination of the "
+"behavior of <command>svn commit</command> and the default behavior of "
+"<command>svn log</command>.  First, when you commit changes to the "
+"repository, <command>svn</command> bumps only the revision of files (and "
+"directories) that it commits, so usually the parent directory remains at the "
+"older revision (See <xref linkend=\"svn.basic.in-action.mixedrevs.update-"
+"commit\"/> for an explanation of why).  <command>svn log</command> then "
+"defaults to fetching the history of the directory at its current revision, "
+"and thus you don't see the newly committed changes.  The solution here is to "
+"either update your working copy or explicitly provide a revision number to "
+"<command>svn log</command> by using the <option>--revision</option> "
+"(<option>-r</option>) option."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2500
+msgid ""
+"If you want even more information about a file or directory, <command>svn "
+"log</command> also takes a <option>--verbose</option> (<option>-v</option>) "
+"option.  Because Subversion allows you to move and copy files and "
+"directories, it is important to be able to track path changes in the "
+"filesystem.  So, in verbose mode, <command>svn log</command> will include a "
+"list of changed paths in a revision in its output:"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2511
+#, no-wrap
+msgid ""
+"$ svn log -r 8 -v\n"
+"------------------------------------------------------------------------\n"
+"r8 | sally | 2008-05-21 13:19:25 -0500 (Wed, 21 May 2008) | 1 line\n"
+"Changed paths:\n"
+"   M /trunk/code/foo.c\n"
+"   M /trunk/code/bar.h\n"
+"   A /trunk/code/doc/README\n"
+"\n"
+"Frozzled the sub-space winch.\n"
+"\n"
+"------------------------------------------------------------------------\n"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2525
+msgid ""
+"<command>svn log</command> also takes a <option>--quiet</option> (<option>-"
+"q</option>) option, which suppresses the body of the log message.  When "
+"combined with <option>--verbose</option> (<option>-v</option>), it gives "
+"just the names of the changed files."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sidebar><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2532
+msgid "Why Does svn log Give Me an Empty Response?"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sidebar><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2535
+msgid ""
+"After working with Subversion for a bit, most users will come across "
+"something like this:"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sidebar><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2540
+#, no-wrap
+msgid ""
+"$ svn log -r 2\n"
+"------------------------------------------------------------------------\n"
+"$\n"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sidebar><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2546
+msgid ""
+"At first glance, this seems like an error.  But recall that while revisions "
+"are repository-wide, <command>svn log</command> operates on a path in the "
+"repository.  If you supply no path, Subversion uses the current working "
+"directory as the default target.  As a result, if you're operating in a "
+"subdirectory of your working copy and attempt to see the log of a revision "
+"in which neither that directory nor any of its children was changed, "
+"Subversion will show you an empty log.  If you want to see what changed in "
+"that revision, try pointing <command>svn log</command> directly at the "
+"topmost URL of your repository, as in <userinput>svn log -r 2 ^/</userinput>."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2561
+msgid ""
+"As of Subversion 1.7, users of the Subversion command-line can also take "
+"advantage of a special output mode for <command>svn log</command> which "
+"integrates a difference report such as is generated by the <command>svn "
+"diff</command> command we introduced earlier.  When you invoke <command>svn "
+"log</command> with the <option>--diff</option> option, Subversion will "
+"append to each revision log chunk in the log report a <command>diff</"
+"command>-style difference report.  This is a very convenient way to see both "
+"the high-level, semantic changes and the line-based modifications of a "
+"revision all at the same time!"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2573
+msgid ""
+"Beginning with Subversion 1.8, <command>svn log</command> accepts <option>--"
+"search</option> and <option>--search-and</option> options.  The options "
+"allow you to filter the output of <command>svn log</command> based on the "
+"search pattern you supply.  When using these options, a log message is shown "
+"only if a revision's author, date, log message text, or list of changed "
+"paths, matches the search pattern."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2585
+msgid "Browsing the Repository"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2587
+msgid ""
+"Using <command>svn cat</command> and <command>svn list</command>, you can "
+"view various revisions of files and directories without changing the working "
+"revision of your working copy.  In fact, you don't even need a working copy "
+"to use either one."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2595
+msgid "Displaying file contents"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2597
+msgid ""
+"If you want to examine an earlier version of a file and not necessarily the "
+"differences between two files, you can use <command>svn cat</command>:"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2603
+#, no-wrap
+msgid ""
+"$ svn cat -r 2 rules.txt\n"
+"Be kind to others\n"
+"Freedom = Chocolate Ice Cream\n"
+"Everything in moderation\n"
+"Chew with your mouth open\n"
+"$\n"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2612
+msgid "You can also redirect the output directly into a file:"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2617
+#, no-wrap
+msgid ""
+"$ svn cat -r 2 rules.txt &gt; rules.txt.v2\n"
+"$\n"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2626
+msgid "Displaying line-by-line change attribution"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2628
+msgid ""
+"Very similar to the <command>svn cat</command> command we discussed in the "
+"previous section is the <command>svn annotate</command> command.  This "
+"command also displays the contents of a versioned file, but it does so using "
+"a tabular format.  Each line of output shows not only a line of the file's "
+"content but also the username, the revision number and (optionally) the "
+"datestamp of the revision in which that line was last modified."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2637
+msgid ""
+"When used with a working copy file target, <command>svn annotate</command> "
+"will by default show line-by-line attribution of the file as it currently "
+"appears in the working copy."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2644
+#, no-wrap
+msgid ""
+"$ svn annotate rules.txt\n"
+"     1      harry Be kind to others\n"
+"     3      sally Freedom = Responsibility\n"
+"     1      harry Everything in moderation\n"
+"     -          - Chew with your mouth closed\n"
+"     -          - Listen when others are speaking\n"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2653
+msgid ""
+"Notice that for some lines, there is no attribution provided.  In this case, "
+"that's because those lines have been modified in the working copy's version "
+"of the file.  In this way, <command>svn annotate</command> becomes another "
+"way for you to see which lines in the file you have changed.  You can use "
+"the <literal>BASE</literal> revision keyword (see <xref linkend=\"svn.tour."
+"revs.keywords\" />) to instead see the unmodified form of the file as it "
+"resides in your working copy."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2665
+#, no-wrap
+msgid ""
+"$ svn annotate rules.txt@BASE\n"
+"     1      harry Be kind to others\n"
+"     3      sally Freedom = Responsibility\n"
+"     1      harry Everything in moderation\n"
+"     1      harry Chew with your mouth open\n"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2673
+msgid ""
+"The <option>--verbose (-v)</option> option causes <command>svn annotate</"
+"command> to also include on each line the datestamp associated with that "
+"line's reported revision number.  (This adds a significant amount of width "
+"to each line of ouput, so we'll skip the demonstration here.)"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2679
+msgid ""
+"As with <command>svn cat</command>, you can also ask <command>svn annotate</"
+"command> to display previous versions of the file.  This can be a handy "
+"trick when, after finding out who most recently modified a particular line "
+"of interest in the file, you then wish to see who modified the same line "
+"prior to that."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2688
+#, no-wrap
+msgid ""
+"$ svn blame rules.txt -r 2\n"
+"     1      harry Be kind to others\n"
+"     1      harry Freedom = Chocolate Ice Cream\n"
+"     1      harry Everything in moderation\n"
+"     1      harry Chew with your mouth open\n"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2696
+msgid ""
+"Unlike the <command>svn cat</command> command, the functionality of "
+"<command>svn annotate</command> is tied heavily to the idea of <quote>lines</"
+"quote> of text in a human-readable file.  As such, if you attempt to run the "
+"command on a file that Subversion has determined is <emphasis>not</emphasis> "
+"human-readable (per the file's <literal>svn:mime-type</literal> "
+"property&mdash;see <xref linkend=\"svn.advanced.props.special.mime-type\" /> "
+"for details), you'll get an error message."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2708
+#, no-wrap
+msgid ""
+"$ svn annotate images/logo.png\n"
+"Skipping binary file (use --force to treat as text): 'images/logo.png'\n"
+"$\n"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2714
+msgid ""
+"As revealed in the error message, you can use the <option>--force</option> "
+"option to disable this check and proceed with the annotation as if the "
+"file's contents are, in fact, human-readable and line-based.  Naturally, if "
+"you force Subversion to try to perform line-based annotation on a nontextual "
+"file, you'll get what you asked for: a screenful of nonsense."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2724
+#, no-wrap
+msgid ""
+"$ svn annotate images/logo.png --force\n"
+"     6      harry \\211PNG\n"
+"     6      harry ^Z\n"
+"     6      harry \n"
+"     7      harry \\274\\361\\MI\\300\\365\\353^X\\300&hellip;\n"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><tip><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2733
+msgid ""
+"Depending on your mood at the time you execute this command and your reasons "
+"for doing so, you may find yourself typing <userinput>svn blame &hellip;</"
+"userinput> or <userinput>svn praise &hellip;</userinput> instead of using "
+"the canonical <command>svn annotate</command> command form.  That's "
+"okay&mdash;the Subversion developers anticipated as much, so those "
+"particular command aliases work, too!"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2743
+msgid ""
+"Finally, as with many of Subversion's informational commands, you can also "
+"reference files in your <command>svn annotate</command> command invocations "
+"by their repository URLs, allowing access to this information even when you "
+"don't have ready access to a working copy."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2753
+msgid "Listing versioned directories"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2755
+msgid ""
+"The <command>svn list</command> command shows you what files are in a "
+"repository directory without actually downloading the files to your local "
+"machine:"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2761
+#, no-wrap
+msgid ""
+"$ svn list http://svn.example.com/repo/project\n"
+"README\n"
+"branches/\n"
+"tags/\n"
+"trunk/\n"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2769
+msgid ""
+"If you want a more detailed listing, pass the <option>--verbose</option> "
+"(<option>-v</option>) flag to get output like this:"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2775
+#, no-wrap
+msgid ""
+"$ svn list -v http://svn.example.com/repo/project\n"
+"  23351 sally                 Feb 05 13:26 ./\n"
+"  20620 harry            1084 Jul 13  2006 README\n"
+"  23339 harry                 Feb 04 01:40 branches/\n"
+"  23198 harry                 Jan 23 17:17 tags/\n"
+"  23351 sally                 Feb 05 13:26 trunk/\n"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2784
+msgid ""
+"The columns tell you the revision at which the file or directory was last "
+"modified, the user who modified it, the size if it is a file, the date it "
+"was last modified, and the item's name."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><sect3><warning><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2790
+msgid ""
+"The <userinput>svn list</userinput> command with no arguments defaults to "
+"the <emphasis>repository URL</emphasis> of the current working directory, "
+"<emphasis>not</emphasis> the local working copy directory.  After all, if "
+"you want a listing of your local directory, you could use just plain "
+"<command>ls</command> (or any reasonable non-Unixy equivalent)."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2806
+msgid "Fetching Older Repository Snapshots"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para><footnote><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2811
+msgid "See? We told you that Subversion was a time machine."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2808
+msgid ""
+"In addition to all of the previous commands, you can use the <option>--"
+"revision</option> (<option>-r</option>) option with <command>svn update</"
+"command> to take an entire working copy <quote>back in time</quote>:"
+"<placeholder type=\"footnote\" id=\"0\"/>"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2817
+#, no-wrap
+msgid ""
+"# Make the current directory look like it did in r1729.\n"
+"$ svn update -r 1729\n"
+"Updating '.':\n"
+"&hellip;\n"
+"$\n"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><tip><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2826
+msgid ""
+"Many Subversion newcomers attempt to use the preceding <command>svn update</"
+"command> example to <quote>undo</quote> committed changes, but this won't "
+"work as you can't commit changes that you obtain from backdating a working "
+"copy if the changed files have newer revisions.  See <xref linkend=\"svn."
+"branchmerge.basicmerging.resurrect\"/> for a description of how to "
+"<quote>undo</quote> a commit."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2835
+msgid ""
+"If you'd prefer to create a whole new working copy from an older snapshot, "
+"you can do so by modifying the typical <command>svn checkout</command> "
+"command.  As with <command>svn update</command>, you can provide the "
+"<option>--revision</option> (<option>-r</option>) option.  But for reasons "
+"that we cover in <xref linkend=\"svn.advanced.pegrevs\" />, you might "
+"instead want to specify the target revision as part of Subversion's expanded "
+"URL syntax."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2847
+#, no-wrap
+msgid ""
+"# Checkout the trunk from r1729.\n"
+"$ svn checkout http://svn.example.com/svn/repo/trunk@1729 trunk-1729\n"
+"&hellip;\n"
+"# Checkout the current trunk as it looked in r1729.\n"
+"$ svn checkout http://svn.example.com/svn/repo/trunk -r 1729 trunk-1729\n"
+"&hellip;\n"
+"$\n"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2857
+msgid ""
+"Lastly, if you're building a release and wish to bundle up your versioned "
+"files and directories, you can use <command>svn export</command> to create a "
+"local copy of all or part of your repository without any <filename>.svn</"
+"filename> administrative directories included.  The basic syntax of this "
+"subcommand is identical to that of <command>svn checkout</command>:"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2867
+#, no-wrap
+msgid ""
+"# Export the trunk from the latest revision.\n"
+"$ svn export http://svn.example.com/svn/repo/trunk trunk-export\n"
+"&hellip;\n"
+"# Export the trunk from r1729.\n"
+"$ svn export http://svn.example.com/svn/repo/trunk@1729 trunk-1729\n"
+"&hellip;\n"
+"# Export the current trunk as it looked in r1729. \n"
+"$ svn export http://svn.example.com/svn/repo/trunk -r 1729 trunk-1729\n"
+"&hellip;\n"
+"$\n"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2889
+msgid "Sometimes You Just Need to Clean Up"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2891
+msgid ""
+"Now that we've covered the day-to-day tasks that you'll frequently use "
+"Subversion for, we'll review a few administrative tasks relating to your "
+"working copy."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2898
+msgid "Disposing of a Working Copy"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2900
+msgid ""
+"Subversion doesn't track either the state or the existence of working copies "
+"on the server, so there's no server overhead to keeping working copies "
+"around.  Likewise, there's no need to let the server know that you're going "
+"to delete a working copy."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2906
+msgid ""
+"If you're likely to use a working copy again, there's nothing wrong with "
+"just leaving it on disk until you're ready to use it again, at which point "
+"all it takes is an <command>svn update</command> to bring it up to date and "
+"ready for use."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2912
+msgid ""
+"However, if you're definitely not going to use a working copy again, you can "
+"safely delete the entire thing using whatever directory removal capabilities "
+"your operating system offers.  We recommend that before you do so you run "
+"<userinput>svn status</userinput> and review any files listed in its output "
+"that are prefixed with a <literal>?</literal> to make certain that they're "
+"not of importance."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2925
+msgid "Recovering from an Interruption"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2927
+msgid ""
+"When Subversion modifies your working copy&mdash;either your files or its "
+"own administrative state&mdash;it tries to do so as safely as possible.  "
+"Before changing the working copy, Subversion logs its intentions in a "
+"private <quote>to-do list</quote>, of sorts.  Next, it performs those "
+"actions to effect the desired change, holding a lock on the relevant part of "
+"the working copy while it works.  This prevents other Subversion clients "
+"from accessing the working copy mid-change.  Finally, Subversion releases "
+"its lock and cleans up its private to-do list.  Architecturally, this is "
+"similar to a journaled filesystem.  If a Subversion operation is interrupted "
+"(e.g, if the process is killed or if the machine crashes), the private to-do "
+"list remains on disk.  This allows Subversion to return to that list later "
+"to complete any unfinished operations and return your working copy to a "
+"consistent state."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2944
+msgid ""
+"This is exactly what <command>svn cleanup</command> does: it searches your "
+"working copy and runs any leftover to-do items, removing working copy locks "
+"as it completes those operations.  If Subversion ever tells you that some "
+"part of your working copy is <quote>locked,</quote> run <command>svn "
+"cleanup</command> to remedy the problem.  The <command>svn status</command> "
+"command will inform you about administrative locks in the working copy, too, "
+"by displaying an <literal>L</literal> next to those locked paths:"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2956
+#, no-wrap
+msgid ""
+"$ svn status\n"
+"  L     somedir\n"
+"M       somedir/foo.c\n"
+"$ svn cleanup\n"
+"$ svn status\n"
+"M       somedir/foo.c\n"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2965
+msgid ""
+"Don't confuse these working copy administrative locks with the user-managed "
+"locks that Subversion users create when using the lock-modify-unlock model "
+"of concurrent version control; see the sidebar <xref linkend=\"svn.advanced."
+"locking.meanings\"/> for clarification."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2980
+msgid "Dealing with Structural Conflicts"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><para><footnote><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2985
+msgid ""
+"Well, you <emphasis>could</emphasis> mark files containing conflict markers "
+"as resolved and commit them, if you really wanted to.  But this is rarely "
+"done in practice."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2982
+msgid ""
+"So far, we have only talked about conflicts at the level of file content.  "
+"When you and your collaborators make overlapping changes within the same "
+"file, Subversion forces you to merge those changes before you can commit."
+"<placeholder type=\"footnote\" id=\"0\"/>"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><para><indexterm><see>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2992
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2997
+msgid "tree conflicts"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><para><indexterm><secondary>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2996
+msgid "tree"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2991
+msgid ""
+"<placeholder type=\"indexterm\" id=\"0\"/> <placeholder type=\"indexterm\" "
+"id=\"1\"/>But what happens if your collaborators move or delete a file that "
+"you are still working on? Maybe there was a miscommunication, and one person "
+"thinks the file should be deleted, while another person still wants to "
+"commit changes to the file.  Or maybe your collaborators did some "
+"refactoring, renaming files and moving around directories in the process.  "
+"If you were still working on these files, those modifications may need to be "
+"applied to the files at their new location.  Such conflicts manifest "
+"themselves at the directory tree structure level rather than at the file "
+"content level, and are known as <firstterm>tree conflicts</firstterm>."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sidebar><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:3011
+msgid "Tree conflicts prior to Subversion 1.6"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sidebar><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:3013
+msgid ""
+"Prior to Subversion 1.6, tree conflicts could yield rather unexpected "
+"results.  For example, if a file was locally modified, but had been renamed "
+"in the repository, running <command>svn update</command> would make "
+"Subversion carry out the following steps:"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sidebar><itemizedlist><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:3020
+msgid "Check the file to be renamed for local modifications."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sidebar><itemizedlist><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:3023
+msgid ""
+"Delete the file at its old location, and if it had local modifications, keep "
+"an on-disk copy of the file at the old location.  This on-disk copy now "
+"appears as an unversioned file in the working copy."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sidebar><itemizedlist><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:3028
+msgid "Add the file, as it exists in the repository, at its new location."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sidebar><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:3032
+msgid ""
+"When this situation arises, there is the possibility that the user makes a "
+"commit without realizing that local modifications have been left in a now-"
+"unversioned file in the working copy, and have not reached the repository.  "
+"This gets more and more likely (and tedious) if the number of files affected "
+"by this problem is large."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sidebar><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:3039
+msgid ""
+"Since Subversion 1.6, this and other similar situations are flagged as "
+"conflicts in the working copy."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:3044
+msgid ""
+"As with textual conflicts, tree conflicts prevent a commit from being made "
+"from the conflicted state, giving the user the opportunity to examine the "
+"state of the working copy for potential problems arising from the tree "
+"conflict, and resolving any such problems before committing."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:3052
+msgid "An Example Tree Conflict"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:3054
+msgid ""
+"Suppose a software project you were working on currently looked like this:"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:3059
+#, no-wrap
+msgid ""
+"$ svn list -Rv svn://svn.example.com/trunk/\n"
+"     13 harry                 Sep 06 10:34 ./\n"
+"     13 harry              27 Sep 06 10:34 COPYING\n"
+"     13 harry              41 Sep 06 10:32 Makefile\n"
+"     13 harry              53 Sep 06 10:34 README\n"
+"     13 harry                 Sep 06 10:32 code/\n"
+"     13 harry              54 Sep 06 10:32 code/bar.c\n"
+"     13 harry             130 Sep 06 10:32 code/foo.c\n"
+"$\n"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:3071
+msgid ""
+"Later, in revision 14, your collaborator Harry renames the file "
+"<filename>bar.c</filename> to <filename>baz.c</filename>.  Unfortunately, "
+"you don't realize this yet.  As it turns out, you are busy in your working "
+"copy composing a different set of changes, some of which also involve "
+"modifications to <filename>bar.c</filename>:"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:3080
+#, no-wrap
+msgid ""
+"$ svn diff\n"
+"Index: code/foo.c\n"
+"===================================================================\n"
+"--- code/foo.c\t(revision 13)\n"
+"+++ code/foo.c\t(working copy)\n"
+"@@ -3,5 +3,5 @@\n"
+" int main(int argc, char *argv[])\n"
+" {\n"
+"     printf(\"I don't like being moved around!\\n%s\", bar());\n"
+"-    return 0;\n"
+"+    return 1;\n"
+" }\n"
+"Index: code/bar.c\n"
+"===================================================================\n"
+"--- code/bar.c\t(revision 13)\n"
+"+++ code/bar.c\t(working copy)\n"
+"@@ -1,4 +1,4 @@\n"
+" const char *bar(void)\n"
+" {\n"
+"-    return \"Me neither!\\n\";\n"
+"+    return \"Well, I do like being moved around!\\n\";\n"
+" }\n"
+"$\n"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:3106
+msgid ""
+"You first realize that someone else has changed <filename>bar.c</filename> "
+"when your own commit attempt fails:"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:3112
+#, no-wrap
+msgid ""
+"$ svn commit -m \"Small fixes\"\n"
+"Sending        code/bar.c\n"
+"Transmitting file data .\n"
+"svn: E155011: Commit failed (details follow):\n"
+"svn: E155011: File '/home/svn/project/code/bar.c' is out of date\n"
+"svn: E160013: File not found: transaction '14-e', path '/code/bar.c'\n"
+"$\n"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:3123
+msgid ""
+"At this point, you need to run <command>svn update</command>.  Besides "
+"bringing our working copy up to date so that you can see Harry's changes, "
+"this also flags a tree conflict so you have the opportunity to evaluate and "
+"properly resolve it."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:3130
+#, no-wrap
+msgid ""
+"$ svn update\n"
+"Updating '.':\n"
+"   C code/bar.c\n"
+"A    code/baz.c\n"
+"U    Makefile\n"
+"Updated to revision 14.\n"
+"Summary of conflicts:\n"
+"  Tree conflicts: 1\n"
+"$\n"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:3142
+msgid ""
+"In its output, <command>svn update</command> signifies tree conflicts using "
+"a capital C in the fourth output column.  <command>svn status</command> "
+"reveals additional details of the conflict:"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:3149
+#, no-wrap
+msgid ""
+"$ svn status\n"
+"M       code/foo.c\n"
+"A  +  C code/bar.c\n"
+"      >   local edit, incoming delete upon update\n"
+"Summary of conflicts:\n"
+"  Tree conflicts: 1\n"
+"$\n"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:3159
+msgid ""
+"Note how <filename>bar.c</filename> is automatically scheduled for re-"
+"addition in your working copy, which simplifies things in case you want to "
+"keep the file."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:3163
+msgid ""
+"Because a move in Subversion is implemented as a copy operation followed by "
+"a delete operation, and these two operations cannot be easily related to one "
+"another during an update, all Subversion can warn you about is an incoming "
+"delete operation on a locally modified file.  This delete operation "
+"<emphasis>may</emphasis> be part of a move, or it could be a genuine delete "
+"operation.  Determining exactly what semantic change was made to the "
+"repository is important&mdash;you want to know just how your own edits fit "
+"into the overall trajectory of the project.  So read log messages, talk to "
+"your collaborators, study the line-based differences&mdash;do whatever you "
+"must do&mdash;to determine your best course of action."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:3177
+msgid ""
+"In this case, Harry's commit log message tells you what you need to know."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:3182
+#, no-wrap
+msgid ""
+"$ svn log -r14 ^/trunk\n"
+"------------------------------------------------------------------------\n"
+"r14 | harry | 2011-09-06 10:38:17 -0400 (Tue, 06 Sep 2011) | 1 line\n"
+"Changed paths:\n"
+"   M /Makefile\n"
+"   D /code/bar.c\n"
+"   A /code/baz.c (from /code/bar.c:13)\n"
+"\n"
+"Rename bar.c to baz.c, and adjust Makefile accordingly.\n"
+"------------------------------------------------------------------------\n"
+"$\n"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:3196
+msgid ""
+"<command>svn info</command> shows the URLs of the items involved in the "
+"conflict.  The <emphasis>left</emphasis> URL shows the source of the local "
+"side of the conflict, while the <emphasis>right</emphasis> URL shows the "
+"source of the incoming side of the conflict.  These URLs indicate where you "
+"should start searching the repository's history for the change which "
+"conflicts with your local change."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:3206
+#, no-wrap
+msgid ""
+"$ svn info code/bar.c\n"
+"Path: code/bar.c\n"
+"Name: bar.c\n"
+"URL: http://svn.example.com/svn/repo/trunk/code/bar.c\n"
+"&hellip;\n"
+"Tree conflict: local edit, incoming delete upon update\n"
+"  Source  left: (file) ^/trunk/code/bar.c@4\n"
+"  Source right: (none) ^/trunk/code/bar.c@5\n"
+"\n"
+"$\n"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:3219
+msgid ""
+"<filename>bar.c</filename> is now said to be the victim of a tree conflict.  "
+"It cannot be committed until the conflict is resolved:"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:3225
+#, no-wrap
+msgid ""
+"$ svn commit -m \"Small fixes\" \n"
+"svn: E155015: Commit failed (details follow):\n"
+"svn: E155015: Aborting commit: '/home/svn/project/code/bar.c' remains in confl\n"
+"ict\n"
+"$\n"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:3233
+msgid ""
+"To resolve this conflict, you must either agree or disagree with the move "
+"that Harry made."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para><footnote><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:3245
+msgid ""
+"In some cases, Subversion 1.5 and 1.6 <emphasis>would</emphasis> actually "
+"handle this for you, but this somewhat hit-or-miss functionality was removed "
+"in Subversion 1.7."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:3236
+msgid ""
+"If you agree with the move, your <filename>bar.c</filename> is superfluous.  "
+"You'll want to delete it and mark the tree conflict as resolved.  But wait: "
+"you made changes to that file! Before deleting <filename>bar.c</filename>, "
+"you need to decide if the changes you made to it need to be applied "
+"elsewhere, for example to the new <filename>baz.c</filename> file where all "
+"of <filename>bar.c</filename>'s code now lives.  Let's assume that your "
+"changes do need to <quote>follow the move</quote>.  Subversion isn't smart "
+"enough to do this work for you<placeholder type=\"footnote\" id=\"0\"/>, so "
+"you need to migrate your changes manually."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:3251
+msgid ""
+"In our example, you could manually re-make your change to <filename>bar.c</"
+"filename> pretty easily&mdash;it was, after all, a single-line change.  "
+"That's not always the case, though, so we'll show a more scalable approach.  "
+"We'll first use <command>svn diff</command> to create a patch file.  Then "
+"we'll edit the headers of that patch file to point to the new name of our "
+"renamed file.  Finally, we re-apply the modified patch to our working copy."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:3262
+#, no-wrap
+msgid ""
+"$ svn diff code/bar.c > PATCHFILE\n"
+"$ cat PATCHFILE\n"
+"Index: code/bar.c\n"
+"===================================================================\n"
+"--- code/bar.c\t(revision 14)\n"
+"+++ code/bar.c\t(working copy)\n"
+"@@ -1,4 +1,4 @@\n"
+" const char *bar(void)\n"
+" {\n"
+"-    return \"Me neither!\\n\";\n"
+"+    return \"Well, I do like being moved around!\\n\";\n"
+" }\n"
+"$ ### Edit PATCHFILE to refer to code/baz.c instead of code/bar.c\n"
+"$ cat PATCHFILE\n"
+"Index: code/baz.c\n"
+"===================================================================\n"
+"--- code/baz.c\t(revision 14)\n"
+"+++ code/baz.c\t(working copy)\n"
+"@@ -1,4 +1,4 @@\n"
+" const char *bar(void)\n"
+" {\n"
+"-    return \"Me neither!\\n\";\n"
+"+    return \"Well, I do like being moved around!\\n\";\n"
+" }\n"
+"$ svn patch PATCHFILE\n"
+"U         code/baz.c\n"
+"$\n"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:3292
+msgid ""
+"Now that the changes you originally made to <filename>bar.c</filename> have "
+"been successfully reproduced in <filename>baz.c</filename>, you can delete "
+"<filename>bar.c</filename> and resolve the conflict, instructing the "
+"resolution logic to accept what is currently in the working copy as the "
+"desired result."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:3301
+#, no-wrap
+msgid ""
+"$ svn delete --force code/bar.c\n"
+"D         code/bar.c\n"
+"$ svn resolve --accept=working code/bar.c\n"
+"Resolved conflicted state of 'code/bar.c'\n"
+"$ svn status\n"
+"M       code/foo.c\n"
+"M       code/baz.c\n"
+"$ svn diff\n"
+"Index: code/foo.c\n"
+"===================================================================\n"
+"--- code/foo.c  (revision 14)\n"
+"+++ code/foo.c  (working copy)\n"
+"@@ -3,5 +3,5 @@\n"
+" int main(int argc, char *argv[])\n"
+" {\n"
+"     printf(\"I don't like being moved around!\\n%s\", bar());\n"
+"-    return 0;\n"
+"+    return 1;\n"
+" }\n"
+"Index: code/baz.c\n"
+"===================================================================\n"
+"--- code/baz.c  (revision 14)\n"
+"+++ code/baz.c  (working copy)\n"
+"@@ -1,4 +1,4 @@\n"
+" const char *bar(void)\n"
+" {\n"
+"-    return \"Me neither!\\n\";\n"
+"+    return \"Well, I do like being moved around!\\n\";\n"
+" }\n"
+"$\n"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:3334
+msgid ""
+"But what if you do not agree with the move? Well, in that case, you can "
+"delete <filename>baz.c</filename> instead, after making sure any changes "
+"made to it after it was renamed are either preserved or not worth keeping.  "
+"(Do not forget to also revert the changes Harry made to <filename>Makefile</"
+"filename>.)  Since <filename>bar.c</filename> is already scheduled for re-"
+"addition, there is nothing else left to do, and the conflict can be marked "
+"resolved:"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:3345
+#, no-wrap
+msgid ""
+"$ svn delete --force code/baz.c\n"
+"D         code/baz.c\n"
+"$ svn resolve --accept=working code/bar.c\n"
+"Resolved conflicted state of 'code/bar.c'\n"
+"$ svn status\n"
+"M       code/foo.c\n"
+"A  +    code/bar.c\n"
+"D       code/baz.c\n"
+"M       Makefile\n"
+"$ svn diff\n"
+"Index: code/foo.c\n"
+"===================================================================\n"
+"--- code/foo.c\t(revision 14)\n"
+"+++ code/foo.c\t(working copy)\n"
+"@@ -3,5 +3,5 @@\n"
+" int main(int argc, char *argv[])\n"
+" {\n"
+"     printf(\"I don't like being moved around!\\n%s\", bar());\n"
+"-    return 0;\n"
+"+    return 1;\n"
+" }\n"
+"Index: code/bar.c\n"
+"===================================================================\n"
+"--- code/bar.c\t(revision 14)\n"
+"+++ code/bar.c\t(working copy)\n"
+"@@ -1,4 +1,4 @@\n"
+" const char *bar(void)\n"
+" {\n"
+"-    return \"Me neither!\\n\";\n"
+"+    return \"Well, I do like being moved around!\\n\";\n"
+" }\n"
+"Index: code/baz.c\n"
+"===================================================================\n"
+"--- code/baz.c\t(revision 14)\n"
+"+++ code/baz.c\t(working copy)\n"
+"@@ -1,4 +0,0 @@\n"
+"-const char *bar(void)\n"
+"-{\n"
+"-    return \"Me neither!\\n\";\n"
+"-}\n"
+"Index: Makefile\n"
+"===================================================================\n"
+"--- Makefile\t(revision 14)\n"
+"+++ Makefile\t(working copy)\n"
+"@@ -1,2 +1,2 @@\n"
+" foo: \n"
+"-\t$(CC) -o $@ code/foo.c code/baz.c\n"
+"+\t$(CC) -o $@ code/foo.c code/bar.c\n"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><sect2><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:3396
+msgid ""
+"You've now resolved your first tree conflict! You can commit your changes "
+"and tell Harry during tea break about all the extra work he caused for you."
+msgstr ""
+
+#. type: Content of: <chapter><sect1><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:3407
+msgid "Summary"
+msgstr ""
+
+#. type: Content of: <chapter><sect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:3409
+msgid ""
+"Now we've covered most of the Subversion client commands.  Notable "
+"exceptions are those dealing with branching and merging (see <xref linkend="
+"\"svn.branchmerge\"/>) and properties (see <xref linkend=\"svn.advanced.props"
+"\"/>).  However, you may want to take a moment to skim through <xref linkend="
+"\"svn.ref.svn\"/> to get an idea of all the different commands that "
+"Subversion has&mdash;and how you can use them to make your work easier."
+msgstr ""

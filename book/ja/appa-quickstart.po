@@ -1,0 +1,354 @@
+# Japanese translations for PACKAGE package
+# Copyright (C) 2017 Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2017.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2017-08-03 18:00+0900\n"
+"PO-Revision-Date: 2017-08-03 18:00+0900\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: matsuand個人翻訳\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. type: Content of: <appendix><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appa-quickstart.xml:5
+msgid "Subversion Quick-Start Guide"
+msgstr ""
+
+#. type: Content of: <appendix><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appa-quickstart.xml:8
+msgid ""
+"If you're eager to get Subversion up and running (and you enjoy learning by "
+"experimentation), this appendix will show you how to create a repository, "
+"import code, and then check it back out again as a working copy.  Along the "
+"way, we give links to the relevant chapters of this book."
+msgstr ""
+
+#. type: Content of: <appendix><warning><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appa-quickstart.xml:15
+msgid ""
+"If you're new to the entire concept of version control or to the <quote>copy-"
+"modify-merge</quote> model used by both CVS and Subversion, you should read "
+"<xref linkend=\"svn.basic\"/> before going any further."
+msgstr ""
+
+#. type: Content of: <appendix><sect1><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appa-quickstart.xml:27
+msgid "Installing Subversion"
+msgstr ""
+
+#. type: Content of: <appendix><sect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appa-quickstart.xml:29
+msgid ""
+"Subversion is built on a portability layer called APR&mdash;the Apache "
+"Portable Runtime library.  The APR library provides all the interfaces that "
+"Subversion needs to function on different operating systems: disk access, "
+"network access, memory management, and so on.  While Subversion is able to "
+"use Apache HTTP Server (or, <command>httpd</command>) as one of its network "
+"server programs, its dependence on APR <emphasis>does not</emphasis> mean "
+"that <command>httpd</command> is a required component.  APR is a standalone "
+"library usable by any application.  It does mean, however, that Subversion "
+"clients and servers run on any operating system that <command>httpd</"
+"command> runs on: Windows, Linux, all flavors of BSD, Mac OS X, NetWare, and "
+"others."
+msgstr ""
+
+#. type: Content of: <appendix><sect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appa-quickstart.xml:43
+msgid ""
+"The easiest way to get Subversion is to download a binary package built for "
+"your operating system.  Subversion's web site (<ulink url=\"http://"
+"subversion.apache.org\"/>) often has these packages available for download, "
+"posted by volunteers.  The site usually contains graphical installer "
+"packages for users of Microsoft operating systems.  If you run a Unix-like "
+"operating system, you can use your system's native package distribution "
+"system (RPMs, DEBs, the ports tree, etc.) to get Subversion."
+msgstr ""
+
+#. type: Content of: <appendix><sect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appa-quickstart.xml:53
+msgid ""
+"Alternatively, you can build Subversion directly from source code, though "
+"it's not always an easy task. (If you're not experienced at building open "
+"source software packages, you're probably better off downloading a binary "
+"distribution instead!)  From the Subversion web site, download the latest "
+"source code release.  After unpacking it, follow the instructions in the "
+"<filename>INSTALL</filename> file to build it."
+msgstr ""
+
+#. type: Content of: <appendix><sect1><para><footnote><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appa-quickstart.xml:67
+msgid ""
+"Note that the URL checked out in the example ends not with "
+"<literal>subversion</literal>, but with a subdirectory thereof called "
+"<literal>trunk</literal>.  See our discussion of Subversion's branching and "
+"tagging model for the reasoning behind this."
+msgstr ""
+
+#. type: Content of: <appendix><sect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appa-quickstart.xml:61
+msgid ""
+"If you're one of those folks that likes to use bleeding-edge software, you "
+"can also get the Subversion source code from the Subversion repository in "
+"which it lives.  Obviously, you'll need to already have a Subversion client "
+"on hand to do this.  But once you do, you can check out a working copy from "
+"<ulink url=\"http://svn.apache.org/repos/asf/subversion\" /><placeholder "
+"type=\"footnote\" id=\"0\"/>:"
+msgstr ""
+
+#. type: Content of: <appendix><sect1><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appa-quickstart.xml:75
+#, no-wrap
+msgid ""
+"$ svn checkout http://svn.apache.org/repos/asf/subversion/trunk subversion\n"
+"A    subversion/HACKING\n"
+"A    subversion/INSTALL\n"
+"A    subversion/README\n"
+"A    subversion/autogen.sh\n"
+"A    subversion/build.conf\n"
+"&hellip;\n"
+msgstr ""
+
+#. type: Content of: <appendix><sect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appa-quickstart.xml:85
+msgid ""
+"The preceding command will create a working copy of the latest (unreleased) "
+"Subversion source code into a subdirectory named <filename>subversion</"
+"filename> in your current working directory.  You can adjust that last "
+"argument as you see fit.  Regardless of what you call the new working copy "
+"directory, though, after this operation completes, you will now have the "
+"Subversion source code.  Of course, you will still need to fetch a few "
+"helper libraries (apr, apr-util, etc.)&mdash;see the <filename>INSTALL</"
+"filename> file in the top level of the working copy for details."
+msgstr ""
+
+#. type: Content of: <appendix><sect1><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appa-quickstart.xml:103
+msgid "High-Speed Tutorial"
+msgstr ""
+
+#. type: Content of: <appendix><sect1><blockquote><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appa-quickstart.xml:106
+msgid ""
+"<quote>Please make sure your seat backs are in their full, upright position "
+"and that your tray tables are stored.  Flight attendants, prepare for take-"
+"off&hellip;.</quote>"
+msgstr ""
+
+#. type: Content of: <appendix><sect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appa-quickstart.xml:111
+msgid ""
+"What follows is a quick tutorial that walks you through some basic "
+"Subversion configuration and operation.  When you finish it, you should have "
+"a general understanding of Subversion's typical usage."
+msgstr ""
+
+#. type: Content of: <appendix><sect1><note><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appa-quickstart.xml:117
+msgid ""
+"The examples used in this appendix assume that you have <command>svn</"
+"command>, the Subversion command-line client, and <command>svnadmin</"
+"command>, the administrative tool, ready to go on a Unix-like operating "
+"system.  (This tutorial also works at the Windows command-line prompt, "
+"assuming you make some obvious tweaks.)  We also assume you are using "
+"Subversion 1.2 or later (run <userinput>svn --version</userinput> to check)."
+msgstr ""
+
+#. type: Content of: <appendix><sect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appa-quickstart.xml:127
+msgid ""
+"Subversion stores all versioned data in a central repository.  To begin, "
+"create a new repository:"
+msgstr ""
+
+#. type: Content of: <appendix><sect1><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appa-quickstart.xml:132
+#, no-wrap
+msgid ""
+"$ cd /var/svn\n"
+"$ svnadmin create repos\n"
+"$ ls repos\n"
+"conf/  dav/  db/  format  hooks/  locks/  README.txt\n"
+"$\n"
+msgstr ""
+
+#. type: Content of: <appendix><sect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appa-quickstart.xml:140
+msgid ""
+"This command creates a Subversion repository in the directory <filename>/var/"
+"svn/repos</filename>, creating the <filename>repos</filename> directory "
+"itself if it doesn't already exist.  This directory contains (among other "
+"things) a collection of database files.  You won't see your versioned files "
+"if you peek inside.  For more information about repository creation and "
+"maintenance, see <xref linkend=\"svn.reposadmin\"/>."
+msgstr ""
+
+#. type: Content of: <appendix><sect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appa-quickstart.xml:149
+msgid ""
+"Subversion has no concept of a <quote>project.</quote> The repository is "
+"just a virtual versioned filesystem, a large tree that can hold anything you "
+"wish.  Some administrators prefer to store only one project in a repository, "
+"and others prefer to store multiple projects in a repository by placing them "
+"into separate directories.  We discuss the merits of each approach in <xref "
+"linkend=\"svn.reposadmin.projects.chooselayout\"/>.  Either way, the "
+"repository manages only files and directories, so it's up to humans to "
+"interpret particular directories as <quote>projects.</quote> So while you "
+"might see references to projects throughout this book, keep in mind that "
+"we're only ever talking about some directory (or collection of directories) "
+"in the repository."
+msgstr ""
+
+#. type: Content of: <appendix><sect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appa-quickstart.xml:163
+msgid ""
+"In this example, we assume you already have some sort of project (a "
+"collection of files and directories) that you wish to import into your newly "
+"created Subversion repository.  Begin by organizing your data into a single "
+"directory called <filename>myproject</filename> (or whatever you wish).  For "
+"reasons explained in <xref linkend=\"svn.branchmerge\"/>, your project's "
+"tree structure should contain three top-level directories named "
+"<filename>branches</filename>, <filename>tags</filename>, and "
+"<filename>trunk</filename>.  The <filename>trunk</filename> directory should "
+"contain all of your data, and the <filename>branches</filename> and "
+"<filename>tags</filename> directories should be empty:"
+msgstr ""
+
+#. type: Content of: <appendix><sect1><informalexample><literallayout>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appa-quickstart.xml:178
+#, no-wrap
+msgid ""
+"/tmp/\n"
+"   myproject/\n"
+"      branches/\n"
+"      tags/\n"
+"      trunk/\n"
+"         foo.c\n"
+"         bar.c\n"
+"         Makefile\n"
+"         &hellip;\n"
+msgstr ""
+
+#. type: Content of: <appendix><sect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appa-quickstart.xml:190
+msgid ""
+"The <filename>branches</filename>, <filename>tags</filename>, and "
+"<filename>trunk</filename> subdirectories aren't actually required by "
+"Subversion.  They're merely a popular convention that you'll most likely "
+"want to use later on."
+msgstr ""
+
+#. type: Content of: <appendix><sect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appa-quickstart.xml:195
+msgid ""
+"Once you have your tree of data ready to go, import it into the repository "
+"with the <command>svn import</command> command (see <xref linkend=\"svn.tour."
+"importing\"/>):"
+msgstr ""
+
+#. type: Content of: <appendix><sect1><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appa-quickstart.xml:201
+#, no-wrap
+msgid ""
+"$ svn import /tmp/myproject file:///var/svn/repos/myproject \\\n"
+"      -m \"initial import\"\n"
+"Adding         /tmp/myproject/branches\n"
+"Adding         /tmp/myproject/tags\n"
+"Adding         /tmp/myproject/trunk\n"
+"Adding         /tmp/myproject/trunk/foo.c\n"
+"Adding         /tmp/myproject/trunk/bar.c\n"
+"Adding         /tmp/myproject/trunk/Makefile\n"
+"&hellip;\n"
+"Committed revision 1.\n"
+"$ \n"
+msgstr ""
+
+#. type: Content of: <appendix><sect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appa-quickstart.xml:215
+msgid ""
+"Now the repository contains this tree of data.  As mentioned earlier, you "
+"won't see your files by directly peeking into the repository; they're all "
+"stored within a database.  But the repository's imaginary filesystem now "
+"contains a top-level directory named <filename>myproject</filename>, which "
+"in turn contains your data."
+msgstr ""
+
+#. type: Content of: <appendix><sect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appa-quickstart.xml:222
+msgid ""
+"Note that the original <filename>/tmp/myproject</filename> directory is "
+"unchanged; Subversion is unaware of it.  (In fact, you can even delete that "
+"directory if you wish.)  To start manipulating repository data, you need to "
+"create a new <quote>working copy</quote> of the data, a sort of private "
+"workspace.  Ask Subversion to <quote>check out</quote> a working copy of the "
+"<filename>myproject/trunk</filename> directory in the repository:"
+msgstr ""
+
+#. type: Content of: <appendix><sect1><informalexample><screen>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appa-quickstart.xml:233
+#, no-wrap
+msgid ""
+"$ svn checkout file:///var/svn/repos/myproject/trunk myproject\n"
+"A    myproject/foo.c\n"
+"A    myproject/bar.c\n"
+"A    myproject/Makefile\n"
+"&hellip;\n"
+"Checked out revision 1.\n"
+"$\n"
+msgstr ""
+
+#. type: Content of: <appendix><sect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appa-quickstart.xml:243
+msgid ""
+"Now you have a personal copy of part of the repository in a new directory "
+"named <filename>myproject</filename>.  You can edit the files in your "
+"working copy and then commit those changes back into the repository."
+msgstr ""
+
+#. type: Content of: <appendix><sect1><itemizedlist><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appa-quickstart.xml:250
+msgid "Enter your working copy and edit a file's contents."
+msgstr ""
+
+#. type: Content of: <appendix><sect1><itemizedlist><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appa-quickstart.xml:254
+msgid ""
+"Run <userinput>svn diff</userinput> to see unified diff output of your "
+"changes."
+msgstr ""
+
+#. type: Content of: <appendix><sect1><itemizedlist><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appa-quickstart.xml:258
+msgid ""
+"Run <userinput>svn commit</userinput> to commit the new version of your file "
+"to the repository."
+msgstr ""
+
+#. type: Content of: <appendix><sect1><itemizedlist><listitem><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appa-quickstart.xml:262
+msgid ""
+"Run <userinput>svn update</userinput> to bring your working copy <quote>up "
+"to date</quote> with the repository."
+msgstr ""
+
+#. type: Content of: <appendix><sect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appa-quickstart.xml:267
+msgid ""
+"For a full tour of all the things you can do with your working copy, read "
+"<xref linkend=\"svn.tour\"/>."
+msgstr ""
+
+#. type: Content of: <appendix><sect1><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appa-quickstart.xml:270
+msgid ""
+"At this point, you have the option of making your repository available to "
+"others over a network.  See <xref linkend=\"svn.serverconfig\"/> to learn "
+"about the different sorts of server processes available and how to configure "
+"them."
+msgstr ""

@@ -1,0 +1,103 @@
+# Japanese translations for PACKAGE package
+# Copyright (C) 2017 Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2017.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2017-08-03 18:00+0900\n"
+"PO-Revision-Date: 2017-08-03 18:00+0900\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: matsuand個人翻訳\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. type: Content of: <book><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/book.xml:45
+msgid "Version Control with Subversion [DRAFT]"
+msgstr ""
+
+#. type: Content of: <book><bookinfo><subtitle>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/book.xml:49
+msgid "For Subversion 1.8"
+msgstr ""
+
+#. type: Content of: <book><bookinfo><subtitle>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/book.xml:53
+msgid "(Compiled from &svn.l10n_revision;&svn.version;)"
+msgstr ""
+
+#. type: Content of: <book><bookinfo><authorgroup><author><firstname>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/book.xml:63
+msgid "Ben"
+msgstr ""
+
+#. type: Content of: <book><bookinfo><authorgroup><author><surname>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/book.xml:64
+msgid "Collins-Sussman"
+msgstr ""
+
+#. type: Content of: <book><bookinfo><authorgroup><author><firstname>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/book.xml:68
+msgid "Brian W."
+msgstr ""
+
+#. type: Content of: <book><bookinfo><authorgroup><author><surname>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/book.xml:69
+msgid "Fitzpatrick"
+msgstr ""
+
+#. type: Content of: <book><bookinfo><authorgroup><author><firstname>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/book.xml:73
+msgid "C. Michael"
+msgstr ""
+
+#. type: Content of: <book><bookinfo><authorgroup><author><surname>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/book.xml:74
+msgid "Pilato"
+msgstr ""
+
+#
+#.     <pagenums>
+#. 350 pages (est.)</pagenums>
+#.     <pubdate>(TBA)</pubdate>
+#.     
+#. type: Content of: <book><bookinfo>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/book.xml:79
+msgid ""
+"<editor> <firstname>Tatiana</firstname> <surname>Apandi</surname> </editor> "
+"<copyright> <year>2002</year> <year>2003</year> <year>2004</year> "
+"<year>2005</year> <year>2006</year> <year>2007</year> <year>2008</year> "
+"<year>2009</year> <year>2010</year> <year>2011</year> <year>2012</year> "
+"<year>2013</year> <year>2014</year> <year>2015</year> <year>2016</year> "
+"<holder>Ben Collins-Sussman</holder> <holder>Brian W. Fitzpatrick</holder> "
+"<holder>C. Michael Pilato</holder> </copyright>"
+msgstr ""
+
+#. type: Content of: <book><bookinfo><legalnotice><para>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/book.xml:110
+msgid ""
+"This work is licensed under the Creative Commons Attribution License.  To "
+"view a copy of this license, visit <ulink url=\"http://creativecommons.org/"
+"licenses/by/2.0/\"/> or send a letter to Creative Commons, 559 Nathan Abbott "
+"Way, Stanford, California 94305, USA."
+msgstr ""
+
+#. type: Content of: <book><part><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/book.xml:124
+msgid "Getting to Know Subversion"
+msgstr ""
+
+#. type: Content of: <book><part><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/book.xml:137
+msgid "Subversion Command Reference"
+msgstr ""
+
+#. type: Content of: <book><part><title>
+#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/book.xml:152
+msgid "Appendices"
+msgstr ""

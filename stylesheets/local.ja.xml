@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<l:i18n xmlns:l="http://docbook.sourceforge.net/xmlns/l10n/1.0">
+  <l:l10n language="ja" english-language-name="Japanese">
+
+    <l:context name="styles">
+      <l:template name="person-name" text="first-last"/>
+    </l:context>
+
+    <l:gentext key="TableofContents" text="も く じ"/>
+    <l:gentext key="tableofcontents" text="も く じ"/>
+    <l:gentext key="Index" text="さくいん"/>
+    <l:gentext key="index" text="さくいん"/>
+
+  </l:l10n>
+</l:i18n>
