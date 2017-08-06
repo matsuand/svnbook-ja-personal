@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2017-08-03 18:00+0900\n"
-"PO-Revision-Date: 2017-08-03 18:00+0900\n"
+"POT-Creation-Date: 2017-08-06 14:19+0900\n"
+"PO-Revision-Date: 2017-08-06 14:19+0900\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: matsuand個人翻訳\n"
 "Language: ja\n"
@@ -17,12 +17,12 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. type: Content of: <chapter><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:4
+#: ch02-basic-usage.xml:4
 msgid "Basic Usage"
-msgstr "利用の基本"
+msgstr ""
 
 #. type: Content of: <chapter><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:6
+#: ch02-basic-usage.xml:6
 msgid ""
 "Theory is useful, but its application is just plain fun.  Let's move now "
 "into the details of using Subversion.  By the time you reach the end of this "
@@ -35,7 +35,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:16
+#: ch02-basic-usage.xml:16
 msgid ""
 "This chapter will not provide exhaustive coverage of all of Subversion's "
 "commands&mdash;rather, it's a conversational introduction to the most common "
@@ -46,7 +46,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:24
+#: ch02-basic-usage.xml:24
 msgid ""
 "Also, this chapter assumes that the reader is seeking information about how "
 "to interact in a basic fashion with an existing Subversion repository.  No "
@@ -59,7 +59,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:35
+#: ch02-basic-usage.xml:35
 msgid ""
 "Finally, any Subversion operation that contacts the repository over a "
 "network may potentially require that the user authenticate.  For the sake of "
@@ -72,74 +72,47 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:50
+#: ch02-basic-usage.xml:50
 msgid "Help!"
-msgstr "ヘルプ!"
+msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><indexterm><primary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:53
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:110
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:173
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:380
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:560
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:679
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:700
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:728
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:748
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:767
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:878
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1069
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1141
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1220
+#: ch02-basic-usage.xml:53 ch02-basic-usage.xml:110 ch02-basic-usage.xml:173
+#: ch02-basic-usage.xml:380 ch02-basic-usage.xml:560 ch02-basic-usage.xml:679
+#: ch02-basic-usage.xml:700 ch02-basic-usage.xml:728 ch02-basic-usage.xml:748
+#: ch02-basic-usage.xml:767 ch02-basic-usage.xml:878 ch02-basic-usage.xml:1069
+#: ch02-basic-usage.xml:1141 ch02-basic-usage.xml:1220
 msgid "svn"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><indexterm><secondary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:54
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:174
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:381
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:561
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:680
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:701
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:729
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:749
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:768
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:879
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1070
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1142
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1221
+#: ch02-basic-usage.xml:54 ch02-basic-usage.xml:174 ch02-basic-usage.xml:381
+#: ch02-basic-usage.xml:561 ch02-basic-usage.xml:680 ch02-basic-usage.xml:701
+#: ch02-basic-usage.xml:729 ch02-basic-usage.xml:749 ch02-basic-usage.xml:768
+#: ch02-basic-usage.xml:879 ch02-basic-usage.xml:1070
+#: ch02-basic-usage.xml:1142 ch02-basic-usage.xml:1221
 msgid "subcommands"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><indexterm><tertiary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:55
+#: ch02-basic-usage.xml:55
 msgid "help"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para><indexterm>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:55
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:175
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:382
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:562
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:681
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:702
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:730
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:750
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:769
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:880
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1071
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1143
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1222
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1567
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1670
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1884
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2010
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2048
+#: ch02-basic-usage.xml:55 ch02-basic-usage.xml:175 ch02-basic-usage.xml:382
+#: ch02-basic-usage.xml:562 ch02-basic-usage.xml:681 ch02-basic-usage.xml:702
+#: ch02-basic-usage.xml:730 ch02-basic-usage.xml:750 ch02-basic-usage.xml:769
+#: ch02-basic-usage.xml:880 ch02-basic-usage.xml:1071
+#: ch02-basic-usage.xml:1143 ch02-basic-usage.xml:1222
+#: ch02-basic-usage.xml:1567 ch02-basic-usage.xml:1670
+#: ch02-basic-usage.xml:1884 ch02-basic-usage.xml:2010
+#: ch02-basic-usage.xml:2048
 msgid "<placeholder type=\"tertiary\" id=\"0\"/>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:58
+#: ch02-basic-usage.xml:58
 msgid ""
 "It goes without saying that this book exists to be a source of information "
 "and assistance for Subversion users new and old.  Conveniently, though, the "
@@ -147,14 +120,9 @@ msgid ""
 "book off the shelf (wooden, virtual, or otherwise).  The <command>svn help</"
 "command> command is your gateway to that built-in documentation:"
 msgstr ""
-"It goes without saying that this book exists to be a source of information "
-"and assistance for Subversion users new and old.  Conveniently, though, the "
-"Subversion command-line is self-documenting, alleviating the need to grab a "
-"book off the shelf (wooden, virtual, or otherwise).  The <command>svn help</"
-"command> command is your gateway to that built-in documentation:"
 
 #. type: Content of: <chapter><sect1><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:68
+#: ch02-basic-usage.xml:68
 #, no-wrap
 msgid ""
 "$ svn help\n"
@@ -176,7 +144,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:87
+#: ch02-basic-usage.xml:87
 msgid ""
 "As described in the previous output, you can ask for help on a particular "
 "subcommand by running <userinput>svn help <replaceable>SUBCOMMAND</"
@@ -185,7 +153,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:95
+#: ch02-basic-usage.xml:95
 #, no-wrap
 msgid ""
 "$ svn help help\n"
@@ -199,17 +167,17 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sidebar><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:107
+#: ch02-basic-usage.xml:107
 msgid "Options and Switches and Flags, Oh My!"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sidebar><indexterm><secondary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:111
+#: ch02-basic-usage.xml:111
 msgid "options"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sidebar><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:114
+#: ch02-basic-usage.xml:114
 msgid ""
 "The Subversion command-line client has numerous command modifiers.  Some "
 "folks refer to such things as <quote>switches</quote> or <quote>flags</"
@@ -220,7 +188,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sidebar><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:123
+#: ch02-basic-usage.xml:123
 msgid ""
 "Subversion's options have two distinct forms: short options are a single "
 "hyphen followed by a single letter, and long options consist of two hyphens "
@@ -237,7 +205,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:142
+#: ch02-basic-usage.xml:142
 msgid ""
 "Many Unix-based distributions of Subversion include manual pages of the sort "
 "that can be invoked using the <command>man</command> program, but those tend "
@@ -251,12 +219,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:160
+#: ch02-basic-usage.xml:160
 msgid "Getting Data into Your Repository"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:162
+#: ch02-basic-usage.xml:162
 msgid ""
 "You can get new files into your Subversion repository in two ways: "
 "<command>svn import</command> and <command>svn add</command>.  We'll discuss "
@@ -265,17 +233,17 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:170
+#: ch02-basic-usage.xml:170
 msgid "Importing Files and Directories"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><indexterm><tertiary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:175
+#: ch02-basic-usage.xml:175
 msgid "import"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:178
+#: ch02-basic-usage.xml:178
 msgid ""
 "The <command>svn import</command> command is a quick way to copy an "
 "unversioned tree of files into a repository, creating intermediate "
@@ -286,7 +254,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:188
+#: ch02-basic-usage.xml:188
 #, no-wrap
 msgid ""
 "$ svn import /path/to/mytree \\\n"
@@ -302,7 +270,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:201
+#: ch02-basic-usage.xml:201
 msgid ""
 "The previous example copied the contents of the local directory "
 "<filename>mytree</filename> into the directory <filename>some/project</"
@@ -312,7 +280,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:211
+#: ch02-basic-usage.xml:211
 #, no-wrap
 msgid ""
 "$ svn list http://svn.example.com/svn/repo/some/project\n"
@@ -323,7 +291,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:219
+#: ch02-basic-usage.xml:219
 msgid ""
 "Note that after the import is finished, the original local directory is "
 "<emphasis>not</emphasis> converted into a working copy.  To begin working on "
@@ -332,12 +300,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:229
+#: ch02-basic-usage.xml:229
 msgid "Recommended Repository Layout"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:231
+#: ch02-basic-usage.xml:231
 msgid ""
 "Subversion provides the ultimate flexibility in terms of how you arrange "
 "your data.  Because it simply versions directories and files, and because it "
@@ -350,27 +318,27 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para><indexterm><primary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:244
+#: ch02-basic-usage.xml:244
 msgid "trunk"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para><indexterm><primary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:247
+#: ch02-basic-usage.xml:247
 msgid "tags"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para><indexterm><primary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:250
+#: ch02-basic-usage.xml:250
 msgid "branches"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para><indexterm><primary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:253
+#: ch02-basic-usage.xml:253
 msgid "project root"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:243
+#: ch02-basic-usage.xml:243
 msgid ""
 "<placeholder type=\"indexterm\" id=\"0\"/> <placeholder type=\"indexterm\" "
 "id=\"1\"/> <placeholder type=\"indexterm\" id=\"2\"/> <placeholder type="
@@ -396,12 +364,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:279
+#: ch02-basic-usage.xml:279
 msgid "Here are some examples:"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:283
+#: ch02-basic-usage.xml:283
 #, no-wrap
 msgid ""
 "$ svn list file:///var/svn/single-project-repo\n"
@@ -419,7 +387,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:298
+#: ch02-basic-usage.xml:298
 msgid ""
 "We talk much more about tags and branches in <xref linkend=\"svn.branchmerge"
 "\"/>.  For details and some advice on how to set up repositories when you "
@@ -429,12 +397,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:309
+#: ch02-basic-usage.xml:309
 msgid "What's In a Name?"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:311
+#: ch02-basic-usage.xml:311
 msgid ""
 "Subversion tries hard not to limit the type of data you can place under "
 "version control.  The contents of files and property values are stored and "
@@ -446,7 +414,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:321
+#: ch02-basic-usage.xml:321
 msgid ""
 "Subversion internally handles certain bits of data&mdash;for example, "
 "property names, pathnames, and log messages&mdash;as UTF-8-encoded Unicode.  "
@@ -458,7 +426,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:331
+#: ch02-basic-usage.xml:331
 msgid ""
 "In WebDAV exchanges and older versions of some of Subversion's "
 "administrative files, paths are used as XML attribute values, and property "
@@ -471,7 +439,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:342
+#: ch02-basic-usage.xml:342
 msgid ""
 "While it may seem like a lot to remember, in practice these limitations are "
 "rarely a problem.  As long as your locale settings are compatible with UTF-8 "
@@ -483,7 +451,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><warning><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:353
+#: ch02-basic-usage.xml:353
 msgid ""
 "Of course, when it comes to choosing valid path names, Subversion isn't the "
 "only limiting factor.  Teams using multiple operating systems need to "
@@ -499,17 +467,17 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:376
+#: ch02-basic-usage.xml:376
 msgid "Creating a Working Copy"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><para><indexterm><tertiary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:382
+#: ch02-basic-usage.xml:382
 msgid "checkout"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:379
+#: ch02-basic-usage.xml:379
 msgid ""
 "<placeholder type=\"indexterm\" id=\"0\"/>Most of the time, you will start "
 "using a Subversion repository by performing a <firstterm>checkout</"
@@ -521,7 +489,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:394
+#: ch02-basic-usage.xml:394
 #, no-wrap
 msgid ""
 "$ svn checkout http://svn.example.com/svn/repo/trunk\n"
@@ -535,7 +503,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:405
+#: ch02-basic-usage.xml:405
 msgid ""
 "Although the preceding example checks out the trunk directory, you can just "
 "as easily check out a deeper subdirectory of a repository by specifying that "
@@ -543,7 +511,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:412
+#: ch02-basic-usage.xml:412
 #, no-wrap
 msgid ""
 "$ svn checkout http://svn.example.com/svn/repo/trunk/src\n"
@@ -556,7 +524,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:422
+#: ch02-basic-usage.xml:422
 msgid ""
 "Since Subversion uses a copy-modify-merge model instead of lock-modify-"
 "unlock (see <xref linkend=\"svn.basic.vsn-models\"/>), you can immediately "
@@ -567,7 +535,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><warning><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:431
+#: ch02-basic-usage.xml:431
 msgid ""
 "While your working copy is <quote>just like any other collection of files "
 "and directories on your system,</quote> you can edit files at will, but you "
@@ -579,7 +547,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:442
+#: ch02-basic-usage.xml:442
 msgid ""
 "Unless you're ready to commit the addition of a new file or directory or "
 "changes to existing ones, there's no need to further notify the Subversion "
@@ -587,12 +555,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sidebar><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:448
+#: ch02-basic-usage.xml:448
 msgid "What Is This .svn Directory?"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sidebar><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:450
+#: ch02-basic-usage.xml:450
 msgid ""
 "The topmost directory of a working copy&mdash;and prior to version 1.7, "
 "every versioned subdirectory thereof&mdash;contains a special administrative "
@@ -604,7 +572,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:461
+#: ch02-basic-usage.xml:461
 msgid ""
 "Notice that in the previous pair of examples, Subversion chose to create a "
 "working copy in a directory named for the final component of the checkout "
@@ -616,7 +584,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:473
+#: ch02-basic-usage.xml:473
 #, no-wrap
 msgid ""
 "$ svn checkout http://svn.example.com/svn/repo/trunk my-working-copy\n"
@@ -630,19 +598,19 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:484
+#: ch02-basic-usage.xml:484
 msgid ""
 "If the local directory you specify doesn't yet exist, that's okay&mdash;"
 "<command>svn checkout</command> will create it for you."
 msgstr ""
 
 #. type: Content of: <chapter><sect1><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:494
+#: ch02-basic-usage.xml:494
 msgid "Basic Work Cycle"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:496
+#: ch02-basic-usage.xml:496
 msgid ""
 "Subversion has numerous features, options, bells, and whistles, but on a day-"
 "to-day basis, odds are that you will use only a few of them.  In this "
@@ -651,19 +619,19 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:502
+#: ch02-basic-usage.xml:502
 msgid "The typical work cycle looks like this:"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><orderedlist><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:506
+#: ch02-basic-usage.xml:506
 msgid ""
 "<emphasis>Update your working copy.</emphasis> This involves the use of the "
 "<command>svn update</command> command."
 msgstr ""
 
 #. type: Content of: <chapter><sect1><orderedlist><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:511
+#: ch02-basic-usage.xml:511
 msgid ""
 "<emphasis>Make your changes.</emphasis> The most common changes that you'll "
 "make are edits to the contents of your existing files.  But sometimes you "
@@ -674,7 +642,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><orderedlist><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:521
+#: ch02-basic-usage.xml:521
 msgid ""
 "<emphasis>Review your changes.</emphasis> The <command>svn status</command> "
 "and <command>svn diff</command> commands are critical to reviewing the "
@@ -682,7 +650,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><orderedlist><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:527
+#: ch02-basic-usage.xml:527
 msgid ""
 "<emphasis>Fix your mistakes.</emphasis> Nobody's perfect, so as you review "
 "your changes, you may spot something that's not quite right.  Sometimes the "
@@ -692,7 +660,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><orderedlist><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:535
+#: ch02-basic-usage.xml:535
 msgid ""
 "<emphasis>Resolve any conflicts (merge others' changes).</emphasis> In the "
 "time it takes you to make and review your changes, others might have made "
@@ -704,7 +672,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><orderedlist><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:547
+#: ch02-basic-usage.xml:547
 msgid ""
 "<emphasis>Publish (commit) your changes.</emphasis> The <command>svn commit</"
 "command> command transmits your changes to the repository where, if they are "
@@ -713,17 +681,17 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:557
+#: ch02-basic-usage.xml:557
 msgid "Update Your Working Copy"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><indexterm><tertiary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:562
+#: ch02-basic-usage.xml:562
 msgid "update"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:565
+#: ch02-basic-usage.xml:565
 msgid ""
 "When working on a project that is being modified via multiple working "
 "copies, you'll want to update your working copy to receive any changes "
@@ -736,14 +704,14 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:577
+#: ch02-basic-usage.xml:577
 msgid ""
 "Use <command>svn update</command> to bring your working copy into sync with "
 "the latest revision in the repository:"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:583
+#: ch02-basic-usage.xml:583
 #, no-wrap
 msgid ""
 "$ svn update\n"
@@ -755,7 +723,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:592
+#: ch02-basic-usage.xml:592
 msgid ""
 "In this case, it appears that someone committed modifications to both "
 "<filename>foo.c</filename> and <filename>bar.c</filename> since the last "
@@ -764,7 +732,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:598
+#: ch02-basic-usage.xml:598
 msgid ""
 "When the server sends changes to your working copy via <command>svn update</"
 "command>, a letter code is displayed next to each item to let you know what "
@@ -775,22 +743,22 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:610
+#: ch02-basic-usage.xml:610
 msgid "Make Your Changes"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para><indexterm><primary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:614
+#: ch02-basic-usage.xml:614
 msgid "file changes"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para><indexterm><primary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:617
+#: ch02-basic-usage.xml:617
 msgid "tree changes"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:613
+#: ch02-basic-usage.xml:613
 msgid ""
 "<placeholder type=\"indexterm\" id=\"0\"/> <placeholder type=\"indexterm\" "
 "id=\"1\"/>Now you can get to work and make changes in your working copy.  "
@@ -811,23 +779,22 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sidebar><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:638
+#: ch02-basic-usage.xml:638
 msgid "Versioning Symbolic Links"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sidebar><para><indexterm><see>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:642
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:646
+#: ch02-basic-usage.xml:642 ch02-basic-usage.xml:646
 msgid "symlink"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sidebar><para><indexterm><primary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:645
+#: ch02-basic-usage.xml:645
 msgid "symbolic link"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sidebar><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:641
+#: ch02-basic-usage.xml:641
 msgid ""
 "<placeholder type=\"indexterm\" id=\"0\"/> <placeholder type=\"indexterm\" "
 "id=\"1\"/>On non-Windows platforms, Subversion is able to version files of "
@@ -838,7 +805,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sidebar><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:655
+#: ch02-basic-usage.xml:655
 msgid ""
 "When a symlink is committed into a Subversion repository, Subversion "
 "remembers that the file was in fact a symlink, as well as the object to "
@@ -854,24 +821,24 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:670
+#: ch02-basic-usage.xml:670
 msgid ""
 "Here is an overview of the five Subversion subcommands that you'll use most "
 "often to make tree changes:"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:676
+#: ch02-basic-usage.xml:676
 msgid "<userinput>svn add FOO</userinput>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><listitem><indexterm><tertiary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:681
+#: ch02-basic-usage.xml:681
 msgid "add"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:683
+#: ch02-basic-usage.xml:683
 msgid ""
 "Use this to schedule the file, directory, or symbolic link <filename>FOO</"
 "filename> to be added to the repository.  When you next commit, "
@@ -883,17 +850,17 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:697
+#: ch02-basic-usage.xml:697
 msgid "<userinput>svn delete FOO</userinput>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><listitem><indexterm><tertiary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:702
+#: ch02-basic-usage.xml:702
 msgid "delete"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><listitem><para><footnote><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:713
+#: ch02-basic-usage.xml:713
 msgid ""
 "Of course, nothing is ever totally deleted from the repository&mdash;just "
 "from its <literal>HEAD</literal> revision.  You may continue to access the "
@@ -903,7 +870,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:704
+#: ch02-basic-usage.xml:704
 msgid ""
 "Use this to schedule the file, directory, or symbolic link <filename>FOO</"
 "filename> to be deleted from the repository.  If <filename>FOO</filename> is "
@@ -915,17 +882,17 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:725
+#: ch02-basic-usage.xml:725
 msgid "<userinput>svn copy FOO BAR</userinput>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><listitem><indexterm><tertiary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:730
+#: ch02-basic-usage.xml:730
 msgid "copy"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:732
+#: ch02-basic-usage.xml:732
 msgid ""
 "Create a new item <filename>BAR</filename> as a duplicate of <filename>FOO</"
 "filename> and automatically schedule <filename>BAR</filename> for addition.  "
@@ -936,17 +903,17 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:745
+#: ch02-basic-usage.xml:745
 msgid "<userinput>svn move FOO BAR</userinput>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><listitem><indexterm><tertiary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:750
+#: ch02-basic-usage.xml:750
 msgid "move"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:752
+#: ch02-basic-usage.xml:752
 msgid ""
 "This command is exactly the same as running <userinput>svn copy FOO BAR; svn "
 "delete FOO</userinput>.  That is, <filename>BAR</filename> is scheduled for "
@@ -957,17 +924,17 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:764
+#: ch02-basic-usage.xml:764
 msgid "<userinput>svn mkdir FOO</userinput>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><listitem><indexterm><tertiary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:769
+#: ch02-basic-usage.xml:769
 msgid "mkdir"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:771
+#: ch02-basic-usage.xml:771
 msgid ""
 "This command is exactly the same as running <userinput>mkdir FOO; svn add "
 "FOO</userinput>.  That is, a new directory named <filename>FOO</filename> is "
@@ -975,12 +942,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sidebar><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:781
+#: ch02-basic-usage.xml:781
 msgid "Changing the Repository Without a Working Copy"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sidebar><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:783
+#: ch02-basic-usage.xml:783
 msgid ""
 "Subversion <emphasis>does</emphasis> offer ways to immediately commit tree "
 "changes to the repository without an explicit commit action.  In particular, "
@@ -994,7 +961,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sidebar><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:796
+#: ch02-basic-usage.xml:796
 msgid ""
 "There are pros and cons to performing URL-based operations.  One obvious "
 "advantage to doing so is speed: sometimes, checking out a working copy that "
@@ -1010,17 +977,17 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:817
+#: ch02-basic-usage.xml:817
 msgid "Review Your Changes"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para><indexterm><primary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:821
+#: ch02-basic-usage.xml:821
 msgid "log message"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:820
+#: ch02-basic-usage.xml:820
 msgid ""
 "<placeholder type=\"indexterm\" id=\"0\"/>Once you've finished making "
 "changes, you need to commit them to the repository, but before you do so, "
@@ -1037,12 +1004,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sidebar><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:838
+#: ch02-basic-usage.xml:838
 msgid "Look Ma! No Network!"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sidebar><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:840
+#: ch02-basic-usage.xml:840
 msgid ""
 "You can use the commands <command>svn status</command>, <command>svn diff</"
 "command>, and <command>svn revert</command> without any network access even "
@@ -1052,17 +1019,17 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sidebar><para><indexterm><primary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:850
+#: ch02-basic-usage.xml:850
 msgid "text-base"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sidebar><para><indexterm><primary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:853
+#: ch02-basic-usage.xml:853
 msgid "delta"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sidebar><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:849
+#: ch02-basic-usage.xml:849
 msgid ""
 "<placeholder type=\"indexterm\" id=\"0\"/> <placeholder type=\"indexterm\" "
 "id=\"1\"/>Subversion does this by keeping private caches of pristine, "
@@ -1080,17 +1047,17 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:875
+#: ch02-basic-usage.xml:875
 msgid "See an overview of your changes"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><indexterm><tertiary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:880
+#: ch02-basic-usage.xml:880
 msgid "status"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:883
+#: ch02-basic-usage.xml:883
 msgid ""
 "To get an overview of your changes, use the <command>svn status</command> "
 "command.  You'll probably use <command>svn status</command> more than any "
@@ -1098,7 +1065,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><tip><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:889
+#: ch02-basic-usage.xml:889
 msgid ""
 "Because the <command>cvs status</command> command's output was so noisy, and "
 "because <command>cvs update</command> not only performs an update, but also "
@@ -1110,7 +1077,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:901
+#: ch02-basic-usage.xml:901
 msgid ""
 "If you run <userinput>svn status</userinput> at the top of your working copy "
 "with no additional arguments, it will detect and report all file and tree "
@@ -1118,7 +1085,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:908
+#: ch02-basic-usage.xml:908
 #, no-wrap
 msgid ""
 "$ svn status\n"
@@ -1131,7 +1098,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:918
+#: ch02-basic-usage.xml:918
 msgid ""
 "In its default output mode, <command>svn status</command> prints seven "
 "columns of characters, followed by several whitespace characters, followed "
@@ -1141,36 +1108,36 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:929
+#: ch02-basic-usage.xml:929
 msgid "<computeroutput>? item</computeroutput>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:931
+#: ch02-basic-usage.xml:931
 msgid ""
 "The file, directory, or symbolic link <filename>item</filename> is not under "
 "version control."
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:938
+#: ch02-basic-usage.xml:938
 msgid "<computeroutput>A item</computeroutput>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:940
+#: ch02-basic-usage.xml:940
 msgid ""
 "The file, directory, or symbolic link <filename>item</filename> has been "
 "scheduled for addition into the repository."
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:947
+#: ch02-basic-usage.xml:947
 msgid "<computeroutput>C item</computeroutput>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:949
+#: ch02-basic-usage.xml:949
 msgid ""
 "The file <filename>item</filename> is in a state of conflict.  That is, "
 "changes received from the server during an update overlap with local changes "
@@ -1180,36 +1147,36 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:960
+#: ch02-basic-usage.xml:960
 msgid "<computeroutput>D item</computeroutput>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:962
+#: ch02-basic-usage.xml:962
 msgid ""
 "The file, directory, or symbolic link <filename>item</filename> has been "
 "scheduled for deletion from the repository."
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:969
+#: ch02-basic-usage.xml:969
 msgid "<computeroutput>M item</computeroutput>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:971
+#: ch02-basic-usage.xml:971
 msgid "The contents of the file <filename>item</filename> have been modified."
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:978
+#: ch02-basic-usage.xml:978
 msgid ""
 "If you pass a specific path to <command>svn status</command>, you get "
 "information about that item alone:"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:984
+#: ch02-basic-usage.xml:984
 #, no-wrap
 msgid ""
 "$ svn status stuff/fish.c\n"
@@ -1217,7 +1184,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:989
+#: ch02-basic-usage.xml:989
 msgid ""
 "<command>svn status</command> also has a <option>--verbose</option> "
 "(<option>-v</option>) option, which will show you the status of "
@@ -1226,7 +1193,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:997
+#: ch02-basic-usage.xml:997
 #, no-wrap
 msgid ""
 "$ svn status -v\n"
@@ -1242,7 +1209,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1010
+#: ch02-basic-usage.xml:1010
 msgid ""
 "This is the <quote>long form</quote> output of <command>svn status</"
 "command>.  The letters in the first column mean the same as before, but the "
@@ -1251,7 +1218,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1017
+#: ch02-basic-usage.xml:1017
 msgid ""
 "None of the prior invocations to <command>svn status</command> contact the "
 "repository&mdash;they merely report what is known about the working copy "
@@ -1265,7 +1232,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1032
+#: ch02-basic-usage.xml:1032
 #, no-wrap
 msgid ""
 "$ svn status -u -v\n"
@@ -1278,7 +1245,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1042
+#: ch02-basic-usage.xml:1042
 msgid ""
 "Notice in the previous example the two asterisks: if you were to run "
 "<userinput>svn update</userinput> at this point, you would receive changes "
@@ -1291,7 +1258,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1053
+#: ch02-basic-usage.xml:1053
 msgid ""
 "<command>svn status</command> can display much more information about the "
 "files and directories in your working copy than we've shown here&mdash;for "
@@ -1301,27 +1268,27 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1065
+#: ch02-basic-usage.xml:1065
 msgid "Examine the details of your local modifications"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para><indexterm><tertiary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1071
+#: ch02-basic-usage.xml:1071
 msgid "diff"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para><indexterm><primary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1074
+#: ch02-basic-usage.xml:1074
 msgid "differences"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para><indexterm><secondary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1075
+#: ch02-basic-usage.xml:1075
 msgid "unified diff"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1068
+#: ch02-basic-usage.xml:1068
 msgid ""
 "<placeholder type=\"indexterm\" id=\"0\"/> <placeholder type=\"indexterm\" "
 "id=\"1\"/>Another way to examine your changes is with the <command>svn diff</"
@@ -1340,12 +1307,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1094
+#: ch02-basic-usage.xml:1094
 msgid "Here's an example:"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1098
+#: ch02-basic-usage.xml:1098
 #, no-wrap
 msgid ""
 "$ svn diff\n"
@@ -1389,23 +1356,22 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para><indexterm><tertiary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1143
+#: ch02-basic-usage.xml:1143
 msgid "patch"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para><indexterm><see>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1146
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1150
+#: ch02-basic-usage.xml:1146 ch02-basic-usage.xml:1150
 msgid "patches"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para><indexterm><primary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1149
+#: ch02-basic-usage.xml:1149
 msgid "patch file"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1140
+#: ch02-basic-usage.xml:1140
 msgid ""
 "<placeholder type=\"indexterm\" id=\"0\"/> <placeholder type=\"indexterm\" "
 "id=\"1\"/> <placeholder type=\"indexterm\" id=\"2\"/>The <command>svn diff</"
@@ -1425,7 +1391,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1170
+#: ch02-basic-usage.xml:1170
 #, no-wrap
 msgid ""
 "$ svn diff &gt; patchfile\n"
@@ -1433,7 +1399,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1175
+#: ch02-basic-usage.xml:1175
 msgid ""
 "Subversion uses its internal diff engine, which produces unified diff "
 "format, by default.  If you want diff output in a different format, specify "
@@ -1448,7 +1414,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1191
+#: ch02-basic-usage.xml:1191
 #, no-wrap
 msgid ""
 "$ svn diff --diff-cmd /usr/bin/diff -x \"-i\" foo.c\n"
@@ -1457,12 +1423,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1204
+#: ch02-basic-usage.xml:1204
 msgid "Fix Your Mistakes"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1206
+#: ch02-basic-usage.xml:1206
 msgid ""
 "Suppose while viewing the output of <command>svn diff</command> you "
 "determine that all the changes you made to a particular file are mistakes.  "
@@ -1477,12 +1443,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><indexterm><tertiary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1222
+#: ch02-basic-usage.xml:1222
 msgid "revert"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1225
+#: ch02-basic-usage.xml:1225
 msgid ""
 "Fortunately in Subversion, undoing your work and starting over from scratch "
 "doesn't require such acrobatics.  Just use the <command>svn revert</command> "
@@ -1490,7 +1456,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1231
+#: ch02-basic-usage.xml:1231
 #, no-wrap
 msgid ""
 "$ svn status README\n"
@@ -1502,7 +1468,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1240
+#: ch02-basic-usage.xml:1240
 msgid ""
 "In this example, Subversion has reverted the file to its premodified state "
 "by overwriting it with the pristine version of the file cached in the text-"
@@ -1512,7 +1478,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1250
+#: ch02-basic-usage.xml:1250
 #, no-wrap
 msgid ""
 "$ svn status new-file.txt\n"
@@ -1527,12 +1493,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1262
+#: ch02-basic-usage.xml:1262
 msgid "Or perhaps you mistakenly removed a file from version control:"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1267
+#: ch02-basic-usage.xml:1267
 #, no-wrap
 msgid ""
 "$ svn status README\n"
@@ -1545,7 +1511,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1277
+#: ch02-basic-usage.xml:1277
 msgid ""
 "The <command>svn revert</command> command offers salvation for imperfect "
 "people.  It can save you huge amounts of time and energy that would "
@@ -1555,35 +1521,28 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1288
+#: ch02-basic-usage.xml:1288
 msgid "Resolve Any Conflicts"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><para><indexterm><primary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1292
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1504
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1565
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1668
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1701
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1882
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2008
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2046
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2995
+#: ch02-basic-usage.xml:1292 ch02-basic-usage.xml:1504
+#: ch02-basic-usage.xml:1565 ch02-basic-usage.xml:1668
+#: ch02-basic-usage.xml:1701 ch02-basic-usage.xml:1882
+#: ch02-basic-usage.xml:2008 ch02-basic-usage.xml:2046
+#: ch02-basic-usage.xml:2995
 msgid "conflicts"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para><indexterm><secondary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1293
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1566
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1669
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1883
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2009
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2047
+#: ch02-basic-usage.xml:1293 ch02-basic-usage.xml:1566
+#: ch02-basic-usage.xml:1669 ch02-basic-usage.xml:1883
+#: ch02-basic-usage.xml:2009 ch02-basic-usage.xml:2047
 msgid "resolution"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1291
+#: ch02-basic-usage.xml:1291
 msgid ""
 "<placeholder type=\"indexterm\" id=\"0\"/>We've already seen how "
 "<userinput>svn status -u</userinput> can predict conflicts, but dealing with "
@@ -1598,14 +1557,14 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1307
+#: ch02-basic-usage.xml:1307
 msgid ""
 "Suppose you run <userinput>svn update</userinput> and you see this sort of "
 "interesting output:"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1312
+#: ch02-basic-usage.xml:1312
 #, no-wrap
 msgid ""
 "$ svn update\n"
@@ -1620,7 +1579,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1323
+#: ch02-basic-usage.xml:1323
 msgid ""
 "The <computeroutput>U</computeroutput> (which stands for <quote>Updated</"
 "quote>) and <computeroutput>G</computeroutput> (for <quote>merGed</quote>) "
@@ -1633,7 +1592,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1334
+#: ch02-basic-usage.xml:1334
 msgid ""
 "It's the next few lines which are interesting.  First, Subversion reports to "
 "you that in its attempt to merge outstanding server changes into the file "
@@ -1648,7 +1607,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1351
+#: ch02-basic-usage.xml:1351
 #, no-wrap
 msgid ""
 "&hellip;\n"
@@ -1680,43 +1639,43 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1380
+#: ch02-basic-usage.xml:1380
 msgid ""
 "Let's briefly review each of these options before we go into detail on what "
 "each option means."
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1385
+#: ch02-basic-usage.xml:1385
 msgid "<computeroutput>(e)  edit [edit]</computeroutput>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1387
+#: ch02-basic-usage.xml:1387
 msgid ""
 "Open the file in conflict with your favorite editor, as set in the "
 "environment variable <literal>EDITOR</literal>."
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1394
+#: ch02-basic-usage.xml:1394
 msgid "<computeroutput>(df)  diff-full</computeroutput>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1396
+#: ch02-basic-usage.xml:1396
 msgid ""
 "Display the differences between the base revision and the conflicted file "
 "itself in unified diff format."
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1402
+#: ch02-basic-usage.xml:1402
 msgid "<computeroutput>(r)  resolved</computeroutput>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1404
+#: ch02-basic-usage.xml:1404
 msgid ""
 "After editing a file, tell <command>svn</command> that you've resolved the "
 "conflicts in the file and that it should accept the current contents&mdash;"
@@ -1724,24 +1683,24 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1413
+#: ch02-basic-usage.xml:1413
 msgid "<computeroutput>(dc)  display-conflict</computeroutput>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1415
+#: ch02-basic-usage.xml:1415
 msgid ""
 "Display all conflicting regions of the file, ignoring changes which were "
 "successfully merged."
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1421
+#: ch02-basic-usage.xml:1421
 msgid "<computeroutput>(mc)  mine-conflict [mine-conflict]</computeroutput>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1423
+#: ch02-basic-usage.xml:1423
 msgid ""
 "Discard any newly received changes from the server which conflict with your "
 "local changes to the file under review.  However, accept and merge all non-"
@@ -1749,13 +1708,13 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1431
+#: ch02-basic-usage.xml:1431
 msgid ""
 "<computeroutput>(tc)  theirs-conflict [theirs-conflict]</computeroutput>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1433
+#: ch02-basic-usage.xml:1433
 msgid ""
 "Discard any local changes which conflict with incoming changes from the "
 "server for the file under review.  However, preserve all non-conflicting "
@@ -1763,96 +1722,96 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1441
+#: ch02-basic-usage.xml:1441
 msgid "<computeroutput>(mf)  mine-full [mine-full]</computeroutput>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1443
+#: ch02-basic-usage.xml:1443
 msgid ""
 "Discard all newly received changes from the server for the file under "
 "review, but preserve all your local changes for that file."
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1450
+#: ch02-basic-usage.xml:1450
 msgid "<computeroutput>(tf)  theirs-full [theirs-full]</computeroutput>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1452
+#: ch02-basic-usage.xml:1452
 msgid ""
 "Discard all your local changes to the file under review and use only the "
 "newly received changes from the server for that file."
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1459
+#: ch02-basic-usage.xml:1459
 msgid "<computeroutput>(m)  merge</computeroutput>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1461
+#: ch02-basic-usage.xml:1461
 msgid ""
 "Launch an internal file merge tool to perform the conflict resolution.  The "
 "option is available starting with Subversion 1.8."
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1468
+#: ch02-basic-usage.xml:1468
 msgid "<computeroutput>(l)  launch</computeroutput>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1470
+#: ch02-basic-usage.xml:1470
 msgid ""
 "Launch an external program to perform the conflict resolution.  This "
 "requires a bit of preparation beforehand."
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1477
+#: ch02-basic-usage.xml:1477
 msgid "<computeroutput>(p)  postpone [postpone]</computeroutput>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1479
+#: ch02-basic-usage.xml:1479
 msgid ""
 "Leave the file in a conflicted state for you to resolve after your update is "
 "complete."
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1485
+#: ch02-basic-usage.xml:1485
 msgid "<computeroutput>(s)  show all</computeroutput>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1487
+#: ch02-basic-usage.xml:1487
 msgid ""
 "Show the list of all possible commands you can use in interactive conflict "
 "resolution."
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1494
+#: ch02-basic-usage.xml:1494
 msgid ""
 "We'll cover these commands in more detail now, grouping them together by "
 "related functionality."
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1500
+#: ch02-basic-usage.xml:1500
 msgid "Viewing conflict differences interactively"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para><indexterm><secondary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1505
+#: ch02-basic-usage.xml:1505
 msgid "reviewing"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1503
+#: ch02-basic-usage.xml:1503
 msgid ""
 "<placeholder type=\"indexterm\" id=\"0\"/>Before deciding how to attack a "
 "conflict interactively, odds are that you'd like to see exactly what is in "
@@ -1863,7 +1822,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1517
+#: ch02-basic-usage.xml:1517
 #, no-wrap
 msgid ""
 "&hellip;\n"
@@ -1883,7 +1842,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1534
+#: ch02-basic-usage.xml:1534
 msgid ""
 "The first line of the diff content shows the previous contents of the "
 "working copy (the <literal>BASE</literal> revision), the next content line "
@@ -1893,7 +1852,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1541
+#: ch02-basic-usage.xml:1541
 msgid ""
 "The second command is similar to the first, but the <quote>display-conflict</"
 "quote> (<userinput>dc</userinput>) command shows only the conflict regions, "
@@ -1907,24 +1866,24 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1553
+#: ch02-basic-usage.xml:1553
 msgid ""
 "After reviewing the information provided by these commands, you're ready to "
 "move on to the next action."
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1561
+#: ch02-basic-usage.xml:1561
 msgid "Resolving conflict differences interactively"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para><indexterm><tertiary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1567
+#: ch02-basic-usage.xml:1567
 msgid "interactive"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1564
+#: ch02-basic-usage.xml:1564
 msgid ""
 "<placeholder type=\"indexterm\" id=\"0\"/>The main way to resolve conflicts "
 "interactively is to use an internal file merge tool.  The tool asks you what "
@@ -1937,7 +1896,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1579
+#: ch02-basic-usage.xml:1579
 msgid ""
 "You've already reviewed the conflicting changes, so it's now time to resolve "
 "the conflicts.  The first command that should help you is the <quote>merge</"
@@ -1947,7 +1906,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1590
+#: ch02-basic-usage.xml:1590
 #, no-wrap
 msgid ""
 "Select: (p) postpone, (df) show diff, (e) edit file, (m) merge,\n"
@@ -1970,7 +1929,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1610
+#: ch02-basic-usage.xml:1610
 msgid ""
 "As you can see, when you use the internal file merge tool, you can cycle "
 "through individual conflicting areas in the file and select various "
@@ -1978,7 +1937,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1615
+#: ch02-basic-usage.xml:1615
 msgid ""
 "However, if you wish to use an external editor to choose some combination of "
 "your local changes, you can use the <quote>edit</quote> command "
@@ -1991,7 +1950,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1627
+#: ch02-basic-usage.xml:1627
 msgid ""
 "Regardless of what your local Unix snob will likely tell you, editing the "
 "file by hand in your favorite text editor is a somewhat low-tech way of "
@@ -2003,7 +1962,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1638
+#: ch02-basic-usage.xml:1638
 msgid ""
 "There is also a pair of compromise options available.  The <quote>mine-"
 "conflict</quote> (<userinput>mc</userinput>)  and <quote>theirs-conflict</"
@@ -2016,7 +1975,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1651
+#: ch02-basic-usage.xml:1651
 msgid ""
 "Finally, if you decide that you don't need to merge any changes, but just "
 "want to accept one version of the file or the other, you can either choose "
@@ -2026,17 +1985,17 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1664
+#: ch02-basic-usage.xml:1664
 msgid "Postponing conflict resolution"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para><indexterm><tertiary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1670
+#: ch02-basic-usage.xml:1670
 msgid "postponing"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1667
+#: ch02-basic-usage.xml:1667
 msgid ""
 "<placeholder type=\"indexterm\" id=\"0\"/>This may sound like an appropriate "
 "section for avoiding marital disagreements, but it's actually still about "
@@ -2051,7 +2010,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1684
+#: ch02-basic-usage.xml:1684
 msgid ""
 "Beginning with Subversion 1.8, an internal file merge tool allows you to "
 "postpone conflict resolution for certain conflicts, but resolve other "
@@ -2060,7 +2019,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1690
+#: ch02-basic-usage.xml:1690
 msgid ""
 "The <computeroutput>C</computeroutput> (for <quote>Conflicted</quote>) means "
 "that the changes from the server overlapped with your own, and now you have "
@@ -2070,19 +2029,19 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><itemizedlist><indexterm><secondary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1702
+#: ch02-basic-usage.xml:1702
 msgid "conflict markers"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><itemizedlist><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1706
+#: ch02-basic-usage.xml:1706
 msgid ""
 "Subversion prints a <computeroutput>C</computeroutput> during the update and "
 "remembers that the file is in a state of conflict."
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><itemizedlist><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1712
+#: ch02-basic-usage.xml:1712
 msgid ""
 "If Subversion considers the file to be mergeable, it places "
 "<firstterm>conflict markers</firstterm>&mdash;special strings of text that "
@@ -2094,19 +2053,19 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><itemizedlist><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1725
+#: ch02-basic-usage.xml:1725
 msgid ""
 "For every conflicted file, Subversion places three extra unversioned files "
 "in your working copy:"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><itemizedlist><listitem><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1731
+#: ch02-basic-usage.xml:1731
 msgid "<filename>filename.mine</filename>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><itemizedlist><listitem><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1733
+#: ch02-basic-usage.xml:1733
 msgid ""
 "This is the file as it existed in your working copy before you began the "
 "update process.  It contains any local modifications you had made to the "
@@ -2116,12 +2075,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><itemizedlist><listitem><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1745
+#: ch02-basic-usage.xml:1745
 msgid "<filename>filename.r<replaceable>OLDREV</replaceable> </filename>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><itemizedlist><listitem><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1748
+#: ch02-basic-usage.xml:1748
 msgid ""
 "This is the file as it existed in the <literal>BASE</literal> revision&mdash;"
 "that is, the unmodified revision of the file in your working copy "
@@ -2130,12 +2089,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><itemizedlist><listitem><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1759
+#: ch02-basic-usage.xml:1759
 msgid "<filename>filename.r<replaceable>NEWREV</replaceable> </filename>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><itemizedlist><listitem><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1762
+#: ch02-basic-usage.xml:1762
 msgid ""
 "This is the file that your Subversion client just received from the server "
 "via the update of your working copy, where <replaceable>NEWREV</replaceable> "
@@ -2144,7 +2103,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1777
+#: ch02-basic-usage.xml:1777
 msgid ""
 "For example, Sally makes changes to the file <filename>sandwich.txt</"
 "filename>, but does not yet commit those changes.  Meanwhile, Harry commits "
@@ -2153,7 +2112,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1785
+#: ch02-basic-usage.xml:1785
 #, no-wrap
 msgid ""
 "$ svn update\n"
@@ -2174,7 +2133,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1803
+#: ch02-basic-usage.xml:1803
 msgid ""
 "At this point, Subversion will <emphasis>not</emphasis> allow Sally to "
 "commit the file <filename>sandwich.txt</filename> until the three temporary "
@@ -2182,7 +2141,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1810
+#: ch02-basic-usage.xml:1810
 #, no-wrap
 msgid ""
 "$ svn commit -m \"Add a few more things\"\n"
@@ -2191,7 +2150,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1816
+#: ch02-basic-usage.xml:1816
 msgid ""
 "If you've postponed a conflict, you need to resolve the conflict before "
 "Subversion will allow you to commit your changes.  You'll do this with the "
@@ -2209,7 +2168,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1834
+#: ch02-basic-usage.xml:1834
 msgid ""
 "The <option>--accept</option> option to the <command>svn resolve</command> "
 "command instructs Subversion to use one of its pre-packaged approaches to "
@@ -2225,7 +2184,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1849
+#: ch02-basic-usage.xml:1849
 msgid ""
 "You aren't limited strictly to all-or-nothing options.  If you want to pick "
 "and choose from your changes and the changes that your update fetched from "
@@ -2238,7 +2197,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1859
+#: ch02-basic-usage.xml:1859
 msgid ""
 "<command>svn resolve</command> removes the three temporary files and accepts "
 "the version of the file that you specified.  After the command completes "
@@ -2248,7 +2207,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1869
+#: ch02-basic-usage.xml:1869
 #, no-wrap
 msgid ""
 "$ svn resolve --accept working sandwich.txt\n"
@@ -2256,17 +2215,17 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1878
+#: ch02-basic-usage.xml:1878
 msgid "Manual conflict resolution"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para><indexterm><tertiary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1884
+#: ch02-basic-usage.xml:1884
 msgid "manual"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1881
+#: ch02-basic-usage.xml:1881
 msgid ""
 "<placeholder type=\"indexterm\" id=\"0\"/>Manually resolving conflicts can "
 "be quite intimidating the first time you attempt it, but with a little "
@@ -2274,7 +2233,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1889
+#: ch02-basic-usage.xml:1889
 msgid ""
 "Here's an example.  Due to a miscommunication, you and Sally, your "
 "collaborator, both edit the file <filename>sandwich.txt</filename> at the "
@@ -2285,7 +2244,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1899
+#: ch02-basic-usage.xml:1899
 #, no-wrap
 msgid ""
 "$ cat sandwich.txt\n"
@@ -2307,7 +2266,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1918
+#: ch02-basic-usage.xml:1918
 msgid ""
 "The strings of less-than signs, equals signs, and greater-than signs are "
 "conflict markers and are not part of the actual data in conflict.  You "
@@ -2317,7 +2276,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1928
+#: ch02-basic-usage.xml:1928
 #, no-wrap
 msgid ""
 "&lt;&lt;&lt;&lt;&lt;&lt;&lt; .mine\n"
@@ -2328,14 +2287,14 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1936
+#: ch02-basic-usage.xml:1936
 msgid ""
 "The text between the second and third sets of conflict markers is the text "
 "from Sally's commit:"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1941
+#: ch02-basic-usage.xml:1941
 #, no-wrap
 msgid ""
 "=======\n"
@@ -2345,14 +2304,14 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para><footnote><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1953
+#: ch02-basic-usage.xml:1953
 msgid ""
 "And if you ask them for it, they may very well ride you out of town on a "
 "rail."
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1948
+#: ch02-basic-usage.xml:1948
 msgid ""
 "Usually you won't want to just delete the conflict markers and Sally's "
 "changes&mdash;she's going to be awfully surprised when the sandwich arrives "
@@ -2363,7 +2322,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1961
+#: ch02-basic-usage.xml:1961
 #, no-wrap
 msgid ""
 "Top piece of bread\n"
@@ -2379,14 +2338,14 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1974
+#: ch02-basic-usage.xml:1974
 msgid ""
 "Now use <command>svn resolve</command>, and you're ready to commit your "
 "changes:"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1979
+#: ch02-basic-usage.xml:1979
 #, no-wrap
 msgid ""
 "$ svn resolve --accept working sandwich.txt\n"
@@ -2395,7 +2354,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1985
+#: ch02-basic-usage.xml:1985
 msgid ""
 "Naturally, you want to be careful that when using <command>svn resolve</"
 "command> you don't tell Subversion that you've resolved a conflict when you "
@@ -2404,7 +2363,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:1992
+#: ch02-basic-usage.xml:1992
 msgid ""
 "If you ever get confused while editing the conflicted file, you can always "
 "consult the three files that Subversion creates for you in your working "
@@ -2413,18 +2372,17 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2003
+#: ch02-basic-usage.xml:2003
 msgid "Discarding your changes in favor of a newly fetched revision"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para><indexterm><tertiary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2010
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2048
+#: ch02-basic-usage.xml:2010 ch02-basic-usage.xml:2048
 msgid "discarding local changes"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2007
+#: ch02-basic-usage.xml:2007
 msgid ""
 "<placeholder type=\"indexterm\" id=\"0\"/>If you get a conflict and decide "
 "that you want to throw out your changes, you can run <userinput>svn resolve "
@@ -2433,7 +2391,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2020
+#: ch02-basic-usage.xml:2020
 #, no-wrap
 msgid ""
 "$ svn update\n"
@@ -2454,12 +2412,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2042
+#: ch02-basic-usage.xml:2042
 msgid "Punting: using svn revert"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2045
+#: ch02-basic-usage.xml:2045
 msgid ""
 "<placeholder type=\"indexterm\" id=\"0\"/>If you decide that you want to "
 "throw out your changes and start your edits again (whether this occurs after "
@@ -2467,7 +2425,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2055
+#: ch02-basic-usage.xml:2055
 #, no-wrap
 msgid ""
 "$ svn revert sandwich.txt\n"
@@ -2478,26 +2436,26 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2063
+#: ch02-basic-usage.xml:2063
 msgid ""
 "Note that when you revert a conflicted file, you don't have to use "
 "<command>svn resolve</command>."
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2072
+#: ch02-basic-usage.xml:2072
 msgid "Commit Your Changes"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2074
+#: ch02-basic-usage.xml:2074
 msgid ""
 "Finally! Your edits are finished, you've merged all changes from the server, "
 "and you're ready to commit your changes to the repository."
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2078
+#: ch02-basic-usage.xml:2078
 msgid ""
 "The <command>svn commit</command> command sends all of your changes to the "
 "repository.  When you commit a change, you need to supply a log message "
@@ -2508,7 +2466,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2088
+#: ch02-basic-usage.xml:2088
 #, no-wrap
 msgid ""
 "$ svn commit -m \"Corrected number of cheese slices.\"\n"
@@ -2518,7 +2476,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2095
+#: ch02-basic-usage.xml:2095
 msgid ""
 "However, if you've been composing your log message in some other text file "
 "as you work, you may want to tell Subversion to get the message from that "
@@ -2527,7 +2485,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2103
+#: ch02-basic-usage.xml:2103
 #, no-wrap
 msgid ""
 "$ svn commit -F logmsg\n"
@@ -2537,7 +2495,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2110
+#: ch02-basic-usage.xml:2110
 msgid ""
 "If you fail to specify either the <option>--message</option> (<option>-m</"
 "option>)  or <option>--file</option> (<option>-F</option>) option, "
@@ -2547,7 +2505,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><tip><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2119
+#: ch02-basic-usage.xml:2119
 msgid ""
 "If you're in your editor writing a commit message and decide that you want "
 "to cancel your commit, you can just quit your editor without saving "
@@ -2556,7 +2514,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><tip><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2127
+#: ch02-basic-usage.xml:2127
 #, no-wrap
 msgid ""
 "$ svn commit\n"
@@ -2569,7 +2527,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2138
+#: ch02-basic-usage.xml:2138
 msgid ""
 "The repository doesn't know or care whether your changes make any sense as a "
 "whole; it checks only to make sure nobody else has changed any of the same "
@@ -2579,7 +2537,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2147
+#: ch02-basic-usage.xml:2147
 #, no-wrap
 msgid ""
 "$ svn commit -m \"Add another rule\"\n"
@@ -2591,21 +2549,21 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2156
+#: ch02-basic-usage.xml:2156
 msgid ""
 "(The exact wording of this error message depends on the network protocol and "
 "server you're using, but the idea is the same in all cases.)"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2160
+#: ch02-basic-usage.xml:2160
 msgid ""
 "At this point, you need to run <userinput>svn update</userinput>, deal with "
 "any merges or conflicts that result, and attempt your commit again."
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2164
+#: ch02-basic-usage.xml:2164
 msgid ""
 "That covers the basic work cycle for using Subversion.  Subversion offers "
 "many other features that you can use to manage your repository and working "
@@ -2615,12 +2573,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2180
+#: ch02-basic-usage.xml:2180
 msgid "Examining History"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2182
+#: ch02-basic-usage.xml:2182
 msgid ""
 "Your Subversion repository is like a time machine.  It keeps a record of "
 "every change ever committed and allows you to explore this history by "
@@ -2633,52 +2591,52 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2192
+#: ch02-basic-usage.xml:2192
 msgid ""
 "Several commands can provide you with historical data from the repository:"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2198
+#: ch02-basic-usage.xml:2198
 msgid "<command>svn diff</command>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2200
+#: ch02-basic-usage.xml:2200
 msgid "Shows line-level details of a particular change"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2205
+#: ch02-basic-usage.xml:2205
 msgid "<command>svn log</command>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2207
+#: ch02-basic-usage.xml:2207
 msgid ""
 "Shows you broad information: log messages with date and author information "
 "attached to revisions and which paths changed in each revision"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2214
+#: ch02-basic-usage.xml:2214
 msgid "<command>svn cat</command>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2216
+#: ch02-basic-usage.xml:2216
 msgid ""
 "Retrieves a file as it existed in a particular revision number and displays "
 "it on your screen"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2222
+#: ch02-basic-usage.xml:2222
 msgid "<command>svn annotate</command>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2224
+#: ch02-basic-usage.xml:2224
 msgid ""
 "Retrieves a human-readable file as it existed in a particular revision "
 "number, displaying its contents in a tabular form with last-changed "
@@ -2686,22 +2644,22 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2232
+#: ch02-basic-usage.xml:2232
 msgid "<command>svn list</command>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2234
+#: ch02-basic-usage.xml:2234
 msgid "Displays the files in a directory for any given revision"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2244
+#: ch02-basic-usage.xml:2244
 msgid "Examining the Details of Historical Changes"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2246
+#: ch02-basic-usage.xml:2246
 msgid ""
 "We've already seen <command>svn diff</command> before&mdash;it displays file "
 "differences in unified diff format; we used it to show the local "
@@ -2709,31 +2667,29 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2251
+#: ch02-basic-usage.xml:2251
 msgid ""
 "In fact, it turns out that there are <emphasis>three</emphasis> distinct "
 "uses of <command>svn diff</command>:"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2258
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2273
+#: ch02-basic-usage.xml:2258 ch02-basic-usage.xml:2273
 msgid "Examining local changes"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><itemizedlist><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2262
+#: ch02-basic-usage.xml:2262
 msgid "Comparing your working copy to the repository"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2266
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2331
+#: ch02-basic-usage.xml:2266 ch02-basic-usage.xml:2331
 msgid "Comparing repository revisions"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2275
+#: ch02-basic-usage.xml:2275
 msgid ""
 "As we've seen, invoking <userinput>svn diff</userinput> with no options will "
 "compare your working files to the cached <quote>pristine</quote> copies in "
@@ -2741,7 +2697,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2282
+#: ch02-basic-usage.xml:2282
 #, no-wrap
 msgid ""
 "$ svn diff\n"
@@ -2760,12 +2716,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2302
+#: ch02-basic-usage.xml:2302
 msgid "Comparing working copy to repository"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2304
+#: ch02-basic-usage.xml:2304
 msgid ""
 "If a single <option>--revision</option> (<option>-r</option>) number is "
 "passed, your working copy is compared to the specified revision in the "
@@ -2773,7 +2729,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2311
+#: ch02-basic-usage.xml:2311
 #, no-wrap
 msgid ""
 "$ svn diff -r 3 rules.txt\n"
@@ -2792,7 +2748,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2333
+#: ch02-basic-usage.xml:2333
 msgid ""
 "If two revision numbers, separated by a colon, are passed via <option>--"
 "revision</option> (<option>-r</option>), the two revisions are directly "
@@ -2800,7 +2756,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2340
+#: ch02-basic-usage.xml:2340
 #, no-wrap
 msgid ""
 "$ svn diff -r 2:3 rules.txt\n"
@@ -2818,14 +2774,14 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2355
+#: ch02-basic-usage.xml:2355
 msgid ""
 "A more convenient way of comparing one revision to the previous revision is "
 "to use the <option>--change</option> (<option>-c</option>) option:"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2361
+#: ch02-basic-usage.xml:2361
 #, no-wrap
 msgid ""
 "$ svn diff -c 3 rules.txt\n"
@@ -2843,7 +2799,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2376
+#: ch02-basic-usage.xml:2376
 msgid ""
 "Lastly, you can compare repository revisions even when you don't have a "
 "working copy on your local machine, just by including the appropriate URL on "
@@ -2851,7 +2807,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2382
+#: ch02-basic-usage.xml:2382
 #, no-wrap
 msgid ""
 "$ svn diff -c 5 http://svn.example.com/repos/example/trunk/text/rules.txt\n"
@@ -2860,12 +2816,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2394
+#: ch02-basic-usage.xml:2394
 msgid "Generating a List of Historical Changes"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2396
+#: ch02-basic-usage.xml:2396
 msgid ""
 "To find information about the history of a file or directory, use the "
 "<command>svn log</command> command.  <command>svn log</command> will provide "
@@ -2875,7 +2831,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2406
+#: ch02-basic-usage.xml:2406
 #, no-wrap
 msgid ""
 "$ svn log\n"
@@ -2895,7 +2851,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2423
+#: ch02-basic-usage.xml:2423
 msgid ""
 "Note that the log messages are printed in <emphasis>reverse chronological "
 "order</emphasis> by default.  If you wish to see a different range of "
@@ -2904,59 +2860,59 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><table><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2431
+#: ch02-basic-usage.xml:2431
 msgid "Common log requests"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><table><tgroup><thead><row><entry>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2435
+#: ch02-basic-usage.xml:2435
 msgid "Command"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><table><tgroup><thead><row><entry>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2436
+#: ch02-basic-usage.xml:2436
 msgid "Description"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><table><tgroup><tbody><row><entry>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2441
+#: ch02-basic-usage.xml:2441
 msgid "<userinput>svn log -r 5:19</userinput>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><table><tgroup><tbody><row><entry>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2442
+#: ch02-basic-usage.xml:2442
 msgid "Display logs for revisions 5 through 19 in chronological order"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><table><tgroup><tbody><row><entry>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2446
+#: ch02-basic-usage.xml:2446
 msgid "<userinput>svn log -r 19:5</userinput>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><table><tgroup><tbody><row><entry>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2447
+#: ch02-basic-usage.xml:2447
 msgid "Display logs for revisions 5 through 19 in reverse chronological order"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><table><tgroup><tbody><row><entry>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2451
+#: ch02-basic-usage.xml:2451
 msgid "<userinput>svn log -r 8</userinput>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><table><tgroup><tbody><row><entry>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2452
+#: ch02-basic-usage.xml:2452
 msgid "Display logs for revision 8 only"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2458
+#: ch02-basic-usage.xml:2458
 msgid ""
 "You can also examine the log history of a single file or directory.  For "
 "example:"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2463
+#: ch02-basic-usage.xml:2463
 #, no-wrap
 msgid ""
 "$ svn log foo.c\n"
@@ -2966,19 +2922,19 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2470
+#: ch02-basic-usage.xml:2470
 msgid ""
 "These will display log messages <emphasis>only</emphasis> for those "
 "revisions in which the named file (or directory)  changed."
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sidebar><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2476
+#: ch02-basic-usage.xml:2476
 msgid "Why Does svn log Not Show Me What I Just Committed?"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sidebar><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2479
+#: ch02-basic-usage.xml:2479
 msgid ""
 "If you make a commit and immediately type <userinput>svn log</userinput> "
 "with no arguments, you may notice that your most recent commit doesn't show "
@@ -2997,7 +2953,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2500
+#: ch02-basic-usage.xml:2500
 msgid ""
 "If you want even more information about a file or directory, <command>svn "
 "log</command> also takes a <option>--verbose</option> (<option>-v</option>) "
@@ -3008,7 +2964,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2511
+#: ch02-basic-usage.xml:2511
 #, no-wrap
 msgid ""
 "$ svn log -r 8 -v\n"
@@ -3025,7 +2981,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2525
+#: ch02-basic-usage.xml:2525
 msgid ""
 "<command>svn log</command> also takes a <option>--quiet</option> (<option>-"
 "q</option>) option, which suppresses the body of the log message.  When "
@@ -3034,19 +2990,19 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sidebar><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2532
+#: ch02-basic-usage.xml:2532
 msgid "Why Does svn log Give Me an Empty Response?"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sidebar><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2535
+#: ch02-basic-usage.xml:2535
 msgid ""
 "After working with Subversion for a bit, most users will come across "
 "something like this:"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sidebar><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2540
+#: ch02-basic-usage.xml:2540
 #, no-wrap
 msgid ""
 "$ svn log -r 2\n"
@@ -3055,7 +3011,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sidebar><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2546
+#: ch02-basic-usage.xml:2546
 msgid ""
 "At first glance, this seems like an error.  But recall that while revisions "
 "are repository-wide, <command>svn log</command> operates on a path in the "
@@ -3069,7 +3025,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2561
+#: ch02-basic-usage.xml:2561
 msgid ""
 "As of Subversion 1.7, users of the Subversion command-line can also take "
 "advantage of a special output mode for <command>svn log</command> which "
@@ -3083,7 +3039,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2573
+#: ch02-basic-usage.xml:2573
 msgid ""
 "Beginning with Subversion 1.8, <command>svn log</command> accepts <option>--"
 "search</option> and <option>--search-and</option> options.  The options "
@@ -3094,12 +3050,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2585
+#: ch02-basic-usage.xml:2585
 msgid "Browsing the Repository"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2587
+#: ch02-basic-usage.xml:2587
 msgid ""
 "Using <command>svn cat</command> and <command>svn list</command>, you can "
 "view various revisions of files and directories without changing the working "
@@ -3108,19 +3064,19 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2595
+#: ch02-basic-usage.xml:2595
 msgid "Displaying file contents"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2597
+#: ch02-basic-usage.xml:2597
 msgid ""
 "If you want to examine an earlier version of a file and not necessarily the "
 "differences between two files, you can use <command>svn cat</command>:"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2603
+#: ch02-basic-usage.xml:2603
 #, no-wrap
 msgid ""
 "$ svn cat -r 2 rules.txt\n"
@@ -3132,12 +3088,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2612
+#: ch02-basic-usage.xml:2612
 msgid "You can also redirect the output directly into a file:"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2617
+#: ch02-basic-usage.xml:2617
 #, no-wrap
 msgid ""
 "$ svn cat -r 2 rules.txt &gt; rules.txt.v2\n"
@@ -3145,12 +3101,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2626
+#: ch02-basic-usage.xml:2626
 msgid "Displaying line-by-line change attribution"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2628
+#: ch02-basic-usage.xml:2628
 msgid ""
 "Very similar to the <command>svn cat</command> command we discussed in the "
 "previous section is the <command>svn annotate</command> command.  This "
@@ -3161,7 +3117,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2637
+#: ch02-basic-usage.xml:2637
 msgid ""
 "When used with a working copy file target, <command>svn annotate</command> "
 "will by default show line-by-line attribution of the file as it currently "
@@ -3169,7 +3125,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2644
+#: ch02-basic-usage.xml:2644
 #, no-wrap
 msgid ""
 "$ svn annotate rules.txt\n"
@@ -3181,7 +3137,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2653
+#: ch02-basic-usage.xml:2653
 msgid ""
 "Notice that for some lines, there is no attribution provided.  In this case, "
 "that's because those lines have been modified in the working copy's version "
@@ -3193,7 +3149,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2665
+#: ch02-basic-usage.xml:2665
 #, no-wrap
 msgid ""
 "$ svn annotate rules.txt@BASE\n"
@@ -3204,7 +3160,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2673
+#: ch02-basic-usage.xml:2673
 msgid ""
 "The <option>--verbose (-v)</option> option causes <command>svn annotate</"
 "command> to also include on each line the datestamp associated with that "
@@ -3213,7 +3169,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2679
+#: ch02-basic-usage.xml:2679
 msgid ""
 "As with <command>svn cat</command>, you can also ask <command>svn annotate</"
 "command> to display previous versions of the file.  This can be a handy "
@@ -3223,7 +3179,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2688
+#: ch02-basic-usage.xml:2688
 #, no-wrap
 msgid ""
 "$ svn blame rules.txt -r 2\n"
@@ -3234,7 +3190,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2696
+#: ch02-basic-usage.xml:2696
 msgid ""
 "Unlike the <command>svn cat</command> command, the functionality of "
 "<command>svn annotate</command> is tied heavily to the idea of <quote>lines</"
@@ -3246,7 +3202,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2708
+#: ch02-basic-usage.xml:2708
 #, no-wrap
 msgid ""
 "$ svn annotate images/logo.png\n"
@@ -3255,7 +3211,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2714
+#: ch02-basic-usage.xml:2714
 msgid ""
 "As revealed in the error message, you can use the <option>--force</option> "
 "option to disable this check and proceed with the annotation as if the "
@@ -3265,7 +3221,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2724
+#: ch02-basic-usage.xml:2724
 #, no-wrap
 msgid ""
 "$ svn annotate images/logo.png --force\n"
@@ -3276,7 +3232,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><tip><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2733
+#: ch02-basic-usage.xml:2733
 msgid ""
 "Depending on your mood at the time you execute this command and your reasons "
 "for doing so, you may find yourself typing <userinput>svn blame &hellip;</"
@@ -3287,7 +3243,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2743
+#: ch02-basic-usage.xml:2743
 msgid ""
 "Finally, as with many of Subversion's informational commands, you can also "
 "reference files in your <command>svn annotate</command> command invocations "
@@ -3296,12 +3252,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2753
+#: ch02-basic-usage.xml:2753
 msgid "Listing versioned directories"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2755
+#: ch02-basic-usage.xml:2755
 msgid ""
 "The <command>svn list</command> command shows you what files are in a "
 "repository directory without actually downloading the files to your local "
@@ -3309,7 +3265,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2761
+#: ch02-basic-usage.xml:2761
 #, no-wrap
 msgid ""
 "$ svn list http://svn.example.com/repo/project\n"
@@ -3320,14 +3276,14 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2769
+#: ch02-basic-usage.xml:2769
 msgid ""
 "If you want a more detailed listing, pass the <option>--verbose</option> "
 "(<option>-v</option>) flag to get output like this:"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2775
+#: ch02-basic-usage.xml:2775
 #, no-wrap
 msgid ""
 "$ svn list -v http://svn.example.com/repo/project\n"
@@ -3339,7 +3295,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2784
+#: ch02-basic-usage.xml:2784
 msgid ""
 "The columns tell you the revision at which the file or directory was last "
 "modified, the user who modified it, the size if it is a file, the date it "
@@ -3347,7 +3303,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><warning><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2790
+#: ch02-basic-usage.xml:2790
 msgid ""
 "The <userinput>svn list</userinput> command with no arguments defaults to "
 "the <emphasis>repository URL</emphasis> of the current working directory, "
@@ -3357,17 +3313,17 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2806
+#: ch02-basic-usage.xml:2806
 msgid "Fetching Older Repository Snapshots"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para><footnote><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2811
+#: ch02-basic-usage.xml:2811
 msgid "See? We told you that Subversion was a time machine."
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2808
+#: ch02-basic-usage.xml:2808
 msgid ""
 "In addition to all of the previous commands, you can use the <option>--"
 "revision</option> (<option>-r</option>) option with <command>svn update</"
@@ -3376,7 +3332,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2817
+#: ch02-basic-usage.xml:2817
 #, no-wrap
 msgid ""
 "# Make the current directory look like it did in r1729.\n"
@@ -3387,7 +3343,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><tip><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2826
+#: ch02-basic-usage.xml:2826
 msgid ""
 "Many Subversion newcomers attempt to use the preceding <command>svn update</"
 "command> example to <quote>undo</quote> committed changes, but this won't "
@@ -3398,7 +3354,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2835
+#: ch02-basic-usage.xml:2835
 msgid ""
 "If you'd prefer to create a whole new working copy from an older snapshot, "
 "you can do so by modifying the typical <command>svn checkout</command> "
@@ -3410,7 +3366,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2847
+#: ch02-basic-usage.xml:2847
 #, no-wrap
 msgid ""
 "# Checkout the trunk from r1729.\n"
@@ -3423,7 +3379,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2857
+#: ch02-basic-usage.xml:2857
 msgid ""
 "Lastly, if you're building a release and wish to bundle up your versioned "
 "files and directories, you can use <command>svn export</command> to create a "
@@ -3433,7 +3389,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2867
+#: ch02-basic-usage.xml:2867
 #, no-wrap
 msgid ""
 "# Export the trunk from the latest revision.\n"
@@ -3449,12 +3405,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2889
+#: ch02-basic-usage.xml:2889
 msgid "Sometimes You Just Need to Clean Up"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2891
+#: ch02-basic-usage.xml:2891
 msgid ""
 "Now that we've covered the day-to-day tasks that you'll frequently use "
 "Subversion for, we'll review a few administrative tasks relating to your "
@@ -3462,12 +3418,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2898
+#: ch02-basic-usage.xml:2898
 msgid "Disposing of a Working Copy"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2900
+#: ch02-basic-usage.xml:2900
 msgid ""
 "Subversion doesn't track either the state or the existence of working copies "
 "on the server, so there's no server overhead to keeping working copies "
@@ -3476,7 +3432,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2906
+#: ch02-basic-usage.xml:2906
 msgid ""
 "If you're likely to use a working copy again, there's nothing wrong with "
 "just leaving it on disk until you're ready to use it again, at which point "
@@ -3485,7 +3441,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2912
+#: ch02-basic-usage.xml:2912
 msgid ""
 "However, if you're definitely not going to use a working copy again, you can "
 "safely delete the entire thing using whatever directory removal capabilities "
@@ -3496,12 +3452,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2925
+#: ch02-basic-usage.xml:2925
 msgid "Recovering from an Interruption"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2927
+#: ch02-basic-usage.xml:2927
 msgid ""
 "When Subversion modifies your working copy&mdash;either your files or its "
 "own administrative state&mdash;it tries to do so as safely as possible.  "
@@ -3519,7 +3475,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2944
+#: ch02-basic-usage.xml:2944
 msgid ""
 "This is exactly what <command>svn cleanup</command> does: it searches your "
 "working copy and runs any leftover to-do items, removing working copy locks "
@@ -3531,7 +3487,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2956
+#: ch02-basic-usage.xml:2956
 #, no-wrap
 msgid ""
 "$ svn status\n"
@@ -3543,7 +3499,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2965
+#: ch02-basic-usage.xml:2965
 msgid ""
 "Don't confuse these working copy administrative locks with the user-managed "
 "locks that Subversion users create when using the lock-modify-unlock model "
@@ -3552,12 +3508,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2980
+#: ch02-basic-usage.xml:2980
 msgid "Dealing with Structural Conflicts"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><para><footnote><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2985
+#: ch02-basic-usage.xml:2985
 msgid ""
 "Well, you <emphasis>could</emphasis> mark files containing conflict markers "
 "as resolved and commit them, if you really wanted to.  But this is rarely "
@@ -3565,7 +3521,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2982
+#: ch02-basic-usage.xml:2982
 msgid ""
 "So far, we have only talked about conflicts at the level of file content.  "
 "When you and your collaborators make overlapping changes within the same "
@@ -3574,18 +3530,17 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><para><indexterm><see>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2992
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2997
+#: ch02-basic-usage.xml:2992 ch02-basic-usage.xml:2997
 msgid "tree conflicts"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><para><indexterm><secondary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2996
+#: ch02-basic-usage.xml:2996
 msgid "tree"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:2991
+#: ch02-basic-usage.xml:2991
 msgid ""
 "<placeholder type=\"indexterm\" id=\"0\"/> <placeholder type=\"indexterm\" "
 "id=\"1\"/>But what happens if your collaborators move or delete a file that "
@@ -3600,12 +3555,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sidebar><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:3011
+#: ch02-basic-usage.xml:3011
 msgid "Tree conflicts prior to Subversion 1.6"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sidebar><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:3013
+#: ch02-basic-usage.xml:3013
 msgid ""
 "Prior to Subversion 1.6, tree conflicts could yield rather unexpected "
 "results.  For example, if a file was locally modified, but had been renamed "
@@ -3614,12 +3569,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sidebar><itemizedlist><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:3020
+#: ch02-basic-usage.xml:3020
 msgid "Check the file to be renamed for local modifications."
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sidebar><itemizedlist><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:3023
+#: ch02-basic-usage.xml:3023
 msgid ""
 "Delete the file at its old location, and if it had local modifications, keep "
 "an on-disk copy of the file at the old location.  This on-disk copy now "
@@ -3627,12 +3582,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sidebar><itemizedlist><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:3028
+#: ch02-basic-usage.xml:3028
 msgid "Add the file, as it exists in the repository, at its new location."
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sidebar><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:3032
+#: ch02-basic-usage.xml:3032
 msgid ""
 "When this situation arises, there is the possibility that the user makes a "
 "commit without realizing that local modifications have been left in a now-"
@@ -3642,14 +3597,14 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sidebar><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:3039
+#: ch02-basic-usage.xml:3039
 msgid ""
 "Since Subversion 1.6, this and other similar situations are flagged as "
 "conflicts in the working copy."
 msgstr ""
 
 #. type: Content of: <chapter><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:3044
+#: ch02-basic-usage.xml:3044
 msgid ""
 "As with textual conflicts, tree conflicts prevent a commit from being made "
 "from the conflicted state, giving the user the opportunity to examine the "
@@ -3658,18 +3613,18 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:3052
+#: ch02-basic-usage.xml:3052
 msgid "An Example Tree Conflict"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:3054
+#: ch02-basic-usage.xml:3054
 msgid ""
 "Suppose a software project you were working on currently looked like this:"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:3059
+#: ch02-basic-usage.xml:3059
 #, no-wrap
 msgid ""
 "$ svn list -Rv svn://svn.example.com/trunk/\n"
@@ -3684,7 +3639,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:3071
+#: ch02-basic-usage.xml:3071
 msgid ""
 "Later, in revision 14, your collaborator Harry renames the file "
 "<filename>bar.c</filename> to <filename>baz.c</filename>.  Unfortunately, "
@@ -3694,7 +3649,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:3080
+#: ch02-basic-usage.xml:3080
 #, no-wrap
 msgid ""
 "$ svn diff\n"
@@ -3723,14 +3678,14 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:3106
+#: ch02-basic-usage.xml:3106
 msgid ""
 "You first realize that someone else has changed <filename>bar.c</filename> "
 "when your own commit attempt fails:"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:3112
+#: ch02-basic-usage.xml:3112
 #, no-wrap
 msgid ""
 "$ svn commit -m \"Small fixes\"\n"
@@ -3743,7 +3698,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:3123
+#: ch02-basic-usage.xml:3123
 msgid ""
 "At this point, you need to run <command>svn update</command>.  Besides "
 "bringing our working copy up to date so that you can see Harry's changes, "
@@ -3752,7 +3707,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:3130
+#: ch02-basic-usage.xml:3130
 #, no-wrap
 msgid ""
 "$ svn update\n"
@@ -3767,7 +3722,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:3142
+#: ch02-basic-usage.xml:3142
 msgid ""
 "In its output, <command>svn update</command> signifies tree conflicts using "
 "a capital C in the fourth output column.  <command>svn status</command> "
@@ -3775,7 +3730,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:3149
+#: ch02-basic-usage.xml:3149
 #, no-wrap
 msgid ""
 "$ svn status\n"
@@ -3788,7 +3743,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:3159
+#: ch02-basic-usage.xml:3159
 msgid ""
 "Note how <filename>bar.c</filename> is automatically scheduled for re-"
 "addition in your working copy, which simplifies things in case you want to "
@@ -3796,7 +3751,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:3163
+#: ch02-basic-usage.xml:3163
 msgid ""
 "Because a move in Subversion is implemented as a copy operation followed by "
 "a delete operation, and these two operations cannot be easily related to one "
@@ -3811,13 +3766,13 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:3177
+#: ch02-basic-usage.xml:3177
 msgid ""
 "In this case, Harry's commit log message tells you what you need to know."
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:3182
+#: ch02-basic-usage.xml:3182
 #, no-wrap
 msgid ""
 "$ svn log -r14 ^/trunk\n"
@@ -3834,7 +3789,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:3196
+#: ch02-basic-usage.xml:3196
 msgid ""
 "<command>svn info</command> shows the URLs of the items involved in the "
 "conflict.  The <emphasis>left</emphasis> URL shows the source of the local "
@@ -3845,7 +3800,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:3206
+#: ch02-basic-usage.xml:3206
 #, no-wrap
 msgid ""
 "$ svn info code/bar.c\n"
@@ -3861,14 +3816,14 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:3219
+#: ch02-basic-usage.xml:3219
 msgid ""
 "<filename>bar.c</filename> is now said to be the victim of a tree conflict.  "
 "It cannot be committed until the conflict is resolved:"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:3225
+#: ch02-basic-usage.xml:3225
 #, no-wrap
 msgid ""
 "$ svn commit -m \"Small fixes\" \n"
@@ -3879,14 +3834,14 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:3233
+#: ch02-basic-usage.xml:3233
 msgid ""
 "To resolve this conflict, you must either agree or disagree with the move "
 "that Harry made."
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para><footnote><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:3245
+#: ch02-basic-usage.xml:3245
 msgid ""
 "In some cases, Subversion 1.5 and 1.6 <emphasis>would</emphasis> actually "
 "handle this for you, but this somewhat hit-or-miss functionality was removed "
@@ -3894,7 +3849,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:3236
+#: ch02-basic-usage.xml:3236
 msgid ""
 "If you agree with the move, your <filename>bar.c</filename> is superfluous.  "
 "You'll want to delete it and mark the tree conflict as resolved.  But wait: "
@@ -3908,7 +3863,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:3251
+#: ch02-basic-usage.xml:3251
 msgid ""
 "In our example, you could manually re-make your change to <filename>bar.c</"
 "filename> pretty easily&mdash;it was, after all, a single-line change.  "
@@ -3919,7 +3874,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:3262
+#: ch02-basic-usage.xml:3262
 #, no-wrap
 msgid ""
 "$ svn diff code/bar.c > PATCHFILE\n"
@@ -3952,7 +3907,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:3292
+#: ch02-basic-usage.xml:3292
 msgid ""
 "Now that the changes you originally made to <filename>bar.c</filename> have "
 "been successfully reproduced in <filename>baz.c</filename>, you can delete "
@@ -3962,7 +3917,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:3301
+#: ch02-basic-usage.xml:3301
 #, no-wrap
 msgid ""
 "$ svn delete --force code/bar.c\n"
@@ -3998,7 +3953,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:3334
+#: ch02-basic-usage.xml:3334
 msgid ""
 "But what if you do not agree with the move? Well, in that case, you can "
 "delete <filename>baz.c</filename> instead, after making sure any changes "
@@ -4010,7 +3965,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:3345
+#: ch02-basic-usage.xml:3345
 #, no-wrap
 msgid ""
 "$ svn delete --force code/baz.c\n"
@@ -4064,19 +4019,19 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:3396
+#: ch02-basic-usage.xml:3396
 msgid ""
 "You've now resolved your first tree conflict! You can commit your changes "
 "and tell Harry during tea break about all the extra work he caused for you."
 msgstr ""
 
 #. type: Content of: <chapter><sect1><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:3407
+#: ch02-basic-usage.xml:3407
 msgid "Summary"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch02-basic-usage.xml:3409
+#: ch02-basic-usage.xml:3409
 msgid ""
 "Now we've covered most of the Subversion client commands.  Notable "
 "exceptions are those dealing with branching and merging (see <xref linkend="

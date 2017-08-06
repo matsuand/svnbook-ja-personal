@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2017-08-03 18:00+0900\n"
-"PO-Revision-Date: 2017-08-03 18:00+0900\n"
+"POT-Creation-Date: 2017-08-06 14:19+0900\n"
+"PO-Revision-Date: 2017-08-06 14:19+0900\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: matsuand個人翻訳\n"
 "Language: ja\n"
@@ -17,47 +17,47 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. type: Content of: <book><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/book.xml:45
+#: book.xml:45
 msgid "Version Control with Subversion [DRAFT]"
 msgstr ""
 
 #. type: Content of: <book><bookinfo><subtitle>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/book.xml:49
+#: book.xml:49
 msgid "For Subversion 1.8"
 msgstr ""
 
 #. type: Content of: <book><bookinfo><subtitle>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/book.xml:53
+#: book.xml:53
 msgid "(Compiled from &svn.l10n_revision;&svn.version;)"
 msgstr ""
 
 #. type: Content of: <book><bookinfo><authorgroup><author><firstname>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/book.xml:63
+#: book.xml:63
 msgid "Ben"
 msgstr ""
 
 #. type: Content of: <book><bookinfo><authorgroup><author><surname>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/book.xml:64
+#: book.xml:64
 msgid "Collins-Sussman"
 msgstr ""
 
 #. type: Content of: <book><bookinfo><authorgroup><author><firstname>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/book.xml:68
+#: book.xml:68
 msgid "Brian W."
 msgstr ""
 
 #. type: Content of: <book><bookinfo><authorgroup><author><surname>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/book.xml:69
+#: book.xml:69
 msgid "Fitzpatrick"
 msgstr ""
 
 #. type: Content of: <book><bookinfo><authorgroup><author><firstname>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/book.xml:73
+#: book.xml:73
 msgid "C. Michael"
 msgstr ""
 
 #. type: Content of: <book><bookinfo><authorgroup><author><surname>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/book.xml:74
+#: book.xml:74
 msgid "Pilato"
 msgstr ""
 
@@ -67,7 +67,7 @@ msgstr ""
 #.     <pubdate>(TBA)</pubdate>
 #.     
 #. type: Content of: <book><bookinfo>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/book.xml:79
+#: book.xml:79
 msgid ""
 "<editor> <firstname>Tatiana</firstname> <surname>Apandi</surname> </editor> "
 "<copyright> <year>2002</year> <year>2003</year> <year>2004</year> "
@@ -79,7 +79,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <book><bookinfo><legalnotice><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/book.xml:110
+#: book.xml:110
 msgid ""
 "This work is licensed under the Creative Commons Attribution License.  To "
 "view a copy of this license, visit <ulink url=\"http://creativecommons.org/"
@@ -88,16 +88,16 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <book><part><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/book.xml:124
+#: book.xml:124
 msgid "Getting to Know Subversion"
 msgstr ""
 
 #. type: Content of: <book><part><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/book.xml:137
+#: book.xml:137
 msgid "Subversion Command Reference"
 msgstr ""
 
 #. type: Content of: <book><part><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/book.xml:152
+#: book.xml:152
 msgid "Appendices"
 msgstr ""

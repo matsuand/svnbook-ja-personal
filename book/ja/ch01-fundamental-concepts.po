@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2017-08-03 18:00+0900\n"
-"PO-Revision-Date: 2017-08-03 18:00+0900\n"
+"POT-Creation-Date: 2017-08-06 14:19+0900\n"
+"PO-Revision-Date: 2017-08-06 14:19+0900\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: matsuand個人翻訳\n"
 "Language: ja\n"
@@ -17,12 +17,12 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. type: Content of: <chapter><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:4
+#: ch01-fundamental-concepts.xml:4
 msgid "Fundamental Concepts"
 msgstr ""
 
 #. type: Content of: <chapter><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:6
+#: ch01-fundamental-concepts.xml:6
 msgid ""
 "This chapter is a short, casual introduction to Subversion and its approach "
 "to version control.  We begin with a discussion of general version control "
@@ -31,7 +31,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:12
+#: ch01-fundamental-concepts.xml:12
 msgid ""
 "Even though the examples in this chapter show people sharing collections of "
 "program source code, keep in mind that Subversion can manage any sort of "
@@ -39,18 +39,17 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:22
+#: ch01-fundamental-concepts.xml:22
 msgid "Version Control Basics"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para><indexterm><primary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:26
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:57
+#: ch01-fundamental-concepts.xml:26 ch01-fundamental-concepts.xml:57
 msgid "version control systems"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:25
+#: ch01-fundamental-concepts.xml:25
 msgid ""
 "<placeholder type=\"indexterm\" id=\"0\"/>A version control system (or "
 "revision control system) is a system that tracks incremental versions (or "
@@ -63,7 +62,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:37
+#: ch01-fundamental-concepts.xml:37
 msgid ""
 "In this section, we'll introduce some fairly high-level version control "
 "system components and concepts.  We'll limit our discussion to modern "
@@ -73,28 +72,27 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:46
+#: ch01-fundamental-concepts.xml:46
 msgid "The Repository"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para><indexterm><primary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:50
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:53
+#: ch01-fundamental-concepts.xml:50 ch01-fundamental-concepts.xml:53
 msgid "repositories"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para><indexterm><secondary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:54
+#: ch01-fundamental-concepts.xml:54
 msgid "filesystem tree"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para><indexterm><secondary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:58
+#: ch01-fundamental-concepts.xml:58
 msgid "clients"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:49
+#: ch01-fundamental-concepts.xml:49
 msgid ""
 "<placeholder type=\"indexterm\" id=\"0\"/> <placeholder type=\"indexterm\" "
 "id=\"1\"/> <placeholder type=\"indexterm\" id=\"2\"/>At the core of the "
@@ -109,17 +107,17 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><figure><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:72
+#: ch01-fundamental-concepts.xml:72
 msgid "A typical client/server system"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><figure>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:73
+#: ch01-fundamental-concepts.xml:73
 msgid "<graphic fileref=\"images/ch02dia1.png\"/>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:76
+#: ch01-fundamental-concepts.xml:76
 msgid ""
 "Why is this interesting? So far, this sounds like the definition of a "
 "typical file server.  And indeed, the repository <emphasis>is</emphasis> a "
@@ -129,7 +127,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:83
+#: ch01-fundamental-concepts.xml:83
 msgid ""
 "When a client reads data from the repository, it normally sees only the "
 "latest version of the filesystem tree.  But what makes a version control "
@@ -142,21 +140,19 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:98
+#: ch01-fundamental-concepts.xml:98
 msgid "The Working Copy"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para><indexterm><primary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:102
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:683
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:853
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:947
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:987
+#: ch01-fundamental-concepts.xml:102 ch01-fundamental-concepts.xml:683
+#: ch01-fundamental-concepts.xml:853 ch01-fundamental-concepts.xml:947
+#: ch01-fundamental-concepts.xml:987
 msgid "working copies"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:101
+#: ch01-fundamental-concepts.xml:101
 msgid ""
 "<placeholder type=\"indexterm\" id=\"0\"/>A version control system's value "
 "comes from the fact that it tracks versions of files and directories, but "
@@ -173,7 +169,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para><footnote><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:121
+#: ch01-fundamental-concepts.xml:121
 msgid ""
 "The term <quote>working copy</quote> can be generally applied to any one "
 "file version's local instance.  When most folks use the term, though, they "
@@ -182,7 +178,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:119
+#: ch01-fundamental-concepts.xml:119
 msgid ""
 "A working copy is, quite literally, a local copy of a particular version of "
 "a user's VCS-managed data upon which that user is free to work.  Working "
@@ -195,12 +191,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:138
+#: ch01-fundamental-concepts.xml:138
 msgid "Versioning Models"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:140
+#: ch01-fundamental-concepts.xml:140
 msgid ""
 "If the primary mission of a version control system is to track the various "
 "versions of digital information over time, a very close secondary mission in "
@@ -215,12 +211,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:155
+#: ch01-fundamental-concepts.xml:155
 msgid "The problem of file sharing"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:157
+#: ch01-fundamental-concepts.xml:157
 msgid ""
 "All version control systems have to solve the same fundamental problem: how "
 "will the system allow users to share information, but prevent them from "
@@ -229,7 +225,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:164
+#: ch01-fundamental-concepts.xml:164
 msgid ""
 "Consider the scenario shown in <xref linkend=\"svn.basic.vsn-models.problem-"
 "sharing.dia-1\"/>.  Suppose we have two coworkers, Harry and Sally.  They "
@@ -245,49 +241,44 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><figure><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:181
+#: ch01-fundamental-concepts.xml:181
 msgid "The problem to avoid"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><figure>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:182
+#: ch01-fundamental-concepts.xml:182
 msgid "<graphic fileref=\"images/ch02dia2.png\"/>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><figure><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:189
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:213
+#: ch01-fundamental-concepts.xml:189 ch01-fundamental-concepts.xml:213
 msgid "The lock-modify-unlock solution"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para><indexterm><primary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:193
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:273
+#: ch01-fundamental-concepts.xml:193 ch01-fundamental-concepts.xml:273
 msgid "version control"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para><indexterm><secondary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:194
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:274
+#: ch01-fundamental-concepts.xml:194 ch01-fundamental-concepts.xml:274
 msgid "models"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para><indexterm><tertiary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:195
+#: ch01-fundamental-concepts.xml:195
 msgid "lock-modify-unlock"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para><indexterm>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:195
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:275
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:847
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:906
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:941
+#: ch01-fundamental-concepts.xml:195 ch01-fundamental-concepts.xml:275
+#: ch01-fundamental-concepts.xml:847 ch01-fundamental-concepts.xml:906
+#: ch01-fundamental-concepts.xml:941
 msgid "<placeholder type=\"tertiary\" id=\"0\"/>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:192
+#: ch01-fundamental-concepts.xml:192
 msgid ""
 "<placeholder type=\"indexterm\" id=\"0\"/>Many version control systems use a "
 "<firstterm>lock-modify-unlock</firstterm> model to address the problem of "
@@ -304,19 +295,19 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><figure>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:214
+#: ch01-fundamental-concepts.xml:214
 msgid "<graphic fileref=\"images/ch02dia3.png\"/>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:217
+#: ch01-fundamental-concepts.xml:217
 msgid ""
 "The problem with the lock-modify-unlock model is that it's a bit restrictive "
 "and often becomes a roadblock for users:"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><itemizedlist><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:223
+#: ch01-fundamental-concepts.xml:223
 msgid ""
 "<emphasis>Locking may cause administrative problems.</emphasis> Sometimes "
 "Harry will lock a file and then forget about it.  Meanwhile, because Sally "
@@ -327,7 +318,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><itemizedlist><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:235
+#: ch01-fundamental-concepts.xml:235
 msgid ""
 "<emphasis>Locking may cause unnecessary serialization.</emphasis> What if "
 "Harry is editing the beginning of a text file, and Sally simply wants to "
@@ -338,7 +329,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><itemizedlist><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:248
+#: ch01-fundamental-concepts.xml:248
 msgid ""
 "<emphasis>Locking may create a false sense of security.</emphasis> Suppose "
 "Harry locks and edits file A, while Sally simultaneously locks and edits "
@@ -352,18 +343,17 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><figure><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:269
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:308
+#: ch01-fundamental-concepts.xml:269 ch01-fundamental-concepts.xml:308
 msgid "The copy-modify-merge solution"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para><indexterm><tertiary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:275
+#: ch01-fundamental-concepts.xml:275
 msgid "copy-modify-merge"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:272
+#: ch01-fundamental-concepts.xml:272
 msgid ""
 "<placeholder type=\"indexterm\" id=\"0\"/>Subversion, CVS, and many other "
 "version control systems use a <firstterm>copy-modify-merge</firstterm> model "
@@ -376,12 +366,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para><indexterm><primary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:289
+#: ch01-fundamental-concepts.xml:289
 msgid "out of date"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:288
+#: ch01-fundamental-concepts.xml:288
 msgid ""
 "<placeholder type=\"indexterm\" id=\"0\"/>Here's an example.  Say that Harry "
 "and Sally each create working copies of the same project, copied from the "
@@ -399,27 +389,27 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><figure>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:309
+#: ch01-fundamental-concepts.xml:309
 msgid "<graphic fileref=\"images/ch02dia4.png\"/>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><figure><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:313
+#: ch01-fundamental-concepts.xml:313
 msgid "The copy-modify-merge solution (continued)"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><figure>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:314
+#: ch01-fundamental-concepts.xml:314
 msgid "<graphic fileref=\"images/ch02dia5.png\"/>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para><indexterm><primary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:319
+#: ch01-fundamental-concepts.xml:319
 msgid "conflicts"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:318
+#: ch01-fundamental-concepts.xml:318
 msgid ""
 "<placeholder type=\"indexterm\" id=\"0\"/>But what if Sally's changes "
 "<emphasis>do</emphasis> overlap with Harry's changes? What then? This "
@@ -435,7 +425,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:336
+#: ch01-fundamental-concepts.xml:336
 msgid ""
 "The copy-modify-merge model may sound a bit chaotic, but in practice, it "
 "runs extremely smoothly.  Users can work in parallel, never waiting for one "
@@ -446,7 +436,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:344
+#: ch01-fundamental-concepts.xml:344
 msgid ""
 "In the end, it all comes down to one critical factor: user communication.  "
 "When users communicate poorly, both syntactic and semantic conflicts "
@@ -458,19 +448,19 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><sidebar><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:354
+#: ch01-fundamental-concepts.xml:354
 msgid "When Locking Is Necessary"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><sidebar><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:356
+#: ch01-fundamental-concepts.xml:356
 msgid ""
 "While the lock-modify-unlock model is considered generally harmful to "
 "collaboration, sometimes locking is appropriate."
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><sidebar><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:360
+#: ch01-fundamental-concepts.xml:360
 msgid ""
 "The copy-modify-merge model is based on the assumption that files are "
 "contextually mergeable&mdash;that is, that the majority of the files in the "
@@ -483,7 +473,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><sidebar><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:371
+#: ch01-fundamental-concepts.xml:371
 msgid ""
 "While Subversion is primarily a copy-modify-merge system, it still "
 "recognizes the need to lock an occasional file, and thus provides mechanisms "
@@ -492,12 +482,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:386
+#: ch01-fundamental-concepts.xml:386
 msgid "Version Control the Subversion Way"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:388
+#: ch01-fundamental-concepts.xml:388
 msgid ""
 "We've mentioned already that Subversion is a modern, network-aware version "
 "control system.  As we described in <xref linkend=\"svn.basic.version-"
@@ -509,12 +499,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:400
+#: ch01-fundamental-concepts.xml:400
 msgid "Subversion Repositories"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:402
+#: ch01-fundamental-concepts.xml:402
 msgid ""
 "Subversion implements the concept of a version control repository much as "
 "any other modern version control system would.  Unlike a working copy, a "
@@ -528,7 +518,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><warning><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:415
+#: ch01-fundamental-concepts.xml:415
 msgid ""
 "In Subversion, the client-side object which every user of the system "
 "has&mdash;the directory of versioned files, along with metadata that enables "
@@ -540,19 +530,19 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><warning><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:425
+#: ch01-fundamental-concepts.xml:425
 msgid ""
 "Working copies are described later, in <xref linkend=\"svn.basic.in-action.wc"
 "\"/>."
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:433
+#: ch01-fundamental-concepts.xml:433
 msgid "Revisions"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:435
+#: ch01-fundamental-concepts.xml:435
 msgid ""
 "A Subversion client commits (that is, communicates the changes made to) any "
 "number of files and directories as a single atomic transaction.  By atomic "
@@ -563,14 +553,13 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><itemizedlist><indexterm><primary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:445
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:471
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:745
+#: ch01-fundamental-concepts.xml:445 ch01-fundamental-concepts.xml:471
+#: ch01-fundamental-concepts.xml:745
 msgid "revisions"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:444
+#: ch01-fundamental-concepts.xml:444
 msgid ""
 "<placeholder type=\"indexterm\" id=\"0\"/>Each time the repository accepts a "
 "commit, this creates a new state of the filesystem tree, called a "
@@ -581,7 +570,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:454
+#: ch01-fundamental-concepts.xml:454
 msgid ""
 "<xref linkend=\"svn.basic.in-action.revs.dia-1\"/> illustrates a nice way to "
 "visualize the repository.  Imagine an array of revision numbers, starting at "
@@ -591,27 +580,27 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><figure><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:462
+#: ch01-fundamental-concepts.xml:462
 msgid "Tree changes over time"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><figure>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:463
+#: ch01-fundamental-concepts.xml:463
 msgid "<graphic fileref=\"images/ch02dia7.png\"/>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sidebar><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:467
+#: ch01-fundamental-concepts.xml:467
 msgid "Global Revision Numbers"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sidebar><para><indexterm><secondary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:472
+#: ch01-fundamental-concepts.xml:472
 msgid "global"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sidebar><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:470
+#: ch01-fundamental-concepts.xml:470
 msgid ""
 "<placeholder type=\"indexterm\" id=\"0\"/>Unlike most version control "
 "systems, Subversion's revision numbers apply to <emphasis>the entire "
@@ -629,17 +618,17 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:495
+#: ch01-fundamental-concepts.xml:495
 msgid "Addressing the Repository"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para><indexterm><primary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:499
+#: ch01-fundamental-concepts.xml:499
 msgid "repository URL"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:498
+#: ch01-fundamental-concepts.xml:498
 msgid ""
 "<placeholder type=\"indexterm\" id=\"0\"/>Subversion client programs use "
 "URLs to identify versioned files and directories in Subversion "
@@ -649,17 +638,17 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><informalexample><itemizedlist><listitem><simpara>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:509
+#: ch01-fundamental-concepts.xml:509
 msgid "http://svn.example.com/svn/project"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><informalexample><itemizedlist><listitem><simpara>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:512
+#: ch01-fundamental-concepts.xml:512
 msgid "http://svn.example.com:9834/repos"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:517
+#: ch01-fundamental-concepts.xml:517
 msgid ""
 "Subversion repository URLs aren't limited to only the <literal>http://</"
 "literal> variety.  Because Subversion offers several different ways for its "
@@ -672,74 +661,74 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><table><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:529
+#: ch01-fundamental-concepts.xml:529
 msgid "Repository access URLs"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><table><tgroup><thead><row><entry>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:533
+#: ch01-fundamental-concepts.xml:533
 msgid "Schema"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><table><tgroup><thead><row><entry>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:534
+#: ch01-fundamental-concepts.xml:534
 msgid "Access method"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><table><tgroup><tbody><row><entry>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:539
+#: ch01-fundamental-concepts.xml:539
 msgid "<literal>file:///</literal>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><table><tgroup><tbody><row><entry>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:540
+#: ch01-fundamental-concepts.xml:540
 msgid "Direct repository access (on local disk)"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><table><tgroup><tbody><row><entry>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:543
+#: ch01-fundamental-concepts.xml:543
 msgid "<literal>http://</literal>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><table><tgroup><tbody><row><entry>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:544
+#: ch01-fundamental-concepts.xml:544
 msgid "Access via WebDAV protocol to Subversion-aware Apache server"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><table><tgroup><tbody><row><entry>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:548
+#: ch01-fundamental-concepts.xml:548
 msgid "<literal>https://</literal>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><table><tgroup><tbody><row><entry>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:549
+#: ch01-fundamental-concepts.xml:549
 msgid ""
 "Same as <literal>http://</literal>, but with SSL encapsulation (encryption "
 "and authentication)"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><table><tgroup><tbody><row><entry>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:553
+#: ch01-fundamental-concepts.xml:553
 msgid "<literal>svn://</literal>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><table><tgroup><tbody><row><entry>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:554
+#: ch01-fundamental-concepts.xml:554
 msgid "Access via custom protocol to an <literal>svnserve</literal> server"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><table><tgroup><tbody><row><entry>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:558
+#: ch01-fundamental-concepts.xml:558
 msgid "<literal>svn+ssh://</literal>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><table><tgroup><tbody><row><entry>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:559
+#: ch01-fundamental-concepts.xml:559
 msgid "Same as <literal>svn://</literal>, but through an SSH tunnel"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:566
+#: ch01-fundamental-concepts.xml:566
 msgid ""
 "Subversion's handling of URLs has some notable nuances.  For example, URLs "
 "containing the <literal>file://</literal> access method (used for local "
@@ -748,17 +737,17 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><informalexample><itemizedlist><listitem><simpara>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:576
+#: ch01-fundamental-concepts.xml:576
 msgid "file:///var/svn/repos"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><informalexample><itemizedlist><listitem><simpara>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:579
+#: ch01-fundamental-concepts.xml:579
 msgid "file://localhost/var/svn/repos"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:584
+#: ch01-fundamental-concepts.xml:584
 msgid ""
 "Also, users of the <literal>file://</literal> scheme on Windows platforms "
 "will need to use an unofficially <quote>standard</quote> syntax for "
@@ -769,17 +758,17 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><informalexample><itemizedlist><listitem><simpara>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:596
+#: ch01-fundamental-concepts.xml:596
 msgid "file:///X:/var/svn/repos"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><informalexample><itemizedlist><listitem><simpara>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:599
+#: ch01-fundamental-concepts.xml:599
 msgid "file:///X|/var/svn/repos"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:604
+#: ch01-fundamental-concepts.xml:604
 msgid ""
 "Note that a URL uses forward slashes even though the native (non-URL) form "
 "of a path on Windows uses backslashes.  Also note that when using the "
@@ -789,7 +778,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><note><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:613
+#: ch01-fundamental-concepts.xml:613
 msgid ""
 "You cannot use Subversion's <literal>file://</literal> URLs in a regular web "
 "browser the way you can use typical <literal>file://</literal> URLs.  When "
@@ -802,7 +791,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:625
+#: ch01-fundamental-concepts.xml:625
 msgid ""
 "The Subversion client will automatically encode URLs as necessary, just like "
 "a web browser does.  For example, the URL <literal>http://host/path with "
@@ -815,7 +804,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:636
+#: ch01-fundamental-concepts.xml:636
 msgid ""
 "There is one notable exception to Subversion's handling of URLs which also "
 "applies to its handling of local paths in many contexts, too.  If the final "
@@ -826,23 +815,22 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para><indexterm><primary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:646
+#: ch01-fundamental-concepts.xml:646
 msgid "repository-relative URL"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para><indexterm><see>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:649
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:653
+#: ch01-fundamental-concepts.xml:649 ch01-fundamental-concepts.xml:653
 msgid "caret syntax"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para><indexterm><primary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:652
+#: ch01-fundamental-concepts.xml:652
 msgid "^"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:645
+#: ch01-fundamental-concepts.xml:645
 msgid ""
 "<placeholder type=\"indexterm\" id=\"0\"/> <placeholder type=\"indexterm\" "
 "id=\"1\"/> <placeholder type=\"indexterm\" id=\"2\"/>In Subversion 1.6, a "
@@ -863,12 +851,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:679
+#: ch01-fundamental-concepts.xml:679
 msgid "Subversion Working Copies"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:682
+#: ch01-fundamental-concepts.xml:682
 msgid ""
 "<placeholder type=\"indexterm\" id=\"0\"/>A Subversion working copy is an "
 "ordinary directory tree on your local system, containing a collection of "
@@ -881,7 +869,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:694
+#: ch01-fundamental-concepts.xml:694
 msgid ""
 "After you've made some changes to the files in your working copy and "
 "verified that they work properly, Subversion provides you with commands to "
@@ -895,18 +883,17 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para><indexterm><see>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:709
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:713
+#: ch01-fundamental-concepts.xml:709 ch01-fundamental-concepts.xml:713
 msgid "administrative directory"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para><indexterm><primary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:712
+#: ch01-fundamental-concepts.xml:712
 msgid ".svn"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:708
+#: ch01-fundamental-concepts.xml:708
 msgid ""
 "<placeholder type=\"indexterm\" id=\"0\"/> <placeholder type=\"indexterm\" "
 "id=\"1\"/>A working copy also contains some extra files, created and "
@@ -919,7 +906,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><note><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:725
+#: ch01-fundamental-concepts.xml:725
 msgid ""
 "Prior to version 1.7, Subversion maintained <filename>.svn</filename> "
 "administrative subdirectories in <emphasis>every</emphasis> versioned "
@@ -931,49 +918,49 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:738
+#: ch01-fundamental-concepts.xml:738
 msgid "How the working copy works"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:740
+#: ch01-fundamental-concepts.xml:740
 msgid ""
 "For each file in a working directory, Subversion records (among other "
 "things) two essential pieces of information:"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><itemizedlist><indexterm><secondary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:746
+#: ch01-fundamental-concepts.xml:746
 msgid "working"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><itemizedlist><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:750
+#: ch01-fundamental-concepts.xml:750
 msgid ""
 "What revision your working file is based on (this is called the file's "
 "<firstterm>working revision</firstterm>)"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><itemizedlist><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:755
+#: ch01-fundamental-concepts.xml:755
 msgid ""
 "A timestamp recording when the local copy was last updated by the repository"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:760
+#: ch01-fundamental-concepts.xml:760
 msgid ""
 "Given this information, by talking to the repository, Subversion can tell "
 "which of the following four states a working file is in:"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:766
+#: ch01-fundamental-concepts.xml:766
 msgid "Unchanged, and current"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:768
+#: ch01-fundamental-concepts.xml:768
 msgid ""
 "The file is unchanged in the working directory, and no changes to that file "
 "have been committed to the repository since its working revision.  An "
@@ -982,12 +969,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:778
+#: ch01-fundamental-concepts.xml:778
 msgid "Locally changed, and current"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:780
+#: ch01-fundamental-concepts.xml:780
 msgid ""
 "The file has been changed in the working directory, and no changes to that "
 "file have been committed to the repository since you last updated.  There "
@@ -997,12 +984,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:791
+#: ch01-fundamental-concepts.xml:791
 msgid "Unchanged, and out of date"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:793
+#: ch01-fundamental-concepts.xml:793
 msgid ""
 "The file has not been changed in the working directory, but it has been "
 "changed in the repository.  The file should eventually be updated in order "
@@ -1012,12 +999,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:805
+#: ch01-fundamental-concepts.xml:805
 msgid "Locally changed, and out of date"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:807
+#: ch01-fundamental-concepts.xml:807
 msgid ""
 "The file has been changed both in the working directory and in the "
 "repository.  An <command>svn commit</command> of the file will fail with an "
@@ -1029,12 +1016,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:824
+#: ch01-fundamental-concepts.xml:824
 msgid "Fundamental working copy interactions"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:826
+#: ch01-fundamental-concepts.xml:826
 msgid ""
 "A typical Subversion repository often holds the files (or source code) for "
 "several projects; usually, each project is a subdirectory in the "
@@ -1043,7 +1030,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:832
+#: ch01-fundamental-concepts.xml:832
 msgid ""
 "For example, suppose you have a repository that contains two software "
 "projects, <literal>paint</literal> and <literal>calc</literal>.  Each "
@@ -1052,47 +1039,44 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><figure><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:839
+#: ch01-fundamental-concepts.xml:839
 msgid "The repository's filesystem"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><figure>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:840
+#: ch01-fundamental-concepts.xml:840
 msgid "<graphic fileref=\"images/ch02dia6.png\"/>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para><indexterm><primary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:845
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:904
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:939
+#: ch01-fundamental-concepts.xml:845 ch01-fundamental-concepts.xml:904
+#: ch01-fundamental-concepts.xml:939
 msgid "svn"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para><indexterm><secondary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:846
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:905
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:940
+#: ch01-fundamental-concepts.xml:846 ch01-fundamental-concepts.xml:905
+#: ch01-fundamental-concepts.xml:940
 msgid "subcommands"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para><indexterm><tertiary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:847
+#: ch01-fundamental-concepts.xml:847
 msgid "checkout"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para><indexterm><see>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:850
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:855
+#: ch01-fundamental-concepts.xml:850 ch01-fundamental-concepts.xml:855
 msgid "checking out"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para><indexterm><secondary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:854
+#: ch01-fundamental-concepts.xml:854
 msgid "creating"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:844
+#: ch01-fundamental-concepts.xml:844
 msgid ""
 "<placeholder type=\"indexterm\" id=\"0\"/> <placeholder type=\"indexterm\" "
 "id=\"1\"/> <placeholder type=\"indexterm\" id=\"2\"/>To get a working copy, "
@@ -1104,7 +1088,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:866
+#: ch01-fundamental-concepts.xml:866
 #, no-wrap
 msgid ""
 "$ svn checkout http://svn.example.com/repos/calc\n"
@@ -1118,7 +1102,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:877
+#: ch01-fundamental-concepts.xml:877
 msgid ""
 "The list of letter <literal>A</literal>s in the left margin indicates that "
 "Subversion is adding a number of items to your working copy.  You now have a "
@@ -1128,19 +1112,18 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para><indexterm><primary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:887
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:891
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:909
+#: ch01-fundamental-concepts.xml:887 ch01-fundamental-concepts.xml:891
+#: ch01-fundamental-concepts.xml:909
 msgid "committing"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para><indexterm><primary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:890
+#: ch01-fundamental-concepts.xml:890
 msgid "checking in"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:886
+#: ch01-fundamental-concepts.xml:886
 msgid ""
 "<placeholder type=\"indexterm\" id=\"0\"/> <placeholder type=\"indexterm\" "
 "id=\"1\"/>Suppose you make changes to <filename>button.c</filename>.  Since "
@@ -1153,12 +1136,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para><indexterm><tertiary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:906
+#: ch01-fundamental-concepts.xml:906
 msgid "commit"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:903
+#: ch01-fundamental-concepts.xml:903
 msgid ""
 "<placeholder type=\"indexterm\" id=\"0\"/> <placeholder type=\"indexterm\" "
 "id=\"1\"/>To publish your changes, you can use Subversion's <command>svn "
@@ -1166,7 +1149,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:915
+#: ch01-fundamental-concepts.xml:915
 #, no-wrap
 msgid ""
 "$ svn commit button.c -m \"Fixed a typo in button.c.\"\n"
@@ -1177,7 +1160,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:923
+#: ch01-fundamental-concepts.xml:923
 msgid ""
 "Now your changes to <filename>button.c</filename> have been committed to the "
 "repository, with a note describing your change (namely, that you fixed a "
@@ -1186,7 +1169,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:930
+#: ch01-fundamental-concepts.xml:930
 msgid ""
 "Suppose you have a collaborator, Sally, who checked out a working copy of "
 "<filename>/calc</filename> at the same time you did.  When you commit your "
@@ -1195,19 +1178,18 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para><indexterm><tertiary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:941
+#: ch01-fundamental-concepts.xml:941
 msgid "update"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para><indexterm><see>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:944
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:948
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:949
+#: ch01-fundamental-concepts.xml:944 ch01-fundamental-concepts.xml:948
+#: ch01-fundamental-concepts.xml:949
 msgid "updating"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:938
+#: ch01-fundamental-concepts.xml:938
 msgid ""
 "<placeholder type=\"indexterm\" id=\"0\"/> <placeholder type=\"indexterm\" "
 "id=\"1\"/> <placeholder type=\"indexterm\" id=\"2\"/>To bring her project up "
@@ -1218,7 +1200,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:959
+#: ch01-fundamental-concepts.xml:959
 #, no-wrap
 msgid ""
 "$ pwd\n"
@@ -1233,7 +1215,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:971
+#: ch01-fundamental-concepts.xml:971
 msgid ""
 "The output from the <command>svn update</command> command indicates that "
 "Subversion updated the contents of <filename>button.c</filename>.  Note that "
@@ -1244,17 +1226,17 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:983
+#: ch01-fundamental-concepts.xml:983
 msgid "Mixed-revision working copies"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para><indexterm><secondary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:988
+#: ch01-fundamental-concepts.xml:988
 msgid "mixed-revision"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:986
+#: ch01-fundamental-concepts.xml:986
 msgid ""
 "<placeholder type=\"indexterm\" id=\"0\"/>As a general principle, Subversion "
 "tries to be as flexible as possible.  One special kind of flexibility is the "
@@ -1266,7 +1248,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><informalexample><literallayout>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:1001
+#: ch01-fundamental-concepts.xml:1001
 #, no-wrap
 msgid ""
 "calc/\n"
@@ -1276,7 +1258,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:1008
+#: ch01-fundamental-concepts.xml:1008
 msgid ""
 "At the moment, this working directory corresponds exactly to revision 4 in "
 "the repository.  However, suppose you make a change to <filename>button.c</"
@@ -1286,7 +1268,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><informalexample><literallayout>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:1017
+#: ch01-fundamental-concepts.xml:1017
 #, no-wrap
 msgid ""
 "calc/\n"
@@ -1296,7 +1278,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:1024
+#: ch01-fundamental-concepts.xml:1024
 msgid ""
 "Suppose that, at this point, Sally commits a change to <filename>integer.c</"
 "filename>, creating revision 6.  If you use <command>svn update</command> to "
@@ -1304,7 +1286,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><informalexample><literallayout>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:1031
+#: ch01-fundamental-concepts.xml:1031
 #, no-wrap
 msgid ""
 "calc/\n"
@@ -1314,7 +1296,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:1038
+#: ch01-fundamental-concepts.xml:1038
 msgid ""
 "Sally's change to <filename>integer.c</filename> will appear in your working "
 "copy, and your change will still be present in <filename>button.c</"
@@ -1326,12 +1308,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><sect4><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:1049
+#: ch01-fundamental-concepts.xml:1049
 msgid "Updates and commits are separate"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><sect4><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:1051
+#: ch01-fundamental-concepts.xml:1051
 msgid ""
 "One of the fundamental rules of Subversion is that a <quote>push</quote> "
 "action does not cause a <quote>pull</quote> nor vice versa.  Just because "
@@ -1343,7 +1325,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><sect4><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:1061
+#: ch01-fundamental-concepts.xml:1061
 msgid ""
 "The main side effect of this rule is that it means a working copy has to do "
 "extra bookkeeping to track mixed revisions as well as be tolerant of the "
@@ -1352,7 +1334,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><sect4><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:1067
+#: ch01-fundamental-concepts.xml:1067
 msgid ""
 "For example, suppose you have a working copy entirely at revision 10, while "
 "others have been committing their changes so that the youngest revision in "
@@ -1376,12 +1358,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><sect4><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:1097
+#: ch01-fundamental-concepts.xml:1097
 msgid "Mixed revisions are normal"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><sect4><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:1099
+#: ch01-fundamental-concepts.xml:1099
 msgid ""
 "The fact is, <emphasis>every time</emphasis> you run <command>svn commit</"
 "command> your working copy ends up with some mixture of revisions.  The "
@@ -1396,7 +1378,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><sect4><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:1113
+#: ch01-fundamental-concepts.xml:1113
 msgid ""
 "Often, new users are completely unaware that their working copy contains "
 "mixed revisions.  This can be confusing, because many client commands are "
@@ -1411,17 +1393,17 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><sect4><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:1130
+#: ch01-fundamental-concepts.xml:1130
 msgid "Mixed revisions are useful"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><sect4><para><indexterm><primary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:1134
+#: ch01-fundamental-concepts.xml:1134
 msgid "backdating"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><sect4><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:1133
+#: ch01-fundamental-concepts.xml:1133
 msgid ""
 "<placeholder type=\"indexterm\" id=\"0\"/>If your project is sufficiently "
 "complex, you'll discover that it's sometimes nice to forcibly "
@@ -1436,19 +1418,19 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><sect4><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:1152
+#: ch01-fundamental-concepts.xml:1152
 msgid "Mixed revisions have limitations"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><sect4><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:1154
+#: ch01-fundamental-concepts.xml:1154
 msgid ""
 "However you make use of mixed revisions in your working copy, there are "
 "limitations to this flexibility."
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><sect4><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:1157
+#: ch01-fundamental-concepts.xml:1157
 msgid ""
 "First, you cannot commit the deletion of a file or directory that isn't "
 "fully up to date.  If a newer version of the item exists in the repository, "
@@ -1457,7 +1439,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><sect4><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:1163
+#: ch01-fundamental-concepts.xml:1163
 msgid ""
 "Second, you cannot commit a metadata change to a directory unless it's fully "
 "up to date.  You'll learn about attaching <quote>properties</quote> to items "
@@ -1468,7 +1450,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><sect4><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:1171
+#: ch01-fundamental-concepts.xml:1171
 msgid ""
 "Finally, beginning in Subversion 1.7, you cannot by default use a mixed-"
 "revision working copy as the target of a merge operation.  (This new "
@@ -1477,24 +1459,24 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:1185
+#: ch01-fundamental-concepts.xml:1185
 msgid "Summary"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:1187
+#: ch01-fundamental-concepts.xml:1187
 msgid "We covered a number of fundamental Subversion concepts in this chapter:"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><itemizedlist><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:1192
+#: ch01-fundamental-concepts.xml:1192
 msgid ""
 "We introduced the notions of the central repository, the client working "
 "copy, and the array of repository revision trees."
 msgstr ""
 
 #. type: Content of: <chapter><sect1><itemizedlist><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:1198
+#: ch01-fundamental-concepts.xml:1198
 msgid ""
 "We saw some simple examples of how two collaborators can use Subversion to "
 "publish and receive changes from one another, using the <quote>copy-modify-"
@@ -1502,14 +1484,14 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><itemizedlist><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:1205
+#: ch01-fundamental-concepts.xml:1205
 msgid ""
 "We talked a bit about the way Subversion tracks and manages information in a "
 "working copy."
 msgstr ""
 
 #. type: Content of: <chapter><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch01-fundamental-concepts.xml:1211
+#: ch01-fundamental-concepts.xml:1211
 msgid ""
 "At this point, you should have a good idea of how Subversion works in the "
 "most general sense.  Armed with this knowledge, you should now be ready to "

@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2017-08-03 18:00+0900\n"
-"PO-Revision-Date: 2017-08-03 18:00+0900\n"
+"POT-Creation-Date: 2017-08-06 14:19+0900\n"
+"PO-Revision-Date: 2017-08-06 14:19+0900\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: matsuand個人翻訳\n"
 "Language: ja\n"
@@ -17,12 +17,12 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. type: Content of: <chapter><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:4
+#: ch07-customizing-svn.xml:4
 msgid "Customizing Your Subversion Experience"
 msgstr ""
 
 #. type: Content of: <chapter><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:6
+#: ch07-customizing-svn.xml:6
 msgid ""
 "Version control can be a complex subject, as much art as science, that "
 "offers myriad ways of getting stuff done.  Throughout this book, you've read "
@@ -35,12 +35,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:26
+#: ch07-customizing-svn.xml:26
 msgid "Runtime Configuration Area"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:28
+#: ch07-customizing-svn.xml:28
 msgid ""
 "Subversion provides many optional behaviors that the user can control.  Many "
 "of these options are of the kind that a user would wish to apply to all "
@@ -51,17 +51,14 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para><indexterm><primary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:38
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:56
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:77
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:116
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:141
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:283
+#: ch07-customizing-svn.xml:38 ch07-customizing-svn.xml:56
+#: ch07-customizing-svn.xml:77 ch07-customizing-svn.xml:116
+#: ch07-customizing-svn.xml:141 ch07-customizing-svn.xml:283
 msgid "runtime configuration"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:37
+#: ch07-customizing-svn.xml:37
 msgid ""
 "<placeholder type=\"indexterm\" id=\"0\"/>The Subversion <firstterm>runtime "
 "configuration area</firstterm> is a two-tiered hierarchy of option names and "
@@ -74,17 +71,17 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:52
+#: ch07-customizing-svn.xml:52
 msgid "Configuration Area Layout"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para><indexterm><secondary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:57
+#: ch07-customizing-svn.xml:57
 msgid "per-user"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para><footnote><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:68
+#: ch07-customizing-svn.xml:68
 msgid ""
 "The <literal>APPDATA</literal> environment variable points to the "
 "<filename>Application Data</filename> area, so you can always refer to this "
@@ -92,7 +89,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:55
+#: ch07-customizing-svn.xml:55
 msgid ""
 "<placeholder type=\"indexterm\" id=\"0\"/>The first time the <command>svn</"
 "command> command-line client is executed, it creates a per-user "
@@ -108,12 +105,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para><indexterm><secondary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:78
+#: ch07-customizing-svn.xml:78
 msgid "system-wide"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:76
+#: ch07-customizing-svn.xml:76
 msgid ""
 "<placeholder type=\"indexterm\" id=\"0\"/>In addition to the per-user "
 "configuration area, Subversion also recognizes the existence of a system-"
@@ -132,7 +129,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:97
+#: ch07-customizing-svn.xml:97
 msgid ""
 "The per-user configuration area currently contains three files&mdash;two "
 "configuration files (<filename>config</filename> and <filename>servers</"
@@ -150,12 +147,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para><indexterm><secondary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:117
+#: ch07-customizing-svn.xml:117
 msgid "command-line override"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:115
+#: ch07-customizing-svn.xml:115
 msgid ""
 "<placeholder type=\"indexterm\" id=\"0\"/>Subversion also allows you to "
 "override individual configuration option values at the command line via the "
@@ -165,7 +162,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:125
+#: ch07-customizing-svn.xml:125
 msgid ""
 "The per-user configuration area also contains a cache of authentication "
 "data.  The <filename>auth</filename> directory holds a set of subdirectories "
@@ -175,17 +172,17 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:137
+#: ch07-customizing-svn.xml:137
 msgid "Configuration and the Windows Registry"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para><indexterm><secondary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:142
+#: ch07-customizing-svn.xml:142
 msgid "Windows Registry"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:140
+#: ch07-customizing-svn.xml:140
 msgid ""
 "<placeholder type=\"indexterm\" id=\"0\"/>In addition to the usual INI-based "
 "configuration area, Subversion clients running on Windows platforms may also "
@@ -197,7 +194,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:152
+#: ch07-customizing-svn.xml:152
 msgid ""
 "Subversion looks for system-wide configuration values under the "
 "<literal>HKEY_LOCAL_MACHINE\\Software\\Tigris.org\\Subversion</literal> "
@@ -210,7 +207,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:162
+#: ch07-customizing-svn.xml:162
 msgid ""
 "Registry-based configuration options are parsed <emphasis>before</emphasis> "
 "their file-based counterparts, so they are overridden by values found in the "
@@ -220,32 +217,32 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><orderedlist><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:171
+#: ch07-customizing-svn.xml:171
 msgid "Command-line options"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><orderedlist><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:174
+#: ch07-customizing-svn.xml:174
 msgid "The per-user INI files"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><orderedlist><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:177
+#: ch07-customizing-svn.xml:177
 msgid "The per-user Registry values"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><orderedlist><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:180
+#: ch07-customizing-svn.xml:180
 msgid "The system-wide INI files"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><orderedlist><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:183
+#: ch07-customizing-svn.xml:183
 msgid "The system-wide Registry values"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:187
+#: ch07-customizing-svn.xml:187
 msgid ""
 "Also, the Windows Registry doesn't really support the notion of something "
 "being <quote>commented out.</quote> However, Subversion will ignore any "
@@ -256,7 +253,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:195
+#: ch07-customizing-svn.xml:195
 msgid ""
 "The <command>svn</command> command-line client never attempts to write to "
 "the Windows Registry and will not attempt to create a default configuration "
@@ -268,12 +265,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><example><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:207
+#: ch07-customizing-svn.xml:207
 msgid "Sample registration entries (.reg) file"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><example><programlisting>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:210
+#: ch07-customizing-svn.xml:210
 #, no-wrap
 msgid ""
 "REGEDIT4\n"
@@ -330,18 +327,15 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><example>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:209
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:1427
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:1451
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:1506
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:1533
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:1586
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:1614
+#: ch07-customizing-svn.xml:209 ch07-customizing-svn.xml:1427
+#: ch07-customizing-svn.xml:1451 ch07-customizing-svn.xml:1506
+#: ch07-customizing-svn.xml:1533 ch07-customizing-svn.xml:1586
+#: ch07-customizing-svn.xml:1614
 msgid "<placeholder type=\"programlisting\" id=\"0\"/>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:264
+#: ch07-customizing-svn.xml:264
 msgid ""
 "<xref linkend=\"svn.advanced.confarea.windows-registry.ex-1\"/> shows the "
 "contents of a <filename>.reg</filename> file, which contains some of the "
@@ -354,17 +348,17 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:279
+#: ch07-customizing-svn.xml:279
 msgid "Runtime Configuration Options"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para><indexterm><secondary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:284
+#: ch07-customizing-svn.xml:284
 msgid "options"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:282
+#: ch07-customizing-svn.xml:282
 msgid ""
 "<placeholder type=\"indexterm\" id=\"0\"/>In this section, we will discuss "
 "the specific runtime configuration options that Subversion currently "
@@ -372,12 +366,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:291
+#: ch07-customizing-svn.xml:291
 msgid "General configuration"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:293
+#: ch07-customizing-svn.xml:293
 msgid ""
 "The <filename>config</filename> file contains the rest of the currently "
 "available Subversion runtime options&mdash;those not related to networking.  "
@@ -386,7 +380,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:300
+#: ch07-customizing-svn.xml:300
 msgid ""
 "The <literal>[auth]</literal> section contains settings related to "
 "Subversion's authentication and authorization against the repository.  It "
@@ -394,12 +388,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:306
+#: ch07-customizing-svn.xml:306
 msgid "<literal>password-stores</literal>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:308
+#: ch07-customizing-svn.xml:308
 msgid ""
 "This comma-delimited list specifies which (if any)  system-provided password "
 "stores Subversion should attempt to use when saving and retrieving cached "
@@ -412,14 +406,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:322
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:950
+#: ch07-customizing-svn.xml:322 ch07-customizing-svn.xml:950
 msgid "<literal>store-passwords</literal>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:324
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:335
+#: ch07-customizing-svn.xml:324 ch07-customizing-svn.xml:335
 msgid ""
 "This option has been deprecated from the <filename>config</filename> file.  "
 "It now lives as a per-server configuration item in the <filename>servers</"
@@ -428,13 +420,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:333
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:939
+#: ch07-customizing-svn.xml:333 ch07-customizing-svn.xml:939
 msgid "<literal>store-auth-creds</literal>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:345
+#: ch07-customizing-svn.xml:345
 msgid ""
 "The <literal>[helpers]</literal> section controls which external "
 "applications Subversion uses to accomplish its tasks.  Valid options in this "
@@ -442,12 +433,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:351
+#: ch07-customizing-svn.xml:351
 msgid "<literal>diff-cmd</literal>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:353
+#: ch07-customizing-svn.xml:353
 msgid ""
 "This specifies the absolute path of a differencing program, used when "
 "Subversion generates <quote>diff</quote> output (such as when using the "
@@ -458,12 +449,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:365
+#: ch07-customizing-svn.xml:365
 msgid "<literal>diff-extensions</literal>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:367
+#: ch07-customizing-svn.xml:367
 msgid ""
 "Like the <option>--extensions</option> (<option>-x</option>) command-line "
 "option, this specifies additional options passed to the file content "
@@ -475,12 +466,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:380
+#: ch07-customizing-svn.xml:380
 msgid "<literal>diff3-cmd</literal>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:382
+#: ch07-customizing-svn.xml:382
 msgid ""
 "This specifies the absolute path of a three-way differencing program.  "
 "Subversion uses this program to merge changes made by the user with those "
@@ -491,12 +482,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:394
+#: ch07-customizing-svn.xml:394
 msgid "<literal>diff3-has-program-arg</literal>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:396
+#: ch07-customizing-svn.xml:396
 msgid ""
 "This flag should be set to <literal>true</literal> if the program specified "
 "by the <literal>diff3-cmd</literal> option accepts a <option>--diff-program</"
@@ -504,12 +495,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:404
+#: ch07-customizing-svn.xml:404
 msgid "<literal>editor-cmd</literal>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:406
+#: ch07-customizing-svn.xml:406
 msgid ""
 "This specifies the program Subversion will use to query the user for certain "
 "types of textual metadata or when interactively resolving conflicts.  See "
@@ -518,12 +509,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:415
+#: ch07-customizing-svn.xml:415
 msgid "<literal>merge-tool-cmd</literal>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:417
+#: ch07-customizing-svn.xml:417
 msgid ""
 "This specifies the program that Subversion will use to perform three-way "
 "merge operations on your versioned files.  See <xref linkend=\"svn.advanced."
@@ -531,7 +522,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:426
+#: ch07-customizing-svn.xml:426
 msgid ""
 "The <literal>[tunnels]</literal> section allows you to define new tunnel "
 "schemes for use with <command>svnserve</command> and <literal>svn://</"
@@ -540,12 +531,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para><footnote><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:434
+#: ch07-customizing-svn.xml:434
 msgid "Anyone for potluck dinner?"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:432
+#: ch07-customizing-svn.xml:432
 msgid ""
 "The <literal>[miscellany]</literal> section is where everything that doesn't "
 "belong elsewhere winds up.<placeholder type=\"footnote\" id=\"0\"/> In this "
@@ -553,12 +544,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:440
+#: ch07-customizing-svn.xml:440
 msgid "<literal>enable-auto-props</literal>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:442
+#: ch07-customizing-svn.xml:442
 msgid ""
 "This instructs Subversion to automatically set properties on newly added or "
 "imported files.  The default value is <literal>no</literal>, so set this to "
@@ -568,12 +559,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:451
+#: ch07-customizing-svn.xml:451
 msgid "<literal>global-ignores</literal>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:453
+#: ch07-customizing-svn.xml:453
 msgid ""
 "When running the <command>svn status</command> command, Subversion lists "
 "unversioned files and directories along with the versioned ones, annotating "
@@ -589,7 +580,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:469
+#: ch07-customizing-svn.xml:469
 msgid ""
 "As well as <command>svn status</command>, the <command>svn add</command> and "
 "<command>svn import</command> commands also ignore files that match the list "
@@ -599,19 +590,19 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:477
+#: ch07-customizing-svn.xml:477
 msgid ""
 "For information on finer-grained control of ignored items, see <xref linkend="
 "\"svn.advanced.props.special.ignore\" />."
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:483
+#: ch07-customizing-svn.xml:483
 msgid "<literal>interactive-conflicts</literal>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:485
+#: ch07-customizing-svn.xml:485
 msgid ""
 "This is a Boolean option that specifies whether Subversion should try to "
 "resolve conflicts interactively.  If its value is <literal>yes</literal> "
@@ -622,12 +613,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:497
+#: ch07-customizing-svn.xml:497
 msgid "<literal>log-encoding</literal>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:499
+#: ch07-customizing-svn.xml:499
 msgid ""
 "This variable sets the default character set encoding for commit log "
 "messages.  It's a permanent form of the <option>--encoding</option> option "
@@ -638,12 +629,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:511
+#: ch07-customizing-svn.xml:511
 msgid "<literal>mime-types-file</literal>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:513
+#: ch07-customizing-svn.xml:513
 msgid ""
 "This option, new to Subversion 1.5, specifies the path of a MIME types "
 "mapping file, such as the <filename>mime.types</filename> file provided by "
@@ -654,12 +645,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:525
+#: ch07-customizing-svn.xml:525
 msgid "<literal>no-unlock</literal>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:527
+#: ch07-customizing-svn.xml:527
 msgid ""
 "This Boolean option corresponds to <command>svn commit</command>'s <option>--"
 "no-unlock</option> option, which tells Subversion not to release locks on "
@@ -670,12 +661,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:538
+#: ch07-customizing-svn.xml:538
 msgid "<literal>preserved-conflict-file-exts</literal>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:540
+#: ch07-customizing-svn.xml:540
 msgid ""
 "The value of this option is a space-delimited list of file extensions that "
 "Subversion should preserve when generating conflict filenames.  By default, "
@@ -683,7 +674,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:546
+#: ch07-customizing-svn.xml:546
 msgid ""
 "When Subversion detects conflicting file content changes, it defers "
 "resolution of those conflicts to the user.  To assist in the resolution, "
@@ -706,7 +697,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:573
+#: ch07-customizing-svn.xml:573
 msgid ""
 "You can fix this annoyance by using this configuration option, though.  For "
 "files with one of the specified extensions, Subversion will append to the "
@@ -721,12 +712,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:591
+#: ch07-customizing-svn.xml:591
 msgid "<literal>use-commit-times</literal>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:593
+#: ch07-customizing-svn.xml:593
 msgid ""
 "Normally your working copy files have timestamps that reflect the last time "
 "they were touched by any process, whether your own editor or some "
@@ -736,7 +727,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:601
+#: ch07-customizing-svn.xml:601
 msgid ""
 "In other situations, however, it's sometimes nice for the working copy files "
 "to have timestamps that reflect the last time they were changed in the "
@@ -749,7 +740,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:617
+#: ch07-customizing-svn.xml:617
 msgid ""
 "The <literal>[auto-props]</literal> section controls the Subversion client's "
 "ability to automatically set properties on files when they are added or "
@@ -764,7 +755,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:632
+#: ch07-customizing-svn.xml:632
 #, no-wrap
 msgid ""
 "$ cat ~/.subversion/config\n"
@@ -794,7 +785,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:660
+#: ch07-customizing-svn.xml:660
 msgid ""
 "Multiple matches on a file will result in multiple propsets for that file; "
 "however, there is no guarantee that auto-props will be applied in the order "
@@ -806,19 +797,19 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:671
+#: ch07-customizing-svn.xml:671
 msgid ""
 "New to Subversion 1.8, the <literal>[working-copy]</literal> section is used "
 "for configuring working copies.  Valid options in this section are:"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:676
+#: ch07-customizing-svn.xml:676
 msgid "<literal>exclusive-locking-clients</literal>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:678
+#: ch07-customizing-svn.xml:678
 msgid ""
 "Enables exclusive SQLite locking of working copies for the client, hence "
 "improving performance for working copies located on network disks.  By "
@@ -835,12 +826,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:696
+#: ch07-customizing-svn.xml:696
 msgid "<literal>exclusive-locking</literal>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:698
+#: ch07-customizing-svn.xml:698
 msgid ""
 "Setting this config variable to <literal>true</literal> enables exclusive "
 "SQLite locking of working copies for all Subversion 1.8 clients.  Enabling "
@@ -850,12 +841,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:711
+#: ch07-customizing-svn.xml:711
 msgid "Per-server configuration"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:713
+#: ch07-customizing-svn.xml:713
 msgid ""
 "The <filename>servers</filename> file contains Subversion configuration "
 "options related to the network layers.  There are two special sections in "
@@ -868,7 +859,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><informalexample><programlisting>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:727
+#: ch07-customizing-svn.xml:727
 #, no-wrap
 msgid ""
 "[groups]\n"
@@ -883,7 +874,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:739
+#: ch07-customizing-svn.xml:739
 msgid ""
 "When Subversion is used over a network, it attempts to match the name of the "
 "server it is trying to reach with a group name under the <literal>[groups]</"
@@ -893,7 +884,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:747
+#: ch07-customizing-svn.xml:747
 msgid ""
 "The <literal>[global]</literal> section contains the settings that are meant "
 "for all of the servers not matched by one of the globs under the "
@@ -904,12 +895,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:758
+#: ch07-customizing-svn.xml:758
 msgid "<literal>http-auth-types</literal>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:760
+#: ch07-customizing-svn.xml:760
 msgid ""
 "This is a semicolon-delimited list of HTTP authentication types which the "
 "client will deem acceptable.  Valid types are <literal>basic</literal>, "
@@ -923,12 +914,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:779
+#: ch07-customizing-svn.xml:779
 msgid "<literal>http-compression</literal>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:781
+#: ch07-customizing-svn.xml:781
 msgid ""
 "This specifies whether Subversion should attempt to compress network "
 "requests made to DAV-ready servers.  The default value is <literal>yes</"
@@ -938,12 +929,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:791
+#: ch07-customizing-svn.xml:791
 msgid "<literal>http-library</literal>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:793
+#: ch07-customizing-svn.xml:793
 msgid ""
 "The <literal>http-library</literal> runtime configuration option allows "
 "users to specify (generally, or in a per-server-group fashion) which of the "
@@ -961,12 +952,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:813
+#: ch07-customizing-svn.xml:813
 msgid "<literal>http-proxy-exceptions</literal>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:815
+#: ch07-customizing-svn.xml:815
 msgid ""
 "This specifies a comma-separated list of patterns for repository hostnames "
 "that should be accessed directly, without using the proxy machine.  The "
@@ -975,12 +966,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:824
+#: ch07-customizing-svn.xml:824
 msgid "<literal>http-proxy-host</literal>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:826
+#: ch07-customizing-svn.xml:826
 msgid ""
 "This specifies the hostname of the proxy computer through which your HTTP-"
 "based Subversion requests must pass.  It defaults to an empty value, which "
@@ -990,48 +981,48 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:835
+#: ch07-customizing-svn.xml:835
 msgid "<literal>http-proxy-password</literal>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:837
+#: ch07-customizing-svn.xml:837
 msgid ""
 "This specifies the password to supply to the proxy machine.  It defaults to "
 "an empty value."
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:842
+#: ch07-customizing-svn.xml:842
 msgid "<literal>http-proxy-port</literal>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:844
+#: ch07-customizing-svn.xml:844
 msgid ""
 "This specifies the port number on the proxy host to use.  It defaults to an "
 "empty value."
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:849
+#: ch07-customizing-svn.xml:849
 msgid "<literal>http-proxy-username</literal>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:851
+#: ch07-customizing-svn.xml:851
 msgid ""
 "This specifies the username to supply to the proxy machine.  It defaults to "
 "an empty value."
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:856
+#: ch07-customizing-svn.xml:856
 msgid "<literal>http-timeout</literal>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:858
+#: ch07-customizing-svn.xml:858
 msgid ""
 "This specifies the amount of time, in seconds, to wait for a server "
 "response.  If you experience problems with a slow network connection causing "
@@ -1042,12 +1033,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:869
+#: ch07-customizing-svn.xml:869
 msgid "<literal>neon-debug-mask</literal>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:871
+#: ch07-customizing-svn.xml:871
 msgid ""
 "This is an integer mask that the Neon HTTP library uses for choosing what "
 "type of debugging output to yield.  The default value is <literal>0</"
@@ -1060,12 +1051,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:885
+#: ch07-customizing-svn.xml:885
 msgid "<literal>ssl-authority-files</literal>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:887
+#: ch07-customizing-svn.xml:887
 msgid ""
 "This is a semicolon-delimited list of paths to files containing certificates "
 "of the certificate authorities (or CAs) that are accepted by the Subversion "
@@ -1073,12 +1064,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:895
+#: ch07-customizing-svn.xml:895
 msgid "<literal>ssl-client-cert-file</literal>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:897
+#: ch07-customizing-svn.xml:897
 msgid ""
 "If a host (or set of hosts) requires an SSL client certificate, you'll "
 "normally be prompted for a path to your certificate.  By setting this "
@@ -1089,12 +1080,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:908
+#: ch07-customizing-svn.xml:908
 msgid "<literal>ssl-client-cert-password</literal>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:910
+#: ch07-customizing-svn.xml:910
 msgid ""
 "If your SSL client certificate file is encrypted by a passphrase, Subversion "
 "will prompt you for the passphrase whenever the certificate is used.  If you "
@@ -1104,12 +1095,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:920
+#: ch07-customizing-svn.xml:920
 msgid "<literal>ssl-pkcs11-provider</literal>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:922
+#: ch07-customizing-svn.xml:922
 msgid ""
 "The value of this option is the name of the PKCS#11 provider from which an "
 "SSL client certificate will be drawn (if the server asks for one).  This "
@@ -1118,19 +1109,19 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:931
+#: ch07-customizing-svn.xml:931
 msgid "<literal>ssl-trust-default-ca</literal>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:933
+#: ch07-customizing-svn.xml:933
 msgid ""
 "Set this variable to <literal>yes</literal> if you want Subversion to "
 "automatically trust the set of default CAs that ship with OpenSSL."
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:941
+#: ch07-customizing-svn.xml:941
 msgid ""
 "This setting is the same as <literal>store-passwords</literal>, except that "
 "it enables or disables on-disk caching of <emphasis>all</emphasis> "
@@ -1139,7 +1130,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:952
+#: ch07-customizing-svn.xml:952
 msgid ""
 "This instructs Subversion to cache, or not to cache, passwords that are "
 "supplied by the user in response to server authentication challenges.  The "
@@ -1155,12 +1146,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:970
+#: ch07-customizing-svn.xml:970
 msgid "<literal>store-plaintext-passwords</literal>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:972
+#: ch07-customizing-svn.xml:972
 msgid ""
 "This variable is only important on UNIX-like systems.  It controls what the "
 "Subversion client does in case the password for the current authentication "
@@ -1174,12 +1165,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:987
+#: ch07-customizing-svn.xml:987
 msgid "<literal>store-ssl-client-cert-pp</literal>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:989
+#: ch07-customizing-svn.xml:989
 msgid ""
 "This option controls whether Subversion will cache SSL client certificate "
 "passphrases provided by the user.  Its value defaults to <literal>yes</"
@@ -1188,12 +1179,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:997
+#: ch07-customizing-svn.xml:997
 msgid "<literal>store-ssl-client-cert-pp-plaintext</literal>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:999
+#: ch07-customizing-svn.xml:999
 msgid ""
 "This option controls whether Subversion, when attempting to cache an SSL "
 "client certificate passphrase, will be allowed to do so using its on-disk "
@@ -1206,17 +1197,17 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:1025
+#: ch07-customizing-svn.xml:1025
 msgid "Localization"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><para><indexterm><primary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:1029
+#: ch07-customizing-svn.xml:1029
 msgid "localization"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:1028
+#: ch07-customizing-svn.xml:1028
 msgid ""
 "<placeholder type=\"indexterm\" id=\"0\"/><firstterm>Localization</"
 "firstterm> is the act of making programs behave in a region-specific way.  "
@@ -1227,12 +1218,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:1040
+#: ch07-customizing-svn.xml:1040
 msgid "Understanding Locales"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:1042
+#: ch07-customizing-svn.xml:1042
 msgid ""
 "Most modern operating systems have a notion of the <quote>current locale</"
 "quote>&mdash;that is, the region or country whose localization conventions "
@@ -1243,7 +1234,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:1050
+#: ch07-customizing-svn.xml:1050
 msgid ""
 "On most Unix-like systems, you can check the values of the locale-related "
 "runtime configuration options by running the <command>locale</command> "
@@ -1251,7 +1242,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:1056
+#: ch07-customizing-svn.xml:1056
 #, no-wrap
 msgid ""
 "$ locale\n"
@@ -1267,7 +1258,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:1069
+#: ch07-customizing-svn.xml:1069
 msgid ""
 "The output is a list of locale-related environment variables and their "
 "current values.  In this example, the variables are all set to the default "
@@ -1286,7 +1277,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:1088
+#: ch07-customizing-svn.xml:1088
 msgid ""
 "On Windows, locale configuration is done via the <quote>Regional and "
 "Language Options</quote> control panel item.  There you can view and select "
@@ -1296,12 +1287,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:1099
+#: ch07-customizing-svn.xml:1099
 msgid "Subversion's Use of Locales"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:1101
+#: ch07-customizing-svn.xml:1101
 msgid ""
 "The Subversion client, <command>svn</command>, honors the current locale "
 "configuration in two ways.  First, it notices the value of the "
@@ -1310,7 +1301,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:1109
+#: ch07-customizing-svn.xml:1109
 #, no-wrap
 msgid ""
 "$ export LC_MESSAGES=de_DE\n"
@@ -1321,7 +1312,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:1117
+#: ch07-customizing-svn.xml:1117
 msgid ""
 "This behavior works identically on both Unix and Windows systems.  Note, "
 "though, that while your operating system might have support for a certain "
@@ -1343,17 +1334,17 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para><indexterm><primary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:1142
+#: ch07-customizing-svn.xml:1142
 msgid "internationalization"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para><indexterm><primary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:1145
+#: ch07-customizing-svn.xml:1145
 msgid "UTF-8"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:1141
+#: ch07-customizing-svn.xml:1141
 msgid ""
 "<placeholder type=\"indexterm\" id=\"0\"/> <placeholder type=\"indexterm\" "
 "id=\"1\"/>The second way in which the locale is honored involves how "
@@ -1367,7 +1358,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:1157
+#: ch07-customizing-svn.xml:1157
 msgid ""
 "For example, suppose you create a file named <filename>caffè.txt</filename>, "
 "and then when committing the file, you write the log message as "
@@ -1379,7 +1370,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:1167
+#: ch07-customizing-svn.xml:1167
 msgid ""
 "Note that while the repository demands UTF-8 filenames and log messages, it "
 "<emphasis>does not</emphasis> pay attention to file contents.  Subversion "
@@ -1389,19 +1380,19 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sidebar><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:1175
+#: ch07-customizing-svn.xml:1175
 msgid "Character Set Conversion Errors"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sidebar><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:1177
+#: ch07-customizing-svn.xml:1177
 msgid ""
 "While using Subversion, you might get hit with an error related to character "
 "set conversions:"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sidebar><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:1182
+#: ch07-customizing-svn.xml:1182
 #, no-wrap
 msgid ""
 "svn: E000022: Can't convert string from native encoding to 'UTF-8':\n"
@@ -1411,7 +1402,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sidebar><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:1189
+#: ch07-customizing-svn.xml:1189
 msgid ""
 "Errors such as this typically occur when the Subversion client has received "
 "a UTF-8 string from the repository, but not all of the characters in that "
@@ -1422,7 +1413,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sidebar><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:1198
+#: ch07-customizing-svn.xml:1198
 msgid ""
 "The solution is either to set your locale to something that <emphasis>can</"
 "emphasis> represent the incoming UTF-8 data, or to change the filename or "
@@ -1432,12 +1423,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:1215
+#: ch07-customizing-svn.xml:1215
 msgid "Using External Editors"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:1217
+#: ch07-customizing-svn.xml:1217
 msgid ""
 "The most obvious way to get data into Subversion is through the addition of "
 "files to version control, committing changes to those files, and so on.  But "
@@ -1451,7 +1442,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:1230
+#: ch07-customizing-svn.xml:1230
 msgid ""
 "Each of these options has its pros and cons.  For example, when performing a "
 "commit, <option>--file</option> (<option>-F</option>) works well if you've "
@@ -1464,7 +1455,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:1241
+#: ch07-customizing-svn.xml:1241
 msgid ""
 "Subversion supports this by allowing you to specify an external text editor "
 "that it will launch as necessary to give you a more powerful input mechanism "
@@ -1474,39 +1465,39 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><orderedlist><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:1251
+#: ch07-customizing-svn.xml:1251
 msgid "<literal>--editor-cmd</literal> command-line option"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><orderedlist><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:1254
+#: ch07-customizing-svn.xml:1254
 msgid "<literal>SVN_EDITOR</literal> environment variable"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><orderedlist><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:1257
+#: ch07-customizing-svn.xml:1257
 msgid "<literal>editor-cmd</literal> runtime configuration option"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><orderedlist><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:1260
+#: ch07-customizing-svn.xml:1260
 msgid "<literal>VISUAL</literal> environment variable"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><orderedlist><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:1263
+#: ch07-customizing-svn.xml:1263
 msgid "<literal>EDITOR</literal> environment variable"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><orderedlist><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:1266
+#: ch07-customizing-svn.xml:1266
 msgid ""
 "Possibly, a fallback value built into the Subversion libraries (not present "
 "in the official builds)"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:1271
+#: ch07-customizing-svn.xml:1271
 msgid ""
 "The value of any of these options or variables is the beginning of a command "
 "line to be executed by the shell.  Subversion appends to that command line a "
@@ -1518,7 +1509,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:1280
+#: ch07-customizing-svn.xml:1280
 msgid ""
 "As noted, external editors can be used to provide commit log messages to any "
 "of the committing subcommands (such as <command>svn commit</command> or "
@@ -1535,12 +1526,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:1302
+#: ch07-customizing-svn.xml:1302
 msgid "Using External Differencing and Merge Tools"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:1304
+#: ch07-customizing-svn.xml:1304
 msgid ""
 "The interface between Subversion and external two- and three-way "
 "differencing tools harkens back to a time when Subversion's only contextual "
@@ -1560,7 +1551,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:1323
+#: ch07-customizing-svn.xml:1323
 msgid ""
 "It didn't take long for folks to realize that having such easy configuration "
 "mechanisms for specifying that Subversion should use the external GNU diff "
@@ -1576,7 +1567,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><note><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:1338
+#: ch07-customizing-svn.xml:1338
 msgid ""
 "The decision on when to fire off a contextual two- or three-way diff as part "
 "of a larger Subversion operation is made internally by Subversion and is "
@@ -1594,7 +1585,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:1356
+#: ch07-customizing-svn.xml:1356
 msgid ""
 "Much later, Subversion 1.5 introduced interactive resolution of conflicts "
 "(described in <xref linkend=\"svn.tour.cycle.resolve\" />).  One of the "
@@ -1609,7 +1600,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><note><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:1371
+#: ch07-customizing-svn.xml:1371
 msgid ""
 "While the general purposes of the three-way differencing and merge tools are "
 "roughly the same (finding a way to make separate-but-overlapping file "
@@ -1623,7 +1614,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:1385
+#: ch07-customizing-svn.xml:1385
 msgid ""
 "Now, while the interface between Subversion and an external merge tool is "
 "significantly less convoluted than that between Subversion and the diff and "
@@ -1637,12 +1628,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:1399
+#: ch07-customizing-svn.xml:1399
 msgid "External diff"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para><footnote><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:1415
+#: ch07-customizing-svn.xml:1415
 msgid ""
 "The GNU diff manual page puts it this way: <quote>An exit status of 0 means "
 "no differences were found, 1 means some differences were found, and 2 means "
@@ -1650,7 +1641,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:1401
+#: ch07-customizing-svn.xml:1401
 msgid ""
 "Subversion calls external diff programs with parameters suitable for the GNU "
 "diff utility, and expects only that the external program will return with a "
@@ -1667,7 +1658,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:1420
+#: ch07-customizing-svn.xml:1420
 msgid ""
 "<xref linkend=\"svn.advanced.externaldifftools.diff.ex-1\"/> and <xref "
 "linkend=\"svn.advanced.externaldifftools.diff.ex-2\"/> are templates for "
@@ -1676,12 +1667,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><example><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:1426
+#: ch07-customizing-svn.xml:1426
 msgid "diffwrap.py"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><example><programlisting>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:1428
+#: ch07-customizing-svn.xml:1428
 #, no-wrap
 msgid ""
 "#!/usr/bin/env python\n"
@@ -1705,12 +1696,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><example><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:1450
+#: ch07-customizing-svn.xml:1450
 msgid "diffwrap.bat"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><example><programlisting>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:1452
+#: ch07-customizing-svn.xml:1452
 #, no-wrap
 msgid ""
 "@ECHO OFF\n"
@@ -1733,12 +1724,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:1475
+#: ch07-customizing-svn.xml:1475
 msgid "External diff3"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:1477
+#: ch07-customizing-svn.xml:1477
 msgid ""
 "Subversion invokes three-way differencing programs to perform non-"
 "interactive merges.  When configured to use an external three-way "
@@ -1758,7 +1749,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:1498
+#: ch07-customizing-svn.xml:1498
 msgid ""
 "<xref linkend=\"svn.advanced.externaldifftools.diff3.ex-1\"/> and <xref "
 "linkend=\"svn.advanced.externaldifftools.diff3.ex-2\"/> are templates for "
@@ -1767,12 +1758,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><example><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:1505
+#: ch07-customizing-svn.xml:1505
 msgid "diff3wrap.py"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><example><programlisting>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:1507
+#: ch07-customizing-svn.xml:1507
 #, no-wrap
 msgid ""
 "#!/usr/bin/env python\n"
@@ -1799,12 +1790,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><example><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:1532
+#: ch07-customizing-svn.xml:1532
 msgid "diff3wrap.bat"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><example><programlisting>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:1534
+#: ch07-customizing-svn.xml:1534
 #, no-wrap
 msgid ""
 "@ECHO OFF\n"
@@ -1833,12 +1824,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:1564
+#: ch07-customizing-svn.xml:1564
 msgid "External merge"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:1566
+#: ch07-customizing-svn.xml:1566
 msgid ""
 "Subversion optionally invokes an external merge tool as part of its support "
 "for interactive conflict resolution.  It provides as arguments to the merge "
@@ -1852,7 +1843,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:1579
+#: ch07-customizing-svn.xml:1579
 msgid ""
 "<xref linkend=\"svn.advanced.externaldifftools.merge.ex-1\"/> and <xref "
 "linkend=\"svn.advanced.externaldifftools.merge.ex-2\"/> are templates for "
@@ -1861,12 +1852,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><example><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:1585
+#: ch07-customizing-svn.xml:1585
 msgid "mergewrap.py"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><example><programlisting>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:1587
+#: ch07-customizing-svn.xml:1587
 #, no-wrap
 msgid ""
 "#!/usr/bin/env python\n"
@@ -1894,12 +1885,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><example><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:1613
+#: ch07-customizing-svn.xml:1613
 msgid "mergewrap.bat"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><example><programlisting>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:1615
+#: ch07-customizing-svn.xml:1615
 #, no-wrap
 msgid ""
 "@ECHO OFF\n"
@@ -1923,12 +1914,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:1643
+#: ch07-customizing-svn.xml:1643
 msgid "Summary"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:1645
+#: ch07-customizing-svn.xml:1645
 msgid ""
 "Sometimes there's a single right way to do things; sometimes there are "
 "many.  Subversion's developers understand that while the majority of its "
@@ -1939,7 +1930,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch07-customizing-svn.xml:1653
+#: ch07-customizing-svn.xml:1653
 msgid ""
 "In this chapter, we explored Subversion's runtime configuration system and "
 "other mechanisms by which users can control those configurable behaviors.  "

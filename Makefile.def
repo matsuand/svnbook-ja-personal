@@ -1,0 +1,24 @@
+define MSGPROC
+  if test ! -f "$@"; then \
+    msginit --no-translator -l ja_JP \
+     -i $1 -o $2 ;\
+    sed -i -e "/Language-Team/s/none/matsuand個人翻訳/" \
+           -e "/Content-Type/s/ASCII/UTF-8/" $2 ;\
+  else \
+    msgmerge -U $2 $1 ; \
+  fi
+endef
+
+define PO4AGET
+  xml_dir=${shell dirname $1}
+  xml_basename=${shell basename $1}
+  pot_absdir=${abs_top_builddir}/book/pot
+  pot_absname=$(pot_absdir)/${shell basename $2}
+  (cd ${xml_dir} && \
+     $(PO4AGETTEXTIZE) -f docbook -M utf-8 -m ${xml_basename} -p ${pot_absname})
+endef
+
+define PO4ATRANS
+  $(PO4ATRANSLATE) -k 0 -f docbook -o doctype="docbook" \
+    -M UTF-8 -m $1 -l $@ -p $2
+endef

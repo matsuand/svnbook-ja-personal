@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2017-08-03 18:00+0900\n"
-"PO-Revision-Date: 2017-08-03 18:00+0900\n"
+"POT-Creation-Date: 2017-08-06 14:19+0900\n"
+"PO-Revision-Date: 2017-08-06 14:19+0900\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: matsuand個人翻訳\n"
 "Language: ja\n"
@@ -17,12 +17,12 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. type: Content of: <reference><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnrdump.xml:4
+#: ref-svnrdump.xml:4
 msgid "svnrdump Reference&mdash;Remote Subversion Repository Data Migration"
 msgstr ""
 
 #. type: Content of: <reference><partintro><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnrdump.xml:7
+#: ref-svnrdump.xml:7
 msgid ""
 "<command>svnrdump</command> joined the Subversion tool chain in the "
 "Subversion 1.7 release.  It is best described as a network-aware version of "
@@ -34,24 +34,24 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><partintro><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnrdump.xml:17
+#: ref-svnrdump.xml:17
 msgid ""
 "Options in <command>svnrdump</command> are global, just as they are in "
 "<command>svn</command> and <command>svnadmin</command>:"
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnrdump.xml:22
+#: ref-svnrdump.xml:22
 msgid "svnrdump Options"
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnrdump.xml:25
+#: ref-svnrdump.xml:25
 msgid "<option>--config-dir</option> <replaceable>DIR</replaceable>"
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnrdump.xml:27
+#: ref-svnrdump.xml:27
 msgid ""
 "Instructs Subversion to read configuration information from the specified "
 "directory instead of the default location (<filename>.subversion</filename> "
@@ -59,7 +59,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnrdump.xml:35
+#: ref-svnrdump.xml:35
 msgid ""
 "<option>--config-option</option> <replaceable>FILE</replaceable>:"
 "<replaceable>SECTION</replaceable>:<replaceable>OPTION</"
@@ -67,7 +67,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnrdump.xml:37
+#: ref-svnrdump.xml:37
 msgid ""
 "Sets, for the duration of the command, the value of a runtime configuration "
 "option.  <replaceable>FILE</replaceable> and <replaceable>SECTION</"
@@ -83,12 +83,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnrdump.xml:57
+#: ref-svnrdump.xml:57
 msgid "<option>--incremental</option>"
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnrdump.xml:59
+#: ref-svnrdump.xml:59
 msgid ""
 "Dump a revision or revision range only as a diff against the previous "
 "revision, instead of the default, which is begin a dumped revision range "
@@ -97,24 +97,24 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnrdump.xml:68
+#: ref-svnrdump.xml:68
 msgid "<option>--no-auth-cache</option>"
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnrdump.xml:70
+#: ref-svnrdump.xml:70
 msgid ""
 "Prevents caching of authentication information (e.g., username and password) "
 "in the Subversion runtime configuration directories."
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnrdump.xml:77
+#: ref-svnrdump.xml:77
 msgid "<option>--non-interactive</option>"
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnrdump.xml:79
+#: ref-svnrdump.xml:79
 msgid ""
 "In the case of an authentication failure or insufficient credentials, "
 "prevents prompting for credentials (e.g., username or password).  This is "
@@ -123,12 +123,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnrdump.xml:89
+#: ref-svnrdump.xml:89
 msgid "<option>--password</option> <replaceable>PASSWD</replaceable>"
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnrdump.xml:91
+#: ref-svnrdump.xml:91
 msgid ""
 "Specifies the password to use when authenticating against a Subversion "
 "server.  If not provided, or if incorrect, Subversion will prompt you for "
@@ -136,48 +136,48 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnrdump.xml:99
+#: ref-svnrdump.xml:99
 msgid "<option>--quiet</option> (<option>-q</option>)"
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnrdump.xml:101
+#: ref-svnrdump.xml:101
 msgid ""
 "Requests that the client print only essential information while performing "
 "an operation."
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnrdump.xml:107
+#: ref-svnrdump.xml:107
 msgid ""
 "<option>--revision</option> (<option>-r</option>) <replaceable>ARG</"
 "replaceable>"
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnrdump.xml:109
+#: ref-svnrdump.xml:109
 msgid "Specifies a particular revision or revision range on which to operate."
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnrdump.xml:115
+#: ref-svnrdump.xml:115
 msgid "<option>--trust-server-cert</option>"
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnrdump.xml:117
+#: ref-svnrdump.xml:117
 msgid ""
 "Used with <option>--non-interactive</option> to accept any unknown SSL "
 "server certificates without prompting."
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnrdump.xml:123
+#: ref-svnrdump.xml:123
 msgid "<option>--username</option> <replaceable>NAME</replaceable>"
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnrdump.xml:125
+#: ref-svnrdump.xml:125
 msgid ""
 "Specifies the username to use when authenticating against a Subversion "
 "server.  If not provided, or if incorrect, Subversion will prompt you for "
@@ -185,50 +185,42 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><indexterm><primary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnrdump.xml:142
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnrdump.xml:230
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnrdump.xml:269
+#: ref-svnrdump.xml:142 ref-svnrdump.xml:230 ref-svnrdump.xml:269
 msgid "svnrdump"
 msgstr ""
 
 #. type: Content of: <reference><refentry><indexterm><secondary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnrdump.xml:143
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnrdump.xml:231
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnrdump.xml:270
+#: ref-svnrdump.xml:143 ref-svnrdump.xml:231 ref-svnrdump.xml:270
 msgid "subcommands"
 msgstr ""
 
 #. type: Content of: <reference><refentry><indexterm><tertiary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnrdump.xml:144
+#: ref-svnrdump.xml:144
 msgid "dump"
 msgstr ""
 
 #. type: Content of: <reference><refentry><indexterm>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnrdump.xml:144
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnrdump.xml:232
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnrdump.xml:271
+#: ref-svnrdump.xml:144 ref-svnrdump.xml:232 ref-svnrdump.xml:271
 msgid "<placeholder type=\"tertiary\" id=\"0\"/>"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnrdump.xml:148
+#: ref-svnrdump.xml:148
 msgid "svnrdump dump"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsynopsisdiv><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnrdump.xml:153
+#: ref-svnrdump.xml:153
 msgid "<literal>svnrdump dump SOURCE_URL</literal>"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnrdump.xml:158
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnrdump.xml:246
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnrdump.xml:285
+#: ref-svnrdump.xml:158 ref-svnrdump.xml:246 ref-svnrdump.xml:285
 msgid "Description"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnrdump.xml:160
+#: ref-svnrdump.xml:160
 msgid ""
 "Dump&mdash;that is, generate a repository dump stream of&mdash;revisions of "
 "the repository item located at <replaceable>SOURCE_URL</replaceable>, "
@@ -239,14 +231,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnrdump.xml:173
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnrdump.xml:257
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnrdump.xml:296
+#: ref-svnrdump.xml:173 ref-svnrdump.xml:257 ref-svnrdump.xml:296
 msgid "Options"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnrdump.xml:177
+#: ref-svnrdump.xml:177
 #, no-wrap
 msgid ""
 "<xref linkend=\"svn.ref.svnrdump.sw.config_dir\" />\n"
@@ -262,13 +252,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnrdump.xml:193
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnrdump.xml:314
+#: ref-svnrdump.xml:193 ref-svnrdump.xml:314
 msgid "Examples"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnrdump.xml:195
+#: ref-svnrdump.xml:195
 msgid ""
 "Generate a dump stream of the full history of a remote repository (assuming "
 "that the user as who this runs has authorization to read all paths in the "
@@ -276,7 +265,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnrdump.xml:201
+#: ref-svnrdump.xml:201
 #, no-wrap
 msgid ""
 "$ svnrdump dump http://svn.example.com/repos/calc &gt; full.dump\n"
@@ -287,12 +276,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnrdump.xml:209
+#: ref-svnrdump.xml:209
 msgid "Incrementally dump a single revision from that same repository:"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnrdump.xml:214
+#: ref-svnrdump.xml:214
 #, no-wrap
 msgid ""
 "$ svnrdump dump http://svn.example.com/repos/calc \\\n"
@@ -302,27 +291,27 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><indexterm><tertiary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnrdump.xml:232
+#: ref-svnrdump.xml:232
 msgid "help"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnrdump.xml:236
+#: ref-svnrdump.xml:236
 msgid "svnrdump help"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refnamediv><refpurpose>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnrdump.xml:237
+#: ref-svnrdump.xml:237
 msgid "Help!"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsynopsisdiv><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnrdump.xml:241
+#: ref-svnrdump.xml:241
 msgid "<literal>svnrdump help</literal>"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnrdump.xml:248
+#: ref-svnrdump.xml:248
 msgid ""
 "Use this to get help.  Well, certain kinds of help.  Need white lab coat and "
 "straightjackets kind of help? There's a whole different protocol for that "
@@ -330,27 +319,27 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnrdump.xml:258
+#: ref-svnrdump.xml:258
 msgid "None"
 msgstr ""
 
 #. type: Content of: <reference><refentry><indexterm><tertiary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnrdump.xml:271
+#: ref-svnrdump.xml:271
 msgid "load"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnrdump.xml:275
+#: ref-svnrdump.xml:275
 msgid "svnrdump load"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsynopsisdiv><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnrdump.xml:280
+#: ref-svnrdump.xml:280
 msgid "<literal>svnrdump load DEST_URL</literal>"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnrdump.xml:287
+#: ref-svnrdump.xml:287
 msgid ""
 "Read from standard input revision information described in a Subversion "
 "repository dump stream, and load that information into the repository "
@@ -358,7 +347,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnrdump.xml:300
+#: ref-svnrdump.xml:300
 #, no-wrap
 msgid ""
 "<xref linkend=\"svn.ref.svnrdump.sw.config_dir\" />\n"
@@ -372,7 +361,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnrdump.xml:316
+#: ref-svnrdump.xml:316
 msgid ""
 "Dump the contents of a local repository, and use <command>svnrdump load</"
 "command> to transfer that revision information into an existing remote "
@@ -380,7 +369,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnrdump.xml:323
+#: ref-svnrdump.xml:323
 #, no-wrap
 msgid ""
 "$ svnadmin dump -q /var/svn/repos/new-project | \\\n"
@@ -392,7 +381,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><note><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnrdump.xml:333
+#: ref-svnrdump.xml:333
 msgid ""
 "To operate properly <command>svnrdump load</command> requires that the "
 "target repository have revision property modification enabled via the pre-"

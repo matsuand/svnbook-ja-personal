@@ -34,17 +34,7 @@ srcs = $(addprefix $(POT_DIR)/,$(basenames))
 outputs = $(basenames:.pot=.po)
 EXTRA_DIST = $(outputs)
 
-define MSGPROC
-  if test -f "$$@"; then \
-    msginit --no-translator -l ja_JP \
-     -i $1 -o $2 ;\
-    sed -i -e "/Language-Team/s/none/matsuand個人翻訳/" \
-           -e "/Content-Type/s/ASCII/UTF-8/" $2 ;\
-  else \
-    msgmerge -U $2 $1 ; \
-  fi
-endef
-
+include ../../Makefile.def
 
 .PHONY: all
 all: $(srcdir)/$(outputs)

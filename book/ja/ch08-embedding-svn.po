@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2017-08-03 18:00+0900\n"
-"PO-Revision-Date: 2017-08-03 18:00+0900\n"
+"POT-Creation-Date: 2017-08-06 14:19+0900\n"
+"PO-Revision-Date: 2017-08-06 14:19+0900\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: matsuand個人翻訳\n"
 "Language: ja\n"
@@ -17,29 +17,25 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. type: Content of: <chapter><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:4
+#: ch08-embedding-svn.xml:4
 msgid "Embedding Subversion"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para><indexterm><primary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:8
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:12
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:43
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:181
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:428
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:517
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:720
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:767
+#: ch08-embedding-svn.xml:8 ch08-embedding-svn.xml:12
+#: ch08-embedding-svn.xml:43 ch08-embedding-svn.xml:181
+#: ch08-embedding-svn.xml:428 ch08-embedding-svn.xml:517
+#: ch08-embedding-svn.xml:720 ch08-embedding-svn.xml:767
 msgid "API"
 msgstr ""
 
 #. type: Content of: <chapter><para><indexterm><primary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:11
+#: ch08-embedding-svn.xml:11
 msgid "application programming interface"
 msgstr ""
 
 #. type: Content of: <chapter><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:7
+#: ch08-embedding-svn.xml:7
 msgid ""
 "<placeholder type=\"indexterm\" id=\"0\"/> <placeholder type=\"indexterm\" "
 "id=\"1\"/>Subversion has a modular design: it's implemented as a collection "
@@ -53,7 +49,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:23
+#: ch08-embedding-svn.xml:23
 msgid ""
 "This chapter is for those who wish to interact with Subversion through its "
 "public API or its various language bindings.  If you wish to write robust "
@@ -67,20 +63,18 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:39
+#: ch08-embedding-svn.xml:39
 msgid "Layered Library Design"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para><indexterm><secondary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:44
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:182
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:429
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:518
+#: ch08-embedding-svn.xml:44 ch08-embedding-svn.xml:182
+#: ch08-embedding-svn.xml:429 ch08-embedding-svn.xml:518
 msgid "layers"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:42
+#: ch08-embedding-svn.xml:42
 msgid ""
 "<placeholder type=\"indexterm\" id=\"0\"/>Each of Subversion's core "
 "libraries can be said to exist in one of three main layers&mdash;the "
@@ -94,158 +88,158 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:58
+#: ch08-embedding-svn.xml:58
 msgid "libsvn_client"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:59
+#: ch08-embedding-svn.xml:59
 msgid "Primary interface for client programs"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:63
+#: ch08-embedding-svn.xml:63
 msgid "libsvn_delta"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:64
+#: ch08-embedding-svn.xml:64
 msgid "Tree and byte-stream differencing routines"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:68
+#: ch08-embedding-svn.xml:68
 msgid "libsvn_diff"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:69
+#: ch08-embedding-svn.xml:69
 msgid "Contextual differencing and merging routines"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:73
+#: ch08-embedding-svn.xml:73
 msgid "libsvn_fs"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:74
+#: ch08-embedding-svn.xml:74
 msgid "Filesystem commons and module loader"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:78
+#: ch08-embedding-svn.xml:78
 msgid "libsvn_fs_base"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:79
+#: ch08-embedding-svn.xml:79
 msgid "The Berkeley DB filesystem backend"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:83
+#: ch08-embedding-svn.xml:83
 msgid "libsvn_fs_fs"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:84
+#: ch08-embedding-svn.xml:84
 msgid "The native filesystem (FSFS)  backend"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:88
+#: ch08-embedding-svn.xml:88
 msgid "libsvn_ra"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:89
+#: ch08-embedding-svn.xml:89
 msgid "Repository Access commons and module loader"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:93
+#: ch08-embedding-svn.xml:93
 msgid "libsvn_ra_local"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:94
+#: ch08-embedding-svn.xml:94
 msgid "The local Repository Access module"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:98
+#: ch08-embedding-svn.xml:98
 msgid "libsvn_ra_serf"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:99
+#: ch08-embedding-svn.xml:99
 msgid "Another (experimental) WebDAV Repository Access module"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:103
+#: ch08-embedding-svn.xml:103
 msgid "libsvn_ra_svn"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:104
+#: ch08-embedding-svn.xml:104
 msgid "The custom protocol Repository Access module"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:108
+#: ch08-embedding-svn.xml:108
 msgid "libsvn_repos"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:109
+#: ch08-embedding-svn.xml:109
 msgid "Repository interface"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:112
+#: ch08-embedding-svn.xml:112
 msgid "libsvn_subr"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:113
+#: ch08-embedding-svn.xml:113
 msgid "Miscellaneous helpful subroutines"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:117
+#: ch08-embedding-svn.xml:117
 msgid "libsvn_wc"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:118
+#: ch08-embedding-svn.xml:118
 msgid "The working copy management library"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:122
+#: ch08-embedding-svn.xml:122
 msgid "mod_authz_svn"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:123
+#: ch08-embedding-svn.xml:123
 msgid ""
 "Apache authorization module for Subversion repositories access via WebDAV"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:127
+#: ch08-embedding-svn.xml:127
 msgid "mod_dav_svn"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:128
+#: ch08-embedding-svn.xml:128
 msgid "Apache module for mapping WebDAV operations to Subversion ones"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:133
+#: ch08-embedding-svn.xml:133
 msgid ""
 "The fact that the word <quote>miscellaneous</quote> appears only once in the "
 "previous list is a good sign.  The Subversion development team is serious "
@@ -257,7 +251,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:143
+#: ch08-embedding-svn.xml:143
 msgid ""
 "Another benefit of modularity is the ability to replace a given module with "
 "a whole new library that implements the same API without affecting the rest "
@@ -274,7 +268,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:160
+#: ch08-embedding-svn.xml:160
 msgid ""
 "The client itself also highlights the benefits of modularity in the "
 "Subversion design.  Subversion's <filename>libsvn_client</filename> library "
@@ -290,20 +284,18 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para><indexterm><tertiary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:177
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:183
+#: ch08-embedding-svn.xml:177 ch08-embedding-svn.xml:183
 msgid "Repository Layer"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para><indexterm>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:183
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:430
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:519
+#: ch08-embedding-svn.xml:183 ch08-embedding-svn.xml:430
+#: ch08-embedding-svn.xml:519
 msgid "<placeholder type=\"tertiary\" id=\"0\"/>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:180
+#: ch08-embedding-svn.xml:180
 msgid ""
 "<placeholder type=\"indexterm\" id=\"0\"/>When referring to Subversion's "
 "Repository layer, we're generally talking about two basic concepts&mdash;the "
@@ -319,18 +311,17 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para><indexterm><primary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:200
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:225
+#: ch08-embedding-svn.xml:200 ch08-embedding-svn.xml:225
 msgid "repositories"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para><indexterm><secondary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:201
+#: ch08-embedding-svn.xml:201
 msgid "filesystem"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:199
+#: ch08-embedding-svn.xml:199
 msgid ""
 "<placeholder type=\"indexterm\" id=\"0\"/>The Subversion filesystem is not a "
 "kernel-level filesystem that one would install in an operating system (such "
@@ -351,12 +342,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para><indexterm><secondary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:226
+#: ch08-embedding-svn.xml:226
 msgid "filesystem tree"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:224
+#: ch08-embedding-svn.xml:224
 msgid ""
 "<placeholder type=\"indexterm\" id=\"0\"/>The filesystem API exported by "
 "<filename>libsvn_fs</filename> contains the kinds of functionality you would "
@@ -373,7 +364,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:243
+#: ch08-embedding-svn.xml:243
 msgid ""
 "All the modifications you make to your tree are done within the context of a "
 "Subversion commit transaction.  The following is a simplified general "
@@ -381,22 +372,22 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><orderedlist><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:250
+#: ch08-embedding-svn.xml:250
 msgid "Begin a Subversion commit transaction."
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><orderedlist><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:253
+#: ch08-embedding-svn.xml:253
 msgid "Make your changes (adds, deletes, property modifications, etc.)."
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><orderedlist><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:257
+#: ch08-embedding-svn.xml:257
 msgid "Commit your transaction."
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:261
+#: ch08-embedding-svn.xml:261
 msgid ""
 "Once you have committed your transaction, your filesystem modifications are "
 "permanently stored as historical artifacts.  Each of these cycles generates "
@@ -405,12 +396,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sidebar><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:268
+#: ch08-embedding-svn.xml:268
 msgid "The Transaction Distraction"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sidebar><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:270
+#: ch08-embedding-svn.xml:270
 msgid ""
 "The notion of a Subversion transaction can become easily confused with the "
 "transaction support provided by the underlying database itself, especially "
@@ -424,7 +415,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sidebar><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:283
+#: ch08-embedding-svn.xml:283
 msgid ""
 "Database transactions generally encompass small operations related "
 "specifically to the modification of data in the database itself (such as "
@@ -439,7 +430,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sidebar><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:297
+#: ch08-embedding-svn.xml:297
 msgid ""
 "Fortunately for users of the filesystem API, the transaction support "
 "provided by the database system itself is hidden almost entirely from view "
@@ -449,7 +440,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:307
+#: ch08-embedding-svn.xml:307
 msgid ""
 "Most of the functionality the filesystem interface provides deals with "
 "actions that occur on individual filesystem paths.  That is, from outside "
@@ -462,7 +453,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:318
+#: ch08-embedding-svn.xml:318
 msgid ""
 "Unlike most filesystems, though, a path alone is not enough information to "
 "identify a file or directory in Subversion.  Think of a directory tree as a "
@@ -473,17 +464,17 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><figure><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:328
+#: ch08-embedding-svn.xml:328
 msgid "Files and directories in two dimensions"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><figure>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:329
+#: ch08-embedding-svn.xml:329
 msgid "<graphic fileref=\"images/ch08dia1.png\"/>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para><footnote><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:334
+#: ch08-embedding-svn.xml:334
 msgid ""
 "We understand that this may come as a shock to sci-fi fans who have long "
 "been under the impression that Time was actually the <emphasis>fourth</"
@@ -492,7 +483,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:332
+#: ch08-embedding-svn.xml:332
 msgid ""
 "The difference here is that the Subversion filesystem has a nifty third "
 "dimension that most filesystems do not have&mdash;Time!<placeholder type="
@@ -508,17 +499,17 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><figure><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:354
+#: ch08-embedding-svn.xml:354
 msgid "Versioning time&mdash;the third dimension!"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><figure>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:355
+#: ch08-embedding-svn.xml:355
 msgid "<graphic fileref=\"images/ch08dia2.png\"/>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:358
+#: ch08-embedding-svn.xml:358
 msgid ""
 "As we mentioned earlier, the <filename>libsvn_fs</filename> API looks and "
 "feels like any other filesystem, except that it has this wonderful "
@@ -531,7 +522,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:369
+#: ch08-embedding-svn.xml:369
 msgid ""
 "The Subversion repository library (<filename>libsvn_repos</filename>) sits "
 "(logically speaking)  atop the <filename>libsvn_fs</filename> API, providing "
@@ -547,7 +538,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:384
+#: ch08-embedding-svn.xml:384
 msgid ""
 "The hooks mechanism is but one of the reasons for the abstraction of a "
 "separate repository library from the rest of the filesystem code.  The "
@@ -556,40 +547,40 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><itemizedlist><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:392
+#: ch08-embedding-svn.xml:392
 msgid ""
 "Create, open, destroy, and perform recovery steps on a Subversion repository "
 "and the filesystem included in that repository."
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><itemizedlist><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:397
+#: ch08-embedding-svn.xml:397
 msgid "Describe the differences between two filesystem trees."
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><itemizedlist><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:401
+#: ch08-embedding-svn.xml:401
 msgid ""
 "Query for the commit log messages associated with all (or some) of the "
 "revisions in which a set of files was modified in the filesystem."
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><itemizedlist><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:406
+#: ch08-embedding-svn.xml:406
 msgid ""
 "Generate a human-readable <quote>dump</quote> of the filesystem&mdash;a "
 "complete representation of the revisions in the filesystem."
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><itemizedlist><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:411
+#: ch08-embedding-svn.xml:411
 msgid ""
 "Parse that dump format, loading the dumped revisions into a different "
 "Subversion repository."
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:416
+#: ch08-embedding-svn.xml:416
 msgid ""
 "As Subversion continues to evolve, the repository library will grow with the "
 "filesystem library to offer increased functionality and configurable option "
@@ -597,17 +588,17 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:424
+#: ch08-embedding-svn.xml:424
 msgid "Repository Access Layer"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para><indexterm><tertiary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:430
+#: ch08-embedding-svn.xml:430
 msgid "Repository Access (RA) Layer"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:427
+#: ch08-embedding-svn.xml:427
 msgid ""
 "<placeholder type=\"indexterm\" id=\"0\"/>If the Subversion Repository layer "
 "is at <quote>the other end of the line,</quote> the Repository Access (RA) "
@@ -622,12 +613,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para><indexterm><primary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:447
+#: ch08-embedding-svn.xml:447
 msgid "repository URL"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:446
+#: ch08-embedding-svn.xml:446
 msgid ""
 "<placeholder type=\"indexterm\" id=\"0\"/>Since Subversion uses URLs to "
 "identify its repository resources, the protocol portion of the URL scheme "
@@ -643,7 +634,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:463
+#: ch08-embedding-svn.xml:463
 #, no-wrap
 msgid ""
 "$ svn --version\n"
@@ -670,7 +661,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:487
+#: ch08-embedding-svn.xml:487
 msgid ""
 "The public API exported by the RA layer contains functionality necessary for "
 "sending and receiving versioned data to and from the repository.  And each "
@@ -683,7 +674,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:498
+#: ch08-embedding-svn.xml:498
 msgid ""
 "For those who wish to access a Subversion repository using still another "
 "protocol, that is precisely why the Repository Access layer is modularized! "
@@ -696,13 +687,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para><indexterm><tertiary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:513
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:519
+#: ch08-embedding-svn.xml:513 ch08-embedding-svn.xml:519
 msgid "Client Layer"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:516
+#: ch08-embedding-svn.xml:516
 msgid ""
 "<placeholder type=\"indexterm\" id=\"0\"/>On the client side, the Subversion "
 "working copy is where all the action takes place.  The bulk of functionality "
@@ -714,12 +704,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para><indexterm><primary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:531
+#: ch08-embedding-svn.xml:531
 msgid "administrative directory"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:530
+#: ch08-embedding-svn.xml:530
 msgid ""
 "<placeholder type=\"indexterm\" id=\"0\"/>Subversion's working copy library, "
 "<filename>libsvn_wc</filename>, is directly responsible for managing the "
@@ -734,7 +724,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:545
+#: ch08-embedding-svn.xml:545
 msgid ""
 "The Subversion client library, <filename>libsvn_client</filename>, has the "
 "broadest responsibility; its job is to mingle the functionality of the "
@@ -749,7 +739,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:560
+#: ch08-embedding-svn.xml:560
 msgid ""
 "The client library is designed to be used by any application.  While the "
 "Subversion source code includes a standard command-line client, it should be "
@@ -765,12 +755,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sidebar><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:576
+#: ch08-embedding-svn.xml:576
 msgid "Binding Directly&mdash;A Word About Correctness"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sidebar><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:578
+#: ch08-embedding-svn.xml:578
 msgid ""
 "Why should your GUI program bind directly with a <filename>libsvn_client</"
 "filename> instead of acting as a wrapper around a command-line program? "
@@ -784,7 +774,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sidebar><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:591
+#: ch08-embedding-svn.xml:591
 msgid ""
 "If you wrap such a command-line program with yet another program, the second "
 "program has access only to already interpreted (and as we mentioned, likely "
@@ -796,7 +786,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sidebar><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:601
+#: ch08-embedding-svn.xml:601
 msgid ""
 "But the most compelling argument for binding directly to the APIs instead of "
 "wrapping other programs is that the Subversion project makes compatibility "
@@ -811,12 +801,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:624
+#: ch08-embedding-svn.xml:624
 msgid "Using the APIs"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:626
+#: ch08-embedding-svn.xml:626
 msgid ""
 "Developing applications against the Subversion library APIs is fairly "
 "straightforward.  Subversion is primarily a set of C libraries, with header "
@@ -831,7 +821,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:639
+#: ch08-embedding-svn.xml:639
 msgid ""
 "When examining the public header files, the first thing you might notice is "
 "that Subversion's datatypes and functions are namespace-protected.  That is, "
@@ -851,12 +841,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><para><footnote><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:666
+#: ch08-embedding-svn.xml:666
 msgid "After all, Subversion uses Subversion's APIs, too."
 msgstr ""
 
 #. type: Content of: <chapter><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:658
+#: ch08-embedding-svn.xml:658
 msgid ""
 "Another good source of information about programming against the Subversion "
 "APIs is the project's own hacking guidelines, which you can find at <ulink "
@@ -868,12 +858,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:671
+#: ch08-embedding-svn.xml:671
 msgid "The Apache Portable Runtime Library"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:673
+#: ch08-embedding-svn.xml:673
 msgid ""
 "Along with Subversion's own datatypes, you will see many references to "
 "datatypes that begin with <literal>apr_</literal>&mdash;symbols from the "
@@ -891,17 +881,17 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para><footnote><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:692
+#: ch08-embedding-svn.xml:692
 msgid "Subversion uses ANSI system calls and datatypes as much as possible."
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para><footnote><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:702
+#: ch08-embedding-svn.xml:702
 msgid "Berkeley DB is an example of such a library."
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:690
+#: ch08-embedding-svn.xml:690
 msgid ""
 "In addition to providing consistent implementations of system calls that "
 "differ across operating systems,<placeholder type=\"footnote\" id=\"0\"/> "
@@ -924,17 +914,17 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sidebar><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:716
+#: ch08-embedding-svn.xml:716
 msgid "Programming with Memory Pools"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sidebar><para><indexterm><secondary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:721
+#: ch08-embedding-svn.xml:721
 msgid "memory pools"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sidebar><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:719
+#: ch08-embedding-svn.xml:719
 msgid ""
 "<placeholder type=\"indexterm\" id=\"0\"/>Almost every developer who has "
 "used the C programming language has at some point sighed at the daunting "
@@ -946,7 +936,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sidebar><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:731
+#: ch08-embedding-svn.xml:731
 msgid ""
 "Higher-level languages, on the other hand, either take the job of memory "
 "management away from you completely or make it something you toy with only "
@@ -957,7 +947,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sidebar><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:740
+#: ch08-embedding-svn.xml:740
 msgid ""
 "APR provides a middle-ground approach called <firstterm>pool-based memory "
 "management</firstterm>.  It allows the developer to control memory usage at "
@@ -975,17 +965,17 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:763
+#: ch08-embedding-svn.xml:763
 msgid "Functions and Batons"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para><indexterm><secondary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:768
+#: ch08-embedding-svn.xml:768
 msgid "batons"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:766
+#: ch08-embedding-svn.xml:766
 msgid ""
 "<placeholder type=\"indexterm\" id=\"0\"/>To facilitate <quote>streamy</"
 "quote> (asynchronous) behavior and provide consumers of the Subversion C API "
@@ -999,12 +989,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:784
+#: ch08-embedding-svn.xml:784
 msgid "URL and Path Requirements"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:786
+#: ch08-embedding-svn.xml:786
 msgid ""
 "With remote version control operation as the whole point of Subversion's "
 "existence, it makes sense that some attention has been paid to "
@@ -1027,7 +1017,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:809
+#: ch08-embedding-svn.xml:809
 msgid ""
 "Also, Subversion APIs require all URL parameters to be properly URI-"
 "encoded.  So, instead of passing <uri>file:///home/username/My&nbsp;File."
@@ -1040,12 +1030,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:821
+#: ch08-embedding-svn.xml:821
 msgid "Using Languages Other Than C and C++"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:823
+#: ch08-embedding-svn.xml:823
 msgid ""
 "If you are interested in using the Subversion libraries in conjunction with "
 "something other than a C program&mdash;say, a Python or Perl script&mdash;"
@@ -1058,7 +1048,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:834
+#: ch08-embedding-svn.xml:834
 msgid ""
 "Significant efforts have been made toward creating functional SWIG-generated "
 "bindings for Python, Perl, and Ruby.  To some extent, the work done "
@@ -1072,7 +1062,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:846
+#: ch08-embedding-svn.xml:846
 msgid ""
 "Subversion also has language bindings for Java.  The javahl bindings "
 "(located in <filename>subversion/bindings/java</filename> in the Subversion "
@@ -1083,7 +1073,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:855
+#: ch08-embedding-svn.xml:855
 msgid ""
 "Subversion's language bindings tend to lack the level of developer attention "
 "given to the core Subversion modules, but can generally be trusted as "
@@ -1094,7 +1084,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:863
+#: ch08-embedding-svn.xml:863
 msgid ""
 "It's worth noting here that there are other options for interfacing with "
 "Subversion using other languages: alternative bindings for Subversion that "
@@ -1109,12 +1099,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sidebar><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:878
+#: ch08-embedding-svn.xml:878
 msgid "SVNKit Versus javahl"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sidebar><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:880
+#: ch08-embedding-svn.xml:880
 msgid ""
 "In 2005, a small company called TMate announced the 1.0.0 release of "
 "JavaSVN&mdash;a pure Java implementation of Subversion.  Since then, the "
@@ -1125,7 +1115,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sidebar><para><footnote><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:898
+#: ch08-embedding-svn.xml:898
 msgid ""
 "Redistributions in any form must be accompanied by information on how to "
 "obtain complete source code for the software that uses SVNKit and any "
@@ -1134,7 +1124,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sidebar><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:888
+#: ch08-embedding-svn.xml:888
 msgid ""
 "The SVNKit library is interesting in that, unlike the javahl library, it is "
 "not merely a wrapper around the official Subversion core libraries.  In "
@@ -1154,7 +1144,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sidebar><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:913
+#: ch08-embedding-svn.xml:913
 msgid ""
 "That said, SVNKit has a well-established track record of reliability.  And a "
 "pure Java solution is much more robust in the face of programming "
@@ -1165,12 +1155,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:928
+#: ch08-embedding-svn.xml:928
 msgid "Code Samples"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:930
+#: ch08-embedding-svn.xml:930
 msgid ""
 "<xref linkend=\"svn.developer.layerlib.repos.ex-1\" /> contains a code "
 "segment (written in C) that illustrates some of the concepts we've been "
@@ -1185,12 +1175,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><example><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:945
+#: ch08-embedding-svn.xml:945
 msgid "Using the repository layer"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><example><programlisting>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:948
+#: ch08-embedding-svn.xml:948
 #, no-wrap
 msgid ""
 "/* Convert a Subversion error into a simple boolean error code.\n"
@@ -1297,14 +1287,13 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><example>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:947
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:1078
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:1172
+#: ch08-embedding-svn.xml:947 ch08-embedding-svn.xml:1078
+#: ch08-embedding-svn.xml:1172
 msgid "<placeholder type=\"programlisting\" id=\"0\"/>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:1052
+#: ch08-embedding-svn.xml:1052
 msgid ""
 "Note that in <xref linkend=\"svn.developer.layerlib.repos.ex-1\" />, the "
 "code could just as easily have committed the transaction using "
@@ -1321,7 +1310,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:1069
+#: ch08-embedding-svn.xml:1069
 msgid ""
 "Now let's switch languages.  <xref linkend=\"svn.developer.usingapi."
 "otherlangs.ex-1\" /> is a sample program that uses Subversion's SWIG Python "
@@ -1330,12 +1319,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><example><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:1076
+#: ch08-embedding-svn.xml:1076
 msgid "Using the repository layer with Python"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><example><programlisting>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:1079
+#: ch08-embedding-svn.xml:1079
 #, no-wrap
 msgid ""
 "#!/usr/bin/python\n"
@@ -1404,7 +1393,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:1145
+#: ch08-embedding-svn.xml:1145
 msgid ""
 "This same program in C would need to deal with APR's memory pool system.  "
 "But Python handles memory usage automatically, and Subversion's Python "
@@ -1420,7 +1409,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:1159
+#: ch08-embedding-svn.xml:1159
 msgid ""
 "The Subversion Python bindings can be used for working copy operations, "
 "too.  In the previous section of this chapter, we mentioned the "
@@ -1432,12 +1421,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><example><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:1170
+#: ch08-embedding-svn.xml:1170
 msgid "A Python status crawler"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><example><programlisting>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:1173
+#: ch08-embedding-svn.xml:1173
 #, no-wrap
 msgid ""
 "#!/usr/bin/env python\n"
@@ -1536,7 +1525,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:1269
+#: ch08-embedding-svn.xml:1269
 msgid ""
 "As was the case in <xref linkend=\"svn.developer.usingapi.otherlangs.ex-1\" /"
 ">, this program is pool-free and uses, for the most part, normal Python "
@@ -1544,7 +1533,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><warning><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:1275
+#: ch08-embedding-svn.xml:1275
 msgid ""
 "Run user-provided paths through the appropriate canonicalization function "
 "(<function>svn_dirent_canonicalize()</function> or "
@@ -1555,7 +1544,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:1285
+#: ch08-embedding-svn.xml:1285
 msgid ""
 "Of particular interest to users of the Python flavor of Subversion's API is "
 "the implementation of callback functions.  As previously mentioned, "
@@ -1574,12 +1563,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:1310
+#: ch08-embedding-svn.xml:1310
 msgid "Summary"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:1312
+#: ch08-embedding-svn.xml:1312
 msgid ""
 "One of Subversion's greatest features isn't something you get from running "
 "its command-line client or other tools.  It's the fact that Subversion was "
@@ -1589,7 +1578,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch08-embedding-svn.xml:1319
+#: ch08-embedding-svn.xml:1319
 msgid ""
 "In this chapter, we took a closer look at Subversion's architecture, "
 "examining its logical layers and describing that public API, the very same "

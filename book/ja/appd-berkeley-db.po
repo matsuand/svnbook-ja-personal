@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2017-08-03 18:00+0900\n"
-"PO-Revision-Date: 2017-08-03 18:00+0900\n"
+"POT-Creation-Date: 2017-08-06 14:19+0900\n"
+"PO-Revision-Date: 2017-08-06 14:19+0900\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: matsuand個人翻訳\n"
 "Language: ja\n"
@@ -17,19 +17,19 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. type: Content of: <appendix><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appd-berkeley-db.xml:4
+#: appd-berkeley-db.xml:4
 msgid "The Berkeley DB Legacy Filesystem"
 msgstr ""
 
 #. type: Content of: <appendix><para><footnote><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appd-berkeley-db.xml:9
+#: appd-berkeley-db.xml:9
 msgid ""
 "Okay, strictly speaking, it used XML files for starters.  But that was never "
 "intended for public release."
 msgstr ""
 
 #. type: Content of: <appendix><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appd-berkeley-db.xml:6
+#: appd-berkeley-db.xml:6
 msgid ""
 "Long ago, when Subversion first learned to store versioned data, it did so "
 "using a storage layer implementation based on the Berkeley DB (BDB) "
@@ -42,7 +42,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appd-berkeley-db.xml:19
+#: appd-berkeley-db.xml:19
 msgid ""
 "This appendix presents some of the documentation about administering BDB-"
 "backed repositories featured more prominently in previous versions of this "
@@ -50,12 +50,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appd-berkeley-db.xml:27
+#: appd-berkeley-db.xml:27
 msgid "Configuring Your Berkeley DB Environment"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appd-berkeley-db.xml:29
+#: appd-berkeley-db.xml:29
 msgid ""
 "A Berkeley DB environment is an encapsulation of one or more databases, "
 "logfiles, region files, and configuration files.  The Berkeley DB "
@@ -69,7 +69,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appd-berkeley-db.xml:41
+#: appd-berkeley-db.xml:41
 msgid ""
 "The producers of Berkeley DB understand that different applications and "
 "database environments have different requirements, so they have provided a "
@@ -81,7 +81,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appd-berkeley-db.xml:50
+#: appd-berkeley-db.xml:50
 msgid ""
 "Subversion creates the <filename>DB_CONFIG</filename> file when it creates "
 "the rest of the repository.  The file initially contains some default "
@@ -90,7 +90,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appd-berkeley-db.xml:58
+#: appd-berkeley-db.xml:58
 #, no-wrap
 msgid ""
 "$ svnadmin create --fstype bdb /var/svn/repos\n"
@@ -104,7 +104,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appd-berkeley-db.xml:69
+#: appd-berkeley-db.xml:69
 msgid ""
 "Of course, you are free to add any of the supported Berkeley DB options to "
 "your <filename>DB_CONFIG</filename> file.  Just be aware that while "
@@ -117,12 +117,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appd-berkeley-db.xml:86
+#: appd-berkeley-db.xml:86
 msgid "Limitations of Berkeley DB"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appd-berkeley-db.xml:88
+#: appd-berkeley-db.xml:88
 msgid ""
 "The Berkeley DB transactional data store offers all the data integrity "
 "promises that you'd expect from a world-class database system.  But every "
@@ -131,12 +131,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appd-berkeley-db.xml:95
+#: appd-berkeley-db.xml:95
 msgid "Architectural Limitations"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appd-berkeley-db.xml:97
+#: appd-berkeley-db.xml:97
 msgid ""
 "Berkeley DB environments are not portable.  You cannot simply copy a "
 "Subversion repository that was created on a Unix system onto a Windows "
@@ -145,7 +145,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appd-berkeley-db.xml:103
+#: appd-berkeley-db.xml:103
 msgid ""
 "Second, Subversion requires the use of Berkeley DB in a way that will not "
 "operate on Windows 95/98 systems&mdash;if you need to house a BDB-backed "
@@ -153,12 +153,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appd-berkeley-db.xml:112
+#: appd-berkeley-db.xml:112
 msgid "Network Share Deployment"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><para><footnote><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appd-berkeley-db.xml:116
+#: appd-berkeley-db.xml:116
 msgid ""
 "Berkeley DB requires that the underlying filesystem implement strict POSIX "
 "locking semantics, and more importantly, the ability to map files directly "
@@ -166,7 +166,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appd-berkeley-db.xml:114
+#: appd-berkeley-db.xml:114
 msgid ""
 "While Berkeley DB promises to behave correctly on network shares that meet a "
 "particular set of specifications,<placeholder type=\"footnote\" id=\"0\"/> "
@@ -178,7 +178,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><warning><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appd-berkeley-db.xml:129
+#: appd-berkeley-db.xml:129
 msgid ""
 "If you attempt to use Berkeley DB on a noncompliant remote filesystem, the "
 "results are unpredictable&mdash;you may see mysterious errors right away, or "
@@ -188,12 +188,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appd-berkeley-db.xml:142
+#: appd-berkeley-db.xml:142
 msgid "Fault Tolerance and the Need for Recovery"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appd-berkeley-db.xml:144
+#: appd-berkeley-db.xml:144
 msgid ""
 "Because Berkeley DB is a library linked directly into Subversion, it's more "
 "sensitive to interruptions than a typical relational database system.  Most "
@@ -206,7 +206,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appd-berkeley-db.xml:155
+#: appd-berkeley-db.xml:155
 msgid ""
 "These things are not the case with Berkeley DB, however.  Subversion (and "
 "programs using Subversion libraries) access the database tables directly, "
@@ -219,7 +219,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><note><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appd-berkeley-db.xml:167
+#: appd-berkeley-db.xml:167
 msgid ""
 "Berkeley DB 4.4 brings (to Subversion 1.4 and later)  the ability for "
 "Subversion to automatically and transparently recover Berkeley DB "
@@ -233,17 +233,17 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appd-berkeley-db.xml:187
+#: appd-berkeley-db.xml:187
 msgid "Maintaining Berkeley DB Repositories"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para><footnote><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appd-berkeley-db.xml:192
+#: appd-berkeley-db.xml:192
 msgid "Tender loving care, Baby."
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appd-berkeley-db.xml:189
+#: appd-berkeley-db.xml:189
 msgid ""
 "In theory, the maintenance of a BDB-backed repository involves essentially "
 "the same steps used to maintain an FSFS-backed repository.  Historically, "
@@ -253,12 +253,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appd-berkeley-db.xml:199
+#: appd-berkeley-db.xml:199
 msgid "Berkeley DB Recovery"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appd-berkeley-db.xml:201
+#: appd-berkeley-db.xml:201
 msgid ""
 "As mentioned in <xref linkend=\"svn.berkeleydb.limitations.faulttolerance\" /"
 ">, a Berkeley DB repository can sometimes be left in a frozen state if not "
@@ -273,7 +273,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appd-berkeley-db.xml:215
+#: appd-berkeley-db.xml:215
 msgid ""
 "To protect the data in your repository, Berkeley DB uses a locking "
 "mechanism.  This mechanism ensures that portions of the database are not "
@@ -291,7 +291,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appd-berkeley-db.xml:232
+#: appd-berkeley-db.xml:232
 msgid ""
 "In the course of using your Subversion repository, fatal errors or "
 "interruptions can prevent a process from having the chance to remove the "
@@ -302,12 +302,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><para><footnote><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appd-berkeley-db.xml:244
+#: appd-berkeley-db.xml:244
 msgid "For example, hard drive + huge electromagnet = disaster."
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appd-berkeley-db.xml:241
+#: appd-berkeley-db.xml:241
 msgid ""
 "If this happens to your repository, don't panic.  The Berkeley DB filesystem "
 "takes advantage of database transactions, checkpoints, and prewrite "
@@ -319,14 +319,14 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appd-berkeley-db.xml:252
+#: appd-berkeley-db.xml:252
 msgid ""
 "Instead, use the following recipe to attempt to <quote>unwedge</quote> your "
 "repository:"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><orderedlist><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appd-berkeley-db.xml:257
+#: appd-berkeley-db.xml:257
 msgid ""
 "Make sure no processes are accessing (or attempting to access) the "
 "repository.  For networked repositories, this also means shutting down the "
@@ -334,7 +334,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><orderedlist><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appd-berkeley-db.xml:263
+#: appd-berkeley-db.xml:263
 msgid ""
 "Become the user who owns and manages the repository.  This is important, as "
 "recovering a repository while running as the wrong user can tweak the "
@@ -343,12 +343,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><orderedlist><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appd-berkeley-db.xml:271
+#: appd-berkeley-db.xml:271
 msgid "Run the <command>svnadmin recover</command> command:"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><orderedlist><listitem><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appd-berkeley-db.xml:274
+#: appd-berkeley-db.xml:274
 #, no-wrap
 msgid ""
 "$ svnadmin recover /var/svn/repos\n"
@@ -361,17 +361,17 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><orderedlist><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appd-berkeley-db.xml:283
+#: appd-berkeley-db.xml:283
 msgid "This command may take many minutes to complete."
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><orderedlist><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appd-berkeley-db.xml:286
+#: appd-berkeley-db.xml:286
 msgid "Restart the server process."
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appd-berkeley-db.xml:290
+#: appd-berkeley-db.xml:290
 msgid ""
 "This procedure fixes almost every case of repository wedging.  Make sure "
 "that you run this command as the user that owns and manages the database, "
@@ -384,12 +384,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appd-berkeley-db.xml:305
+#: appd-berkeley-db.xml:305
 msgid "Purging unused Berkeley DB logfiles"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appd-berkeley-db.xml:307
+#: appd-berkeley-db.xml:307
 msgid ""
 "Prior to the release of Berkeley DB 4.2, the largest offender of disk space "
 "usage with respect to BDB-backed Subversion repositories were the logfiles "
@@ -402,7 +402,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appd-berkeley-db.xml:319
+#: appd-berkeley-db.xml:319
 msgid ""
 "Fortunately, beginning with the 4.2 release of Berkeley DB, the database "
 "environment has the ability to remove its own unused logfiles "
@@ -419,7 +419,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appd-berkeley-db.xml:336
+#: appd-berkeley-db.xml:336
 msgid ""
 "Without some sort of automatic logfile removal in place, logfiles will "
 "accumulate as you use your repository.  This is actually somewhat of a "
@@ -432,7 +432,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appd-berkeley-db.xml:350
+#: appd-berkeley-db.xml:350
 #, no-wrap
 msgid ""
 "$ svnadmin list-unused-dblogs /var/svn/repos\n"
@@ -445,7 +445,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><warning><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appd-berkeley-db.xml:361
+#: appd-berkeley-db.xml:361
 msgid ""
 "BDB-backed repositories whose logfiles are used as part of a backup or "
 "disaster recovery plan should <emphasis>not</emphasis> make use of the "
@@ -457,12 +457,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appd-berkeley-db.xml:377
+#: appd-berkeley-db.xml:377
 msgid "Berkeley DB Utilities"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appd-berkeley-db.xml:379
+#: appd-berkeley-db.xml:379
 msgid ""
 "If you're using a Berkeley DB repository, all of your versioned filesystem's "
 "structure and data live in a set of database tables within the <filename>db/"
@@ -473,7 +473,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appd-berkeley-db.xml:388
+#: appd-berkeley-db.xml:388
 msgid ""
 "For day-to-day Subversion use, these tools are unnecessary.  Most of the "
 "functionality typically needed for Subversion repositories has been "
@@ -486,7 +486,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appd-berkeley-db.xml:399
+#: appd-berkeley-db.xml:399
 msgid ""
 "However, there are still a few Berkeley DB utilities that you might find "
 "useful.  The <command>db_dump</command> and <command>db_load</command> "
@@ -507,7 +507,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appd-berkeley-db.xml:420
+#: appd-berkeley-db.xml:420
 msgid ""
 "For more information on the Berkeley DB tool chain, visit the documentation "
 "section of the Berkeley DB section of Oracle's web site, located at <ulink "

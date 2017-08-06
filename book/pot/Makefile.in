@@ -75,8 +75,9 @@ POST_INSTALL = :
 NORMAL_UNINSTALL = :
 PRE_UNINSTALL = :
 POST_UNINSTALL = :
+DIST_COMMON = $(srcdir)/../../Makefile.def $(srcdir)/Makefile.in \
+	$(srcdir)/Makefile.am
 subdir = book/pot
-DIST_COMMON = $(srcdir)/Makefile.in $(srcdir)/Makefile.am
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
 am__aclocal_m4_deps = $(top_srcdir)/progs.m4 \
 	$(top_srcdir)/configure.ac
@@ -218,10 +219,14 @@ basenames = \
 srcs = $(addprefix $(ORIGSRCDIR)/,$(basenames))
 outputs = $(patsubst %.xml,%.pot,$(basenames))
 DISTCLEANFILES = $(outputs)
+xml_dir = ${shell dirname $1}
+xml_basename = ${shell basename $1}
+pot_absdir = ${abs_top_builddir}/book/pot
+pot_absname = $(pot_absdir)/${shell basename $2}
 all: all-am
 
 .SUFFIXES:
-$(srcdir)/Makefile.in:  $(srcdir)/Makefile.am  $(am__configure_deps)
+$(srcdir)/Makefile.in:  $(srcdir)/Makefile.am $(srcdir)/../../Makefile.def $(am__configure_deps)
 	@for dep in $?; do \
 	  case '$(am__configure_deps)' in \
 	    *$$dep*) \
@@ -242,6 +247,7 @@ Makefile: $(srcdir)/Makefile.in $(top_builddir)/config.status
 	    echo ' cd $(top_builddir) && $(SHELL) ./config.status $(subdir)/$@ $(am__depfiles_maybe)'; \
 	    cd $(top_builddir) && $(SHELL) ./config.status $(subdir)/$@ $(am__depfiles_maybe);; \
 	esac;
+$(srcdir)/../../Makefile.def:
 
 $(top_builddir)/config.status: $(top_srcdir)/configure $(CONFIG_STATUS_DEPENDENCIES)
 	cd $(top_builddir) && $(MAKE) $(AM_MAKEFLAGS) am--refresh
@@ -402,68 +408,84 @@ uninstall-am:
 	maintainer-clean-generic mostlyclean mostlyclean-generic pdf \
 	pdf-am ps ps-am tags-am uninstall uninstall-am
 
+define MSGPROC
+  if test ! -f "$@"; then \
+    msginit --no-translator -l ja_JP \
+     -i $1 -o $2 ;\
+    sed -i -e "/Language-Team/s/none/matsuand個人翻訳/" \
+           -e "/Content-Type/s/ASCII/UTF-8/" $2 ;\
+  else \
+    msgmerge -U $2 $1 ; \
+  fi
+endef
 
-define PO4A
-  $(PO4AGETTEXTIZE) -f docbook -M utf-8 -m $1 -p $2
+define PO4AGET
+  (cd ${xml_dir} && \
+     $(PO4AGETTEXTIZE) -f docbook -M utf-8 -m ${xml_basename} -p ${pot_absname})
+endef
+
+define PO4ATRANS
+  $(PO4ATRANSLATE) -k 0 -f docbook -o doctype="docbook" \
+    -M UTF-8 -m $1 -l $@ -p $2
 endef
 
 .PHONY: all
 all: $(outputs)
 
 appa-quickstart.pot: $(ORIGSRCDIR)/appa-quickstart.xml
-	$(call PO4A, $<, $@)
+	$(call PO4AGET, $<, $@)
 appb-svn-for-cvs-users.pot: $(ORIGSRCDIR)/appb-svn-for-cvs-users.xml
-	$(call PO4A, $<, $@)
+	$(call PO4AGET, $<, $@)
 appc-webdav.pot: $(ORIGSRCDIR)/appc-webdav.xml
-	$(call PO4A, $<, $@)
+	$(call PO4AGET, $<, $@)
 appd-berkeley-db.pot: $(ORIGSRCDIR)/appd-berkeley-db.xml
-	$(call PO4A, $<, $@)
+	$(call PO4AGET, $<, $@)
 book.pot: $(ORIGSRCDIR)/book.xml
-	$(call PO4A, $<, $@)
+	$(call PO4AGET, $<, $@)
 ch00-preface.pot: $(ORIGSRCDIR)/ch00-preface.xml
-	$(call PO4A, $<, $@)
+	$(call PO4AGET, $<, $@)
 ch01-fundamental-concepts.pot: $(ORIGSRCDIR)/ch01-fundamental-concepts.xml
-	$(call PO4A, $<, $@)
+	$(call PO4AGET, $<, $@)
 ch02-basic-usage.pot: $(ORIGSRCDIR)/ch02-basic-usage.xml
-	$(call PO4A, $<, $@)
+	$(call PO4AGET, $<, $@)
 ch03-advanced-topics.pot: $(ORIGSRCDIR)/ch03-advanced-topics.xml
-	$(call PO4A, $<, $@)
+	$(call PO4AGET, $<, $@)
 ch04-branching-and-merging.pot: $(ORIGSRCDIR)/ch04-branching-and-merging.xml
-	$(call PO4A, $<, $@)
+	$(call PO4AGET, $<, $@)
 ch05-repository-admin.pot: $(ORIGSRCDIR)/ch05-repository-admin.xml
-	$(call PO4A, $<, $@)
+	$(call PO4AGET, $<, $@)
 ch06-server-configuration.pot: $(ORIGSRCDIR)/ch06-server-configuration.xml
-	$(call PO4A, $<, $@)
+	$(call PO4AGET, $<, $@)
 ch07-customizing-svn.pot: $(ORIGSRCDIR)/ch07-customizing-svn.xml
-	$(call PO4A, $<, $@)
+	$(call PO4AGET, $<, $@)
 ch08-embedding-svn.pot: $(ORIGSRCDIR)/ch08-embedding-svn.xml
-	$(call PO4A, $<, $@)
+	$(call PO4AGET, $<, $@)
 copyright.pot: $(ORIGSRCDIR)/copyright.xml
-	$(call PO4A, $<, $@)
+	$(call PO4AGET, $<, $@)
 foreword.pot: $(ORIGSRCDIR)/foreword.xml
-	$(call PO4A, $<, $@)
+	$(call PO4AGET, $<, $@)
 index.pot: $(ORIGSRCDIR)/index.xml
-	$(call PO4A, $<, $@)
+	$(call PO4AGET, $<, $@)
 ref-reposhooks.pot: $(ORIGSRCDIR)/ref-reposhooks.xml
-	$(call PO4A, $<, $@)
+	$(call PO4AGET, $<, $@)
 ref-svn.pot: $(ORIGSRCDIR)/ref-svn.xml
-	$(call PO4A, $<, $@)
+	$(call PO4AGET, $<, $@)
 ref-svnadmin.pot: $(ORIGSRCDIR)/ref-svnadmin.xml
-	$(call PO4A, $<, $@)
+	$(call PO4AGET, $<, $@)
 ref-svndumpfilter.pot: $(ORIGSRCDIR)/ref-svndumpfilter.xml
-	$(call PO4A, $<, $@)
+	$(call PO4AGET, $<, $@)
 ref-svnlook.pot: $(ORIGSRCDIR)/ref-svnlook.xml
-	$(call PO4A, $<, $@)
+	$(call PO4AGET, $<, $@)
 ref-svnmucc.pot: $(ORIGSRCDIR)/ref-svnmucc.xml
-	$(call PO4A, $<, $@)
+	$(call PO4AGET, $<, $@)
 ref-svnrdump.pot: $(ORIGSRCDIR)/ref-svnrdump.xml
-	$(call PO4A, $<, $@)
+	$(call PO4AGET, $<, $@)
 ref-svnserve.pot: $(ORIGSRCDIR)/ref-svnserve.xml
-	$(call PO4A, $<, $@)
+	$(call PO4AGET, $<, $@)
 ref-svnsync.pot: $(ORIGSRCDIR)/ref-svnsync.xml
-	$(call PO4A, $<, $@)
+	$(call PO4AGET, $<, $@)
 ref-svnversion.pot: $(ORIGSRCDIR)/ref-svnversion.xml
-	$(call PO4A, $<, $@)
+	$(call PO4AGET, $<, $@)
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

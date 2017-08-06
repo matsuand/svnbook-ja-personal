@@ -75,8 +75,9 @@ POST_INSTALL = :
 NORMAL_UNINSTALL = :
 PRE_UNINSTALL = :
 POST_UNINSTALL = :
+DIST_COMMON = $(srcdir)/../Makefile.def $(srcdir)/Makefile.in \
+	$(srcdir)/Makefile.am
 subdir = book
-DIST_COMMON = $(srcdir)/Makefile.in $(srcdir)/Makefile.am
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
 am__aclocal_m4_deps = $(top_srcdir)/progs.m4 \
 	$(top_srcdir)/configure.ac
@@ -283,10 +284,14 @@ srcs_xml = $(addprefix $(POT_DIR)/,$(basenames:.po=.xml))
 srcs_po = $(addprefix $(LANG_DIR)/,$(basenames))
 outputs = $(patsubst %.po,%.xml,$(basenames))
 DISTCLEANFILES = $(outputs) version.xml
+xml_dir = ${shell dirname $1}
+xml_basename = ${shell basename $1}
+pot_absdir = ${abs_top_builddir}/book/pot
+pot_absname = $(pot_absdir)/${shell basename $2}
 all: all-recursive
 
 .SUFFIXES:
-$(srcdir)/Makefile.in:  $(srcdir)/Makefile.am  $(am__configure_deps)
+$(srcdir)/Makefile.in:  $(srcdir)/Makefile.am $(srcdir)/../Makefile.def $(am__configure_deps)
 	@for dep in $?; do \
 	  case '$(am__configure_deps)' in \
 	    *$$dep*) \
@@ -307,6 +312,7 @@ Makefile: $(srcdir)/Makefile.in $(top_builddir)/config.status
 	    echo ' cd $(top_builddir) && $(SHELL) ./config.status $(subdir)/$@ $(am__depfiles_maybe)'; \
 	    cd $(top_builddir) && $(SHELL) ./config.status $(subdir)/$@ $(am__depfiles_maybe);; \
 	esac;
+$(srcdir)/../Makefile.def:
 
 $(top_builddir)/config.status: $(top_srcdir)/configure $(CONFIG_STATUS_DEPENDENCIES)
 	cd $(top_builddir) && $(MAKE) $(AM_MAKEFLAGS) am--refresh
@@ -587,10 +593,25 @@ uninstall-am:
 	maintainer-clean-generic mostlyclean mostlyclean-generic pdf \
 	pdf-am ps ps-am tags tags-am uninstall uninstall-am
 
+define MSGPROC
+  if test ! -f "$@"; then \
+    msginit --no-translator -l ja_JP \
+     -i $1 -o $2 ;\
+    sed -i -e "/Language-Team/s/none/matsuand個人翻訳/" \
+           -e "/Content-Type/s/ASCII/UTF-8/" $2 ;\
+  else \
+    msgmerge -U $2 $1 ; \
+  fi
+endef
 
-define PO4A
+define PO4AGET
+  (cd ${xml_dir} && \
+     $(PO4AGETTEXTIZE) -f docbook -M utf-8 -m ${xml_basename} -p ${pot_absname})
+endef
+
+define PO4ATRANS
   $(PO4ATRANSLATE) -k 0 -f docbook -o doctype="docbook" \
-  -M UTF-8 -m $1 -l $@ -p $2
+    -M UTF-8 -m $1 -l $@ -p $2
 endef
 
 .PHONY: all
@@ -598,87 +619,87 @@ all: $(outputs) version.xml
 
 appa-quickstart.xml: $(ORIGSRCDIR)/appa-quickstart.xml \
 	$(LANG_DIR)/appa-quickstart.po
-	$(call PO4A, $(ORIGSRCDIR)/$@, $(LANG_DIR)/$(@:.xml=.po))
+	$(call PO4ATRANS, $(ORIGSRCDIR)/$@, $(LANG_DIR)/$(@:.xml=.po))
 appb-svn-for-cvs-users.xml: $(ORIGSRCDIR)/appb-svn-for-cvs-users.xml \
 	$(LANG_DIR)/appb-svn-for-cvs-users.po
-	$(call PO4A, $(ORIGSRCDIR)/$@, $(LANG_DIR)/$(@:.xml=.po))
+	$(call PO4ATRANS, $(ORIGSRCDIR)/$@, $(LANG_DIR)/$(@:.xml=.po))
 appc-webdav.xml: $(ORIGSRCDIR)/appc-webdav.xml \
 	$(LANG_DIR)/appc-webdav.po
-	$(call PO4A, $(ORIGSRCDIR)/$@, $(LANG_DIR)/$(@:.xml=.po))
+	$(call PO4ATRANS, $(ORIGSRCDIR)/$@, $(LANG_DIR)/$(@:.xml=.po))
 appd-berkeley-db.xml: $(ORIGSRCDIR)/appd-berkeley-db.xml \
 	$(LANG_DIR)/appd-berkeley-db.po
-	$(call PO4A, $(ORIGSRCDIR)/$@, $(LANG_DIR)/$(@:.xml=.po))
+	$(call PO4ATRANS, $(ORIGSRCDIR)/$@, $(LANG_DIR)/$(@:.xml=.po))
 book.xml: $(ORIGSRCDIR)/book.xml \
 	$(LANG_DIR)/book.po
-	$(call PO4A, $(ORIGSRCDIR)/$@, $(LANG_DIR)/$(@:.xml=.po))
+	$(call PO4ATRANS, $(ORIGSRCDIR)/$@, $(LANG_DIR)/$(@:.xml=.po))
 	sed -i "/^<book /s/>/ lang=\"ja\">/" $@
 
 ch00-preface.xml: $(ORIGSRCDIR)/ch00-preface.xml \
 	$(LANG_DIR)/ch00-preface.po
-	$(call PO4A, $(ORIGSRCDIR)/$@, $(LANG_DIR)/$(@:.xml=.po))
+	$(call PO4ATRANS, $(ORIGSRCDIR)/$@, $(LANG_DIR)/$(@:.xml=.po))
 ch01-fundamental-concepts.xml: $(ORIGSRCDIR)/ch01-fundamental-concepts.xml \
 	$(LANG_DIR)/ch01-fundamental-concepts.po
-	$(call PO4A, $(ORIGSRCDIR)/$@, $(LANG_DIR)/$(@:.xml=.po))
+	$(call PO4ATRANS, $(ORIGSRCDIR)/$@, $(LANG_DIR)/$(@:.xml=.po))
 ch02-basic-usage.xml: $(ORIGSRCDIR)/ch02-basic-usage.xml \
 	$(LANG_DIR)/ch02-basic-usage.po
-	$(call PO4A, $(ORIGSRCDIR)/$@, $(LANG_DIR)/$(@:.xml=.po))
+	$(call PO4ATRANS, $(ORIGSRCDIR)/$@, $(LANG_DIR)/$(@:.xml=.po))
 ch03-advanced-topics.xml: $(ORIGSRCDIR)/ch03-advanced-topics.xml \
 	$(LANG_DIR)/ch03-advanced-topics.po
-	$(call PO4A, $(ORIGSRCDIR)/$@, $(LANG_DIR)/$(@:.xml=.po))
+	$(call PO4ATRANS, $(ORIGSRCDIR)/$@, $(LANG_DIR)/$(@:.xml=.po))
 ch04-branching-and-merging.xml: $(ORIGSRCDIR)/ch04-branching-and-merging.xml \
 	$(LANG_DIR)/ch04-branching-and-merging.po
-	$(call PO4A, $(ORIGSRCDIR)/$@, $(LANG_DIR)/$(@:.xml=.po))
+	$(call PO4ATRANS, $(ORIGSRCDIR)/$@, $(LANG_DIR)/$(@:.xml=.po))
 ch05-repository-admin.xml: $(ORIGSRCDIR)/ch05-repository-admin.xml \
 	$(LANG_DIR)/ch05-repository-admin.po
-	$(call PO4A, $(ORIGSRCDIR)/$@, $(LANG_DIR)/$(@:.xml=.po))
+	$(call PO4ATRANS, $(ORIGSRCDIR)/$@, $(LANG_DIR)/$(@:.xml=.po))
 ch06-server-configuration.xml: $(ORIGSRCDIR)/ch06-server-configuration.xml \
 	$(LANG_DIR)/ch06-server-configuration.po
-	$(call PO4A, $(ORIGSRCDIR)/$@, $(LANG_DIR)/$(@:.xml=.po))
+	$(call PO4ATRANS, $(ORIGSRCDIR)/$@, $(LANG_DIR)/$(@:.xml=.po))
 ch07-customizing-svn.xml: $(ORIGSRCDIR)/ch07-customizing-svn.xml \
 	$(LANG_DIR)/ch07-customizing-svn.po
-	$(call PO4A, $(ORIGSRCDIR)/$@, $(LANG_DIR)/$(@:.xml=.po))
+	$(call PO4ATRANS, $(ORIGSRCDIR)/$@, $(LANG_DIR)/$(@:.xml=.po))
 ch08-embedding-svn.xml: $(ORIGSRCDIR)/ch08-embedding-svn.xml \
 	$(LANG_DIR)/ch08-embedding-svn.po
-	$(call PO4A, $(ORIGSRCDIR)/$@, $(LANG_DIR)/$(@:.xml=.po))
+	$(call PO4ATRANS, $(ORIGSRCDIR)/$@, $(LANG_DIR)/$(@:.xml=.po))
 copyright.xml: $(ORIGSRCDIR)/copyright.xml \
 	$(LANG_DIR)/copyright.po
-	$(call PO4A, $(ORIGSRCDIR)/$@, $(LANG_DIR)/$(@:.xml=.po))
+	$(call PO4ATRANS, $(ORIGSRCDIR)/$@, $(LANG_DIR)/$(@:.xml=.po))
 foreword.xml: $(ORIGSRCDIR)/foreword.xml \
 	$(LANG_DIR)/foreword.po
-	$(call PO4A, $(ORIGSRCDIR)/$@, $(LANG_DIR)/$(@:.xml=.po))
+	$(call PO4ATRANS, $(ORIGSRCDIR)/$@, $(LANG_DIR)/$(@:.xml=.po))
 index.xml: $(ORIGSRCDIR)/index.xml \
 	$(LANG_DIR)/index.po
-	$(call PO4A, $(ORIGSRCDIR)/$@, $(LANG_DIR)/$(@:.xml=.po))
+	$(call PO4ATRANS, $(ORIGSRCDIR)/$@, $(LANG_DIR)/$(@:.xml=.po))
 ref-reposhooks.xml: $(ORIGSRCDIR)/ref-reposhooks.xml \
 	$(LANG_DIR)/ref-reposhooks.po
-	$(call PO4A, $(ORIGSRCDIR)/$@, $(LANG_DIR)/$(@:.xml=.po))
+	$(call PO4ATRANS, $(ORIGSRCDIR)/$@, $(LANG_DIR)/$(@:.xml=.po))
 ref-svn.xml: $(ORIGSRCDIR)/ref-svn.xml \
 	$(LANG_DIR)/ref-svn.po
-	$(call PO4A, $(ORIGSRCDIR)/$@, $(LANG_DIR)/$(@:.xml=.po))
+	$(call PO4ATRANS, $(ORIGSRCDIR)/$@, $(LANG_DIR)/$(@:.xml=.po))
 ref-svnadmin.xml: $(ORIGSRCDIR)/ref-svnadmin.xml \
 	$(LANG_DIR)/ref-svnadmin.po
-	$(call PO4A, $(ORIGSRCDIR)/$@, $(LANG_DIR)/$(@:.xml=.po))
+	$(call PO4ATRANS, $(ORIGSRCDIR)/$@, $(LANG_DIR)/$(@:.xml=.po))
 ref-svndumpfilter.xml: $(ORIGSRCDIR)/ref-svndumpfilter.xml \
 	$(LANG_DIR)/ref-svndumpfilter.po
-	$(call PO4A, $(ORIGSRCDIR)/$@, $(LANG_DIR)/$(@:.xml=.po))
+	$(call PO4ATRANS, $(ORIGSRCDIR)/$@, $(LANG_DIR)/$(@:.xml=.po))
 ref-svnlook.xml: $(ORIGSRCDIR)/ref-svnlook.xml \
 	$(LANG_DIR)/ref-svnlook.po
-	$(call PO4A, $(ORIGSRCDIR)/$@, $(LANG_DIR)/$(@:.xml=.po))
+	$(call PO4ATRANS, $(ORIGSRCDIR)/$@, $(LANG_DIR)/$(@:.xml=.po))
 ref-svnmucc.xml: $(ORIGSRCDIR)/ref-svnmucc.xml \
 	$(LANG_DIR)/ref-svnmucc.po
-	$(call PO4A, $(ORIGSRCDIR)/$@, $(LANG_DIR)/$(@:.xml=.po))
+	$(call PO4ATRANS, $(ORIGSRCDIR)/$@, $(LANG_DIR)/$(@:.xml=.po))
 ref-svnrdump.xml: $(ORIGSRCDIR)/ref-svnrdump.xml \
 	$(LANG_DIR)/ref-svnrdump.po
-	$(call PO4A, $(ORIGSRCDIR)/$@, $(LANG_DIR)/$(@:.xml=.po))
+	$(call PO4ATRANS, $(ORIGSRCDIR)/$@, $(LANG_DIR)/$(@:.xml=.po))
 ref-svnserve.xml: $(ORIGSRCDIR)/ref-svnserve.xml \
 	$(LANG_DIR)/ref-svnserve.po
-	$(call PO4A, $(ORIGSRCDIR)/$@, $(LANG_DIR)/$(@:.xml=.po))
+	$(call PO4ATRANS, $(ORIGSRCDIR)/$@, $(LANG_DIR)/$(@:.xml=.po))
 ref-svnsync.xml: $(ORIGSRCDIR)/ref-svnsync.xml \
 	$(LANG_DIR)/ref-svnsync.po
-	$(call PO4A, $(ORIGSRCDIR)/$@, $(LANG_DIR)/$(@:.xml=.po))
+	$(call PO4ATRANS, $(ORIGSRCDIR)/$@, $(LANG_DIR)/$(@:.xml=.po))
 ref-svnversion.xml: $(ORIGSRCDIR)/ref-svnversion.xml \
 	$(LANG_DIR)/ref-svnversion.po
-	$(call PO4A, $(ORIGSRCDIR)/$@, $(LANG_DIR)/$(@:.xml=.po))
+	$(call PO4ATRANS, $(ORIGSRCDIR)/$@, $(LANG_DIR)/$(@:.xml=.po))
 
 version.xml: $(ORIGSRCDIR)/version.xml
 	cp -p $(ORIGSRCDIR)/$@ $@

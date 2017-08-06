@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2017-08-03 18:00+0900\n"
-"PO-Revision-Date: 2017-08-03 18:00+0900\n"
+"POT-Creation-Date: 2017-08-06 14:19+0900\n"
+"PO-Revision-Date: 2017-08-06 14:19+0900\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: matsuand個人翻訳\n"
 "Language: ja\n"
@@ -17,12 +17,12 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. type: Content of: <reference><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svndumpfilter.xml:4
+#: ref-svndumpfilter.xml:4
 msgid "svndumpfilter Reference&mdash;Subversion History Filtering"
 msgstr ""
 
 #. type: Content of: <reference><partintro><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svndumpfilter.xml:8
+#: ref-svndumpfilter.xml:8
 msgid ""
 "<command>svndumpfilter</command> is a command-line utility for removing "
 "history from a Subversion dump file by either excluding or including paths "
@@ -31,24 +31,24 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><partintro><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svndumpfilter.xml:14
+#: ref-svndumpfilter.xml:14
 msgid ""
 "Options in <command>svndumpfilter</command> are global, just as they are in "
 "<command>svn</command> and <command>svnadmin</command>:"
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svndumpfilter.xml:19
+#: ref-svndumpfilter.xml:19
 msgid "svndumpfilter Options"
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svndumpfilter.xml:22
+#: ref-svndumpfilter.xml:22
 msgid "<option>--drop-empty-revs</option>"
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svndumpfilter.xml:24
+#: ref-svndumpfilter.xml:24
 msgid ""
 "If the current filtering invocation causes any revision to be empty (i.e., "
 "the revision causes no change to the repository), removes these revisions "
@@ -56,46 +56,46 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svndumpfilter.xml:32
+#: ref-svndumpfilter.xml:32
 msgid "<option>--drop-all-empty-revs</option>"
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svndumpfilter.xml:34
+#: ref-svndumpfilter.xml:34
 msgid ""
 "Removes all empty revisions found in the dumpstream from the final dump file "
 "(except revision 0)."
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svndumpfilter.xml:40
+#: ref-svndumpfilter.xml:40
 msgid "<option>--pattern</option>"
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svndumpfilter.xml:42
+#: ref-svndumpfilter.xml:42
 msgid ""
 "Treat the path prefixes provided to the filtering commands as file glob "
 "patterns rather than explicit path substrings."
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svndumpfilter.xml:49
+#: ref-svndumpfilter.xml:49
 msgid "<option>--renumber-revs</option>"
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svndumpfilter.xml:51
+#: ref-svndumpfilter.xml:51
 msgid "Renumbers revisions that remain after filtering."
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svndumpfilter.xml:57
+#: ref-svndumpfilter.xml:57
 msgid "<option>--skip-missing-merge-sources</option>"
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svndumpfilter.xml:59
+#: ref-svndumpfilter.xml:59
 msgid ""
 "Skips merge sources that have been removed as part of the filtering.  "
 "Without this option, <command>svndumpfilter</command> will exit with an "
@@ -103,12 +103,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svndumpfilter.xml:68
+#: ref-svndumpfilter.xml:68
 msgid "<option>--preserve-revprops</option>"
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svndumpfilter.xml:70
+#: ref-svndumpfilter.xml:70
 msgid ""
 "If all nodes in a revision are removed by filtering and <option>--drop-empty-"
 "revs</option> is not passed, the default behavior of <command>svndumpfilter</"
@@ -120,12 +120,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svndumpfilter.xml:83
+#: ref-svndumpfilter.xml:83
 msgid "<option>--targets</option> <replaceable>FILENAME</replaceable>"
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svndumpfilter.xml:85
+#: ref-svndumpfilter.xml:85
 msgid ""
 "Instructs <command>svndumpfilter</command> to read additional path "
 "prefixes&mdash;one per line&mdash;from the file located at "
@@ -135,80 +135,74 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svndumpfilter.xml:96
+#: ref-svndumpfilter.xml:96
 msgid "<option>--quiet</option>"
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svndumpfilter.xml:98
+#: ref-svndumpfilter.xml:98
 msgid "Does not display filtering statistics."
 msgstr ""
 
 #. type: Content of: <reference><refentry><indexterm><primary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svndumpfilter.xml:112
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svndumpfilter.xml:218
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svndumpfilter.xml:343
+#: ref-svndumpfilter.xml:112 ref-svndumpfilter.xml:218
+#: ref-svndumpfilter.xml:343
 msgid "svndumpfilter"
 msgstr ""
 
 #. type: Content of: <reference><refentry><indexterm><secondary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svndumpfilter.xml:113
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svndumpfilter.xml:219
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svndumpfilter.xml:344
+#: ref-svndumpfilter.xml:113 ref-svndumpfilter.xml:219
+#: ref-svndumpfilter.xml:344
 msgid "subcommands"
 msgstr ""
 
 #. type: Content of: <reference><refentry><indexterm><tertiary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svndumpfilter.xml:114
+#: ref-svndumpfilter.xml:114
 msgid "exclude"
 msgstr ""
 
 #. type: Content of: <reference><refentry><indexterm>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svndumpfilter.xml:114
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svndumpfilter.xml:220
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svndumpfilter.xml:345
+#: ref-svndumpfilter.xml:114 ref-svndumpfilter.xml:220
+#: ref-svndumpfilter.xml:345
 msgid "<placeholder type=\"tertiary\" id=\"0\"/>"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svndumpfilter.xml:118
+#: ref-svndumpfilter.xml:118
 msgid "svndumpfilter exclude"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refnamediv><refpurpose>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svndumpfilter.xml:119
+#: ref-svndumpfilter.xml:119
 msgid "Filter out nodes with given prefixes from the dump stream."
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsynopsisdiv><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svndumpfilter.xml:123
+#: ref-svndumpfilter.xml:123
 msgid "<literal>svndumpfilter exclude PATH_PREFIX...</literal>"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svndumpfilter.xml:128
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svndumpfilter.xml:235
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svndumpfilter.xml:359
+#: ref-svndumpfilter.xml:128 ref-svndumpfilter.xml:235
+#: ref-svndumpfilter.xml:359
 msgid "Description"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svndumpfilter.xml:130
+#: ref-svndumpfilter.xml:130
 msgid ""
 "This can be used to exclude nodes that begin with one or more "
 "<replaceable>PATH_PREFIX</replaceable>es from a filtered dump file."
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svndumpfilter.xml:137
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svndumpfilter.xml:244
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svndumpfilter.xml:370
+#: ref-svndumpfilter.xml:137 ref-svndumpfilter.xml:244
+#: ref-svndumpfilter.xml:370
 msgid "Options"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svndumpfilter.xml:141
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svndumpfilter.xml:248
+#: ref-svndumpfilter.xml:141 ref-svndumpfilter.xml:248
 #, no-wrap
 msgid ""
 "<xref linkend=\"svn.ref.svndumpfilter.sw.drop_empty_revs\" />\n"
@@ -222,12 +216,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svndumpfilter.xml:155
+#: ref-svndumpfilter.xml:155
 msgid "Examples"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svndumpfilter.xml:157
+#: ref-svndumpfilter.xml:157
 msgid ""
 "If we have a dump file from a repository with a number of different picnic-"
 "related directories in it, but we want to keep everything <emphasis>except</"
@@ -236,7 +230,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svndumpfilter.xml:165
+#: ref-svndumpfilter.xml:165
 #, no-wrap
 msgid ""
 "$ svndumpfilter exclude sandwiches &lt; dumpfile &gt; filtered-dumpfile\n"
@@ -255,7 +249,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svndumpfilter.xml:181
+#: ref-svndumpfilter.xml:181
 msgid ""
 "Beginning in Subversion 1.7, <command>svndumpfilter</command> can optionally "
 "treat the <replaceable>PATH_PREFIX</replaceable>s not merely as explicit "
@@ -265,7 +259,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svndumpfilter.xml:191
+#: ref-svndumpfilter.xml:191
 #, no-wrap
 msgid ""
 "$ svndumpfilter exclude --pattern \"*.OLD\" &lt; dumpfile &gt; filtered-dumpfile\n"
@@ -286,27 +280,27 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><indexterm><tertiary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svndumpfilter.xml:220
+#: ref-svndumpfilter.xml:220
 msgid "include"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svndumpfilter.xml:224
+#: ref-svndumpfilter.xml:224
 msgid "svndumpfilter include"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refnamediv><refpurpose>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svndumpfilter.xml:225
+#: ref-svndumpfilter.xml:225
 msgid "Filter out nodes without given prefixes from dump stream."
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsynopsisdiv><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svndumpfilter.xml:230
+#: ref-svndumpfilter.xml:230
 msgid "<literal>svndumpfilter include PATH_PREFIX...</literal>"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svndumpfilter.xml:237
+#: ref-svndumpfilter.xml:237
 msgid ""
 "Can be used to include nodes that begin with one or more "
 "<replaceable>PATH_PREFIX</replaceable>es in a filtered dump file (thus "
@@ -314,12 +308,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svndumpfilter.xml:262
+#: ref-svndumpfilter.xml:262
 msgid "Example"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svndumpfilter.xml:264
+#: ref-svndumpfilter.xml:264
 msgid ""
 "If we have a dump file from a repository with a number of different picnic-"
 "related directories in it, but want to keep only the <filename>sandwiches</"
@@ -327,7 +321,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svndumpfilter.xml:271
+#: ref-svndumpfilter.xml:271
 #, no-wrap
 msgid ""
 "$ svndumpfilter include sandwiches &lt; dumpfile &gt; filtered-dumpfile\n"
@@ -357,7 +351,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svndumpfilter.xml:298
+#: ref-svndumpfilter.xml:298
 msgid ""
 "Beginning in Subversion 1.7, <command>svndumpfilter</command> can optionally "
 "treat the <replaceable>PATH_PREFIX</replaceable>s not merely as explicit "
@@ -367,7 +361,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svndumpfilter.xml:308
+#: ref-svndumpfilter.xml:308
 #, no-wrap
 msgid ""
 "$ svndumpfilter include --pattern \"*ks\" &lt; dumpfile &gt; filtered-dumpfile\n"
@@ -396,27 +390,27 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><indexterm><tertiary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svndumpfilter.xml:345
+#: ref-svndumpfilter.xml:345
 msgid "help"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svndumpfilter.xml:349
+#: ref-svndumpfilter.xml:349
 msgid "svndumpfilter help"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refnamediv><refpurpose>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svndumpfilter.xml:350
+#: ref-svndumpfilter.xml:350
 msgid "Help!"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsynopsisdiv><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svndumpfilter.xml:354
+#: ref-svndumpfilter.xml:354
 msgid "<literal>svndumpfilter help [SUBCOMMAND...]</literal>"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svndumpfilter.xml:361
+#: ref-svndumpfilter.xml:361
 msgid ""
 "Displays the help message for <command>svndumpfilter</command>.  Unlike "
 "other help commands documented in this chapter, there is no witty commentary "
@@ -424,6 +418,6 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svndumpfilter.xml:371
+#: ref-svndumpfilter.xml:371
 msgid "None"
 msgstr ""

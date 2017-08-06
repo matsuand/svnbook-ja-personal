@@ -270,6 +270,7 @@ top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 SUBDIRS = book
+EXTRA_DIST = README.md
 XML_SOURCE = book/book.xml
 HTML_TARGET = book/svn-book.html
 XSL_DIR = @srcdir@/stylesheets

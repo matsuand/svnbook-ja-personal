@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2017-08-03 18:00+0900\n"
-"PO-Revision-Date: 2017-08-03 18:00+0900\n"
+"POT-Creation-Date: 2017-08-06 14:19+0900\n"
+"PO-Revision-Date: 2017-08-06 14:19+0900\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: matsuand個人翻訳\n"
 "Language: ja\n"
@@ -17,12 +17,12 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. type: Content of: <reference><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:4
+#: ref-svnsync.xml:4
 msgid "svnsync Reference&mdash;Subversion Repository Mirroring"
 msgstr ""
 
 #. type: Content of: <reference><partintro><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:7
+#: ref-svnsync.xml:7
 msgid ""
 "<command>svnsync</command> is the Subversion remote repository mirroring "
 "tool.  Put simply, it allows you to replay the revisions of one repository "
@@ -30,7 +30,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><partintro><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:11
+#: ref-svnsync.xml:11
 msgid ""
 "In any mirroring scenario, there are two repositories: the source "
 "repository, and the mirror (or <quote>sink</quote>)  repository.  The source "
@@ -41,7 +41,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><partintro><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:19
+#: ref-svnsync.xml:19
 msgid ""
 "The <command>svnsync</command> process requires only read access to the "
 "source repository; it never attempts to modify it.  But obviously, "
@@ -50,7 +50,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><partintro><warning><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:25
+#: ref-svnsync.xml:25
 msgid ""
 "<command>svnsync</command> is very sensitive to changes made in the mirror "
 "repository that weren't made as part of a mirroring operation.  To prevent "
@@ -59,24 +59,24 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><partintro><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:32
+#: ref-svnsync.xml:32
 msgid ""
 "Options in <command>svnsync</command> are global, just as they are in "
 "<command>svn</command> and <command>svnadmin</command>:"
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:37
+#: ref-svnsync.xml:37
 msgid "svnsync Options"
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:40
+#: ref-svnsync.xml:40
 msgid "<option>--allow-non-empty</option>"
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:42
+#: ref-svnsync.xml:42
 msgid ""
 "Disables the verification (which <command>svnsync initialize</command> "
 "performs by default) that the repository being initialized is empty of "
@@ -84,12 +84,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:50
+#: ref-svnsync.xml:50
 msgid "<option>--config-dir</option> <replaceable>DIR</replaceable>"
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:52
+#: ref-svnsync.xml:52
 msgid ""
 "Instructs Subversion to read configuration information from the specified "
 "directory instead of the default location (<filename>.subversion</filename> "
@@ -97,12 +97,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:60
+#: ref-svnsync.xml:60
 msgid "<option>--config-option</option> <replaceable>CONFSPEC</replaceable>"
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:62
+#: ref-svnsync.xml:62
 msgid ""
 "Sets, for the duration of the command, the value of a runtime configuration "
 "option.  <replaceable>CONFSPEC</replaceable> is a string which specifies the "
@@ -122,12 +122,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:86
+#: ref-svnsync.xml:86
 msgid "<option>--disable-locking</option>"
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:88
+#: ref-svnsync.xml:88
 msgid ""
 "Causes <command>svnsync</command> to bypass its own exclusive access "
 "mechanisms and operate on the assumption that its exclusive access to the "
@@ -136,24 +136,24 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:97
+#: ref-svnsync.xml:97
 msgid "<option>--no-auth-cache</option>"
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:99
+#: ref-svnsync.xml:99
 msgid ""
 "Prevents caching of authentication information (e.g., username and password) "
 "in the Subversion runtime configuration directories."
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:106
+#: ref-svnsync.xml:106
 msgid "<option>--non-interactive</option>"
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:108
+#: ref-svnsync.xml:108
 msgid ""
 "In the case of an authentication failure or insufficient credentials, "
 "prevents prompting for credentials (e.g., username or password).  This is "
@@ -162,38 +162,38 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:118
+#: ref-svnsync.xml:118
 msgid "<option>--quiet</option> (<option>-q</option>)"
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:120
+#: ref-svnsync.xml:120
 msgid ""
 "Requests that the client print only essential information while performing "
 "an operation."
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:126
+#: ref-svnsync.xml:126
 msgid ""
 "<option>--revision</option> (<option>-r</option>) <replaceable>ARG</"
 "replaceable>"
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:128
+#: ref-svnsync.xml:128
 msgid ""
 "Used by <command>svnsync copy-revprops</command> to specify a particular "
 "revision or revision range on which to operate."
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:135
+#: ref-svnsync.xml:135
 msgid "<option>--source-password</option> <replaceable>PASSWD</replaceable>"
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:137
+#: ref-svnsync.xml:137
 msgid ""
 "Specifies the password for the Subversion server from which you are "
 "syncing.  If not provided, or if incorrect, Subversion will prompt you for "
@@ -201,12 +201,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:145
+#: ref-svnsync.xml:145
 msgid "<option>--source-prop-encoding <replaceable>ARG</replaceable></option>"
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:147
+#: ref-svnsync.xml:147
 msgid ""
 "Instructs <command>svnsync</command> to assume that translatable Subversion "
 "revision properties found in the source repository are stored using the "
@@ -215,12 +215,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:157
+#: ref-svnsync.xml:157
 msgid "<option>--source-username</option> <replaceable>NAME</replaceable>"
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:159
+#: ref-svnsync.xml:159
 msgid ""
 "Specifies the username for the Subversion server from which you are "
 "syncing.  If not provided, or if incorrect, Subversion will prompt you for "
@@ -228,12 +228,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:167
+#: ref-svnsync.xml:167
 msgid "<option>--steal-lock</option>"
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:169
+#: ref-svnsync.xml:169
 msgid ""
 "Causes <command>svnsync</command> to steal, as necessary, the lock which it "
 "uses on the mirror repository to ensure exclusive repository access.  (This "
@@ -243,12 +243,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:181
+#: ref-svnsync.xml:181
 msgid "<option>--sync-password</option> <replaceable>PASSWD</replaceable>"
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:183
+#: ref-svnsync.xml:183
 msgid ""
 "Specifies the password for the Subversion server to which you are syncing.  "
 "If not provided, or if incorrect, Subversion will prompt you for this "
@@ -256,12 +256,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:191
+#: ref-svnsync.xml:191
 msgid "<option>--sync-username</option> <replaceable>NAME</replaceable>"
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:193
+#: ref-svnsync.xml:193
 msgid ""
 "Specifies the username for the Subversion server to which you are syncing.  "
 "If not provided, or if incorrect, Subversion will prompt you for this "
@@ -269,82 +269,70 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:201
+#: ref-svnsync.xml:201
 msgid "<option>--trust-server-cert</option>"
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:203
+#: ref-svnsync.xml:203
 msgid ""
 "Used with <option>--non-interactive</option> to accept any unknown SSL "
 "server certificates without prompting."
 msgstr ""
 
 #. type: Content of: <reference><refentry><indexterm><primary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:218
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:326
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:367
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:436
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:560
+#: ref-svnsync.xml:218 ref-svnsync.xml:326 ref-svnsync.xml:367
+#: ref-svnsync.xml:436 ref-svnsync.xml:560
 msgid "svnsync"
 msgstr ""
 
 #. type: Content of: <reference><refentry><indexterm><secondary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:219
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:327
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:368
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:437
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:561
+#: ref-svnsync.xml:219 ref-svnsync.xml:327 ref-svnsync.xml:368
+#: ref-svnsync.xml:437 ref-svnsync.xml:561
 msgid "subcommands"
 msgstr ""
 
 #. type: Content of: <reference><refentry><indexterm><tertiary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:220
+#: ref-svnsync.xml:220
 msgid "copy-revprops"
 msgstr ""
 
 #. type: Content of: <reference><refentry><indexterm>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:220
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:328
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:369
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:438
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:562
+#: ref-svnsync.xml:220 ref-svnsync.xml:328 ref-svnsync.xml:369
+#: ref-svnsync.xml:438 ref-svnsync.xml:562
 msgid "<placeholder type=\"tertiary\" id=\"0\"/>"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:224
+#: ref-svnsync.xml:224
 msgid "svnsync copy-revprops"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refnamediv><refpurpose>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:225
+#: ref-svnsync.xml:225
 msgid ""
 "Copy all revision properties for a particular revision (or range of "
 "revisions) from the source repository to the mirror repository."
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsynopsisdiv><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:231
+#: ref-svnsync.xml:231
 msgid "<literal>svnsync copy-revprops DEST_URL [SOURCE_URL]</literal>"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsynopsisdiv><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:233
+#: ref-svnsync.xml:233
 msgid "<literal>svnsync copy-revprops DEST_URL REV[:REV2]</literal>"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:239
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:342
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:384
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:454
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:578
+#: ref-svnsync.xml:239 ref-svnsync.xml:342 ref-svnsync.xml:384
+#: ref-svnsync.xml:454 ref-svnsync.xml:578
 msgid "Description"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:241
+#: ref-svnsync.xml:241
 msgid ""
 "Because Subversion revision properties can be changed at any time, it's "
 "possible that the properties for some revision might be changed after that "
@@ -359,8 +347,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:255
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:590
+#: ref-svnsync.xml:255 ref-svnsync.xml:590
 msgid ""
 "When <replaceable>SOURCE_URL</replaceable> is provided, <command>svnsync</"
 "command> will use it as the repository URL which the destination repository "
@@ -373,8 +360,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><warning><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:268
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:603
+#: ref-svnsync.xml:268 ref-svnsync.xml:603
 msgid ""
 "We strongly recommend that you specify the source URL on the command-line, "
 "especially when untrusted users have write access to the revision 0 "
@@ -382,16 +368,13 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:279
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:355
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:393
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:499
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:614
+#: ref-svnsync.xml:279 ref-svnsync.xml:355 ref-svnsync.xml:393
+#: ref-svnsync.xml:499 ref-svnsync.xml:614
 msgid "Options"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:283
+#: ref-svnsync.xml:283
 #, no-wrap
 msgid ""
 "<xref linkend=\"svn.ref.svnsync.sw.config_dir\" />\n"
@@ -411,21 +394,19 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:303
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:412
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:523
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:637
+#: ref-svnsync.xml:303 ref-svnsync.xml:412 ref-svnsync.xml:523
+#: ref-svnsync.xml:637
 msgid "Examples"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:305
+#: ref-svnsync.xml:305
 msgid ""
 "Resynchronize the revision properties associated with a single revision (r6):"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:310
+#: ref-svnsync.xml:310
 #, no-wrap
 msgid ""
 "$ svnsync copy-revprops -r 6 file:///var/svn/repos-mirror \\\n"
@@ -435,27 +416,27 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><indexterm><tertiary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:328
+#: ref-svnsync.xml:328
 msgid "help"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:332
+#: ref-svnsync.xml:332
 msgid "svnsync help"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refnamediv><refpurpose>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:333
+#: ref-svnsync.xml:333
 msgid "Help!"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsynopsisdiv><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:337
+#: ref-svnsync.xml:337
 msgid "<literal>svnsync help</literal>"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:344
+#: ref-svnsync.xml:344
 msgid ""
 "This subcommand is useful when you're trapped in a foreign prison with "
 "neither a Net connection nor a copy of this book, but you do have a local Wi-"
@@ -464,33 +445,33 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:356
+#: ref-svnsync.xml:356
 msgid "None"
 msgstr ""
 
 #. type: Content of: <reference><refentry><indexterm><tertiary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:369
+#: ref-svnsync.xml:369
 msgid "info"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:373
+#: ref-svnsync.xml:373
 msgid "svnsync info"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refnamediv><refpurpose>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:374
+#: ref-svnsync.xml:374
 msgid ""
 "Print information about the synchronization of a destination repository."
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsynopsisdiv><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:379
+#: ref-svnsync.xml:379
 msgid "<literal>svnsync info DEST_URL</literal>"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:386
+#: ref-svnsync.xml:386
 msgid ""
 "Print the synchronization source URL, source repository UUID and the last "
 "revision merged from the source to the destination repository at "
@@ -498,7 +479,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:397
+#: ref-svnsync.xml:397
 #, no-wrap
 msgid ""
 "<xref linkend=\"svn.ref.svnsync.sw.config_dir\" />\n"
@@ -513,12 +494,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:414
+#: ref-svnsync.xml:414
 msgid "Print the synchronization information of a mirror repository:"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:419
+#: ref-svnsync.xml:419
 #, no-wrap
 msgid ""
 "$ svnsync info file:///var/svn/repos-mirror\n"
@@ -529,29 +510,29 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><indexterm><tertiary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:438
+#: ref-svnsync.xml:438
 msgid "initialize"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:442
+#: ref-svnsync.xml:442
 msgid "svnsync initialize (init)"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refnamediv><refpurpose>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:443
+#: ref-svnsync.xml:443
 msgid ""
 "Initialize a mirror repository for synchronization from the source "
 "repository."
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsynopsisdiv><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:448
+#: ref-svnsync.xml:448
 msgid "<literal>svnsync initialize MIRROR_URL SOURCE_URL</literal>"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:456
+#: ref-svnsync.xml:456
 msgid ""
 "<command>svnsync initialize</command> verifies that a repository meets the "
 "basic requirements of a new mirror repository and records the initial "
@@ -562,7 +543,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:465
+#: ref-svnsync.xml:465
 msgid ""
 "Ordinarily, <replaceable>SOURCE_URL</replaceable> is the URL of the root "
 "directory of the Subversion repository you wish to mirror.  Subversion 1.5 "
@@ -572,7 +553,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:473
+#: ref-svnsync.xml:473
 msgid ""
 "By default, the aforementioned basic requirements of a mirror are that it "
 "allows revision property modifications and that it contains no version "
@@ -592,7 +573,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:503
+#: ref-svnsync.xml:503
 #, no-wrap
 msgid ""
 "<xref linkend=\"svn.ref.svnsync.sw.allow_non_empty\" />\n"
@@ -612,14 +593,14 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:525
+#: ref-svnsync.xml:525
 msgid ""
 "Fail to initialize a mirror repository due to inability to modify revision "
 "properties:"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:530
+#: ref-svnsync.xml:530
 #, no-wrap
 msgid ""
 "$ svnsync initialize file:///var/svn/repos-mirror \\\n"
@@ -630,14 +611,14 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:538
+#: ref-svnsync.xml:538
 msgid ""
 "Initialize a repository as a mirror, having already created a <literal>pre-"
 "revprop-change</literal> hook that permits all revision property changes:"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:544
+#: ref-svnsync.xml:544
 #, no-wrap
 msgid ""
 "$ svnsync initialize file:///var/svn/repos-mirror \\\n"
@@ -647,29 +628,29 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><indexterm><tertiary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:562
+#: ref-svnsync.xml:562
 msgid "synchronize"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:566
+#: ref-svnsync.xml:566
 msgid "svnsync synchronize (sync)"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refnamediv><refpurpose>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:567
+#: ref-svnsync.xml:567
 msgid ""
 "Transfer all pending revisions from the source repository to the mirror "
 "repository."
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsynopsisdiv><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:572
+#: ref-svnsync.xml:572
 msgid "<literal>svnsync synchronize DEST_URL [SOURCE_URL]</literal>"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:580
+#: ref-svnsync.xml:580
 msgid ""
 "The <command>svnsync synchronize</command> command does all the heavy "
 "lifting of a repository mirroring operation.  After consulting with the "
@@ -679,14 +660,14 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:587
+#: ref-svnsync.xml:587
 msgid ""
 "<command>svnsync synchronize</command> can be gracefully canceled and "
 "restarted."
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:618
+#: ref-svnsync.xml:618
 #, no-wrap
 msgid ""
 "<xref linkend=\"svn.ref.svnsync.sw.config_dir\" />\n"
@@ -705,14 +686,14 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:639
+#: ref-svnsync.xml:639
 msgid ""
 "Copy unsynchronized revisions from the source repository to the mirror "
 "repository:"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnsync.xml:644
+#: ref-svnsync.xml:644
 #, no-wrap
 msgid ""
 "$ svnsync synchronize file:///var/svn/repos-mirror \\\n"

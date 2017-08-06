@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2017-08-03 18:00+0900\n"
-"PO-Revision-Date: 2017-08-03 18:00+0900\n"
+"POT-Creation-Date: 2017-08-06 14:19+0900\n"
+"PO-Revision-Date: 2017-08-06 14:19+0900\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: matsuand個人翻訳\n"
 "Language: ja\n"
@@ -17,12 +17,12 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. type: Content of: <reference><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:4
+#: ref-svnlook.xml:4
 msgid "svnlook Reference&mdash;Subversion Repository Examination"
 msgstr ""
 
 #. type: Content of: <reference><partintro><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:7
+#: ref-svnlook.xml:7
 msgid ""
 "<command>svnlook</command> is a command-line utility for examining different "
 "aspects of a Subversion repository.  It does not make any changes to the "
@@ -32,7 +32,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><partintro><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:15
+#: ref-svnlook.xml:15
 msgid ""
 "Since <command>svnlook</command> works via direct repository access (and "
 "thus can be used only on the machine that holds the repository), it refers "
@@ -40,14 +40,14 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><partintro><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:19
+#: ref-svnlook.xml:19
 msgid ""
 "If no revision or transaction is specified, <command>svnlook</command> "
 "defaults to the youngest (most recent) revision of the repository."
 msgstr ""
 
 #. type: Content of: <reference><partintro><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:23
+#: ref-svnlook.xml:23
 msgid ""
 "Options in <command>svnlook</command> are global, just as they are in "
 "<command>svn</command> and <command>svnadmin</command>; however, most "
@@ -56,29 +56,29 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:31
+#: ref-svnlook.xml:31
 msgid "svnlook Options"
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:34
+#: ref-svnlook.xml:34
 msgid "<option>--copy-info</option>"
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:36
+#: ref-svnlook.xml:36
 msgid ""
 "Causes <command>svnlook changed</command> to show detailed copy source "
 "information."
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:42
+#: ref-svnlook.xml:42
 msgid "<option>--diff-cmd</option> <replaceable>CMD</replaceable>"
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:44
+#: ref-svnlook.xml:44
 msgid ""
 "Specifies an external program to use to show differences between files.  "
 "When <command>svnlook diff</command> is invoked without this option, it uses "
@@ -89,86 +89,86 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:56
+#: ref-svnlook.xml:56
 msgid "<option>--diff-copy-from</option>"
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:58
+#: ref-svnlook.xml:58
 msgid "Print differences for copied items against the copy source."
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:64
+#: ref-svnlook.xml:64
 msgid ""
 "<option>--extensions</option> (<option>-x</option>) <replaceable>ARG</"
 "replaceable>"
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:66
+#: ref-svnlook.xml:66
 msgid ""
 "Specifies customizations which Subversion should make when performing "
 "difference calculations.  Valid extensions include:"
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:71
+#: ref-svnlook.xml:71
 msgid "<option>--ignore-space-change</option> (<option>-b</option>)"
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:73
+#: ref-svnlook.xml:73
 msgid "Ignore changes in the amount of white space."
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:77
+#: ref-svnlook.xml:77
 msgid "<option>--ignore-all-space</option> (<option>-w</option>)"
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:79
+#: ref-svnlook.xml:79
 msgid "Ignore all white space."
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:83
+#: ref-svnlook.xml:83
 msgid "<option>--ignore-eol-style</option>"
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:85
+#: ref-svnlook.xml:85
 msgid "Ignore changes in EOL (end-of-line) style."
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:89
+#: ref-svnlook.xml:89
 msgid "<option>--show-c-function</option> (<option>-p</option>)"
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:91
+#: ref-svnlook.xml:91
 msgid "Show C function names in the diff output."
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:95
+#: ref-svnlook.xml:95
 msgid "<option>--unified</option> (<option>-u</option>)"
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:97
+#: ref-svnlook.xml:97
 msgid "Show three lines of unified diff context."
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:101
+#: ref-svnlook.xml:101
 msgid "The default value is <literal>-u</literal>."
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:102
+#: ref-svnlook.xml:102
 msgid ""
 "Note that when Subversion is configured to invoke an external diff command, "
 "the value of the <option>--extension</option> (<option>-x</option>)  option "
@@ -179,48 +179,48 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:114
+#: ref-svnlook.xml:114
 msgid "<option>--full-paths</option>"
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:116
+#: ref-svnlook.xml:116
 msgid ""
 "Causes <command>svnlook tree</command> to display full paths instead of "
 "hierarchical, indented path components."
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:123
+#: ref-svnlook.xml:123
 msgid "<option>--ignore-properties</option>"
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:125
+#: ref-svnlook.xml:125
 msgid ""
 "Instructs <command>svnlook diff</command> to suppress output of property "
 "changes."
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:131
+#: ref-svnlook.xml:131
 msgid ""
 "<option>--limit</option> (<option>-l</option>) <replaceable>ARG</replaceable>"
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:133
+#: ref-svnlook.xml:133
 msgid ""
 "Limit output to a maximum number of <replaceable>ARG</replaceable> items."
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:139
+#: ref-svnlook.xml:139
 msgid "<option>--no-diff-deleted</option>"
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:141
+#: ref-svnlook.xml:141
 msgid ""
 "Prevents <command>svnlook diff</command> from printing differences for "
 "deleted files.  The default behavior when a file is deleted in a transaction/"
@@ -229,12 +229,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:150
+#: ref-svnlook.xml:150
 msgid "<option>--no-diff-added</option>"
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:152
+#: ref-svnlook.xml:152
 msgid ""
 "Prevents <command>svnlook diff</command> from printing differences for added "
 "files.  The default behavior when you add a file is to print the same "
@@ -243,45 +243,45 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:161
+#: ref-svnlook.xml:161
 msgid "<option>--non-recursive</option> (<option>-N</option>)"
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:163
+#: ref-svnlook.xml:163
 msgid "Operate on a single directory only."
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:168
+#: ref-svnlook.xml:168
 msgid "<option>--properties-only</option>"
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:170
+#: ref-svnlook.xml:170
 msgid ""
 "Instructs <command>svnlook diff</command> to show only property changes."
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:176
+#: ref-svnlook.xml:176
 msgid ""
 "<option>--revision</option> (<option>-r</option>) <replaceable>REV</"
 "replaceable>"
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:178
+#: ref-svnlook.xml:178
 msgid "Specifies a particular revision number that you wish to examine."
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:184
+#: ref-svnlook.xml:184
 msgid "<option>--revprop</option>"
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:186
+#: ref-svnlook.xml:186
 msgid ""
 "Operates on a revision property instead of a property specific to a file or "
 "directory.  This option requires that you also pass a revision with the "
@@ -289,47 +289,47 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:195
+#: ref-svnlook.xml:195
 msgid "<option>--show-inherited-props</option>"
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:197
+#: ref-svnlook.xml:197
 msgid ""
 "Works with <command>svnlook propget</command> and <command>svnlook proplist</"
 "command> to display the versioned properties inherited by a path."
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:204
+#: ref-svnlook.xml:204
 msgid ""
 "<option>--transaction</option> (<option>-t</option>) <replaceable>ID</"
 "replaceable>"
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:206
+#: ref-svnlook.xml:206
 msgid "Specifies a particular transaction ID that you wish to examine."
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:212
+#: ref-svnlook.xml:212
 msgid "<option>--show-ids</option>"
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:214
+#: ref-svnlook.xml:214
 msgid ""
 "Shows the filesystem node revision IDs for each path in the filesystem tree."
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:220
+#: ref-svnlook.xml:220
 msgid "<option>--verbose</option> (<option>-v</option>)"
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:222
+#: ref-svnlook.xml:222
 msgid ""
 "Be verbose.  When used with <command>svnlook proplist</command>, for "
 "example, this causes Subversion to display not just the list of properties, "
@@ -337,153 +337,94 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:230
+#: ref-svnlook.xml:230
 msgid "<option>--xml</option>"
 msgstr ""
 
 #. type: Content of: <reference><partintro><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:232
+#: ref-svnlook.xml:232
 msgid "Prints output in XML format."
 msgstr ""
 
 #. type: Content of: <reference><refentry><indexterm><primary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:246
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:303
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:372
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:511
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:568
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:719
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:777
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:846
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:885
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:960
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1022
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1083
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1140
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1218
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1316
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1432
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1485
+#: ref-svnlook.xml:246 ref-svnlook.xml:303 ref-svnlook.xml:372
+#: ref-svnlook.xml:511 ref-svnlook.xml:568 ref-svnlook.xml:719
+#: ref-svnlook.xml:777 ref-svnlook.xml:846 ref-svnlook.xml:885
+#: ref-svnlook.xml:960 ref-svnlook.xml:1022 ref-svnlook.xml:1083
+#: ref-svnlook.xml:1140 ref-svnlook.xml:1218 ref-svnlook.xml:1316
+#: ref-svnlook.xml:1432 ref-svnlook.xml:1485
 msgid "svnlook"
 msgstr ""
 
 #. type: Content of: <reference><refentry><indexterm><secondary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:247
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:304
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:373
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:512
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:569
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:720
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:778
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:847
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:886
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:961
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1023
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1084
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1141
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1219
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1317
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1433
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1486
+#: ref-svnlook.xml:247 ref-svnlook.xml:304 ref-svnlook.xml:373
+#: ref-svnlook.xml:512 ref-svnlook.xml:569 ref-svnlook.xml:720
+#: ref-svnlook.xml:778 ref-svnlook.xml:847 ref-svnlook.xml:886
+#: ref-svnlook.xml:961 ref-svnlook.xml:1023 ref-svnlook.xml:1084
+#: ref-svnlook.xml:1141 ref-svnlook.xml:1219 ref-svnlook.xml:1317
+#: ref-svnlook.xml:1433 ref-svnlook.xml:1486
 msgid "subcommands"
 msgstr ""
 
 #. type: Content of: <reference><refentry><indexterm><tertiary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:248
+#: ref-svnlook.xml:248
 msgid "author"
 msgstr ""
 
 #. type: Content of: <reference><refentry><indexterm>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:248
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:305
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:374
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:513
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:570
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:721
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:779
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:848
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:887
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:962
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1024
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1085
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1142
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1220
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1318
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1434
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1487
+#: ref-svnlook.xml:248 ref-svnlook.xml:305 ref-svnlook.xml:374
+#: ref-svnlook.xml:513 ref-svnlook.xml:570 ref-svnlook.xml:721
+#: ref-svnlook.xml:779 ref-svnlook.xml:848 ref-svnlook.xml:887
+#: ref-svnlook.xml:962 ref-svnlook.xml:1024 ref-svnlook.xml:1085
+#: ref-svnlook.xml:1142 ref-svnlook.xml:1220 ref-svnlook.xml:1318
+#: ref-svnlook.xml:1434 ref-svnlook.xml:1487
 msgid "<placeholder type=\"tertiary\" id=\"0\"/>"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:252
+#: ref-svnlook.xml:252
 msgid "svnlook author"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refnamediv><refpurpose>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:253
+#: ref-svnlook.xml:253
 msgid "Print the author."
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsynopsisdiv><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:257
+#: ref-svnlook.xml:257
 msgid "<literal>svnlook author REPOS_PATH</literal>"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:262
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:319
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:388
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:527
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:584
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:735
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:795
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:862
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:903
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:977
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1039
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1100
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1157
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1235
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1332
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1449
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1501
+#: ref-svnlook.xml:262 ref-svnlook.xml:319 ref-svnlook.xml:388
+#: ref-svnlook.xml:527 ref-svnlook.xml:584 ref-svnlook.xml:735
+#: ref-svnlook.xml:795 ref-svnlook.xml:862 ref-svnlook.xml:903
+#: ref-svnlook.xml:977 ref-svnlook.xml:1039 ref-svnlook.xml:1100
+#: ref-svnlook.xml:1157 ref-svnlook.xml:1235 ref-svnlook.xml:1332
+#: ref-svnlook.xml:1449 ref-svnlook.xml:1501
 msgid "Description"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:264
+#: ref-svnlook.xml:264
 msgid "Print the author of a revision or transaction in the repository."
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:270
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:327
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:443
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:535
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:592
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:744
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:810
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:873
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:912
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:985
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1049
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1107
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1166
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1245
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1341
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1461
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1508
+#: ref-svnlook.xml:270 ref-svnlook.xml:327 ref-svnlook.xml:443
+#: ref-svnlook.xml:535 ref-svnlook.xml:592 ref-svnlook.xml:744
+#: ref-svnlook.xml:810 ref-svnlook.xml:873 ref-svnlook.xml:912
+#: ref-svnlook.xml:985 ref-svnlook.xml:1049 ref-svnlook.xml:1107
+#: ref-svnlook.xml:1166 ref-svnlook.xml:1245 ref-svnlook.xml:1341
+#: ref-svnlook.xml:1461 ref-svnlook.xml:1508
 msgid "Options"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:274
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:331
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:539
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:748
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:814
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:989
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1111
+#: ref-svnlook.xml:274 ref-svnlook.xml:331 ref-svnlook.xml:539
+#: ref-svnlook.xml:748 ref-svnlook.xml:814 ref-svnlook.xml:989
+#: ref-svnlook.xml:1111
 #, no-wrap
 msgid ""
 "<xref linkend=\"svn.ref.svnlook.sw.revision\" />\n"
@@ -491,31 +432,21 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:282
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:339
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:456
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:547
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:611
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:756
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:822
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:925
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:997
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1056
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1119
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1180
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1261
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1467
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1514
+#: ref-svnlook.xml:282 ref-svnlook.xml:339 ref-svnlook.xml:456
+#: ref-svnlook.xml:547 ref-svnlook.xml:611 ref-svnlook.xml:756
+#: ref-svnlook.xml:822 ref-svnlook.xml:925 ref-svnlook.xml:997
+#: ref-svnlook.xml:1056 ref-svnlook.xml:1119 ref-svnlook.xml:1180
+#: ref-svnlook.xml:1261 ref-svnlook.xml:1467 ref-svnlook.xml:1514
 msgid "Examples"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:284
+#: ref-svnlook.xml:284
 msgid "<command>svnlook author</command> is handy, but not very exciting:"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:289
+#: ref-svnlook.xml:289
 #, no-wrap
 msgid ""
 "$ svnlook author -r 40 /var/svn/repos \n"
@@ -523,35 +454,34 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><indexterm><tertiary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:305
+#: ref-svnlook.xml:305
 msgid "cat"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:309
+#: ref-svnlook.xml:309
 msgid "svnlook cat"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:310
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:321
+#: ref-svnlook.xml:310 ref-svnlook.xml:321
 msgid "Print the contents of a file."
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsynopsisdiv><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:314
+#: ref-svnlook.xml:314
 msgid "<literal>svnlook cat REPOS_PATH PATH_IN_REPOS</literal>"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:341
+#: ref-svnlook.xml:341
 msgid ""
 "This shows the contents of a file in transaction <literal>ax8</literal>, "
 "located at <filename>/trunk/README</filename>:"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:347
+#: ref-svnlook.xml:347
 #, no-wrap
 msgid ""
 "$ svnlook cat -t ax8 /var/svn/repos /trunk/README\n"
@@ -570,27 +500,27 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><indexterm><tertiary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:374
+#: ref-svnlook.xml:374
 msgid "changed"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:378
+#: ref-svnlook.xml:378
 msgid "svnlook changed"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refnamediv><refpurpose>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:379
+#: ref-svnlook.xml:379
 msgid "Print the paths that were changed."
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsynopsisdiv><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:383
+#: ref-svnlook.xml:383
 msgid "<literal>svnlook changed REPOS_PATH</literal>"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:390
+#: ref-svnlook.xml:390
 msgid ""
 "Print the paths that were changed in a particular revision or transaction, "
 "as well as <quote>svn update-style</quote> status letters in the first two "
@@ -598,64 +528,64 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:398
+#: ref-svnlook.xml:398
 msgid "<literal>'A '</literal>"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:400
+#: ref-svnlook.xml:400
 msgid "Item added to repository"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:405
+#: ref-svnlook.xml:405
 msgid "<literal>'D '</literal>"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:407
+#: ref-svnlook.xml:407
 msgid "Item deleted from repository"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:412
+#: ref-svnlook.xml:412
 msgid "<literal>'U '</literal>"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:414
+#: ref-svnlook.xml:414
 msgid "File contents changed"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:419
+#: ref-svnlook.xml:419
 msgid "<literal>'_U'</literal>"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:421
+#: ref-svnlook.xml:421
 msgid "Properties of item changed; note the leading underscore"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:426
+#: ref-svnlook.xml:426
 msgid "<literal>'UU'</literal>"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:428
+#: ref-svnlook.xml:428
 msgid "File contents and properties changed"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:434
+#: ref-svnlook.xml:434
 msgid ""
 "Files and directories can be distinguished, as directory paths are displayed "
 "with a trailing <quote><literal>/</literal></quote> character."
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:447
+#: ref-svnlook.xml:447
 #, no-wrap
 msgid ""
 "<xref linkend=\"svn.ref.svnlook.sw.copy_info\" />\n"
@@ -664,7 +594,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:458
+#: ref-svnlook.xml:458
 msgid ""
 "This shows a list of all the changed files and directories in revision 39 of "
 "a test repository.  Note that the first changed item is a directory, as "
@@ -672,7 +602,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:465
+#: ref-svnlook.xml:465
 #, no-wrap
 msgid ""
 "$ svnlook changed -r 39 /var/svn/repos\n"
@@ -687,12 +617,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:477
+#: ref-svnlook.xml:477
 msgid "Here's an example that shows a revision in which a file was renamed:"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:482
+#: ref-svnlook.xml:482
 #, no-wrap
 msgid ""
 "$ svnlook changed -r 64 /var/svn/repos\n"
@@ -701,7 +631,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:488
+#: ref-svnlook.xml:488
 msgid ""
 "Unfortunately, nothing in the preceding output reveals the connection "
 "between the deleted and added files.  Use the <option>--copy-info</option> "
@@ -709,7 +639,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:495
+#: ref-svnlook.xml:495
 #, no-wrap
 msgid ""
 "$ svnlook changed -r 64 --copy-info /var/svn/repos\n"
@@ -719,37 +649,37 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><indexterm><tertiary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:513
+#: ref-svnlook.xml:513
 msgid "date"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:517
+#: ref-svnlook.xml:517
 msgid "svnlook date"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refnamediv><refpurpose>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:518
+#: ref-svnlook.xml:518
 msgid "Print the datestamp."
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsynopsisdiv><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:522
+#: ref-svnlook.xml:522
 msgid "<literal>svnlook date REPOS_PATH</literal>"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:529
+#: ref-svnlook.xml:529
 msgid "Print the datestamp of a revision or transaction in a repository."
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:549
+#: ref-svnlook.xml:549
 msgid "This shows the date of revision 40 of a test repository:"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:554
+#: ref-svnlook.xml:554
 #, no-wrap
 msgid ""
 "$ svnlook date -r 40 /var/svn/repos/\n"
@@ -757,33 +687,33 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><indexterm><tertiary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:570
+#: ref-svnlook.xml:570
 msgid "diff"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:574
+#: ref-svnlook.xml:574
 msgid "svnlook diff"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refnamediv><refpurpose>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:575
+#: ref-svnlook.xml:575
 msgid "Print differences of changed files and properties."
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsynopsisdiv><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:579
+#: ref-svnlook.xml:579
 msgid "<literal>svnlook diff REPOS_PATH</literal>"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:586
+#: ref-svnlook.xml:586
 msgid ""
 "Print GNU-style differences of changed files and properties in a repository."
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:596
+#: ref-svnlook.xml:596
 #, no-wrap
 msgid ""
 "<xref linkend=\"svn.ref.svnlook.sw.diff_cmd\" />\n"
@@ -798,14 +728,14 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:613
+#: ref-svnlook.xml:613
 msgid ""
 "This shows a newly added (empty) file, a modified binary file, and a renamed "
 "(that is, copied and deleted)  file with modifications:"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:619
+#: ref-svnlook.xml:619
 #, no-wrap
 msgid ""
 "$ svnlook diff -r 40 /var/svn/repos\n"
@@ -833,7 +763,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:644
+#: ref-svnlook.xml:644
 msgid ""
 "By default, <command>svnlook diff</command> will treat copied files very "
 "much like any other added file, displaying in their entirety the contents of "
@@ -845,7 +775,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:657
+#: ref-svnlook.xml:657
 #, no-wrap
 msgid ""
 "$ svnlook diff -r 40 /var/svn/repos --diff-copy-from\n"
@@ -874,14 +804,14 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:683
+#: ref-svnlook.xml:683
 msgid ""
 "Use the <option>--no-diff-deleted</option> option to silence output "
 "regarding deleted files."
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:688
+#: ref-svnlook.xml:688
 #, no-wrap
 msgid ""
 "$ svnlook diff -r 40 /var/svn/repos --no-diff-deleted\n"
@@ -902,7 +832,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:706
+#: ref-svnlook.xml:706
 msgid ""
 "Note that in each of the previous examples, when a file has a nontextual "
 "<literal>svn:mime-type</literal> property, the differences are not "
@@ -910,41 +840,41 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><indexterm><tertiary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:721
+#: ref-svnlook.xml:721
 msgid "dirs-changed"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:725
+#: ref-svnlook.xml:725
 msgid "svnlook dirs-changed"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refnamediv><refpurpose>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:726
+#: ref-svnlook.xml:726
 msgid "Print the directories that were themselves changed."
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsynopsisdiv><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:730
+#: ref-svnlook.xml:730
 msgid "<literal>svnlook dirs-changed REPOS_PATH</literal>"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:737
+#: ref-svnlook.xml:737
 msgid ""
 "Print the directories that were themselves changed (property edits) or whose "
 "file children were changed."
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:758
+#: ref-svnlook.xml:758
 msgid ""
 "This shows the directories that changed in revision 40 in our sample "
 "repository:"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:763
+#: ref-svnlook.xml:763
 #, no-wrap
 msgid ""
 "$ svnlook dirs-changed -r 40 /var/svn/repos\n"
@@ -952,27 +882,27 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><indexterm><tertiary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:779
+#: ref-svnlook.xml:779
 msgid "filesize"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:783
+#: ref-svnlook.xml:783
 msgid "svnlook filesize"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refnamediv><refpurpose>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:784
+#: ref-svnlook.xml:784
 msgid "Print the size (in bytes) of a versioned file."
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsynopsisdiv><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:789
+#: ref-svnlook.xml:789
 msgid "<literal>svnlook filesize REPOS_PATH PATH_IN_REPOS</literal>"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:797
+#: ref-svnlook.xml:797
 msgid ""
 "Print the file size (in bytes) of the file located at "
 "<replaceable>PATH_IN_REPOS</replaceable> in the HEAD revision of the "
@@ -984,7 +914,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:824
+#: ref-svnlook.xml:824
 msgid ""
 "The following demonstrates how to display the size of the <filename>trunk/"
 "vendors/deli/soda.txt</filename> file as it appeared in revision 40 of our "
@@ -992,7 +922,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:831
+#: ref-svnlook.xml:831
 #, no-wrap
 msgid ""
 "$ svnlook filesize -r 40 /var/svn/repos trunk/vendors/deli/soda.txt\n"
@@ -1001,27 +931,27 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><indexterm><tertiary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:848
+#: ref-svnlook.xml:848
 msgid "help"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:852
+#: ref-svnlook.xml:852
 msgid "svnlook help (h, ?)"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refnamediv><refpurpose>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:853
+#: ref-svnlook.xml:853
 msgid "Help!"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsynopsisdiv><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:857
+#: ref-svnlook.xml:857
 msgid "<literal>Also svnlook -h and svnlook -?.</literal>"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:864
+#: ref-svnlook.xml:864
 msgid ""
 "Displays the help message for <command>svnlook</command>.  This command, "
 "like its brother, <command>svn help</command>, is also your friend, even "
@@ -1029,38 +959,35 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:874
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1051
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1462
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1509
+#: ref-svnlook.xml:874 ref-svnlook.xml:1051 ref-svnlook.xml:1462
+#: ref-svnlook.xml:1509
 msgid "None"
 msgstr ""
 
 #. type: Content of: <reference><refentry><indexterm><tertiary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:887
+#: ref-svnlook.xml:887
 msgid "history"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:891
+#: ref-svnlook.xml:891
 msgid "svnlook history"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:892
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:905
+#: ref-svnlook.xml:892 ref-svnlook.xml:905
 msgid ""
 "Print information about the history of a path in the repository (or the root "
 "directory if no path is supplied)."
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsynopsisdiv><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:898
+#: ref-svnlook.xml:898
 msgid "<literal>svnlook history REPOS_PATH [PATH_IN_REPOS]</literal>"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:916
+#: ref-svnlook.xml:916
 #, no-wrap
 msgid ""
 "<xref linkend=\"svn.ref.svnlook.sw.limit\" />\n"
@@ -1069,14 +996,14 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:927
+#: ref-svnlook.xml:927
 msgid ""
 "This shows the history output for the path <filename>/branches/bookstore</"
 "filename> as of revision 13 in our sample repository:"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:933
+#: ref-svnlook.xml:933
 #, no-wrap
 msgid ""
 "$ svnlook history -r 13 /var/svn/repos /branches/bookstore --show-ids\n"
@@ -1097,39 +1024,39 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><indexterm><tertiary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:962
+#: ref-svnlook.xml:962
 msgid "info"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:966
+#: ref-svnlook.xml:966
 msgid "svnlook info"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refnamediv><refpurpose>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:967
+#: ref-svnlook.xml:967
 msgid "Print the author, datestamp, log message size, and log message."
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsynopsisdiv><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:972
+#: ref-svnlook.xml:972
 msgid "<literal>svnlook info REPOS_PATH</literal>"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:979
+#: ref-svnlook.xml:979
 msgid ""
 "Print the author, datestamp, log message size (in bytes), and log message, "
 "followed by a newline character."
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:999
+#: ref-svnlook.xml:999
 msgid "This shows the info output for revision 40 in our sample repository:"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1004
+#: ref-svnlook.xml:1004
 #, no-wrap
 msgid ""
 "$ svnlook info -r 40 /var/svn/repos\n"
@@ -1140,27 +1067,27 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><indexterm><tertiary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1024
+#: ref-svnlook.xml:1024
 msgid "lock"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1028
+#: ref-svnlook.xml:1028
 msgid "svnlook lock"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refnamediv><refpurpose>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1029
+#: ref-svnlook.xml:1029
 msgid "If a lock exists on a path in the repository, describe it."
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsynopsisdiv><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1034
+#: ref-svnlook.xml:1034
 msgid "<literal>svnlook lock REPOS_PATH PATH_IN_REPOS</literal>"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1041
+#: ref-svnlook.xml:1041
 msgid ""
 "Print all information available for the lock at <replaceable>PATH_IN_REPOS</"
 "replaceable>.  If <replaceable>PATH_IN_REPOS</replaceable> is not locked, "
@@ -1168,12 +1095,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1058
+#: ref-svnlook.xml:1058
 msgid "This describes the lock on the file <filename>tree.jpg</filename>:"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1063
+#: ref-svnlook.xml:1063
 #, no-wrap
 msgid ""
 "$ svnlook lock /var/svn/repos tree.jpg\n"
@@ -1186,37 +1113,37 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><indexterm><tertiary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1085
+#: ref-svnlook.xml:1085
 msgid "log"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1089
+#: ref-svnlook.xml:1089
 msgid "svnlook log"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refnamediv><refpurpose>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1090
+#: ref-svnlook.xml:1090
 msgid "Print the log message, followed by a newline character."
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsynopsisdiv><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1095
+#: ref-svnlook.xml:1095
 msgid "<literal>svnlook log REPOS_PATH</literal>"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1102
+#: ref-svnlook.xml:1102
 msgid "Print the log message."
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1121
+#: ref-svnlook.xml:1121
 msgid "This shows the log output for revision 40 in our sample repository:"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1126
+#: ref-svnlook.xml:1126
 #, no-wrap
 msgid ""
 "$ svnlook log /var/svn/repos/\n"
@@ -1224,32 +1151,32 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><indexterm><tertiary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1142
+#: ref-svnlook.xml:1142
 msgid "propget"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1146
+#: ref-svnlook.xml:1146
 msgid "svnlook propget (pget, pg)"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refnamediv><refpurpose>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1147
+#: ref-svnlook.xml:1147
 msgid "Print the raw value of a property on a path in the repository."
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsynopsisdiv><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1152
+#: ref-svnlook.xml:1152
 msgid "<literal>svnlook propget REPOS_PATH PROPNAME [PATH_IN_REPOS]</literal>"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1159
+#: ref-svnlook.xml:1159
 msgid "List the value of a property on a path in the repository."
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1170
+#: ref-svnlook.xml:1170
 #, no-wrap
 msgid ""
 "<xref linkend=\"svn.ref.svnlook.sw.revision\" />\n"
@@ -1259,14 +1186,14 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1182
+#: ref-svnlook.xml:1182
 msgid ""
 "This shows the value of the <quote>seasonings</quote> property on the file "
 "<filename>/trunk/sandwich</filename> in the <literal>HEAD</literal> revision:"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1188
+#: ref-svnlook.xml:1188
 #, no-wrap
 msgid ""
 "$ svnlook pg /var/svn/repos seasonings /trunk/sandwich\n"
@@ -1274,14 +1201,14 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1193
+#: ref-svnlook.xml:1193
 msgid ""
 "This shows the inherited values of the <literal> svn:auto-props</literal> "
 "property on the directory <filename>/trunk</filename> in revision 14:"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1199
+#: ref-svnlook.xml:1199
 #, no-wrap
 msgid ""
 "$ svnlook pg repos svn:auto-props trunk --show-inherited-props -v -r14\n"
@@ -1294,34 +1221,34 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><indexterm><tertiary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1220
+#: ref-svnlook.xml:1220
 msgid "proplist"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1224
+#: ref-svnlook.xml:1224
 msgid "svnlook proplist (plist, pl)"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refnamediv><refpurpose>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1225
+#: ref-svnlook.xml:1225
 msgid "Print the names and values of versioned file and directory properties."
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsynopsisdiv><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1230
+#: ref-svnlook.xml:1230
 msgid "<literal>svnlook proplist REPOS_PATH [PATH_IN_REPOS]</literal>"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1237
+#: ref-svnlook.xml:1237
 msgid ""
 "List the properties of a path in the repository.  With <option>--verbose</"
 "option> (<option>-v</option>), show the property values too."
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1249
+#: ref-svnlook.xml:1249
 #, no-wrap
 msgid ""
 "<xref linkend=\"svn.ref.svnlook.sw.revision\" />\n"
@@ -1333,14 +1260,14 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1263
+#: ref-svnlook.xml:1263
 msgid ""
 "This shows the names of properties set on the file <filename>/trunk/README</"
 "filename> in the <literal>HEAD</literal> revision:"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1269
+#: ref-svnlook.xml:1269
 #, no-wrap
 msgid ""
 "$ svnlook proplist /var/svn/repos /trunk/README\n"
@@ -1349,14 +1276,14 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1275
+#: ref-svnlook.xml:1275
 msgid ""
 "This is the same command as in the preceding example, but this time showing "
 "the property values as well:"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1280
+#: ref-svnlook.xml:1280
 #, no-wrap
 msgid ""
 "$ svnlook -v proplist /var/svn/repos /trunk/README\n"
@@ -1365,12 +1292,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1286
+#: ref-svnlook.xml:1286
 msgid "This shows the properties inherited by a directory:"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1291
+#: ref-svnlook.xml:1291
 #, no-wrap
 msgid ""
 "$ svnlook pl /var/svn/repos branches --show-inherited-props -v\n"
@@ -1390,27 +1317,27 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><indexterm><tertiary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1318
+#: ref-svnlook.xml:1318
 msgid "tree"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1322
+#: ref-svnlook.xml:1322
 msgid "svnlook tree"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refnamediv><refpurpose>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1323
+#: ref-svnlook.xml:1323
 msgid "Print the tree."
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsynopsisdiv><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1327
+#: ref-svnlook.xml:1327
 msgid "<literal>svnlook tree REPOS_PATH [PATH_IN_REPOS]</literal>"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1333
+#: ref-svnlook.xml:1333
 msgid ""
 "Print the tree, starting at <replaceable>PATH_IN_REPOS</replaceable> (if "
 "supplied; at the root of the tree otherwise), optionally showing node "
@@ -1418,7 +1345,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1345
+#: ref-svnlook.xml:1345
 #, no-wrap
 msgid ""
 "<xref linkend=\"svn.ref.svnlook.sw.full_paths\" />\n"
@@ -1429,17 +1356,17 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1356
+#: ref-svnlook.xml:1356
 msgid "Example"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1358
+#: ref-svnlook.xml:1358
 msgid "This shows the tree output for revision 13 in our sample repository:"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1363
+#: ref-svnlook.xml:1363
 #, no-wrap
 msgid ""
 "$ svnlook tree -r 13 /var/svn/repos\n"
@@ -1457,7 +1384,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1378
+#: ref-svnlook.xml:1378
 msgid ""
 "Use the <option>--show-ids</option> option to include node revision IDs "
 "(unique internal identifiers for specific nodes in Subversion's versioned "
@@ -1465,7 +1392,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1385
+#: ref-svnlook.xml:1385
 #, no-wrap
 msgid ""
 "$ svnlook tree -r 13 /var/svn/repos --show-ids\n"
@@ -1483,7 +1410,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1400
+#: ref-svnlook.xml:1400
 msgid ""
 "For output which lends itself more readily to being parsed by scripts, use "
 "the <option>--full-paths</option> option, which causes <command>svnlook</"
@@ -1492,7 +1419,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1408
+#: ref-svnlook.xml:1408
 #, no-wrap
 msgid ""
 "$ svnlook tree -r 13 /var/svn/repos --show-ids --full-paths\n"
@@ -1510,27 +1437,27 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><indexterm><tertiary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1434
+#: ref-svnlook.xml:1434
 msgid "uuid"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1438
+#: ref-svnlook.xml:1438
 msgid "svnlook uuid"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refnamediv><refpurpose>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1439
+#: ref-svnlook.xml:1439
 msgid "Print the repository's <literal>UUID</literal>."
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsynopsisdiv><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1444
+#: ref-svnlook.xml:1444
 msgid "<literal>svnlook uuid REPOS_PATH</literal>"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1451
+#: ref-svnlook.xml:1451
 msgid ""
 "Print the <literal>UUID</literal> for the repository.  The <literal>UUID</"
 "literal> is the repository's <emphasis>u</emphasis>niversal <emphasis>u</"
@@ -1539,7 +1466,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1471
+#: ref-svnlook.xml:1471
 #, no-wrap
 msgid ""
 "$ svnlook uuid /var/svn/repos\n"
@@ -1547,37 +1474,37 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><indexterm><tertiary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1487
+#: ref-svnlook.xml:1487
 msgid "youngest"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1491
+#: ref-svnlook.xml:1491
 msgid "svnlook youngest"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refnamediv><refpurpose>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1492
+#: ref-svnlook.xml:1492
 msgid "Print the youngest revision number."
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsynopsisdiv><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1496
+#: ref-svnlook.xml:1496
 msgid "<literal>svnlook youngest REPOS_PATH</literal>"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1503
+#: ref-svnlook.xml:1503
 msgid "Print the youngest revision number of a repository."
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1516
+#: ref-svnlook.xml:1516
 msgid "This shows the youngest revision of our sample repository:"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnlook.xml:1521
+#: ref-svnlook.xml:1521
 #, no-wrap
 msgid ""
 "$ svnlook youngest /var/svn/repos/ \n"

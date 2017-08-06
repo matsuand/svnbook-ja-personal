@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2017-08-03 18:00+0900\n"
-"PO-Revision-Date: 2017-08-03 18:00+0900\n"
+"POT-Creation-Date: 2017-08-06 14:19+0900\n"
+"PO-Revision-Date: 2017-08-06 14:19+0900\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: matsuand個人翻訳\n"
 "Language: ja\n"
@@ -17,12 +17,12 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. type: Content of: <chapter><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:4
+#: ch05-repository-admin.xml:4
 msgid "Repository Administration"
 msgstr ""
 
 #. type: Content of: <chapter><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:6
+#: ch05-repository-admin.xml:6
 msgid ""
 "The Subversion repository is the central storehouse of all your versioned "
 "data.  As such, it becomes an obvious candidate for all the love and "
@@ -33,7 +33,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:14
+#: ch05-repository-admin.xml:14
 msgid ""
 "In this chapter, we'll discuss how to create and configure a Subversion "
 "repository.  We'll also talk about repository maintenance, providing "
@@ -43,7 +43,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><para><footnote><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:25
+#: ch05-repository-admin.xml:25
 msgid ""
 "This may sound really prestigious and lofty, but we're just talking about "
 "anyone who is interested in that mysterious realm beyond the working copy "
@@ -51,7 +51,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:21
+#: ch05-repository-admin.xml:21
 msgid ""
 "If you plan to access a Subversion repository only in the role of a user "
 "whose data is under version control (i.e., via a Subversion client), you can "
@@ -61,12 +61,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:35
+#: ch05-repository-admin.xml:35
 msgid "The Subversion Repository, Defined"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:37
+#: ch05-repository-admin.xml:37
 msgid ""
 "Before jumping into the broader topic of repository administration, let's "
 "further define what a repository is.  How does it look? How does it feel? "
@@ -79,7 +79,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:47
+#: ch05-repository-admin.xml:47
 msgid ""
 "Seen through the eyes of a typical file browser application (such as Windows "
 "Explorer) or command-line based filesystem navigation tools, the Subversion "
@@ -93,7 +93,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:61
+#: ch05-repository-admin.xml:61
 #, no-wrap
 msgid ""
 "$ ls repos\n"
@@ -101,7 +101,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:66
+#: ch05-repository-admin.xml:66
 msgid ""
 "Here's a quick fly-by overview of what exactly you're seeing in this "
 "directory listing.  (Don't get bogged down in the terminology&mdash;detailed "
@@ -109,22 +109,22 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:73
+#: ch05-repository-admin.xml:73
 msgid "conf/"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:75
+#: ch05-repository-admin.xml:75
 msgid "This directory is a container for configuration files."
 msgstr ""
 
 #. type: Content of: <chapter><sect1><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:80
+#: ch05-repository-admin.xml:80
 msgid "db/"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><variablelist><varlistentry><listitem><para><footnote><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:83
+#: ch05-repository-admin.xml:83
 msgid ""
 "Strictly speaking, Subversion doesn't dictate that the versioned data live "
 "here, and there are known (albeit proprietary) alternative backend storage "
@@ -132,19 +132,19 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:82
+#: ch05-repository-admin.xml:82
 msgid ""
 "This directory contains the data store for all of your versioned data."
 "<placeholder type=\"footnote\" id=\"0\"/>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:91
+#: ch05-repository-admin.xml:91
 msgid "format"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:93
+#: ch05-repository-admin.xml:93
 msgid ""
 "This file describes the repository's internal organizational scheme.  (As it "
 "turns out, the <filename>db/</filename> subdirectory sometimes also contains "
@@ -153,53 +153,53 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:102
+#: ch05-repository-admin.xml:102
 msgid "hooks/"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:104
+#: ch05-repository-admin.xml:104
 msgid ""
 "This directory contains hook script templates and hook scripts, if any have "
 "been installed."
 msgstr ""
 
 #. type: Content of: <chapter><sect1><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:109
+#: ch05-repository-admin.xml:109
 msgid "locks/"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:111
+#: ch05-repository-admin.xml:111
 msgid ""
 "Subversion uses this directory to house repository lock files, used for "
 "managing concurrent access to the repository."
 msgstr ""
 
 #. type: Content of: <chapter><sect1><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:117
+#: ch05-repository-admin.xml:117
 msgid "README.txt"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:119
+#: ch05-repository-admin.xml:119
 msgid ""
 "This is a brief text file containing merely a notice to readers that the "
 "directory they are looking in is a Subversion repository."
 msgstr ""
 
 #. type: Content of: <chapter><sect1><note><para><indexterm><primary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:129
+#: ch05-repository-admin.xml:129
 msgid "WebDAV"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><note><para><indexterm><secondary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:130
+#: ch05-repository-admin.xml:130
 msgid "activities"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><note><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:128
+#: ch05-repository-admin.xml:128
 msgid ""
 "<placeholder type=\"indexterm\" id=\"0\"/>Prior to Subversion 1.5, the on-"
 "disk repository structure also always contained a <filename>dav</filename> "
@@ -216,7 +216,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:148
+#: ch05-repository-admin.xml:148
 msgid ""
 "Of course, when accessed via the Subversion libraries, this otherwise "
 "unremarkable collection of files and directories suddenly becomes an "
@@ -230,12 +230,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sidebar><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:161
+#: ch05-repository-admin.xml:161
 msgid "Speaking of Filesystems&hellip;"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sidebar><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:163
+#: ch05-repository-admin.xml:163
 msgid ""
 "When the initial design phase of Subversion was in progress, the developers "
 "decided to use Berkeley DB (BDB) as the storage mechanism behind the virtual "
@@ -246,7 +246,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sidebar><para><footnote><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:172
+#: ch05-repository-admin.xml:172
 msgid ""
 "While it is often pronounced <quote>fuzz-fuzz,</quote> per Jack Repenning's "
 "rendition, this book assumes that the reader is thinking <quote>eff-ess-eff-"
@@ -254,7 +254,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sidebar><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:171
+#: ch05-repository-admin.xml:171
 msgid ""
 "In the years since, the newer <firstterm>FSFS</firstterm><placeholder type="
 "\"footnote\" id=\"0\"/> backend was introduced.  This so-called "
@@ -269,7 +269,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sidebar><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:187
+#: ch05-repository-admin.xml:187
 msgid ""
 "These days, it is generally assumed that if you are using the open source "
 "Subversion product, you are using the FSFS backend for your repositories.  "
@@ -283,7 +283,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sidebar><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:199
+#: ch05-repository-admin.xml:199
 msgid ""
 "This book will continue to provide information relevant to administrators of "
 "BDB-backed repositories where it makes sense to do so, but most of this "
@@ -295,12 +295,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:215
+#: ch05-repository-admin.xml:215
 msgid "Strategies for Repository Deployment"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:217
+#: ch05-repository-admin.xml:217
 msgid ""
 "Due largely to the simplicity of the overall design of the Subversion "
 "repository and the technologies on which it relies, creating and configuring "
@@ -311,39 +311,39 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:226
+#: ch05-repository-admin.xml:226
 msgid "Some things you'll want to consider beforehand, though, are:"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><itemizedlist><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:230
+#: ch05-repository-admin.xml:230
 msgid ""
 "What data do you expect to live in your repository (or repositories), and "
 "how will that data be organized?"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><itemizedlist><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:234
+#: ch05-repository-admin.xml:234
 msgid "Where will your repository live, and how will it be accessed?"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><itemizedlist><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:238
+#: ch05-repository-admin.xml:238
 msgid "What types of access control do you need?"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:242
+#: ch05-repository-admin.xml:242
 msgid "In this section, we'll try to help you answer those questions."
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:247
+#: ch05-repository-admin.xml:247
 msgid "Planning Your Repository Organization"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:249
+#: ch05-repository-admin.xml:249
 msgid ""
 "While Subversion allows you to move around versioned files and directories "
 "without any loss of information, and even provides ways of moving whole sets "
@@ -357,7 +357,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:261
+#: ch05-repository-admin.xml:261
 msgid ""
 "Let's assume that as repository administrator, you will be responsible for "
 "supporting the version control system for several projects.  Your first "
@@ -366,7 +366,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:268
+#: ch05-repository-admin.xml:268
 msgid ""
 "There are benefits to using a single repository for multiple projects, most "
 "obviously the lack of duplicated maintenance.  A single repository means "
@@ -377,7 +377,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para><footnote><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:292
+#: ch05-repository-admin.xml:292
 msgid ""
 "Whether founded in ignorance or in poorly considered concepts about how to "
 "derive legitimate software development metrics, global revision numbers are "
@@ -386,7 +386,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:277
+#: ch05-repository-admin.xml:277
 msgid ""
 "The downside of using a single repository is that different projects may "
 "have different requirements in terms of the repository event triggers, such "
@@ -404,7 +404,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:300
+#: ch05-repository-admin.xml:300
 msgid ""
 "A middle-ground approach can be taken, too.  For example, projects can be "
 "grouped by how well they relate to each other.  You might have a few "
@@ -416,12 +416,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para><indexterm><primary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:311
+#: ch05-repository-admin.xml:311
 msgid "project root"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para><footnote><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:330
+#: ch05-repository-admin.xml:330
 msgid ""
 "The <filename>trunk</filename>, <filename>tags</filename>, and "
 "<filename>branches</filename> trio is sometimes referred to as <quote>the "
@@ -429,7 +429,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:310
+#: ch05-repository-admin.xml:310
 msgid ""
 "<placeholder type=\"indexterm\" id=\"0\"/> After deciding how to organize "
 "your projects with respect to repositories, you'll probably want to think "
@@ -448,12 +448,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:335
+#: ch05-repository-admin.xml:335
 msgid "For example, your repository might look like this:"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><informalexample><literallayout>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:339
+#: ch05-repository-admin.xml:339
 #, no-wrap
 msgid ""
 "/\n"
@@ -473,7 +473,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:356
+#: ch05-repository-admin.xml:356
 msgid ""
 "Note that it doesn't matter where in your repository each project root is.  "
 "If you have only one project per repository, the logical place to put each "
@@ -485,7 +485,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><informalexample><literallayout>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:368
+#: ch05-repository-admin.xml:368
 #, no-wrap
 msgid ""
 "/\n"
@@ -508,7 +508,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:388
+#: ch05-repository-admin.xml:388
 msgid ""
 "Lay out your repository in whatever way you see fit.  Subversion does not "
 "expect or enforce a particular layout&mdash;in its eyes, a directory is a "
@@ -518,7 +518,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:395
+#: ch05-repository-admin.xml:395
 msgid ""
 "In the name of full disclosure, though, we'll mention another very common "
 "layout.  In this layout, the <filename>trunk</filename>, <filename>tags</"
@@ -528,7 +528,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><informalexample><literallayout>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:404
+#: ch05-repository-admin.xml:404
 #, no-wrap
 msgid ""
 "/\n"
@@ -550,7 +550,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:423
+#: ch05-repository-admin.xml:423
 msgid ""
 "There's nothing particularly incorrect about such a layout, but it may or "
 "may not seem as intuitive for your users.  Especially in large, multiproject "
@@ -566,12 +566,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:442
+#: ch05-repository-admin.xml:442
 msgid "Deciding Where and How to Host Your Repository"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:444
+#: ch05-repository-admin.xml:444
 msgid ""
 "Before creating your Subversion repository, an obvious question you'll need "
 "to answer is where the thing is going to live.  This is strongly connected "
@@ -583,7 +583,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:455
+#: ch05-repository-admin.xml:455
 msgid ""
 "We cover server choice and configuration in <xref linkend=\"svn.serverconfig"
 "\" />, but the point we'd like to briefly make here is simply that the "
@@ -599,12 +599,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:474
+#: ch05-repository-admin.xml:474
 msgid "Controlling Access to Your Repository"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:476
+#: ch05-repository-admin.xml:476
 msgid ""
 "Access control in Subversion is almost entirely managed by the Subversion "
 "server processes.  We discuss the available Subversion servers in <xref "
@@ -619,12 +619,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:496
+#: ch05-repository-admin.xml:496
 msgid "Creating and Configuring Your Repository"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:498
+#: ch05-repository-admin.xml:498
 msgid ""
 "Earlier in this chapter (in <xref linkend=\"svn.reposadmin.planning\" />), "
 "we looked at some of the important decisions that should be made before "
@@ -635,12 +635,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:509
+#: ch05-repository-admin.xml:509
 msgid "Creating the Repository"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:511
+#: ch05-repository-admin.xml:511
 msgid ""
 "Subversion repository creation is an incredibly simple task.  The "
 "<command>svnadmin</command> utility that comes with Subversion provides a "
@@ -648,7 +648,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:518
+#: ch05-repository-admin.xml:518
 #, no-wrap
 msgid ""
 "$ # Create a repository\n"
@@ -657,7 +657,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:524
+#: ch05-repository-admin.xml:524
 msgid ""
 "Assuming that the parent directory <filename>/var/svn</filename> exists and "
 "that you have sufficient permissions to modify that directory, the previous "
@@ -669,7 +669,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:536
+#: ch05-repository-admin.xml:536
 #, no-wrap
 msgid ""
 "$ # Create an FSFS-backed repository\n"
@@ -678,7 +678,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:544
+#: ch05-repository-admin.xml:544
 #, no-wrap
 msgid ""
 "# Create a legacy Berkeley-DB-backed repository\n"
@@ -687,7 +687,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:550
+#: ch05-repository-admin.xml:550
 msgid ""
 "After running this simple command, you have a Subversion repository.  "
 "Depending on how users will access this new repository, you might need to "
@@ -697,7 +697,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><tip><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:558
+#: ch05-repository-admin.xml:558
 msgid ""
 "The path argument to <command>svnadmin</command> is just a regular "
 "filesystem path and not a URL like the <command>svn</command> client program "
@@ -711,7 +711,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:571
+#: ch05-repository-admin.xml:571
 msgid ""
 "Present in the <filename>db/</filename> subdirectory of your repository is "
 "the implementation of the versioned filesystem.  Your new repository's "
@@ -722,12 +722,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:580
+#: ch05-repository-admin.xml:580
 msgid "Now that you have a repository, it's time to customize it."
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><warning><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:584
+#: ch05-repository-admin.xml:584
 msgid ""
 "While some parts of a Subversion repository&mdash;such as the configuration "
 "files and hook scripts&mdash;are meant to be examined and modified manually, "
@@ -741,30 +741,28 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:602
+#: ch05-repository-admin.xml:602
 msgid "Implementing Repository Hooks"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para><indexterm><see>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:606
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:610
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:615
+#: ch05-repository-admin.xml:606 ch05-repository-admin.xml:610
+#: ch05-repository-admin.xml:615
 msgid "hook scripts"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para><indexterm><secondary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:609
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:614
+#: ch05-repository-admin.xml:609 ch05-repository-admin.xml:614
 msgid "hooks"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para><indexterm><primary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:613
+#: ch05-repository-admin.xml:613
 msgid "repositories"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:605
+#: ch05-repository-admin.xml:605
 msgid ""
 "<placeholder type=\"indexterm\" id=\"0\"/> <placeholder type=\"indexterm\" "
 "id=\"1\"/> <placeholder type=\"indexterm\" id=\"2\"/>A <firstterm>hook</"
@@ -781,14 +779,14 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:630
+#: ch05-repository-admin.xml:630
 msgid ""
 "The <filename>hooks</filename> subdirectory is, by default, filled with "
 "templates for various repository hooks:"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:636
+#: ch05-repository-admin.xml:636
 #, no-wrap
 msgid ""
 "$ ls repos/hooks/\n"
@@ -799,7 +797,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:644
+#: ch05-repository-admin.xml:644
 msgid ""
 "There is one template for each hook that the Subversion repository supports; "
 "by examining the contents of those template scripts, you can see what "
@@ -814,7 +812,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:657
+#: ch05-repository-admin.xml:657
 msgid ""
 "On Unix platforms, this means supplying a script or program (which could be "
 "a shell script, a Python program, a compiled C binary, or any number of "
@@ -831,7 +829,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:674
+#: ch05-repository-admin.xml:674
 msgid ""
 "Subversion executes hooks as the same user who owns the process that is "
 "accessing the Subversion repository.  In most cases, the repository is being "
@@ -846,7 +844,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:687
+#: ch05-repository-admin.xml:687
 msgid ""
 "There are several hooks implemented by the Subversion repository, and you "
 "can get details about each of them in <xref linkend=\"svn.ref.reposhooks\" /"
@@ -860,12 +858,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:702
+#: ch05-repository-admin.xml:702
 msgid "Hook script environment configuration"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:704
+#: ch05-repository-admin.xml:704
 msgid ""
 "By default, Subversion executes hook scripts with an empty environment&mdash;"
 "that is, no environment variables are set at all, not even <literal>$PATH</"
@@ -877,7 +875,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:715
+#: ch05-repository-admin.xml:715
 msgid ""
 "Subversion 1.8 introduces a new way to manage the environment of Subversion-"
 "executed hook scripts&mdash;the hook script environment configuration file.  "
@@ -889,7 +887,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:725
+#: ch05-repository-admin.xml:725
 msgid ""
 "The syntax of the <filename>hooks-env</filename> file is pretty "
 "straightforward: each section name is the name of a hook script (such as "
@@ -904,12 +902,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><example><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:741
+#: ch05-repository-admin.xml:741
 msgid "hooks-env (custom hook script environment configuration)"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><example><programlisting>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:745
+#: ch05-repository-admin.xml:745
 #, no-wrap
 msgid ""
 "# All scripts should use a UTF-8 locale and have our hook script\n"
@@ -931,16 +929,14 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><example>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:744
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:844
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1564
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2574
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2597
+#: ch05-repository-admin.xml:744 ch05-repository-admin.xml:844
+#: ch05-repository-admin.xml:1564 ch05-repository-admin.xml:2574
+#: ch05-repository-admin.xml:2597
 msgid "<placeholder type=\"programlisting\" id=\"0\"/>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><note><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:765
+#: ch05-repository-admin.xml:765
 msgid ""
 "<xref linkend=\"svn.reposadmin.hooks.configuration.ex-1\" /> also "
 "demonstrates the nifty string substitution syntax found in Subversion's "
@@ -954,7 +950,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:779
+#: ch05-repository-admin.xml:779
 msgid ""
 "Of course, having exact duplicates of your custom hook script environment "
 "configuration files in every single repository's <filename>conf/</filename> "
@@ -964,19 +960,19 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:793
+#: ch05-repository-admin.xml:793
 msgid "Common uses for hook scripts"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:795
+#: ch05-repository-admin.xml:795
 msgid ""
 "Repository hook scripts can offer a wide range of utility, but most tend to "
 "fall into a few basic categories: notification, validation, and replication."
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:799
+#: ch05-repository-admin.xml:799
 msgid ""
 "Notification scripts are those which tell someone that something happened.  "
 "The most common of these found in a Subversion service offering involve "
@@ -988,7 +984,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:809
+#: ch05-repository-admin.xml:809
 msgid ""
 "On the validation side of things, the start-commit and pre-commit hooks are "
 "widely used to allow or disallow commits based on various criteria: the "
@@ -1001,7 +997,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:821
+#: ch05-repository-admin.xml:821
 msgid ""
 "One special class of change validation that has seen widespread use since "
 "Subversion 1.5 was released is validation of the committing client software "
@@ -1019,12 +1015,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><example><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:841
+#: ch05-repository-admin.xml:841
 msgid "start-commit hook to require merge tracking support"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><example><programlisting>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:845
+#: ch05-repository-admin.xml:845
 #, no-wrap
 msgid ""
 "#!/usr/bin/env python\n"
@@ -1041,17 +1037,17 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para><indexterm><primary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:861
+#: ch05-repository-admin.xml:861
 msgid "properties"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para><indexterm><secondary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:862
+#: ch05-repository-admin.xml:862
 msgid "ephemeral transaction properties"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:860
+#: ch05-repository-admin.xml:860
 msgid ""
 "<placeholder type=\"indexterm\" id=\"0\"/>Beginning in Subversion 1.8, "
 "clients committing against a Subversion 1.8 server will still provide the "
@@ -1068,19 +1064,19 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:879
+#: ch05-repository-admin.xml:879
 msgid ""
 "The following are the ephemeral transaction properties which Subversion "
 "currently provides and implements:"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:885
+#: ch05-repository-admin.xml:885
 msgid "<literal>svn:txn-client-compat-version</literal>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:887
+#: ch05-repository-admin.xml:887
 msgid ""
 "Carries the Subversion library version string with which the committing "
 "client claims compatibility.  This is useful for deciding whether the client "
@@ -1089,12 +1085,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:896
+#: ch05-repository-admin.xml:896
 msgid "<literal>svn:txn-user-agent</literal>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:898
+#: ch05-repository-admin.xml:898
 msgid ""
 "Carries the <quote>user agent</quote> string which describes the committing "
 "client program.  Subversion's libraries define the initial portion of this "
@@ -1103,7 +1099,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><note><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:913
+#: ch05-repository-admin.xml:913
 msgid ""
 "While most clients will transmit ephemeral transaction properties early "
 "enough in the commit process that they may be inspected by the start-commit "
@@ -1117,7 +1113,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:927
+#: ch05-repository-admin.xml:927
 msgid ""
 "As noted before, ephemeral transaction properties are removed from the "
 "transaction just before it is promoted to a new revision.  Some "
@@ -1130,7 +1126,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:938
+#: ch05-repository-admin.xml:938
 msgid ""
 "The third common type of hook script usage is for the purpose of "
 "replication.  Whether you are driving a simple backup process or a more "
@@ -1141,12 +1137,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:951
+#: ch05-repository-admin.xml:951
 msgid "Finding hook scripts or rolling your own"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:953
+#: ch05-repository-admin.xml:953
 msgid ""
 "As you might imagine, there is no shortage of Subversion hook programs and "
 "scripts that are freely available either from the Subversion community "
@@ -1159,7 +1155,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><warning><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:965
+#: ch05-repository-admin.xml:965
 msgid ""
 "While hook scripts can do almost anything, there is one dimension in which "
 "hook script authors should show restraint: do <emphasis>not</emphasis> "
@@ -1177,12 +1173,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:989
+#: ch05-repository-admin.xml:989
 msgid "FSFS Configuration"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:991
+#: ch05-repository-admin.xml:991
 msgid ""
 "As of Subversion 1.6, FSFS filesystems have several configurable parameters "
 "which an administrator can use to fine-tune the performance or disk usage of "
@@ -1192,12 +1188,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1008
+#: ch05-repository-admin.xml:1008
 msgid "Repository Maintenance"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1010
+#: ch05-repository-admin.xml:1010
 msgid ""
 "Maintaining a Subversion repository can be daunting, mostly due to the "
 "complexities inherent in systems that have a database backend.  Doing the "
@@ -1209,12 +1205,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1021
+#: ch05-repository-admin.xml:1021
 msgid "An Administrator's Toolkit"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1023
+#: ch05-repository-admin.xml:1023
 msgid ""
 "Subversion provides a handful of utilities useful for creating, inspecting, "
 "modifying, and repairing your repository.  Let's look more closely at each "
@@ -1222,15 +1218,13 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para><indexterm><primary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1030
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1034
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1724
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1729
+#: ch05-repository-admin.xml:1030 ch05-repository-admin.xml:1034
+#: ch05-repository-admin.xml:1724 ch05-repository-admin.xml:1729
 msgid "svnadmin"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1033
+#: ch05-repository-admin.xml:1033
 msgid ""
 "<placeholder type=\"indexterm\" id=\"0\"/>The <command>svnadmin</command> "
 "program is the repository administrator's best friend.  Besides providing "
@@ -1241,7 +1235,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1045
+#: ch05-repository-admin.xml:1045
 #, no-wrap
 msgid ""
 "$ svnadmin help\n"
@@ -1257,7 +1251,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1058
+#: ch05-repository-admin.xml:1058
 msgid ""
 "Previously in this chapter (in <xref linkend=\"svn.reposadmin.basics.creating"
 "\"/>), we were introduced to the <command>svnadmin create</command> "
@@ -1268,30 +1262,27 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para><indexterm><primary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1070
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1074
+#: ch05-repository-admin.xml:1070 ch05-repository-admin.xml:1074
 msgid "svnlook"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para><indexterm><primary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1077
+#: ch05-repository-admin.xml:1077
 msgid "revisions"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para><indexterm><secondary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1078
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1085
+#: ch05-repository-admin.xml:1078 ch05-repository-admin.xml:1085
 msgid "inspection"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para><indexterm><primary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1081
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1084
+#: ch05-repository-admin.xml:1081 ch05-repository-admin.xml:1084
 msgid "transactions"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1073
+#: ch05-repository-admin.xml:1073
 msgid ""
 "<placeholder type=\"indexterm\" id=\"0\"/> <placeholder type=\"indexterm\" "
 "id=\"1\"/> <placeholder type=\"indexterm\" id=\"2\"/> <placeholder type="
@@ -1307,12 +1298,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1098
+#: ch05-repository-admin.xml:1098
 msgid "<command>svnlook</command> has a straightforward syntax:"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1103
+#: ch05-repository-admin.xml:1103
 #, no-wrap
 msgid ""
 "$ svnlook help\n"
@@ -1326,7 +1317,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1114
+#: ch05-repository-admin.xml:1114
 msgid ""
 "Most of <command>svnlook</command>'s subcommands can operate on either a "
 "revision or a transaction tree, printing information about the tree itself, "
@@ -1342,7 +1333,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1133
+#: ch05-repository-admin.xml:1133
 #, no-wrap
 msgid ""
 "$ svnlook info /var/svn/repos\n"
@@ -1350,7 +1341,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1138
+#: ch05-repository-admin.xml:1138
 msgid ""
 "One exception to these rules about subcommands is the <command>svnlook "
 "youngest</command> subcommand, which takes no options and simply prints out "
@@ -1358,7 +1349,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1145
+#: ch05-repository-admin.xml:1145
 #, no-wrap
 msgid ""
 "$ svnlook youngest /var/svn/repos\n"
@@ -1367,7 +1358,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><note><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1152
+#: ch05-repository-admin.xml:1152
 msgid ""
 "Keep in mind that the only transactions you can browse are uncommitted "
 "ones.  Most repositories will have no such transactions because transactions "
@@ -1377,7 +1368,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1161
+#: ch05-repository-admin.xml:1161
 msgid ""
 "Output from <command>svnlook</command> is designed to be both human- and "
 "machine-parsable.  Take, as an example, the output of the <command>svnlook "
@@ -1385,7 +1376,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1167
+#: ch05-repository-admin.xml:1167
 #, no-wrap
 msgid ""
 "$ svnlook info /var/svn/repos\n"
@@ -1398,34 +1389,34 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1177
+#: ch05-repository-admin.xml:1177
 msgid ""
 "The output of <command>svnlook info</command> consists of the following, in "
 "the order given:"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><orderedlist><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1182
+#: ch05-repository-admin.xml:1182
 msgid "The author, followed by a newline"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><orderedlist><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1185
+#: ch05-repository-admin.xml:1185
 msgid "The date, followed by a newline"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><orderedlist><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1188
+#: ch05-repository-admin.xml:1188
 msgid "The number of characters in the log message, followed by a newline"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><orderedlist><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1192
+#: ch05-repository-admin.xml:1192
 msgid "The log message itself, followed by a newline"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1196
+#: ch05-repository-admin.xml:1196
 msgid ""
 "This output is human-readable, meaning items such as the datestamp are "
 "displayed using a textual representation instead of something more obscure "
@@ -1440,7 +1431,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1210
+#: ch05-repository-admin.xml:1210
 msgid ""
 "<command>svnlook</command> can perform a variety of other queries: "
 "displaying subsets of bits of information we've mentioned previously, "
@@ -1452,12 +1443,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1223
+#: ch05-repository-admin.xml:1223
 msgid "svndumpfilter"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1225
+#: ch05-repository-admin.xml:1225
 msgid ""
 "While it won't be the most commonly used tool at the administrator's "
 "disposal, <command>svndumpfilter</command> provides a very particular brand "
@@ -1467,12 +1458,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1232
+#: ch05-repository-admin.xml:1232
 msgid "The syntax of <command>svndumpfilter</command> is as follows:"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1237
+#: ch05-repository-admin.xml:1237
 #, no-wrap
 msgid ""
 "$ svndumpfilter help\n"
@@ -1487,7 +1478,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1249
+#: ch05-repository-admin.xml:1249
 msgid ""
 "There are only two interesting subcommands: <command>svndumpfilter exclude</"
 "command> and <command>svndumpfilter include</command>.  They allow you to "
@@ -1498,13 +1489,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para><indexterm><primary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1262
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1734
+#: ch05-repository-admin.xml:1262 ch05-repository-admin.xml:1734
 msgid "svnrdump"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1264
+#: ch05-repository-admin.xml:1264
 msgid ""
 "The <command>svnrdump</command> program is, to put it simply, essentially "
 "just network-aware flavors of the <command>svnadmin dump</command> and "
@@ -1513,7 +1503,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1272
+#: ch05-repository-admin.xml:1272
 #, no-wrap
 msgid ""
 "$ svnrdump help\n"
@@ -1530,7 +1520,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1286
+#: ch05-repository-admin.xml:1286
 msgid ""
 "We discuss the use of <command>svnrdump</command> and the aforementioned "
 "<command>svnadmin</command> commands later in this chapter (see <xref "
@@ -1538,17 +1528,17 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1295
+#: ch05-repository-admin.xml:1295
 msgid "svnsync"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para><footnote><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1304
+#: ch05-repository-admin.xml:1304
 msgid "Or is that, the <quote>sync</quote>?"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1297
+#: ch05-repository-admin.xml:1297
 msgid ""
 "The <command>svnsync</command> program provides all the functionality "
 "required for maintaining a read-only mirror of a Subversion repository.  The "
@@ -1561,14 +1551,14 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1309
+#: ch05-repository-admin.xml:1309
 msgid ""
 "As you might expect, <command>svnsync</command> has a syntax that looks very "
 "much like every other program we've mentioned in this chapter:"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1315
+#: ch05-repository-admin.xml:1315
 #, no-wrap
 msgid ""
 "$ svnsync help\n"
@@ -1586,7 +1576,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1330
+#: ch05-repository-admin.xml:1330
 msgid ""
 "We talk more about replicating repositories with <command>svnsync</command> "
 "later in this chapter (see <xref linkend=\"svn.reposadmin.maint.replication"
@@ -1594,12 +1584,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1338
+#: ch05-repository-admin.xml:1338
 msgid "fsfs-reshard.py"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1340
+#: ch05-repository-admin.xml:1340
 msgid ""
 "While not an official member of the Subversion toolchain, the <command>fsfs-"
 "reshard.py</command> script (found in the <filename>tools/server-side</"
@@ -1611,7 +1601,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1350
+#: ch05-repository-admin.xml:1350
 msgid ""
 "The earliest FSFS release versions would house all the revision files within "
 "a single directory that grew&mdash;one file per revision&mdash;throughout "
@@ -1622,7 +1612,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1359
+#: ch05-repository-admin.xml:1359
 msgid ""
 "Beginning in version 1.5, Subversion creates FSFS-backed repositories using "
 "a slightly modified layout in which the contents of the revision files "
@@ -1634,7 +1624,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1369
+#: ch05-repository-admin.xml:1369
 msgid ""
 "The number of files permitted to live in a given subdirectory is a "
 "configurable thing (though the defaults are reasonable ones for most known "
@@ -1644,7 +1634,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1377
+#: ch05-repository-admin.xml:1377
 msgid ""
 "<command>fsfs-reshard.py</command> reshuffles the repository's file "
 "structure into a new arrangement that reflects the requested number of "
@@ -1658,12 +1648,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1394
+#: ch05-repository-admin.xml:1394
 msgid "Commit Log Message Correction"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1396
+#: ch05-repository-admin.xml:1396
 msgid ""
 "Sometimes a user will have an error in her log message (a misspelling or "
 "some misinformation, perhaps).  If the repository is configured (using the "
@@ -1678,7 +1668,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1411
+#: ch05-repository-admin.xml:1411
 msgid ""
 "If a log message needs to be changed by an administrator, this can be done "
 "using <command>svnadmin setlog</command>.  This command changes the log "
@@ -1687,7 +1677,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1419
+#: ch05-repository-admin.xml:1419
 #, no-wrap
 msgid ""
 "$ echo \"Here is the new, correct log message\" &gt; newlog.txt\n"
@@ -1695,7 +1685,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1424
+#: ch05-repository-admin.xml:1424
 msgid ""
 "The <command>svnadmin setlog</command> command, by default, is still bound "
 "by the same protections against modifying unversioned properties as a remote "
@@ -1707,7 +1697,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><warning><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1435
+#: ch05-repository-admin.xml:1435
 msgid ""
 "Remember, though, that by bypassing the hooks, you are likely avoiding such "
 "things as email notifications of property changes, backup systems that track "
@@ -1716,12 +1706,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1448
+#: ch05-repository-admin.xml:1448
 msgid "Managing Disk Space"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1450
+#: ch05-repository-admin.xml:1450
 msgid ""
 "While the cost of storage has dropped incredibly in the past few years, disk "
 "usage is still a valid concern for administrators seeking to version large "
@@ -1733,17 +1723,17 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1462
+#: ch05-repository-admin.xml:1462
 msgid "How Subversion saves disk space"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para><indexterm><primary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1466
+#: ch05-repository-admin.xml:1466
 msgid "deltification"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1465
+#: ch05-repository-admin.xml:1465
 msgid ""
 "<placeholder type=\"indexterm\" id=\"0\"/>To keep the repository small, "
 "Subversion uses <firstterm>deltification</firstterm> (or delta-based "
@@ -1760,12 +1750,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para><indexterm><primary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1485
+#: ch05-repository-admin.xml:1485
 msgid "representation sharing"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1484
+#: ch05-repository-admin.xml:1484
 msgid ""
 "<placeholder type=\"indexterm\" id=\"0\"/>While deltified storage has been a "
 "part of Subversion's design since the very beginning, there have been "
@@ -1780,12 +1770,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1502
+#: ch05-repository-admin.xml:1502
 msgid "Removing dead transactions"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1504
+#: ch05-repository-admin.xml:1504
 msgid ""
 "Though they are uncommon, there are circumstances in which a Subversion "
 "commit process might fail, leaving behind in the repository the remnants of "
@@ -1799,14 +1789,14 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1517
+#: ch05-repository-admin.xml:1517
 msgid ""
 "You can use the <command>svnadmin lstxns</command> command to list the names "
 "of the currently outstanding transactions:"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1523
+#: ch05-repository-admin.xml:1523
 #, no-wrap
 msgid ""
 "$ svnadmin lstxns myrepos\n"
@@ -1817,7 +1807,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1531
+#: ch05-repository-admin.xml:1531
 msgid ""
 "Each item in the resultant output can then be used with <command>svnlook</"
 "command> (and its <option>--transaction</option> (<option>-t</option>) "
@@ -1831,7 +1821,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1547
+#: ch05-repository-admin.xml:1547
 #, no-wrap
 msgid ""
 "$ svnadmin rmtxns myrepos `svnadmin lstxns myrepos`\n"
@@ -1839,7 +1829,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1552
+#: ch05-repository-admin.xml:1552
 msgid ""
 "If you use these two subcommands like this, you should consider making your "
 "repository temporarily inaccessible to clients.  That way, no one can begin "
@@ -1850,12 +1840,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><example><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1562
+#: ch05-repository-admin.xml:1562
 msgid "txn-info.sh (reporting outstanding transactions)"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><example><programlisting>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1565
+#: ch05-repository-admin.xml:1565
 #, no-wrap
 msgid ""
 "#!/bin/sh\n"
@@ -1876,7 +1866,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1583
+#: ch05-repository-admin.xml:1583
 msgid ""
 "The output of the script is basically a concatenation of several chunks of "
 "<command>svnlook info</command> output (see <xref linkend=\"svn.reposadmin."
@@ -1884,7 +1874,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1590
+#: ch05-repository-admin.xml:1590
 #, no-wrap
 msgid ""
 "$ txn-info.sh myrepos\n"
@@ -1905,7 +1895,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1608
+#: ch05-repository-admin.xml:1608
 msgid ""
 "A long-abandoned transaction usually represents some sort of failed or "
 "interrupted commit.  A transaction's datestamp can provide interesting "
@@ -1914,7 +1904,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1614
+#: ch05-repository-admin.xml:1614
 msgid ""
 "In short, transaction cleanup decisions need not be made unwisely.  Various "
 "sources of information&mdash;including Apache's error and access logs, "
@@ -1926,12 +1916,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1627
+#: ch05-repository-admin.xml:1627
 msgid "Packing FSFS filesystems"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1629
+#: ch05-repository-admin.xml:1629
 msgid ""
 "FSFS repositories contain files that describe the changes made in a single "
 "revision, and files that contain the revision properties associated with a "
@@ -1944,7 +1934,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1641
+#: ch05-repository-admin.xml:1641
 msgid ""
 "The first problem is that the operating system has to reference many "
 "different files over a short period of time.  This leads to inefficient use "
@@ -1954,7 +1944,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1648
+#: ch05-repository-admin.xml:1648
 msgid ""
 "The second problem is a bit more subtle.  Because of the ways that most "
 "filesystems allocate disk space, each file claims more space on the disk "
@@ -1968,7 +1958,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1661
+#: ch05-repository-admin.xml:1661
 msgid ""
 "To solve these problems, Subversion 1.6 introduced the <command>svnadmin "
 "pack</command> command.  By concatenating all the files of a completed shard "
@@ -1980,7 +1970,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1671
+#: ch05-repository-admin.xml:1671
 msgid ""
 "Subversion can pack existing sharded repositories which have been upgraded "
 "to the 1.6 filesystem format or later (see <xref linkend=\"svn.ref.svnadmin."
@@ -1989,7 +1979,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1680
+#: ch05-repository-admin.xml:1680
 #, no-wrap
 msgid ""
 "$ svnadmin pack /var/svn/repos\n"
@@ -2004,7 +1994,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1692
+#: ch05-repository-admin.xml:1692
 msgid ""
 "Because the packing process obtains the required locks before doing its "
 "work, you can run it on live repositories, or even as part of a post-commit "
@@ -2013,19 +2003,19 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1698
+#: ch05-repository-admin.xml:1698
 msgid ""
 "<command>svnadmin pack</command> has no effect on BDB-backed Subversion "
 "repositories."
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1706
+#: ch05-repository-admin.xml:1706
 msgid "Migrating Repository Data Elsewhere"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1708
+#: ch05-repository-admin.xml:1708
 msgid ""
 "A Subversion filesystem has its data spread throughout files in the "
 "repository, in a fashion generally understood by (and of interest to) only "
@@ -2035,40 +2025,37 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para><indexterm><see>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1717
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1721
+#: ch05-repository-admin.xml:1717 ch05-repository-admin.xml:1721
 msgid "repository dump streams"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para><indexterm><primary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1720
+#: ch05-repository-admin.xml:1720
 msgid "dump files"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para><indexterm><secondary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1725
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1730
+#: ch05-repository-admin.xml:1725 ch05-repository-admin.xml:1730
 msgid "subcommands"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para><indexterm><tertiary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1726
+#: ch05-repository-admin.xml:1726
 msgid "dump"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para><indexterm>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1726
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1731
+#: ch05-repository-admin.xml:1726 ch05-repository-admin.xml:1731
 msgid "<placeholder type=\"tertiary\" id=\"0\"/>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para><indexterm><tertiary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1731
+#: ch05-repository-admin.xml:1731
 msgid "load"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1716
+#: ch05-repository-admin.xml:1716
 msgid ""
 "<placeholder type=\"indexterm\" id=\"0\"/> <placeholder type=\"indexterm\" "
 "id=\"1\"/> <placeholder type=\"indexterm\" id=\"2\"/> <placeholder type="
@@ -2086,7 +2073,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><warning><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1750
+#: ch05-repository-admin.xml:1750
 msgid ""
 "While the Subversion repository dump format contains human-readable portions "
 "and a familiar structure (it resembles an RFC 822 format, the same type of "
@@ -2097,7 +2084,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1759
+#: ch05-repository-admin.xml:1759
 msgid ""
 "There are many reasons for dumping and loading Subversion repository data.  "
 "Early in Subversion's life, the most common reason was due to the evolution "
@@ -2117,7 +2104,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><note><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1780
+#: ch05-repository-admin.xml:1780
 msgid ""
 "The Subversion repository dump format describes versioned repository changes "
 "only.  It will not carry any information about uncommitted transactions, "
@@ -2126,7 +2113,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1787
+#: ch05-repository-admin.xml:1787
 msgid ""
 "The Subversion repository dump format also enables conversion from a "
 "different storage mechanism or version control system altogether.  Because "
@@ -2139,7 +2126,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1798
+#: ch05-repository-admin.xml:1798
 msgid ""
 "For now, we'll concern ourselves only with migration of repository data "
 "between Subversion repositories, which we'll describe in detail in the "
@@ -2147,12 +2134,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1804
+#: ch05-repository-admin.xml:1804
 msgid "Repository data migration using svnadmin"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1806
+#: ch05-repository-admin.xml:1806
 msgid ""
 "Whatever your reason for migrating repository history, using the "
 "<command>svnadmin dump</command> and <command>svnadmin load</command> "
@@ -2165,7 +2152,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1820
+#: ch05-repository-admin.xml:1820
 #, no-wrap
 msgid ""
 "$ svnlook youngest myrepos\n"
@@ -2180,7 +2167,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1832
+#: ch05-repository-admin.xml:1832
 msgid ""
 "At the end of the process, you will have a single file (<filename>dumpfile</"
 "filename> in the previous example) that contains all the data stored in your "
@@ -2191,7 +2178,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1841
+#: ch05-repository-admin.xml:1841
 msgid ""
 "The other subcommand in the pair, <command>svnadmin load</command>, parses "
 "the standard input stream as a Subversion repository dump file and "
@@ -2201,7 +2188,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1850
+#: ch05-repository-admin.xml:1850
 #, no-wrap
 msgid ""
 "$ svnadmin load newrepos &lt; dumpfile\n"
@@ -2233,7 +2220,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1879
+#: ch05-repository-admin.xml:1879
 msgid ""
 "The result of a load is new revisions added to a repository&mdash;the same "
 "thing you get by making commits against that repository from a regular "
@@ -2253,7 +2240,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1899
+#: ch05-repository-admin.xml:1899
 msgid ""
 "Note that because <command>svnadmin</command> uses standard input and output "
 "streams for the repository dump and load processes, people who are feeling "
@@ -2262,7 +2249,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1907
+#: ch05-repository-admin.xml:1907
 #, no-wrap
 msgid ""
 "$ svnadmin create newrepos\n"
@@ -2270,7 +2257,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1912
+#: ch05-repository-admin.xml:1912
 msgid ""
 "By default, the dump file will be quite large&mdash;much larger than the "
 "repository itself.  That's because by default every version of every file is "
@@ -2286,7 +2273,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1927
+#: ch05-repository-admin.xml:1927
 msgid ""
 "We mentioned previously that <command>svnadmin dump</command> outputs a "
 "range of revisions.  Use the <option>--revision</option> (<option>-r</"
@@ -2296,7 +2283,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1936
+#: ch05-repository-admin.xml:1936
 #, no-wrap
 msgid ""
 "$ svnadmin dump myrepos -r 23 &gt; rev-23.dumpfile\n"
@@ -2304,7 +2291,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1941
+#: ch05-repository-admin.xml:1941
 msgid ""
 "As Subversion dumps each new revision, it outputs only enough information to "
 "allow a future loader to re-create that revision based on the previous one.  "
@@ -2315,7 +2302,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1950
+#: ch05-repository-admin.xml:1950
 msgid ""
 "By default, Subversion will not express the first dumped revision as merely "
 "differences to be applied to the previous revision.  For one thing, there is "
@@ -2328,7 +2315,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1961
+#: ch05-repository-admin.xml:1961
 msgid ""
 "However, you can change this default behavior.  If you add the <option>--"
 "incremental</option> option when you dump your repository, "
@@ -2342,7 +2329,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1975
+#: ch05-repository-admin.xml:1975
 #, no-wrap
 msgid ""
 "$ svnadmin dump myrepos -r 0:1000 &gt; dumpfile1\n"
@@ -2351,14 +2338,14 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1981
+#: ch05-repository-admin.xml:1981
 msgid ""
 "These dump files could be loaded into a new repository with the following "
 "command sequence:"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1986
+#: ch05-repository-admin.xml:1986
 #, no-wrap
 msgid ""
 "$ svnadmin load newrepos &lt; dumpfile1\n"
@@ -2367,7 +2354,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:1992
+#: ch05-repository-admin.xml:1992
 msgid ""
 "Another neat trick you can perform with this <option>--incremental</option> "
 "option involves appending to an existing dump file a new range of dumped "
@@ -2381,7 +2368,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2004
+#: ch05-repository-admin.xml:2004
 msgid ""
 "The dump format can also be used to merge the contents of several different "
 "repositories into a single repository.  By using the <option>--parent-dir</"
@@ -2393,7 +2380,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2017
+#: ch05-repository-admin.xml:2017
 #, no-wrap
 msgid ""
 "$ svnadmin create /var/svn/projects\n"
@@ -2401,14 +2388,14 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2022
+#: ch05-repository-admin.xml:2022
 msgid ""
 "Then, make new directories in the repository that will encapsulate the "
 "contents of each of the three previous repositories:"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2028
+#: ch05-repository-admin.xml:2028
 #, no-wrap
 msgid ""
 "$ svn mkdir -m \"Initial project roots\" \\\n"
@@ -2420,14 +2407,14 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2037
+#: ch05-repository-admin.xml:2037
 msgid ""
 "Lastly, load the individual dump files into their respective locations in "
 "the new repository:"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2042
+#: ch05-repository-admin.xml:2042
 #, no-wrap
 msgid ""
 "$ svnadmin load /var/svn/projects --parent-dir calc &lt; calc-dumpfile\n"
@@ -2440,12 +2427,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2056
+#: ch05-repository-admin.xml:2056
 msgid "Repository data migration using svnrdump"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2058
+#: ch05-repository-admin.xml:2058
 msgid ""
 "In Subversion 1.7, <command>svnrdump</command> joined the set of stock "
 "Subversion tools.  It offers fairly specialized functionality, essentially "
@@ -2462,7 +2449,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2075
+#: ch05-repository-admin.xml:2075
 msgid ""
 "The primary difference is that instead of requiring direct access to the "
 "repository, <command>svnrdump</command> operates remotely, using the very "
@@ -2473,7 +2460,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><note><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2084
+#: ch05-repository-admin.xml:2084
 msgid ""
 "<command>svnrdump dump</command> requires that the remote server be running "
 "Subversion 1.4 or newer.  It currently generates dump streams only of the "
@@ -2484,7 +2471,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><note><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2095
+#: ch05-repository-admin.xml:2095
 msgid ""
 "Because it modifies revision properties after committing new revisions, "
 "<command>svnrdump load</command> requires that the target repository have "
@@ -2494,7 +2481,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2103
+#: ch05-repository-admin.xml:2103
 msgid ""
 "As you might expect, you can use <command>svnadmin</command> and "
 "<command>svnrdump</command> in concert.  You can, for example, use "
@@ -2506,7 +2493,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><tip><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2114
+#: ch05-repository-admin.xml:2114
 msgid ""
 "By using <literal>file://</literal> URLs, <command>svnrdump</command> can "
 "also access local repositories, but it will be doing so via Subversion's "
@@ -2515,17 +2502,17 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2127
+#: ch05-repository-admin.xml:2127
 msgid "Filtering Repository History"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para><footnote><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2136
+#: ch05-repository-admin.xml:2136
 msgid "That's rather the reason you use version control at all, right?"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para><footnote><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2142
+#: ch05-repository-admin.xml:2142
 msgid ""
 "Conscious, cautious removal of certain bits of versioned data is actually "
 "supported by real use cases.  That's why an <quote>obliterate</quote> "
@@ -2534,7 +2521,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2129
+#: ch05-repository-admin.xml:2129
 msgid ""
 "Since Subversion stores your versioned history using, at the very least, "
 "binary differencing algorithms and data compression (optionally in a "
@@ -2553,7 +2540,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2154
+#: ch05-repository-admin.xml:2154
 msgid ""
 "As we described earlier in <xref linkend=\"svn.reposadmin.maint.migrate\" /"
 ">, the Subversion repository dump format is a human-readable representation "
@@ -2569,7 +2556,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2170
+#: ch05-repository-admin.xml:2170
 msgid ""
 "That's where <command>svndumpfilter</command> becomes useful.  This program "
 "acts as a path-based filter for repository dump streams.  Simply give it "
@@ -2580,7 +2567,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2179
+#: ch05-repository-admin.xml:2179
 msgid ""
 "Let's look at a realistic example of how you might use this program.  "
 "Earlier in this chapter (see <xref linkend=\"svn.reposadmin.projects."
@@ -2594,7 +2581,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2191
+#: ch05-repository-admin.xml:2191
 msgid ""
 "Our imaginary repository contains three projects: <literal>calc</literal>, "
 "<literal>calendar</literal>, and <literal>spreadsheet</literal>.  They have "
@@ -2602,7 +2589,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><informalexample><literallayout>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2198
+#: ch05-repository-admin.xml:2198
 #, no-wrap
 msgid ""
 "/\n"
@@ -2621,14 +2608,14 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2214
+#: ch05-repository-admin.xml:2214
 msgid ""
 "To get these three projects into their own repositories, we first dump the "
 "whole repository:"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2219
+#: ch05-repository-admin.xml:2219
 #, no-wrap
 msgid ""
 "$ svnadmin dump /var/svn/repos &gt; repos-dumpfile\n"
@@ -2641,14 +2628,14 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2229
+#: ch05-repository-admin.xml:2229
 msgid ""
 "Next, run that dump file through the filter, each time including only one of "
 "our top-level directories.  This results in three new dump files:"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2235
+#: ch05-repository-admin.xml:2235
 #, no-wrap
 msgid ""
 "$ svndumpfilter include calc &lt; repos-dumpfile &gt; calc-dumpfile\n"
@@ -2661,7 +2648,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2245
+#: ch05-repository-admin.xml:2245
 msgid ""
 "At this point, you have to make a decision.  Each of your dump files will "
 "create a valid repository, but will preserve the paths exactly as they were "
@@ -2679,7 +2666,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><informalexample><programlisting>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2264
+#: ch05-repository-admin.xml:2264
 #, no-wrap
 msgid ""
 "Node-path: calc\n"
@@ -2690,7 +2677,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><warning><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2273
+#: ch05-repository-admin.xml:2273
 msgid ""
 "If you do plan on manually editing the dump file to remove a top-level "
 "directory, make sure your editor is not set to automatically convert end-of-"
@@ -2700,7 +2687,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2282
+#: ch05-repository-admin.xml:2282
 msgid ""
 "All that remains now is to create your three new repositories, and load each "
 "dump file into the right repository, ignoring the UUID found in the dump "
@@ -2708,7 +2695,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2288
+#: ch05-repository-admin.xml:2288
 #, no-wrap
 msgid ""
 "$ svnadmin create calc\n"
@@ -2733,7 +2720,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2310
+#: ch05-repository-admin.xml:2310
 msgid ""
 "Both of <command>svndumpfilter</command>'s subcommands accept options for "
 "deciding how to deal with <quote>empty</quote> revisions.  If a given "
@@ -2744,22 +2731,22 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2321
+#: ch05-repository-admin.xml:2321
 msgid "<option>--drop-empty-revs</option>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2323
+#: ch05-repository-admin.xml:2323
 msgid "Do not generate empty revisions at all&mdash;just omit them."
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2328
+#: ch05-repository-admin.xml:2328
 msgid "<option>--renumber-revs</option>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2330
+#: ch05-repository-admin.xml:2330
 msgid ""
 "If empty revisions are dropped (using the <option>--drop-empty-revs</option> "
 "option), change the revision numbers of the remaining revisions so that "
@@ -2767,12 +2754,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2337
+#: ch05-repository-admin.xml:2337
 msgid "<option>--preserve-revprops</option>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2339
+#: ch05-repository-admin.xml:2339
 msgid ""
 "If empty revisions are not dropped, preserve the revision properties (log "
 "message, author, date, custom properties, etc.) for those empty revisions.  "
@@ -2782,7 +2769,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2350
+#: ch05-repository-admin.xml:2350
 msgid ""
 "While <command>svndumpfilter</command> can be very useful and a huge "
 "timesaver, there are unfortunately a couple of gotchas.  First, this utility "
@@ -2793,7 +2780,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><informalexample><programlisting>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2360
+#: ch05-repository-admin.xml:2360
 #, no-wrap
 msgid ""
 "&hellip;\n"
@@ -2802,7 +2789,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para><footnote><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2372
+#: ch05-repository-admin.xml:2372
 msgid ""
 "While <command>svnadmin dump</command> has a consistent leading slash policy "
 "(to not include them), other programs that generate dump data might not be "
@@ -2810,7 +2797,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2366
+#: ch05-repository-admin.xml:2366
 msgid ""
 "If the paths have leading slashes, you should include leading slashes in the "
 "paths you pass to <command>svndumpfilter include</command> and "
@@ -2822,7 +2809,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2380
+#: ch05-repository-admin.xml:2380
 msgid ""
 "Also, copied paths can give you some trouble.  Subversion supports copy "
 "operations in the repository, where a new path is created by copying some "
@@ -2842,7 +2829,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2401
+#: ch05-repository-admin.xml:2401
 msgid ""
 "Finally, <command>svndumpfilter</command> takes path filtering quite "
 "literally.  If you are trying to copy the history of a project rooted at "
@@ -2861,12 +2848,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2425
+#: ch05-repository-admin.xml:2425
 msgid "Repository Replication"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2427
+#: ch05-repository-admin.xml:2427
 msgid ""
 "There are several scenarios in which it is quite handy to have a Subversion "
 "repository whose version history is exactly the same as some other "
@@ -2879,7 +2866,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2437
+#: ch05-repository-admin.xml:2437
 msgid ""
 "Subversion provides a program for managing scenarios such as these.  "
 "<command>svnsync</command> works by essentially asking the Subversion server "
@@ -2893,7 +2880,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><note><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2451
+#: ch05-repository-admin.xml:2451
 msgid ""
 "When using <command>svnsync</command> against a remote source repository, "
 "the Subversion server for that repository must be running Subversion version "
@@ -2901,12 +2888,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2458
+#: ch05-repository-admin.xml:2458
 msgid "Replication with svnsync"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2460
+#: ch05-repository-admin.xml:2460
 msgid ""
 "Assuming you already have a source repository that you'd like to mirror, the "
 "next thing you need is a target repository that will actually serve as that "
@@ -2918,14 +2905,14 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para><footnote><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2477
+#: ch05-repository-admin.xml:2477
 msgid ""
 "In fact, it can't truly be read-only, or <command>svnsync</command> itself "
 "would have a tough time copying revision history into it."
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2471
+#: ch05-repository-admin.xml:2471
 msgid ""
 "The protocol that <command>svnsync</command> uses to communicate revision "
 "information is highly sensitive to mismatches between the versioned "
@@ -2937,7 +2924,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><warning><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2485
+#: ch05-repository-admin.xml:2485
 msgid ""
 "Do <emphasis>not</emphasis> modify a mirror repository in such a way as to "
 "cause its version history to deviate from that of the repository it "
@@ -2947,7 +2934,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2493
+#: ch05-repository-admin.xml:2493
 msgid ""
 "Another requirement of the target repository is that the <command>svnsync</"
 "command> process be allowed to modify revision properties.  Because "
@@ -2962,7 +2949,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><tip><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2508
+#: ch05-repository-admin.xml:2508
 msgid ""
 "It's a good idea to implement authorization measures that allow your "
 "repository replication process to perform its tasks while preventing other "
@@ -2970,7 +2957,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2514
+#: ch05-repository-admin.xml:2514
 msgid ""
 "Let's walk through the use of <command>svnsync</command> in a somewhat "
 "typical mirroring scenario.  We'll pepper this discourse with practical "
@@ -2979,7 +2966,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2520
+#: ch05-repository-admin.xml:2520
 msgid ""
 "We will be mirroring the public Subversion repository which houses the "
 "source code for this very book and exposing that mirror publicly on the "
@@ -2996,7 +2983,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2536
+#: ch05-repository-admin.xml:2536
 msgid ""
 "First, we'll create the repository which will be our mirror.  This and the "
 "next couple of steps do require shell access to the machine on which the "
@@ -3005,7 +2992,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2544
+#: ch05-repository-admin.xml:2544
 #, no-wrap
 msgid ""
 "$ ssh admin@svn.example.com \"svnadmin create /var/svn/svn-mirror\"\n"
@@ -3014,7 +3001,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2550
+#: ch05-repository-admin.xml:2550
 msgid ""
 "At this point, we have our repository, and due to our server's "
 "configuration, that repository is now <quote>live</quote> on the Internet.  "
@@ -3026,7 +3013,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2560
+#: ch05-repository-admin.xml:2560
 msgid ""
 "We'll use the repository's hook system both to allow the replication process "
 "to do what it needs to do and to enforce that only it is doing those "
@@ -3039,12 +3026,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><example><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2573
+#: ch05-repository-admin.xml:2573
 msgid "Mirror repository's pre-revprop-change hook script"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><example><programlisting>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2575
+#: ch05-repository-admin.xml:2575
 #, no-wrap
 msgid ""
 "#!/bin/sh \n"
@@ -3058,7 +3045,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2586
+#: ch05-repository-admin.xml:2586
 msgid ""
 "That covers revision property changes.  Now we need to ensure that only the "
 "<literal>syncuser</literal> user is permitted to commit new revisions to the "
@@ -3068,12 +3055,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><example><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2595
+#: ch05-repository-admin.xml:2595
 msgid "Mirror repository's start-commit hook script"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><example><programlisting>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2598
+#: ch05-repository-admin.xml:2598
 #, no-wrap
 msgid ""
 "#!/bin/sh \n"
@@ -3087,7 +3074,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2609
+#: ch05-repository-admin.xml:2609
 msgid ""
 "After installing our hook scripts and ensuring that they are executable by "
 "the Subversion server, we're finished with the setup of the mirror "
@@ -3095,7 +3082,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2614
+#: ch05-repository-admin.xml:2614
 msgid ""
 "The first thing we need to do with <command>svnsync</command> is to register "
 "in our target repository the fact that it will be a mirror of the source "
@@ -3108,7 +3095,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2628
+#: ch05-repository-admin.xml:2628
 #, no-wrap
 msgid ""
 "$ svnsync help init\n"
@@ -3126,7 +3113,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2643
+#: ch05-repository-admin.xml:2643
 msgid ""
 "Our target repository will now remember that it is a mirror of the public "
 "Subversion source code repository.  Notice that we provided a username and "
@@ -3135,7 +3122,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><note><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2650
+#: ch05-repository-admin.xml:2650
 msgid ""
 "In Subversion 1.4, the values given to <command>svnsync</command>'s "
 "<option>--username</option> and <option>--password</option> command-line "
@@ -3153,7 +3140,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para><footnote><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2674
+#: ch05-repository-admin.xml:2674
 msgid ""
 "Be forewarned that while it will take only a few seconds for the average "
 "reader to parse this paragraph and the sample output that follows it, the "
@@ -3162,7 +3149,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2671
+#: ch05-repository-admin.xml:2671
 msgid ""
 "And now comes the fun part.  With a single subcommand, we can tell "
 "<command>svnsync</command> to copy all the as-yet-unmirrored revisions from "
@@ -3180,7 +3167,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2695
+#: ch05-repository-admin.xml:2695
 #, no-wrap
 msgid ""
 "$ svnsync help synchronize\n"
@@ -3212,7 +3199,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2724
+#: ch05-repository-admin.xml:2724
 msgid ""
 "Of particular interest here is that for each mirrored revision, there is "
 "first a commit of that revision to the target repository, and then property "
@@ -3227,7 +3214,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2738
+#: ch05-repository-admin.xml:2738
 msgid ""
 "Also noteworthy is that <command>svnsync</command> performs careful "
 "bookkeeping that allows it to be safely interrupted and restarted without "
@@ -3239,7 +3226,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><warning><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2749
+#: ch05-repository-admin.xml:2749
 msgid ""
 "As part of its bookkeeping, <command>svnsync</command> records in the mirror "
 "repository the URL with which the mirror was initialized.  Because of this, "
@@ -3252,12 +3239,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><sidebar><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2763
+#: ch05-repository-admin.xml:2763
 msgid "svnsync Bookkeeping"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><sidebar><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2765
+#: ch05-repository-admin.xml:2765
 msgid ""
 "<command>svnsync</command> needs to be able to set and modify revision "
 "properties on the mirror repository because those properties are part of the "
@@ -3271,7 +3258,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><sidebar><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2777
+#: ch05-repository-admin.xml:2777
 msgid ""
 "One of those pieces of state-tracking information is a flag that essentially "
 "just means <quote>there's a synchronization in progress right now.</quote> "
@@ -3292,7 +3279,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><sidebar><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2801
+#: ch05-repository-admin.xml:2801
 #, no-wrap
 msgid ""
 "$ svn propdel --revprop -r0 svn:sync-lock http://svn.example.com/svn-mirror\n"
@@ -3301,7 +3288,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><sidebar><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2807
+#: ch05-repository-admin.xml:2807
 msgid ""
 "Also, <command>svnsync</command> stores the source repository URL provided "
 "at mirror initialization time in a bookkeeping property on the mirror "
@@ -3323,7 +3310,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><sidebar><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2833
+#: ch05-repository-admin.xml:2833
 #, no-wrap
 msgid ""
 "$ svnsync initialize --allow-non-empty http://svn.example.com/svn-mirror \\\n"
@@ -3333,14 +3320,14 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><sidebar><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2840
+#: ch05-repository-admin.xml:2840
 msgid ""
 "If you are running an older version of Subversion, you'll need to manually "
 "tweak the <literal>svn:sync-from-url</literal> bookkeeping property:"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><sidebar><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2847
+#: ch05-repository-admin.xml:2847
 #, no-wrap
 msgid ""
 "$ svn propset --revprop -r0 svn:sync-from-url <replaceable>NEW-SOURCE-URL</replaceable> \\\n"
@@ -3350,7 +3337,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><sidebar><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2854
+#: ch05-repository-admin.xml:2854
 msgid ""
 "Another interesting thing about these special bookkeeping properties is that "
 "<command>svnsync</command> will not attempt to mirror any of those "
@@ -3365,7 +3352,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><sidebar><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2868
+#: ch05-repository-admin.xml:2868
 msgid ""
 "An <command>svnsync info</command> subcommand was added in Subversion 1.6 to "
 "easily display the special bookkeeping properties in the destination "
@@ -3373,7 +3360,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><sidebar><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2875
+#: ch05-repository-admin.xml:2875
 #, no-wrap
 msgid ""
 "$ svnsync help info\n"
@@ -3390,7 +3377,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2890
+#: ch05-repository-admin.xml:2890
 msgid ""
 "There is, however, one bit of inelegance in the process.  Because Subversion "
 "revision properties can be changed at any time throughout the lifetime of "
@@ -3406,7 +3393,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2906
+#: ch05-repository-admin.xml:2906
 #, no-wrap
 msgid ""
 "$ svnsync help copy-revprops\n"
@@ -3422,7 +3409,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2919
+#: ch05-repository-admin.xml:2919
 msgid ""
 "That's repository replication via <command>svnsync</command> in a nutshell.  "
 "You'll likely want some automation around such a process.  For example, "
@@ -3434,12 +3421,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2933
+#: ch05-repository-admin.xml:2933
 msgid "Partial replication with svnsync"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2935
+#: ch05-repository-admin.xml:2935
 msgid ""
 "<command>svnsync</command> isn't limited to full copies of everything which "
 "lives in a repository.  It can handle various shades of partial replication, "
@@ -3451,7 +3438,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2945
+#: ch05-repository-admin.xml:2945
 msgid ""
 "As of Subversion 1.5, <command>svnsync</command> also has the ability to "
 "mirror a subset of a repository rather than the whole thing.  The process of "
@@ -3473,12 +3460,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2971
+#: ch05-repository-admin.xml:2971
 msgid "A quick trick for mirror creation"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2973
+#: ch05-repository-admin.xml:2973
 msgid ""
 "We mentioned previously the cost of setting up an initial mirror of an "
 "existing repository.  For many folks, the sheer cost of transmitting "
@@ -3497,7 +3484,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:2994
+#: ch05-repository-admin.xml:2994
 #, no-wrap
 msgid ""
 "$ svnadmin hotcopy /path/to/repos /path/to/mirror-repos\n"
@@ -3514,7 +3501,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:3008
+#: ch05-repository-admin.xml:3008
 msgid ""
 "Admins who are running a version of Subversion prior to 1.7 (and thus do not "
 "have access to <command>svnsync initialize</command>'s <option>--allow-non-"
@@ -3527,12 +3514,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:3024
+#: ch05-repository-admin.xml:3024
 msgid "Replication wrap-up"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:3026
+#: ch05-repository-admin.xml:3026
 msgid ""
 "We've discussed a couple of ways to replicate revision history from one "
 "repository to another.  So let's look now at the user end of these "
@@ -3541,7 +3528,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:3032
+#: ch05-repository-admin.xml:3032
 msgid ""
 "As far as user interaction with repositories and mirrors goes, it "
 "<emphasis>is</emphasis> possible to have a single working copy that "
@@ -3553,7 +3540,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:3041
+#: ch05-repository-admin.xml:3041
 msgid ""
 "Once the two repositories have the same UUID, you can use <command>svn "
 "relocate</command> to point your working copy to whichever of the "
@@ -3571,7 +3558,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:3059
+#: ch05-repository-admin.xml:3059
 msgid ""
 "Finally, be aware that the revision-based replication provided by "
 "<command>svnsync</command> is only that&mdash;replication of revisions.  "
@@ -3586,12 +3573,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:3079
+#: ch05-repository-admin.xml:3079
 msgid "Repository Backup"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:3081
+#: ch05-repository-admin.xml:3081
 msgid ""
 "Despite numerous advances in technology since the birth of the modern "
 "computer, one thing unfortunately rings true with crystalline clarity&mdash;"
@@ -3603,7 +3590,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:3091
+#: ch05-repository-admin.xml:3091
 msgid ""
 "There are two types of backup methods available for Subversion repository "
 "administrators&mdash;full and incremental.  A full backup of the repository "
@@ -3616,7 +3603,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:3103
+#: ch05-repository-admin.xml:3103
 msgid ""
 "As far as full backups go, the naïve approach might seem like a sane one, "
 "but unless you temporarily disable all other access to your repository, "
@@ -3632,13 +3619,13 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:3120
+#: ch05-repository-admin.xml:3120
 #, no-wrap
 msgid "$ svnadmin hotcopy /var/svn/repos /var/svn/repos-backup\n"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:3124
+#: ch05-repository-admin.xml:3124
 msgid ""
 "The resultant backup is a fully functional Subversion repository, able to be "
 "dropped in as a replacement for your live repository should something go "
@@ -3646,7 +3633,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:3128
+#: ch05-repository-admin.xml:3128
 msgid ""
 "Additional tooling around this command is available, too.  The "
 "<filename>tools/backup/</filename> directory of the Subversion source "
@@ -3664,7 +3651,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:3146
+#: ch05-repository-admin.xml:3146
 msgid ""
 "Some administrators use a different backup mechanism built around generating "
 "and storing repository dump data.  We described in <xref linkend=\"svn."
@@ -3685,7 +3672,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:3167
+#: ch05-repository-admin.xml:3167
 msgid ""
 "Beginning with Subversion 1.8, <command>svnadmin hotcopy</command> accepts "
 "<option>--incremental</option> option and supports incremental hotcopy mode "
@@ -3702,7 +3689,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:3182
+#: ch05-repository-admin.xml:3182
 msgid ""
 "As you can see, each of the various backup types and methods has its "
 "advantages and disadvantages.  The easiest is by far the full hot backup, "
@@ -3719,7 +3706,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:3198
+#: ch05-repository-admin.xml:3198
 msgid ""
 "The <command>svnsync</command> program (see <xref linkend=\"svn.reposadmin."
 "maint.replication\" />) actually provides a rather handy middle-ground "
@@ -3734,14 +3721,14 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para><footnote><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:3218
+#: ch05-repository-admin.xml:3218
 msgid ""
 "<command>svnadmin setlog</command> can be called in a way that bypasses the "
 "hook interface altogether."
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:3212
+#: ch05-repository-admin.xml:3212
 msgid ""
 "In any backup scenario, repository administrators need to be aware of how "
 "modifications to unversioned revision properties affect their backups.  "
@@ -3755,7 +3742,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:3227
+#: ch05-repository-admin.xml:3227
 msgid ""
 "Generally speaking, only the truly paranoid would need to back up their "
 "entire repository, say, every time a commit occurred.  However, assuming "
@@ -3767,14 +3754,14 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para><footnote><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:3251
+#: ch05-repository-admin.xml:3251
 msgid ""
 "You know&mdash;the collective term for all of her <quote>fickle fingers.</"
 "quote>"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:3237
+#: ch05-repository-admin.xml:3237
 msgid ""
 "Often, the best approach to repository backups is a diversified one that "
 "leverages combinations of the methods described here.  The Subversion "
@@ -3792,12 +3779,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:3260
+#: ch05-repository-admin.xml:3260
 msgid "Managing Repository UUIDs"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:3262
+#: ch05-repository-admin.xml:3262
 msgid ""
 "Subversion repositories have a universally unique identifier (UUID) "
 "associated with them.  This is used by Subversion clients to verify the "
@@ -3809,7 +3796,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:3272
+#: ch05-repository-admin.xml:3272
 msgid ""
 "As a general rule, you want the UUIDs of your live repositories to be "
 "unique.  That is, after all, the point of having UUIDs.  But there are times "
@@ -3826,7 +3813,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:3288
+#: ch05-repository-admin.xml:3288
 msgid ""
 "There are a couple of ways to set (or reset) a repository's UUID, should you "
 "need to.  As of Subversion 1.5, this is as simple as using the "
@@ -3837,7 +3824,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:3299
+#: ch05-repository-admin.xml:3299
 #, no-wrap
 msgid ""
 "$ svnlook uuid /var/svn/repos\n"
@@ -3853,7 +3840,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:3312
+#: ch05-repository-admin.xml:3312
 msgid ""
 "For folks using versions of Subversion earlier than 1.5, these tasks are a "
 "little more complicated.  You can explicitly set a repository's UUID by "
@@ -3863,7 +3850,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:3321
+#: ch05-repository-admin.xml:3321
 #, no-wrap
 msgid ""
 "$ svnadmin load --force-uuid /var/svn/repos &lt;&lt;EOF\n"
@@ -3877,7 +3864,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:3332
+#: ch05-repository-admin.xml:3332
 msgid ""
 "Having older versions of Subversion generate a brand-new UUID is not quite "
 "as simple to do, though.  Your best bet here is to find some other way to "
@@ -3885,12 +3872,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:3345
+#: ch05-repository-admin.xml:3345
 msgid "Moving and Removing Repositories"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:3347
+#: ch05-repository-admin.xml:3347
 msgid ""
 "Subversion repository data is wholly contained within the repository "
 "directory.  As such, you can move a Subversion repository to some other "
@@ -3904,7 +3891,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:3359
+#: ch05-repository-admin.xml:3359
 msgid ""
 "Of course, there's often still more to be done when trying to cleanly affect "
 "changes such as this.  For example, you might need to update your Subversion "
@@ -3918,7 +3905,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:3371
+#: ch05-repository-admin.xml:3371
 msgid ""
 "In the case of a copied repository, you should also consider the fact that "
 "Subversion uses repository UUIDs to distinguish repositories.  If you copy a "
@@ -3931,12 +3918,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:3388
+#: ch05-repository-admin.xml:3388
 msgid "Summary"
 msgstr ""
 
 #. type: Content of: <chapter><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:3390
+#: ch05-repository-admin.xml:3390
 msgid ""
 "By now you should have a basic understanding of how to create, configure, "
 "and maintain Subversion repositories.  We introduced you to the various "
@@ -3945,7 +3932,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <chapter><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ch05-repository-admin.xml:3397
+#: ch05-repository-admin.xml:3397
 msgid ""
 "All that remains is for you to decide what exciting data to store in your "
 "repository, and finally, how to make it available over a network.  The next "

@@ -75,8 +75,9 @@ POST_INSTALL = :
 NORMAL_UNINSTALL = :
 PRE_UNINSTALL = :
 POST_UNINSTALL = :
+DIST_COMMON = $(srcdir)/../../Makefile.def $(srcdir)/Makefile.in \
+	$(srcdir)/Makefile.am
 subdir = book/ja
-DIST_COMMON = $(srcdir)/Makefile.in $(srcdir)/Makefile.am
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
 am__aclocal_m4_deps = $(top_srcdir)/progs.m4 \
 	$(top_srcdir)/configure.ac
@@ -219,10 +220,14 @@ srcs = $(addprefix $(POT_DIR)/,$(basenames))
 #outputs = $(addprefix $(srcdir)/, $(patsubst %.pot,%.po,$(basenames)))
 outputs = $(basenames:.pot=.po)
 EXTRA_DIST = $(outputs)
+xml_dir = ${shell dirname $1}
+xml_basename = ${shell basename $1}
+pot_absdir = ${abs_top_builddir}/book/pot
+pot_absname = $(pot_absdir)/${shell basename $2}
 all: all-am
 
 .SUFFIXES:
-$(srcdir)/Makefile.in:  $(srcdir)/Makefile.am  $(am__configure_deps)
+$(srcdir)/Makefile.in:  $(srcdir)/Makefile.am $(srcdir)/../../Makefile.def $(am__configure_deps)
 	@for dep in $?; do \
 	  case '$(am__configure_deps)' in \
 	    *$$dep*) \
@@ -243,6 +248,7 @@ Makefile: $(srcdir)/Makefile.in $(top_builddir)/config.status
 	    echo ' cd $(top_builddir) && $(SHELL) ./config.status $(subdir)/$@ $(am__depfiles_maybe)'; \
 	    cd $(top_builddir) && $(SHELL) ./config.status $(subdir)/$@ $(am__depfiles_maybe);; \
 	esac;
+$(srcdir)/../../Makefile.def:
 
 $(top_builddir)/config.status: $(top_srcdir)/configure $(CONFIG_STATUS_DEPENDENCIES)
 	cd $(top_builddir) && $(MAKE) $(AM_MAKEFLAGS) am--refresh
@@ -402,9 +408,8 @@ uninstall-am:
 	maintainer-clean-generic mostlyclean mostlyclean-generic pdf \
 	pdf-am ps ps-am tags-am uninstall uninstall-am
 
-
 define MSGPROC
-  if test -f "$$@"; then \
+  if test ! -f "$@"; then \
     msginit --no-translator -l ja_JP \
      -i $1 -o $2 ;\
     sed -i -e "/Language-Team/s/none/matsuand個人翻訳/" \
@@ -412,6 +417,16 @@ define MSGPROC
   else \
     msgmerge -U $2 $1 ; \
   fi
+endef
+
+define PO4AGET
+  (cd ${xml_dir} && \
+     $(PO4AGETTEXTIZE) -f docbook -M utf-8 -m ${xml_basename} -p ${pot_absname})
+endef
+
+define PO4ATRANS
+  $(PO4ATRANSLATE) -k 0 -f docbook -o doctype="docbook" \
+    -M UTF-8 -m $1 -l $@ -p $2
 endef
 
 .PHONY: all

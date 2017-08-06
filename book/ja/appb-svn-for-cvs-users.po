@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2017-08-03 18:00+0900\n"
-"PO-Revision-Date: 2017-08-03 18:00+0900\n"
+"POT-Creation-Date: 2017-08-06 14:19+0900\n"
+"PO-Revision-Date: 2017-08-06 14:19+0900\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: matsuand個人翻訳\n"
 "Language: ja\n"
@@ -17,12 +17,12 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. type: Content of: <appendix><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appb-svn-for-cvs-users.xml:4
+#: appb-svn-for-cvs-users.xml:4
 msgid "Subversion for CVS Users"
 msgstr ""
 
 #. type: Content of: <appendix><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appb-svn-for-cvs-users.xml:6
+#: appb-svn-for-cvs-users.xml:6
 msgid ""
 "This appendix is a guide for CVS users new to Subversion.  It's essentially "
 "a list of differences between the two systems as <quote>viewed from 10,000 "
@@ -31,7 +31,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appb-svn-for-cvs-users.xml:12
+#: appb-svn-for-cvs-users.xml:12
 msgid ""
 "Although the goal of Subversion is to take over the current and future CVS "
 "user base, some new features and design changes were required to fix certain "
@@ -41,12 +41,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appb-svn-for-cvs-users.xml:24
+#: appb-svn-for-cvs-users.xml:24
 msgid "Revision Numbers Are Different Now"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appb-svn-for-cvs-users.xml:26
+#: appb-svn-for-cvs-users.xml:26
 msgid ""
 "In CVS, revision numbers are per file.  This is because CVS stores its data "
 "in RCS files; each file has a corresponding RCS file in the repository, and "
@@ -55,7 +55,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appb-svn-for-cvs-users.xml:31
+#: appb-svn-for-cvs-users.xml:31
 msgid ""
 "In Subversion, the repository looks like a single filesystem.  Each commit "
 "results in an entirely new filesystem tree; in essence, the repository is an "
@@ -66,7 +66,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appb-svn-for-cvs-users.xml:39
+#: appb-svn-for-cvs-users.xml:39
 msgid ""
 "Technically, it's not valid to talk about <quote>revision 5 of <filename>foo."
 "c</filename>.</quote> Instead, one would say <quote><filename>foo.c</"
@@ -78,7 +78,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appb-svn-for-cvs-users.xml:49
+#: appb-svn-for-cvs-users.xml:49
 msgid ""
 "Similarly, in CVS, a tag or branch is an annotation on the file or on the "
 "version information for that individual file, whereas in Subversion, a tag "
@@ -93,31 +93,31 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appb-svn-for-cvs-users.xml:63
+#: appb-svn-for-cvs-users.xml:63
 msgid ""
 "For more details on this topic, see <xref linkend=\"svn.basic.in-action.revs"
 "\" />."
 msgstr ""
 
 #. type: Content of: <appendix><sect1><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appb-svn-for-cvs-users.xml:72
+#: appb-svn-for-cvs-users.xml:72
 msgid "Directory Versions"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appb-svn-for-cvs-users.xml:74
+#: appb-svn-for-cvs-users.xml:74
 msgid ""
 "Subversion tracks tree structures, not just file contents.  It's one of the "
 "biggest reasons Subversion was written to replace CVS."
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appb-svn-for-cvs-users.xml:78
+#: appb-svn-for-cvs-users.xml:78
 msgid "Here's what this means to you, as a former CVS user:"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><itemizedlist><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appb-svn-for-cvs-users.xml:82
+#: appb-svn-for-cvs-users.xml:82
 msgid ""
 "The <command>svn add</command> and <command>svn delete</command> commands "
 "work on directories now, just as they work on files.  So do <command>svn "
@@ -129,7 +129,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><itemizedlist><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appb-svn-for-cvs-users.xml:93
+#: appb-svn-for-cvs-users.xml:93
 msgid ""
 "Directories aren't dumb containers anymore; they have revision numbers like "
 "files.  (Or more properly, it's correct to talk about <quote>directory "
@@ -137,7 +137,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appb-svn-for-cvs-users.xml:100
+#: appb-svn-for-cvs-users.xml:100
 msgid ""
 "Let's talk more about that last point.  Directory versioning is a hard "
 "problem; because we want to allow mixed-revision working copies, there are "
@@ -145,7 +145,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appb-svn-for-cvs-users.xml:105
+#: appb-svn-for-cvs-users.xml:105
 msgid ""
 "From a theoretical point of view, we define <quote>revision 5 of directory "
 "<filename>foo</filename></quote> to mean a specific collection of directory "
@@ -158,7 +158,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appb-svn-for-cvs-users.xml:117
+#: appb-svn-for-cvs-users.xml:117
 msgid ""
 "Subversion deals with this problem by quietly tracking committed adds and "
 "deletes in the <filename>.svn</filename> area.  When you eventually run "
@@ -171,7 +171,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appb-svn-for-cvs-users.xml:127
+#: appb-svn-for-cvs-users.xml:127
 msgid ""
 "Similarly, a problem arises if you attempt to commit property changes on a "
 "directory.  Normally, the commit would bump the working directory's local "
@@ -182,19 +182,19 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appb-svn-for-cvs-users.xml:136
+#: appb-svn-for-cvs-users.xml:136
 msgid ""
 "For more discussion about the limitations of directory versioning, see <xref "
 "linkend=\"svn.basic.in-action.mixedrevs\"/>."
 msgstr ""
 
 #. type: Content of: <appendix><sect1><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appb-svn-for-cvs-users.xml:146
+#: appb-svn-for-cvs-users.xml:146
 msgid "More Disconnected Operations"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appb-svn-for-cvs-users.xml:148
+#: appb-svn-for-cvs-users.xml:148
 msgid ""
 "In recent years, disk space has become outrageously cheap and abundant, but "
 "network bandwidth has not.  Therefore, the Subversion working copy has been "
@@ -202,7 +202,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appb-svn-for-cvs-users.xml:153
+#: appb-svn-for-cvs-users.xml:153
 msgid ""
 "The <filename>.svn</filename> administrative directory serves the same "
 "purpose as the <filename>CVS</filename> directory, except that it also "
@@ -211,49 +211,49 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appb-svn-for-cvs-users.xml:162
+#: appb-svn-for-cvs-users.xml:162
 msgid "<command>svn status</command>"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appb-svn-for-cvs-users.xml:164
+#: appb-svn-for-cvs-users.xml:164
 msgid ""
 "Shows you any local changes you've made (see <xref linkend=\"svn.tour.cycle."
 "examine.status\"/>)"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appb-svn-for-cvs-users.xml:170
+#: appb-svn-for-cvs-users.xml:170
 msgid "<command>svn diff</command>"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appb-svn-for-cvs-users.xml:172
+#: appb-svn-for-cvs-users.xml:172
 msgid ""
 "Shows you the details of your changes (see <xref linkend=\"svn.tour.cycle."
 "examine.diff\"/>)"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appb-svn-for-cvs-users.xml:178
+#: appb-svn-for-cvs-users.xml:178
 msgid "<command>svn revert</command>"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appb-svn-for-cvs-users.xml:180
+#: appb-svn-for-cvs-users.xml:180
 msgid ""
 "Removes your local changes (see <xref linkend=\"svn.tour.cycle.revert\"/>)"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appb-svn-for-cvs-users.xml:187
+#: appb-svn-for-cvs-users.xml:187
 msgid ""
 "Also, the cached pristine files allow the Subversion client to send "
 "differences when committing, which CVS cannot do."
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appb-svn-for-cvs-users.xml:190
+#: appb-svn-for-cvs-users.xml:190
 msgid ""
 "The last subcommand in the list&mdash;<command>svn revert</command>&mdash;is "
 "new.  It will not only remove local changes, but also unschedule operations "
@@ -263,19 +263,19 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appb-svn-for-cvs-users.xml:203
+#: appb-svn-for-cvs-users.xml:203
 msgid "Distinction Between Status and Update"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appb-svn-for-cvs-users.xml:205
+#: appb-svn-for-cvs-users.xml:205
 msgid ""
 "Subversion attempts to erase a lot of the confusion between the <command>cvs "
 "status</command> and <command>cvs update</command> commands."
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appb-svn-for-cvs-users.xml:209
+#: appb-svn-for-cvs-users.xml:209
 msgid ""
 "The <command>cvs status</command> command has two purposes: first, to show "
 "the user any local modifications in the working copy, and second, to show "
@@ -289,7 +289,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appb-svn-for-cvs-users.xml:221
+#: appb-svn-for-cvs-users.xml:221
 msgid ""
 "Subversion removes this muddle by making the output of <command>svn status</"
 "command> easy to read for both humans and parsers.  Also, <command>svn "
@@ -298,12 +298,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appb-svn-for-cvs-users.xml:228
+#: appb-svn-for-cvs-users.xml:228
 msgid "Status"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appb-svn-for-cvs-users.xml:230
+#: appb-svn-for-cvs-users.xml:230
 msgid ""
 "<command>svn status</command> prints all files that have local "
 "modifications.  By default, the repository is not contacted.  While this "
@@ -312,46 +312,46 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appb-svn-for-cvs-users.xml:237
+#: appb-svn-for-cvs-users.xml:237
 msgid "<option>-u</option>"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appb-svn-for-cvs-users.xml:239
+#: appb-svn-for-cvs-users.xml:239
 msgid ""
 "Contact the repository to determine, and then display, out-of-dateness "
 "information."
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appb-svn-for-cvs-users.xml:245
+#: appb-svn-for-cvs-users.xml:245
 msgid "<option>-v</option>"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appb-svn-for-cvs-users.xml:247
+#: appb-svn-for-cvs-users.xml:247
 msgid "Show <emphasis>all</emphasis> entries under version control."
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appb-svn-for-cvs-users.xml:253
+#: appb-svn-for-cvs-users.xml:253
 msgid "<option>-N</option>"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appb-svn-for-cvs-users.xml:255
+#: appb-svn-for-cvs-users.xml:255
 msgid "Run nonrecursively (do not descend into subdirectories)."
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appb-svn-for-cvs-users.xml:261
+#: appb-svn-for-cvs-users.xml:261
 msgid ""
 "The <command>svn status</command> command has two output formats.  In the "
 "default <quote>short</quote> format, local modifications look like this:"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appb-svn-for-cvs-users.xml:267
+#: appb-svn-for-cvs-users.xml:267
 #, no-wrap
 msgid ""
 "$ svn status\n"
@@ -360,14 +360,14 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appb-svn-for-cvs-users.xml:273
+#: appb-svn-for-cvs-users.xml:273
 msgid ""
 "If you specify the <option>--show-updates</option> (<option>-u</option>) "
 "option, a longer output format is used:"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appb-svn-for-cvs-users.xml:279
+#: appb-svn-for-cvs-users.xml:279
 #, no-wrap
 msgid ""
 "$ svn status -u\n"
@@ -379,7 +379,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appb-svn-for-cvs-users.xml:288
+#: appb-svn-for-cvs-users.xml:288
 msgid ""
 "In this case, two new columns appear.  The second column contains an "
 "asterisk if the file or directory is out of date.  The third column shows "
@@ -392,7 +392,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appb-svn-for-cvs-users.xml:298
+#: appb-svn-for-cvs-users.xml:298
 msgid ""
 "For a more detailed discussion of <command>svn status</command>, including "
 "an explanation of the status codes shown in the previous example, see <xref "
@@ -400,19 +400,19 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appb-svn-for-cvs-users.xml:306
+#: appb-svn-for-cvs-users.xml:306
 msgid "Update"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appb-svn-for-cvs-users.xml:308
+#: appb-svn-for-cvs-users.xml:308
 msgid ""
 "<command>svn update</command> updates your working copy, and prints only "
 "information about files that it updates."
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appb-svn-for-cvs-users.xml:311
+#: appb-svn-for-cvs-users.xml:311
 msgid ""
 "Subversion has combined CVS's <literal>P</literal> and <literal>U</literal> "
 "codes into just <literal>U</literal>.  When a merge or conflict occurs, "
@@ -421,19 +421,19 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appb-svn-for-cvs-users.xml:317
+#: appb-svn-for-cvs-users.xml:317
 msgid ""
 "For a more detailed discussion of <command>svn update</command>, see <xref "
 "linkend=\"svn.tour.cycle.update\" />."
 msgstr ""
 
 #. type: Content of: <appendix><sect1><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appb-svn-for-cvs-users.xml:328
+#: appb-svn-for-cvs-users.xml:328
 msgid "Branches and Tags"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appb-svn-for-cvs-users.xml:330
+#: appb-svn-for-cvs-users.xml:330
 msgid ""
 "Subversion doesn't distinguish between filesystem space and <quote>branch</"
 "quote> space; branches and tags are ordinary directories within the "
@@ -443,14 +443,14 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><warning><para><footnote><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appb-svn-for-cvs-users.xml:347
+#: appb-svn-for-cvs-users.xml:347
 msgid ""
 "That is, providing you don't run out of disk space before your checkout "
 "finishes."
 msgstr ""
 
 #. type: Content of: <appendix><sect1><warning><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appb-svn-for-cvs-users.xml:338
+#: appb-svn-for-cvs-users.xml:338
 msgid ""
 "Since Subversion treats branches and tags as ordinary directories, your "
 "project's various lines of development probably live in subdirectories of "
@@ -463,12 +463,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appb-svn-for-cvs-users.xml:358
+#: appb-svn-for-cvs-users.xml:358
 msgid "Metadata Properties"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appb-svn-for-cvs-users.xml:360
+#: appb-svn-for-cvs-users.xml:360
 msgid ""
 "A new feature of Subversion is that you can attach arbitrary metadata (or "
 "<quote>properties</quote>) to files and directories.  Properties are "
@@ -477,7 +477,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appb-svn-for-cvs-users.xml:366
+#: appb-svn-for-cvs-users.xml:366
 msgid ""
 "To set or get a property name, use the <command>svn propset</command> and "
 "<command>svn propget</command> subcommands.  To list all properties on an "
@@ -485,17 +485,17 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appb-svn-for-cvs-users.xml:371
+#: appb-svn-for-cvs-users.xml:371
 msgid "For more information, see <xref linkend=\"svn.advanced.props\"/>."
 msgstr ""
 
 #. type: Content of: <appendix><sect1><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appb-svn-for-cvs-users.xml:379
+#: appb-svn-for-cvs-users.xml:379
 msgid "Conflict Resolution"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appb-svn-for-cvs-users.xml:381
+#: appb-svn-for-cvs-users.xml:381
 msgid ""
 "CVS marks conflicts with inline <quote>conflict markers,</quote> and then "
 "prints a <literal>C</literal> during an update or merge operation.  "
@@ -507,7 +507,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appb-svn-for-cvs-users.xml:390
+#: appb-svn-for-cvs-users.xml:390
 msgid ""
 "Subversion solves this problem in a pair of ways.  First, when a conflict "
 "occurs in a file, Subversion records the fact that the file is in a state of "
@@ -520,12 +520,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appb-svn-for-cvs-users.xml:406
+#: appb-svn-for-cvs-users.xml:406
 msgid "Binary Files and Translation"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appb-svn-for-cvs-users.xml:408
+#: appb-svn-for-cvs-users.xml:408
 msgid ""
 "In the most general sense, Subversion handles binary files more gracefully "
 "than CVS does.  Because CVS uses RCS, it can only store successive full "
@@ -536,7 +536,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appb-svn-for-cvs-users.xml:416
+#: appb-svn-for-cvs-users.xml:416
 msgid ""
 "CVS users have to mark binary files with <option>-kb</option> flags to "
 "prevent data from being garbled (due to keyword expansion and line-ending "
@@ -544,7 +544,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appb-svn-for-cvs-users.xml:421
+#: appb-svn-for-cvs-users.xml:421
 msgid ""
 "Subversion takes the more paranoid route.  First, it never performs any kind "
 "of keyword or line-ending translation unless you explicitly ask it to do so "
@@ -555,7 +555,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appb-svn-for-cvs-users.xml:430
+#: appb-svn-for-cvs-users.xml:430
 msgid ""
 "Second, Subversion maintains an internal notion of whether a file is "
 "<quote>text</quote> or <quote>binary</quote> data, but this notion is "
@@ -565,7 +565,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appb-svn-for-cvs-users.xml:437
+#: appb-svn-for-cvs-users.xml:437
 msgid ""
 "To determine whether a contextual merge is possible, Subversion examines the "
 "<literal>svn:mime-type</literal> property.  If the file has no <literal>svn:"
@@ -580,12 +580,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appb-svn-for-cvs-users.xml:458
+#: appb-svn-for-cvs-users.xml:458
 msgid "Versioned Modules"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appb-svn-for-cvs-users.xml:460
+#: appb-svn-for-cvs-users.xml:460
 msgid ""
 "Unlike CVS, a Subversion working copy is aware that it has checked out a "
 "module.  That means if somebody changes the definition of a module (e.g., "
@@ -594,19 +594,19 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appb-svn-for-cvs-users.xml:466
+#: appb-svn-for-cvs-users.xml:466
 msgid ""
 "Subversion defines modules as a list of directories within a directory "
 "property; see <xref linkend=\"svn.advanced.externals\"/>."
 msgstr ""
 
 #. type: Content of: <appendix><sect1><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appb-svn-for-cvs-users.xml:476
+#: appb-svn-for-cvs-users.xml:476
 msgid "Authentication"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appb-svn-for-cvs-users.xml:478
+#: appb-svn-for-cvs-users.xml:478
 msgid ""
 "With CVS's pserver, you are required to log in to the server (using the "
 "<command>cvs login</command> command) before performing any read or write "
@@ -621,7 +621,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appb-svn-for-cvs-users.xml:491
+#: appb-svn-for-cvs-users.xml:491
 msgid ""
 "As with CVS, Subversion still caches your credentials on disk (in your "
 "<filename>~/.subversion/auth/</filename> directory) unless you tell it not "
@@ -629,7 +629,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appb-svn-for-cvs-users.xml:496
+#: appb-svn-for-cvs-users.xml:496
 msgid ""
 "The exception to this behavior, however, is in the case of accessing an "
 "<command>svnserve</command> server over an SSH tunnel, using the <literal>svn"
@@ -638,12 +638,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appb-svn-for-cvs-users.xml:509
+#: appb-svn-for-cvs-users.xml:509
 msgid "Converting a Repository from CVS to Subversion"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appb-svn-for-cvs-users.xml:511
+#: appb-svn-for-cvs-users.xml:511
 msgid ""
 "Perhaps the most important way to familiarize CVS users with Subversion is "
 "to let them continue to work on their projects using the new system.  And "
@@ -659,7 +659,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appb-svn-for-cvs-users.xml:525
+#: appb-svn-for-cvs-users.xml:525
 msgid ""
 "The most popular (and mature) conversion tool is cvs2svn (<ulink url="
 "\"http://cvs2svn.tigris.org/\"/>), a Python program originally created by "

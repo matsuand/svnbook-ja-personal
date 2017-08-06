@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2017-08-03 18:00+0900\n"
-"PO-Revision-Date: 2017-08-03 18:00+0900\n"
+"POT-Creation-Date: 2017-08-06 14:19+0900\n"
+"PO-Revision-Date: 2017-08-06 14:19+0900\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: matsuand個人翻訳\n"
 "Language: ja\n"
@@ -17,12 +17,12 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. type: Content of: <appendix><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appa-quickstart.xml:5
+#: appa-quickstart.xml:5
 msgid "Subversion Quick-Start Guide"
 msgstr ""
 
 #. type: Content of: <appendix><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appa-quickstart.xml:8
+#: appa-quickstart.xml:8
 msgid ""
 "If you're eager to get Subversion up and running (and you enjoy learning by "
 "experimentation), this appendix will show you how to create a repository, "
@@ -31,7 +31,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><warning><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appa-quickstart.xml:15
+#: appa-quickstart.xml:15
 msgid ""
 "If you're new to the entire concept of version control or to the <quote>copy-"
 "modify-merge</quote> model used by both CVS and Subversion, you should read "
@@ -39,12 +39,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appa-quickstart.xml:27
+#: appa-quickstart.xml:27
 msgid "Installing Subversion"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appa-quickstart.xml:29
+#: appa-quickstart.xml:29
 msgid ""
 "Subversion is built on a portability layer called APR&mdash;the Apache "
 "Portable Runtime library.  The APR library provides all the interfaces that "
@@ -60,7 +60,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appa-quickstart.xml:43
+#: appa-quickstart.xml:43
 msgid ""
 "The easiest way to get Subversion is to download a binary package built for "
 "your operating system.  Subversion's web site (<ulink url=\"http://"
@@ -72,7 +72,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appa-quickstart.xml:53
+#: appa-quickstart.xml:53
 msgid ""
 "Alternatively, you can build Subversion directly from source code, though "
 "it's not always an easy task. (If you're not experienced at building open "
@@ -83,7 +83,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para><footnote><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appa-quickstart.xml:67
+#: appa-quickstart.xml:67
 msgid ""
 "Note that the URL checked out in the example ends not with "
 "<literal>subversion</literal>, but with a subdirectory thereof called "
@@ -92,7 +92,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appa-quickstart.xml:61
+#: appa-quickstart.xml:61
 msgid ""
 "If you're one of those folks that likes to use bleeding-edge software, you "
 "can also get the Subversion source code from the Subversion repository in "
@@ -103,7 +103,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appa-quickstart.xml:75
+#: appa-quickstart.xml:75
 #, no-wrap
 msgid ""
 "$ svn checkout http://svn.apache.org/repos/asf/subversion/trunk subversion\n"
@@ -116,7 +116,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appa-quickstart.xml:85
+#: appa-quickstart.xml:85
 msgid ""
 "The preceding command will create a working copy of the latest (unreleased) "
 "Subversion source code into a subdirectory named <filename>subversion</"
@@ -129,12 +129,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appa-quickstart.xml:103
+#: appa-quickstart.xml:103
 msgid "High-Speed Tutorial"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><blockquote><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appa-quickstart.xml:106
+#: appa-quickstart.xml:106
 msgid ""
 "<quote>Please make sure your seat backs are in their full, upright position "
 "and that your tray tables are stored.  Flight attendants, prepare for take-"
@@ -142,7 +142,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appa-quickstart.xml:111
+#: appa-quickstart.xml:111
 msgid ""
 "What follows is a quick tutorial that walks you through some basic "
 "Subversion configuration and operation.  When you finish it, you should have "
@@ -150,7 +150,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><note><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appa-quickstart.xml:117
+#: appa-quickstart.xml:117
 msgid ""
 "The examples used in this appendix assume that you have <command>svn</"
 "command>, the Subversion command-line client, and <command>svnadmin</"
@@ -161,14 +161,14 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appa-quickstart.xml:127
+#: appa-quickstart.xml:127
 msgid ""
 "Subversion stores all versioned data in a central repository.  To begin, "
 "create a new repository:"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appa-quickstart.xml:132
+#: appa-quickstart.xml:132
 #, no-wrap
 msgid ""
 "$ cd /var/svn\n"
@@ -179,7 +179,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appa-quickstart.xml:140
+#: appa-quickstart.xml:140
 msgid ""
 "This command creates a Subversion repository in the directory <filename>/var/"
 "svn/repos</filename>, creating the <filename>repos</filename> directory "
@@ -190,7 +190,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appa-quickstart.xml:149
+#: appa-quickstart.xml:149
 msgid ""
 "Subversion has no concept of a <quote>project.</quote> The repository is "
 "just a virtual versioned filesystem, a large tree that can hold anything you "
@@ -206,7 +206,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appa-quickstart.xml:163
+#: appa-quickstart.xml:163
 msgid ""
 "In this example, we assume you already have some sort of project (a "
 "collection of files and directories) that you wish to import into your newly "
@@ -221,7 +221,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><informalexample><literallayout>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appa-quickstart.xml:178
+#: appa-quickstart.xml:178
 #, no-wrap
 msgid ""
 "/tmp/\n"
@@ -236,7 +236,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appa-quickstart.xml:190
+#: appa-quickstart.xml:190
 msgid ""
 "The <filename>branches</filename>, <filename>tags</filename>, and "
 "<filename>trunk</filename> subdirectories aren't actually required by "
@@ -245,7 +245,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appa-quickstart.xml:195
+#: appa-quickstart.xml:195
 msgid ""
 "Once you have your tree of data ready to go, import it into the repository "
 "with the <command>svn import</command> command (see <xref linkend=\"svn.tour."
@@ -253,7 +253,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appa-quickstart.xml:201
+#: appa-quickstart.xml:201
 #, no-wrap
 msgid ""
 "$ svn import /tmp/myproject file:///var/svn/repos/myproject \\\n"
@@ -270,7 +270,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appa-quickstart.xml:215
+#: appa-quickstart.xml:215
 msgid ""
 "Now the repository contains this tree of data.  As mentioned earlier, you "
 "won't see your files by directly peeking into the repository; they're all "
@@ -280,7 +280,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appa-quickstart.xml:222
+#: appa-quickstart.xml:222
 msgid ""
 "Note that the original <filename>/tmp/myproject</filename> directory is "
 "unchanged; Subversion is unaware of it.  (In fact, you can even delete that "
@@ -291,7 +291,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appa-quickstart.xml:233
+#: appa-quickstart.xml:233
 #, no-wrap
 msgid ""
 "$ svn checkout file:///var/svn/repos/myproject/trunk myproject\n"
@@ -304,7 +304,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appa-quickstart.xml:243
+#: appa-quickstart.xml:243
 msgid ""
 "Now you have a personal copy of part of the repository in a new directory "
 "named <filename>myproject</filename>.  You can edit the files in your "
@@ -312,40 +312,40 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><itemizedlist><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appa-quickstart.xml:250
+#: appa-quickstart.xml:250
 msgid "Enter your working copy and edit a file's contents."
 msgstr ""
 
 #. type: Content of: <appendix><sect1><itemizedlist><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appa-quickstart.xml:254
+#: appa-quickstart.xml:254
 msgid ""
 "Run <userinput>svn diff</userinput> to see unified diff output of your "
 "changes."
 msgstr ""
 
 #. type: Content of: <appendix><sect1><itemizedlist><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appa-quickstart.xml:258
+#: appa-quickstart.xml:258
 msgid ""
 "Run <userinput>svn commit</userinput> to commit the new version of your file "
 "to the repository."
 msgstr ""
 
 #. type: Content of: <appendix><sect1><itemizedlist><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appa-quickstart.xml:262
+#: appa-quickstart.xml:262
 msgid ""
 "Run <userinput>svn update</userinput> to bring your working copy <quote>up "
 "to date</quote> with the repository."
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appa-quickstart.xml:267
+#: appa-quickstart.xml:267
 msgid ""
 "For a full tour of all the things you can do with your working copy, read "
 "<xref linkend=\"svn.tour\"/>."
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appa-quickstart.xml:270
+#: appa-quickstart.xml:270
 msgid ""
 "At this point, you have the option of making your repository available to "
 "others over a network.  See <xref linkend=\"svn.serverconfig\"/> to learn "

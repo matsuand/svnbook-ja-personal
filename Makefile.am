@@ -1,4 +1,5 @@
 SUBDIRS=book
+EXTRA_DIST = README.md
 
 XSLTPROC=@XSLTPROC@
 XML_SOURCE = book/book.xml

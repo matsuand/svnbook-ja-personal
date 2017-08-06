@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2017-08-03 18:00+0900\n"
-"PO-Revision-Date: 2017-08-03 18:00+0900\n"
+"POT-Creation-Date: 2017-08-06 14:19+0900\n"
+"PO-Revision-Date: 2017-08-06 14:19+0900\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: matsuand個人翻訳\n"
 "Language: ja\n"
@@ -17,33 +17,32 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. type: Content of: <reference><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnversion.xml:4
+#: ref-svnversion.xml:4
 msgid "svnversion Reference&mdash;Subversion Working Copy Version Info"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnversion.xml:12
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnversion.xml:16
+#: ref-svnversion.xml:12 ref-svnversion.xml:16
 msgid "svnversion"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refnamediv><refpurpose>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnversion.xml:17
+#: ref-svnversion.xml:17
 msgid "Summarize the local revision(s) of a working copy."
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsynopsisdiv><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnversion.xml:22
+#: ref-svnversion.xml:22
 msgid "<literal>svnversion [OPTIONS] [WC_PATH [TRAIL_URL]]</literal>"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnversion.xml:27
+#: ref-svnversion.xml:27
 msgid "Description"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnversion.xml:29
+#: ref-svnversion.xml:29
 msgid ""
 "<command>svnversion</command> is a program for summarizing the revision "
 "mixture of a working copy.  The resultant revision number, or revision "
@@ -51,14 +50,14 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnversion.xml:34
+#: ref-svnversion.xml:34
 msgid ""
 "It's common to use this output in your build process when defining the "
 "version number of your program."
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnversion.xml:37
+#: ref-svnversion.xml:37
 msgid ""
 "<replaceable>TRAIL_URL</replaceable>, if present, is the trailing portion of "
 "the URL used to determine whether <replaceable>WC_PATH</replaceable> itself "
@@ -67,7 +66,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnversion.xml:44
+#: ref-svnversion.xml:44
 msgid ""
 "When <replaceable>WC_PATH</replaceable> is not defined, the current "
 "directory will be used as the working copy path.  <replaceable>TRAIL_URL</"
@@ -76,86 +75,86 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnversion.xml:54
+#: ref-svnversion.xml:54
 msgid "Options"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnversion.xml:56
+#: ref-svnversion.xml:56
 msgid ""
 "Like <command>svnserve</command>, <command>svnversion</command> has no "
 "subcommands&mdash;only options:"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnversion.xml:63
+#: ref-svnversion.xml:63
 msgid "<option>--no-newline</option> (<option>-n</option>)"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnversion.xml:65
+#: ref-svnversion.xml:65
 msgid "Omits the usual trailing newline from the output."
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnversion.xml:70
+#: ref-svnversion.xml:70
 msgid "<option>--committed</option> (<option>-c</option>)"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnversion.xml:72
+#: ref-svnversion.xml:72
 msgid ""
 "Uses the last-changed revisions rather than the current (i.e., highest "
 "locally available) revisions."
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnversion.xml:78
+#: ref-svnversion.xml:78
 msgid "<option>--help</option> (<option>-h</option>)"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnversion.xml:80
+#: ref-svnversion.xml:80
 msgid "Prints a help summary."
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnversion.xml:85
+#: ref-svnversion.xml:85
 msgid "<option>--quiet</option> (<option>-q</option>)"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnversion.xml:87
+#: ref-svnversion.xml:87
 msgid ""
 "Requests that the program print only essential information while performing "
 "an operation."
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnversion.xml:93
+#: ref-svnversion.xml:93
 msgid "<option>--version</option>"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnversion.xml:95
+#: ref-svnversion.xml:95
 msgid ""
 "Prints the version of <command>svnversion</command> and exit with no error."
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnversion.xml:105
+#: ref-svnversion.xml:105
 msgid "Examples"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnversion.xml:107
+#: ref-svnversion.xml:107
 msgid ""
 "If the working copy is all at the same revision (e.g., immediately after an "
 "update), then that revision is printed out:"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnversion.xml:113
+#: ref-svnversion.xml:113
 #, no-wrap
 msgid ""
 "$ svnversion\n"
@@ -163,7 +162,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnversion.xml:118
+#: ref-svnversion.xml:118
 msgid ""
 "You can add <replaceable>TRAIL_URL</replaceable> to make sure the working "
 "copy is not switched from what you expect.  Note that the "
@@ -171,7 +170,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnversion.xml:125
+#: ref-svnversion.xml:125
 #, no-wrap
 msgid ""
 "$ svnversion . /var/svn/trunk\n"
@@ -179,13 +178,13 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnversion.xml:130
+#: ref-svnversion.xml:130
 msgid ""
 "For a mixed-revision working copy, the range of revisions present is printed:"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnversion.xml:135
+#: ref-svnversion.xml:135
 #, no-wrap
 msgid ""
 "$ svnversion\n"
@@ -193,14 +192,14 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnversion.xml:140
+#: ref-svnversion.xml:140
 msgid ""
 "If the working copy contains modifications, a trailing '<literal>M</"
 "literal>' is added:"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnversion.xml:145
+#: ref-svnversion.xml:145
 #, no-wrap
 msgid ""
 "$ svnversion\n"
@@ -208,13 +207,13 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnversion.xml:150
+#: ref-svnversion.xml:150
 msgid ""
 "If the working copy is switched, a trailing '<literal>S</literal>' is added:"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnversion.xml:155
+#: ref-svnversion.xml:155
 #, no-wrap
 msgid ""
 "$ svnversion\n"
@@ -222,7 +221,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnversion.xml:160
+#: ref-svnversion.xml:160
 msgid ""
 "<command>svnversion</command> will also inform you if the target working "
 "copy is sparsely populated (see <xref linkend=\"svn.advanced.sparsedirs\" /"
@@ -230,7 +229,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnversion.xml:167
+#: ref-svnversion.xml:167
 #, no-wrap
 msgid ""
 "$ svnversion\n"
@@ -238,14 +237,14 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnversion.xml:172
+#: ref-svnversion.xml:172
 msgid ""
 "Thus, here is a mixed-revision, sparsely populated and switched working copy "
 "containing some local modifications:"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnversion.xml:178
+#: ref-svnversion.xml:178
 #, no-wrap
 msgid ""
 "$ svnversion\n"

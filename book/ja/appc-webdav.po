@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2017-08-03 18:00+0900\n"
-"PO-Revision-Date: 2017-08-03 18:00+0900\n"
+"POT-Creation-Date: 2017-08-06 14:19+0900\n"
+"PO-Revision-Date: 2017-08-06 14:19+0900\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: matsuand個人翻訳\n"
 "Language: ja\n"
@@ -17,12 +17,12 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. type: Content of: <appendix><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:4
+#: appc-webdav.xml:4
 msgid "WebDAV and Autoversioning"
 msgstr ""
 
 #. type: Content of: <appendix><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:6
+#: appc-webdav.xml:6
 msgid ""
 "WebDAV is an extension to HTTP, and it is growing more and more popular as a "
 "standard for file sharing.  Today's operating systems are becoming extremely "
@@ -31,7 +31,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:12
+#: appc-webdav.xml:12
 msgid ""
 "If you use Apache as your Subversion network server, to some extent you are "
 "also running a WebDAV server.  This appendix gives some background on the "
@@ -40,19 +40,17 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:23
+#: appc-webdav.xml:23
 msgid "What Is WebDAV?"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para><indexterm><primary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:27
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:126
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:249
+#: appc-webdav.xml:27 appc-webdav.xml:126 appc-webdav.xml:249
 msgid "WebDAV"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:26
+#: appc-webdav.xml:26
 msgid ""
 "<placeholder type=\"indexterm\" id=\"0\"/><firstterm>DAV</firstterm> stands "
 "for <quote>Distributed Authoring and Versioning.</quote> RFC 2518 defines a "
@@ -64,7 +62,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:37
+#: appc-webdav.xml:37
 msgid ""
 "The tragedy, though, is that despite the acronym, the RFC specification "
 "doesn't actually describe any sort of version control.  Basic WebDAV clients "
@@ -73,7 +71,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:43
+#: appc-webdav.xml:43
 msgid ""
 "Because RFC 2518 left out versioning concepts, another committee was left "
 "with the responsibility of writing RFC 3253 a few years later.  The new RFC "
@@ -84,7 +82,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:52
+#: appc-webdav.xml:52
 msgid ""
 "The original WebDAV standard has been widely successful.  Every modern "
 "computer operating system has a general WebDAV client built in (details to "
@@ -97,7 +95,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:63
+#: appc-webdav.xml:63
 msgid ""
 "DeltaV, unfortunately, has not been so successful.  It's very difficult to "
 "find any DeltaV clients or servers.  The few that do exist are relatively "
@@ -112,7 +110,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:76
+#: appc-webdav.xml:76
 msgid ""
 "When Subversion was still in its design phase, it seemed like a great idea "
 "to use Apache as a network server.  It already had a module to provide "
@@ -125,12 +123,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:86
+#: appc-webdav.xml:86
 msgid "What does this mean, then?"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:88
+#: appc-webdav.xml:88
 msgid ""
 "First, the Subversion client is not a fully implemented DeltaV client.  It "
 "needs certain types of things from the server that DeltaV itself cannot "
@@ -140,7 +138,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:95
+#: appc-webdav.xml:95
 msgid ""
 "Second, <command>mod_dav_svn</command> is not a fully realized DeltaV "
 "server.  Many portions of the DeltaV specification were irrelevant to "
@@ -148,14 +146,14 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para><footnote><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:106
+#: appc-webdav.xml:106
 msgid ""
 "The Subversion developers colloquially refer to this deviation from the "
 "DeltaV standard as <quote>HTTPv2</quote>."
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:100
+#: appc-webdav.xml:100
 msgid ""
 "A long-held debate in the Subversion developer community about whether it "
 "was worthfile to remedy either of these situations eventually reached "
@@ -171,17 +169,17 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:122
+#: appc-webdav.xml:122
 msgid "Autoversioning"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para><indexterm><secondary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:127
+#: appc-webdav.xml:127
 msgid "autoversioning"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:125
+#: appc-webdav.xml:125
 msgid ""
 "<placeholder type=\"indexterm\" id=\"0\"/>While the Subversion client is not "
 "a full DeltaV client, and the Subversion server is not a full DeltaV server, "
@@ -190,7 +188,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:133
+#: appc-webdav.xml:133
 msgid ""
 "Autoversioning is an optional feature defined in the DeltaV standard.  A "
 "typical DeltaV server will reject an ignorant WebDAV client attempting to do "
@@ -207,7 +205,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:148
+#: appc-webdav.xml:148
 msgid ""
 "Because so many operating systems already have integrated WebDAV clients, "
 "the use case for this feature can be incredibly appealing to administrators "
@@ -221,7 +219,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:160
+#: appc-webdav.xml:160
 msgid ""
 "This scenario isn't fiction&mdash;it's real and it works.  To activate "
 "autoversioning in <command>mod_dav_svn</command>, use the "
@@ -230,7 +228,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><informalexample><programlisting>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:168
+#: appc-webdav.xml:168
 #, no-wrap
 msgid ""
 "&lt;Location /repos&gt;\n"
@@ -241,7 +239,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:176
+#: appc-webdav.xml:176
 msgid ""
 "When Subversion autoversioning is active, write requests from WebDAV clients "
 "result in automatic commits.  A generic log message is automatically "
@@ -249,7 +247,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:181
+#: appc-webdav.xml:181
 msgid ""
 "Before activating this feature, however, understand what you're getting "
 "into.  WebDAV clients tend to do <emphasis>many</emphasis> write requests, "
@@ -262,7 +260,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:192
+#: appc-webdav.xml:192
 msgid ""
 "If you have a post-commit hook program that sends email, you may want to "
 "disable email generation either altogether or on certain sections of the "
@@ -275,7 +273,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:203
+#: appc-webdav.xml:203
 msgid ""
 "Another feature that may be a useful complement for Subversion's "
 "autoversioning comes from Apache's <literal>mod_mime</literal> module.  If a "
@@ -291,7 +289,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><informalexample><programlisting>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:220
+#: appc-webdav.xml:220
 #, no-wrap
 msgid ""
 "&lt;Location /repos&gt;\n"
@@ -305,7 +303,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:231
+#: appc-webdav.xml:231
 msgid ""
 "This directive allows <literal>mod_mime</literal> to attempt automatic "
 "deduction of the MIME type on new files that enter the repository via "
@@ -315,17 +313,17 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:245
+#: appc-webdav.xml:245
 msgid "Client Interoperability"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para><indexterm><secondary>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:250
+#: appc-webdav.xml:250
 msgid "client support"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:248
+#: appc-webdav.xml:248
 msgid ""
 "<placeholder type=\"indexterm\" id=\"0\"/>All WebDAV clients fall into one "
 "of three categories&mdash;standalone applications, file-explorer extensions, "
@@ -338,220 +336,200 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><table><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:262
+#: appc-webdav.xml:262
 msgid "Common WebDAV clients"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><table><tgroup><thead><row><entry>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:266
+#: appc-webdav.xml:266
 msgid "Software"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><table><tgroup><thead><row><entry>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:267
+#: appc-webdav.xml:267
 msgid "Type"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><table><tgroup><thead><row><entry>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:268
+#: appc-webdav.xml:268
 msgid "Windows"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><table><tgroup><thead><row><entry>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:269
+#: appc-webdav.xml:269
 msgid "Mac"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><table><tgroup><thead><row><entry>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:270
+#: appc-webdav.xml:270
 msgid "Linux"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><table><tgroup><thead><row><entry>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:271
+#: appc-webdav.xml:271
 msgid "Description"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><table><tgroup><tbody><row><entry>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:276
+#: appc-webdav.xml:276
 msgid "Adobe Photoshop"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><table><tgroup><tbody><row><entry>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:277
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:286
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:295
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:303
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:312
+#: appc-webdav.xml:277 appc-webdav.xml:286 appc-webdav.xml:295
+#: appc-webdav.xml:303 appc-webdav.xml:312
 msgid "Standalone WebDAV application"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><table><tgroup><tbody><row><entry>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:278
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:288
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:289
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:296
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:297
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:298
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:304
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:313
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:323
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:334
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:343
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:351
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:359
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:368
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:380
+#: appc-webdav.xml:278 appc-webdav.xml:288 appc-webdav.xml:289
+#: appc-webdav.xml:296 appc-webdav.xml:297 appc-webdav.xml:298
+#: appc-webdav.xml:304 appc-webdav.xml:313 appc-webdav.xml:323
+#: appc-webdav.xml:334 appc-webdav.xml:343 appc-webdav.xml:351
+#: appc-webdav.xml:359 appc-webdav.xml:368 appc-webdav.xml:380
 msgid "X"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><table><tgroup><tbody><row><entry>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:281
+#: appc-webdav.xml:281
 msgid ""
 "Image editing software, allowing direct opening from, and writing to, WebDAV "
 "URLs"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><table><tgroup><tbody><row><entry>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:285
+#: appc-webdav.xml:285
 msgid "cadaver"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><table><tgroup><tbody><row><entry>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:290
+#: appc-webdav.xml:290
 msgid ""
 "Command-line WebDAV client supporting file transfer, tree, and locking "
 "operations"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><table><tgroup><tbody><row><entry>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:294
+#: appc-webdav.xml:294
 msgid "DAV Explorer"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><table><tgroup><tbody><row><entry>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:299
+#: appc-webdav.xml:299
 msgid "Java GUI tool for exploring WebDAV shares"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><table><tgroup><tbody><row><entry>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:302
+#: appc-webdav.xml:302
 msgid "Adobe Dreamweaver"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><table><tgroup><tbody><row><entry>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:307
+#: appc-webdav.xml:307
 msgid ""
 "Web production software able to directly read from and write to WebDAV URLs"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><table><tgroup><tbody><row><entry>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:311
+#: appc-webdav.xml:311
 msgid "Microsoft Office"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><table><tgroup><tbody><row><entry>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:316
+#: appc-webdav.xml:316
 msgid ""
 "Office productivity suite with several components able to directly read from "
 "and write to WebDAV URLs"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><sect3><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:321
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:496
+#: appc-webdav.xml:321 appc-webdav.xml:496
 msgid "Microsoft Web Folders"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><table><tgroup><tbody><row><entry>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:322
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:331
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:340
+#: appc-webdav.xml:322 appc-webdav.xml:331 appc-webdav.xml:340
 msgid "File-explorer WebDAV extension"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><table><tgroup><tbody><row><entry>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:326
+#: appc-webdav.xml:326
 msgid ""
 "GUI file explorer program able to perform tree operations on a WebDAV share"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><table><tgroup><tbody><row><entry>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:330
+#: appc-webdav.xml:330
 msgid "GNOME Nautilus"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><table><tgroup><tbody><row><entry>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:335
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:344
+#: appc-webdav.xml:335 appc-webdav.xml:344
 msgid "GUI file explorer able to perform tree operations on a WebDAV share"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><table><tgroup><tbody><row><entry>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:339
+#: appc-webdav.xml:339
 msgid "KDE Konqueror"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><sect3><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:348
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:637
+#: appc-webdav.xml:348 appc-webdav.xml:637
 msgid "Mac OS X"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><table><tgroup><tbody><row><entry>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:349
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:358
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:367
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:377
+#: appc-webdav.xml:349 appc-webdav.xml:358 appc-webdav.xml:367
+#: appc-webdav.xml:377
 msgid "WebDAV filesystem implementation"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><table><tgroup><tbody><row><entry>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:353
+#: appc-webdav.xml:353
 msgid "Operating system that has built-in support for mounting WebDAV shares."
 msgstr ""
 
 #. type: Content of: <appendix><sect1><table><tgroup><tbody><row><entry>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:357
+#: appc-webdav.xml:357
 msgid "Novell NetDrive"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><table><tgroup><tbody><row><entry>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:362
+#: appc-webdav.xml:362
 msgid ""
 "Drive-mapping program for assigning Windows drive letters to a mounted "
 "remote WebDAV share"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><table><tgroup><tbody><row><entry>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:366
+#: appc-webdav.xml:366
 msgid "SRT WebDrive"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><table><tgroup><tbody><row><entry>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:371
+#: appc-webdav.xml:371
 msgid ""
 "File transfer software, which, among other things, allows the assignment of "
 "Windows drive letters to a mounted remote WebDAV share"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><table><tgroup><tbody><row><entry>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:376
+#: appc-webdav.xml:376
 msgid "davfs2"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><table><tgroup><tbody><row><entry>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:381
+#: appc-webdav.xml:381
 msgid "Linux filesystem driver that allows you to mount a WebDAV share"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:391
+#: appc-webdav.xml:391
 msgid "Standalone WebDAV Applications"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:393
+#: appc-webdav.xml:393
 msgid ""
 "A WebDAV application is a program that speaks WebDAV protocols with a WebDAV "
 "server.  We'll cover some of the most popular programs with this kind of "
@@ -559,19 +537,19 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><sect3><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:399
+#: appc-webdav.xml:399
 msgid "Microsoft Office, Dreamweaver, Photoshop"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><sect3><para><footnote><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:403
+#: appc-webdav.xml:403
 msgid ""
 "WebDAV support was removed from Microsoft Access for some reason, but it "
 "exists in the rest of the Office suite."
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:401
+#: appc-webdav.xml:401
 msgid ""
 "On Windows, several well-known applications contain integrated WebDAV client "
 "functionality, such as Microsoft's Office,<placeholder type=\"footnote\" id="
@@ -581,7 +559,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:410
+#: appc-webdav.xml:410
 msgid ""
 "Note that while many of these programs also exist for Mac OS X, they do not "
 "appear to support WebDAV directly on that platform.  In fact, on Mac OS X, "
@@ -592,12 +570,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><sect3><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:423
+#: appc-webdav.xml:423
 msgid "cadaver, DAV Explorer"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:425
+#: appc-webdav.xml:425
 msgid ""
 "cadaver is a bare-bones Unix command-line program for browsing and changing "
 "WebDAV shares.  It uses the neon HTTP library&mdash;not surprisingly, since "
@@ -607,7 +585,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:432
+#: appc-webdav.xml:432
 msgid ""
 "Using cadaver is similar to using a command-line FTP program, and thus it's "
 "extremely useful for basic WebDAV debugging.  It can be used to upload or "
@@ -616,7 +594,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><sect3><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:440
+#: appc-webdav.xml:440
 #, no-wrap
 msgid ""
 "$ cadaver http://host/repos\n"
@@ -637,7 +615,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:458
+#: appc-webdav.xml:458
 msgid ""
 "DAV Explorer is another standalone WebDAV client, written in Java.  It's "
 "under a free Apache-like license and is available at <ulink url=\"http://www."
@@ -648,7 +626,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:466
+#: appc-webdav.xml:466
 msgid ""
 "Of course, DAV Explorer's ACL support is useless in this case, since "
 "<command>mod_dav_svn</command> doesn't support it.  The fact that both "
@@ -659,12 +637,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:480
+#: appc-webdav.xml:480
 msgid "File-Explorer WebDAV Extensions"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:482
+#: appc-webdav.xml:482
 msgid ""
 "Some popular file explorer GUI programs support WebDAV extensions that allow "
 "a user to browse a DAV share as though it was just another directory on the "
@@ -678,7 +656,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:498
+#: appc-webdav.xml:498
 msgid ""
 "Microsoft was one of the original backers of the WebDAV specification, and "
 "first started shipping a client in Windows 98, which was known as Web "
@@ -686,7 +664,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:503
+#: appc-webdav.xml:503
 msgid ""
 "The original Web Folders client was an extension to Explorer, the main GUI "
 "program used to browse filesystems.  It works well enough.  In Windows 98, "
@@ -697,7 +675,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:511
+#: appc-webdav.xml:511
 msgid ""
 "With the release of Windows XP, Microsoft started shipping a new "
 "implementation of Web Folders, known as the WebDAV Mini-Redirector.  The new "
@@ -715,7 +693,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:528
+#: appc-webdav.xml:528
 msgid ""
 "Windows Vista's initial implementation of Web Folders seems to be almost the "
 "same as XP's, so it has the same sort of problems.  With luck, Microsoft "
@@ -723,7 +701,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:533
+#: appc-webdav.xml:533
 msgid ""
 "However, there seem to be workarounds for both XP and Vista that allow Web "
 "Folders to work against Apache.  Users have mostly reported success with "
@@ -731,7 +709,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:538
+#: appc-webdav.xml:538
 msgid ""
 "On Windows XP, you have two options.  First, search Microsoft's web site for "
 "update KB907306, <quote>Software Update for Web Folders.</quote> This may "
@@ -746,7 +724,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:552
+#: appc-webdav.xml:552
 msgid ""
 "On Windows Vista, the same KB907306 update may clear everything up.  But "
 "there may still be other issues.  Some users have reported that Vista "
@@ -764,7 +742,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:568
+#: appc-webdav.xml:568
 msgid ""
 "In general, while these workarounds may function for you, you might get a "
 "better overall experience using a third-party WebDAV client such as WebDrive "
@@ -772,12 +750,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><sect3><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:576
+#: appc-webdav.xml:576
 msgid "Nautilus, Konqueror"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:578
+#: appc-webdav.xml:578
 msgid ""
 "Nautilus is the official file manager/browser for the GNOME desktop (<ulink "
 "url=\"http://www.gnome.org\"/>), and Konqueror is the manager/browser for "
@@ -787,7 +765,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:585
+#: appc-webdav.xml:585
 msgid ""
 "In GNOME's Nautilus, select the <guimenuitem>File&rarr;Open location</"
 "guimenuitem> menu item and enter the URL in the dialog box presented.  The "
@@ -795,7 +773,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:590
+#: appc-webdav.xml:590
 msgid ""
 "In KDE's Konqueror, you need to use the <literal>webdav://</literal> scheme "
 "when entering the URL in the location bar.  If you enter an <literal>http://"
@@ -808,12 +786,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:606
+#: appc-webdav.xml:606
 msgid "WebDAV Filesystem Implementation"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:608
+#: appc-webdav.xml:608
 msgid ""
 "The WebDAV filesystem implementation is arguably the best sort of WebDAV "
 "client.  It's implemented as a low-level filesystem module, typically within "
@@ -826,12 +804,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><sect3><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:621
+#: appc-webdav.xml:621
 msgid "WebDrive, NetDrive"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:623
+#: appc-webdav.xml:623
 msgid ""
 "Both WebDrive and NetDrive are excellent commercial products that allow a "
 "WebDAV share to be attached as drive letters in Windows.  As a result, you "
@@ -843,7 +821,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:639
+#: appc-webdav.xml:639
 msgid ""
 "Apple's OS X operating system has an integrated filesystem-level WebDAV "
 "client.  From the Finder, select the <guimenuitem>Go&rarr;Connect to Server</"
@@ -854,7 +832,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><sect3><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:650
+#: appc-webdav.xml:650
 #, no-wrap
 msgid ""
 "$ mount -t webdav http://svn.example.com/repos/project /some/mountpoint\n"
@@ -862,7 +840,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:655
+#: appc-webdav.xml:655
 msgid ""
 "Note that if your <command>mod_dav_svn</command> is older than version 1.2, "
 "OS X will refuse to mount the share as read/write; it will appear as read-"
@@ -871,7 +849,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:662
+#: appc-webdav.xml:662
 msgid ""
 "Also, OS X's WebDAV client can sometimes be overly sensitive to HTTP "
 "redirects.  If OS X is unable to mount the repository at all, you may need "
@@ -880,18 +858,18 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><sect3><informalexample><programlisting>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:670
+#: appc-webdav.xml:670
 #, no-wrap
 msgid "BrowserMatch \"^WebDAVFS/1.[012]\" redirect-carefully\n"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><sect3><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:678
+#: appc-webdav.xml:678
 msgid "Linux davfs2"
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><sect3><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:680
+#: appc-webdav.xml:680
 msgid ""
 "Linux davfs2 is a filesystem module for the Linux kernel, whose development "
 "is organized at <ulink url=\"http://dav.sourceforge.net/\"/>.  Once you "
@@ -900,7 +878,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <appendix><sect1><sect2><sect3><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/appc-webdav.xml:688
+#: appc-webdav.xml:688
 #, no-wrap
 msgid "$ mount.davfs http://host/repos /mnt/dav\n"
 msgstr ""

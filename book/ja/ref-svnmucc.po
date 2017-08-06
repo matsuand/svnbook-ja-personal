@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2017-08-03 18:00+0900\n"
-"PO-Revision-Date: 2017-08-03 18:00+0900\n"
+"POT-Creation-Date: 2017-08-06 14:19+0900\n"
+"PO-Revision-Date: 2017-08-06 14:19+0900\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: matsuand個人翻訳\n"
 "Language: ja\n"
@@ -17,12 +17,12 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. type: Content of: <reference><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnmucc.xml:4
+#: ref-svnmucc.xml:4
 msgid "svnmucc Reference&mdash;Subversion Multiple URL Command Client"
 msgstr ""
 
 #. type: Content of: <reference><partintro><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnmucc.xml:8
+#: ref-svnmucc.xml:8
 msgid ""
 "The Subversion Multiple URL Command Client (<command>svnmucc</command>) is a "
 "tool that can make arbitrary changes to the repository without the use of a "
@@ -36,37 +36,36 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><partintro><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnmucc.xml:20
+#: ref-svnmucc.xml:20
 msgid ""
 "This reference describes the <command>svnmucc</command> tool, and the "
 "various remote modification actions you can perform using it."
 msgstr ""
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnmucc.xml:32
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnmucc.xml:36
+#: ref-svnmucc.xml:32 ref-svnmucc.xml:36
 msgid "svnmucc"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refnamediv><refpurpose>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnmucc.xml:38
+#: ref-svnmucc.xml:38
 msgid ""
 "Perform one or more Subversion repository URL-based ACTIONs, committing the "
 "result as a (single) new revision."
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsynopsisdiv><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnmucc.xml:44
+#: ref-svnmucc.xml:44
 msgid "<literal>svnmucc ACTION...</literal>"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnmucc.xml:49
+#: ref-svnmucc.xml:49
 msgid "Description"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnmucc.xml:51
+#: ref-svnmucc.xml:51
 msgid ""
 "<command>svnmucc</command> is a program for modifying Subversion-versioned "
 "data without the use of a working copy.  It allows operations to be "
@@ -78,26 +77,26 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnmucc.xml:65
+#: ref-svnmucc.xml:65
 msgid "Actions"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnmucc.xml:67
+#: ref-svnmucc.xml:67
 msgid ""
 "<command>svnmucc</command> supports the following actions (and related "
 "arguments), which may be combined into ordered sequences on the command line:"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnmucc.xml:74
+#: ref-svnmucc.xml:74
 msgid ""
 "cp <replaceable>REV</replaceable> <replaceable>SRC-URL</replaceable> "
 "<replaceable>DST-URL</replaceable>"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnmucc.xml:78
+#: ref-svnmucc.xml:78
 msgid ""
 "Copy the file or directory located at <replaceable>SRC-URL</replaceable> in "
 "revision <replaceable>REV</replaceable> to <replaceable>DST-URL</"
@@ -105,12 +104,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnmucc.xml:86
+#: ref-svnmucc.xml:86
 msgid "mkdir <replaceable>URL</replaceable>"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnmucc.xml:88
+#: ref-svnmucc.xml:88
 msgid ""
 "Create a new directory at <replaceable>URL</replaceable>.  The parent "
 "directory of <replaceable>URL</replaceable> must already exist (or have been "
@@ -120,35 +119,35 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnmucc.xml:99
+#: ref-svnmucc.xml:99
 msgid ""
 "mv <replaceable>SRC-URL</replaceable> <replaceable>DST-URL</replaceable>"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnmucc.xml:102
+#: ref-svnmucc.xml:102
 msgid ""
 "Move the file or directory located at <replaceable>SRC-URL</replaceable> to "
 "<replaceable>DST-URL</replaceable>."
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnmucc.xml:109
+#: ref-svnmucc.xml:109
 msgid "rm <replaceable>URL</replaceable>"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnmucc.xml:111
+#: ref-svnmucc.xml:111
 msgid "Delete the file or directory located at <replaceable>URL</replaceable>."
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnmucc.xml:117
+#: ref-svnmucc.xml:117
 msgid "put <replaceable>SRC-FILE</replaceable> <replaceable>URL</replaceable>"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnmucc.xml:120
+#: ref-svnmucc.xml:120
 msgid ""
 "Add a new file&mdash;or modify an existing one&mdash;located at "
 "<replaceable>URL</replaceable>, copying the contents of the local file "
@@ -159,28 +158,28 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnmucc.xml:133
+#: ref-svnmucc.xml:133
 msgid ""
 "propset <replaceable>NAME</replaceable> <replaceable>VALUE</replaceable> "
 "<replaceable>URL</replaceable>"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnmucc.xml:137
+#: ref-svnmucc.xml:137
 msgid ""
 "Set the value of the property <replaceable>NAME</replaceable> on the target "
 "<replaceable>URL</replaceable> to <replaceable>VALUE</replaceable>."
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnmucc.xml:145
+#: ref-svnmucc.xml:145
 msgid ""
 "propsetf <replaceable>NAME</replaceable> <replaceable>FILE</replaceable> "
 "<replaceable>URL</replaceable>"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnmucc.xml:149
+#: ref-svnmucc.xml:149
 msgid ""
 "Set the value of the property <replaceable>NAME</replaceable> on the target "
 "<replaceable>URL</replaceable> to the contents of the file "
@@ -188,24 +187,24 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnmucc.xml:158
+#: ref-svnmucc.xml:158
 msgid "propdel <replaceable>NAME</replaceable> <replaceable>URL</replaceable>"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnmucc.xml:161
+#: ref-svnmucc.xml:161
 msgid ""
 "Delete the property <replaceable>NAME</replaceable> from the target "
 "<replaceable>URL</replaceable>."
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnmucc.xml:171
+#: ref-svnmucc.xml:171
 msgid "Options"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnmucc.xml:173
+#: ref-svnmucc.xml:173
 msgid ""
 "Options specified on the <command>svnmucc</command> command line are global "
 "to all actions performed by that command line.  The following is a list of "
@@ -213,12 +212,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnmucc.xml:181
+#: ref-svnmucc.xml:181
 msgid "<option>--config-dir</option> <replaceable>DIR</replaceable>"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnmucc.xml:184
+#: ref-svnmucc.xml:184
 msgid ""
 "Read configuration information from the specified directory instead of the "
 "default location (<filename>.subversion</filename> in the user's home "
@@ -226,12 +225,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnmucc.xml:192
+#: ref-svnmucc.xml:192
 msgid "<option>--config-option</option> <replaceable>CONFSPEC</replaceable>"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnmucc.xml:195
+#: ref-svnmucc.xml:195
 msgid ""
 "Set, for the duration of the command, the value of a runtime configuration "
 "option.  <replaceable>CONFSPEC</replaceable> is a string which specifies the "
@@ -251,14 +250,14 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnmucc.xml:221
+#: ref-svnmucc.xml:221
 msgid ""
 "<option>--extra-args</option> (<option>-X</option>)  <replaceable>ARGFILE</"
 "replaceable>"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnmucc.xml:224
+#: ref-svnmucc.xml:224
 msgid ""
 "Read additional would-be command-line arguments from <replaceable>ARGFILE</"
 "replaceable>, one argument per line.  As a special consideration, "
@@ -267,74 +266,74 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnmucc.xml:235
+#: ref-svnmucc.xml:235
 msgid ""
 "<option>--file</option> (<option>-F</option>)  <replaceable>MSGFILE</"
 "replaceable>"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnmucc.xml:238
+#: ref-svnmucc.xml:238
 msgid ""
 "Use the contents of the <replaceable>MSGFILE</replaceable> as the log "
 "message for the commit."
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnmucc.xml:244
+#: ref-svnmucc.xml:244
 msgid "<option>--help</option> (<option>-h</option>, <option>-?</option>)"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnmucc.xml:247
+#: ref-svnmucc.xml:247
 msgid "Show program usage information and exit."
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnmucc.xml:252
+#: ref-svnmucc.xml:252
 msgid ""
 "<option>--message</option> (<option>-m</option>)  <replaceable>MSG</"
 "replaceable>"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnmucc.xml:255
+#: ref-svnmucc.xml:255
 msgid "Use <replaceable>MSG</replaceable> as the log message for the commit."
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnmucc.xml:261
+#: ref-svnmucc.xml:261
 msgid "<option>--no-auth-cache</option>"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnmucc.xml:263
+#: ref-svnmucc.xml:263
 msgid ""
 "Prevent caching of authentication information (e.g., username and password) "
 "in the Subversion runtime configuration directories."
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnmucc.xml:270
+#: ref-svnmucc.xml:270
 msgid "<option>--non-interactive</option>"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnmucc.xml:272
+#: ref-svnmucc.xml:272
 msgid ""
 "Disable all interactive prompting (e.g., requests for authentication "
 "credentials)."
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnmucc.xml:278
+#: ref-svnmucc.xml:278
 msgid ""
 "<option>--revision</option> (<option>-r</option>)  <replaceable>REV</"
 "replaceable>"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnmucc.xml:281
+#: ref-svnmucc.xml:281
 msgid ""
 "Use revision <replaceable>REV</replaceable> as the baseline revision for all "
 "changes made via the <command>svnmucc</command> actions.  This is an "
@@ -344,14 +343,14 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnmucc.xml:292
+#: ref-svnmucc.xml:292
 msgid ""
 "<option>--root-url</option> (<option>-U</option>)  <replaceable>ROOT-URL</"
 "replaceable>"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnmucc.xml:295
+#: ref-svnmucc.xml:295
 msgid ""
 "Use <replaceable>ROOT-URL</replaceable> as a base URL to which all other URL "
 "targets are relative.  This URL need not be the repository's root URL (such "
@@ -361,14 +360,14 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnmucc.xml:306
+#: ref-svnmucc.xml:306
 msgid ""
 "<option>--password</option> (<option>-p</option>)  <replaceable>PASSWD</"
 "replaceable>"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnmucc.xml:309
+#: ref-svnmucc.xml:309
 msgid ""
 "Use <replaceable>PASSWD</replaceable> as the password when authenticating "
 "against a Subversion server.  If not provided, or if incorrect, Subversion "
@@ -376,12 +375,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnmucc.xml:317
+#: ref-svnmucc.xml:317
 msgid "<option>--username</option> <replaceable>NAME</replaceable>"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnmucc.xml:320
+#: ref-svnmucc.xml:320
 msgid ""
 "Use <replaceable>USERNAME</replaceable> as the username when authenticating "
 "against a Subversion server.  If not provided, or if incorrect, Subversion "
@@ -389,36 +388,36 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnmucc.xml:328
+#: ref-svnmucc.xml:328
 msgid "<option>--version</option>"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnmucc.xml:330
+#: ref-svnmucc.xml:330
 msgid "Display the program's version information and exit."
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><term>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnmucc.xml:336
+#: ref-svnmucc.xml:336
 msgid ""
 "<option>--with-revprop</option> <replaceable>NAME</"
 "replaceable>=<replaceable>VALUE</replaceable>"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><variablelist><varlistentry><listitem><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnmucc.xml:339
+#: ref-svnmucc.xml:339
 msgid ""
 "Set the value of the revision property <replaceable>NAME</replaceable> to "
 "<replaceable>VALUE</replaceable> on the committed revision."
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnmucc.xml:351
+#: ref-svnmucc.xml:351
 msgid "Examples"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnmucc.xml:353
+#: ref-svnmucc.xml:353
 msgid ""
 "To (safely) modify a file's contents without using a working copy, use "
 "<command>svn cat</command> to fetch the current contents of the file, and "
@@ -426,7 +425,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnmucc.xml:360
+#: ref-svnmucc.xml:360
 #, no-wrap
 msgid ""
 "$ # Calculate some convenience variables.\n"
@@ -446,7 +445,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnmucc.xml:377
+#: ref-svnmucc.xml:377
 msgid ""
 "Apply a similar approach to change a file or directory property.  Simply use "
 "<command>svn propget</command> and <command>svnmucc propsetf</command> "
@@ -455,7 +454,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnmucc.xml:385
+#: ref-svnmucc.xml:385
 #, no-wrap
 msgid ""
 "$ # Calculate some convenience variables.\n"
@@ -475,12 +474,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnmucc.xml:402
+#: ref-svnmucc.xml:402
 msgid "Let's look now at some multi-operation examples."
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnmucc.xml:404
+#: ref-svnmucc.xml:404
 msgid ""
 "To implement a <quote>moving tag</quote>, where a single tag name is "
 "recycled to point to different snapshots (for example, the current latest "
@@ -489,7 +488,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnmucc.xml:412
+#: ref-svnmucc.xml:412
 #, no-wrap
 msgid ""
 "$ svnmucc -U http://svn.example.com/projects/doohickey \\\n"
@@ -501,7 +500,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnmucc.xml:421
+#: ref-svnmucc.xml:421
 msgid ""
 "In the previous example, we slyly introduced the use of the <option>--root-"
 "url (-U)</option> option.  Use this option to specify a base URL to which "
@@ -510,7 +509,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnmucc.xml:427
+#: ref-svnmucc.xml:427
 msgid ""
 "The following shows an example of using <command>svnmucc</command> to, in a "
 "single revision, create a new tag of your project which includes a newly "
@@ -519,7 +518,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><informalexample><screen>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnmucc.xml:435
+#: ref-svnmucc.xml:435
 #, no-wrap
 msgid ""
 "$ echo \"This is the 1.2.0 release.\" | \\\n"
@@ -543,7 +542,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsect1><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/ref-svnmucc.xml:456
+#: ref-svnmucc.xml:456
 msgid ""
 "The previous example demonstrates not only how to do several different "
 "things in a single <command>svnmucc</command> invocation, but also the use "

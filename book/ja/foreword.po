@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2017-08-03 18:00+0900\n"
-"PO-Revision-Date: 2017-08-03 18:00+0900\n"
+"POT-Creation-Date: 2017-08-06 14:19+0900\n"
+"PO-Revision-Date: 2017-08-06 14:19+0900\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: matsuand個人翻訳\n"
 "Language: ja\n"
@@ -17,19 +17,19 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. type: Content of: <preface><prefaceinfo>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/foreword.xml:6
+#: foreword.xml:6
 msgid ""
 "<author> <firstname>Karl</firstname> <surname>Fogel</surname> </author> "
 "<pubdate>Chicago, March 14, 2004.</pubdate>"
 msgstr ""
 
 #. type: Content of: <preface><title>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/foreword.xml:13
+#: foreword.xml:13
 msgid "Foreword"
 msgstr ""
 
 #. type: Content of: <preface><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/foreword.xml:15
+#: foreword.xml:15
 msgid ""
 "A bad Frequently Asked Questions (FAQ) sheet is one that is composed not of "
 "the questions people actually ask, but of the questions the FAQ's author "
@@ -38,12 +38,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <preface><blockquote><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/foreword.xml:21
+#: foreword.xml:21
 msgid "Q: How can I use Glorbosoft XYZ to maximize team productivity?"
 msgstr ""
 
 #. type: Content of: <preface><blockquote><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/foreword.xml:26
+#: foreword.xml:26
 msgid ""
 "A: Many of our customers want to know how they can maximize productivity "
 "through our patented office groupware innovations.  The answer is simple.  "
@@ -52,7 +52,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <preface><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/foreword.xml:34
+#: foreword.xml:34
 msgid ""
 "The problem with such FAQs is that they are not, in a literal sense, FAQs at "
 "all.  No one ever called the tech support line and asked, <quote>How can we "
@@ -70,7 +70,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <preface><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/foreword.xml:51
+#: foreword.xml:51
 msgid ""
 "What I love about this book is that it grew out of just such a process, and "
 "shows it on every page.  It is the direct result of the authors' encounters "
@@ -82,7 +82,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <preface><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/foreword.xml:60
+#: foreword.xml:60
 msgid ""
 "Frustrated at seeing the same questions day after day, Ben worked intensely "
 "over a month in the summer of 2002 to write <citetitle>The Subversion "
@@ -95,7 +95,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <preface><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/foreword.xml:71
+#: foreword.xml:71
 msgid ""
 "The three coauthors of the new book were thus presented with an unusual "
 "opportunity.  Officially, their task was to write a book top-down, starting "
@@ -107,7 +107,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <preface><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/foreword.xml:81
+#: foreword.xml:81
 msgid ""
 "During the entire time they wrote this book, Ben, Mike, and Brian haunted "
 "the Subversion mailing lists and chat rooms incessantly, carefully noting "
@@ -129,7 +129,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <preface><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/foreword.xml:102
+#: foreword.xml:102
 msgid ""
 "Of course, no one can promise that this book will answer every question you "
 "have about Subversion.  Sometimes the precision with which it anticipates "
@@ -149,6 +149,6 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <preface><para>
-#: /home/matsuand/local/src/subversion/svnbook-source/trunk/en/book/foreword.xml:121
+#: foreword.xml:121
 msgid "Let this book be your first companion."
 msgstr ""
