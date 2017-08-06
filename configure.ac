@@ -3,7 +3,7 @@
 
 AC_PREREQ([2.69])
 AC_INIT([svnbook-ja-personal], [trunk], [michio_matsuyama AT yahoo DOT co DOT jp])
-AM_INIT_AUTOMAKE
+AM_INIT_AUTOMAKE([-Wno-portability])
 
 m4_include([progs.m4])
 
